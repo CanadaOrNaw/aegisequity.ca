@@ -194,7 +194,6 @@ p, li, label { font-family: var(--font-ui); }
   max-width: 440px;
   height: auto;
   border-radius: 16px;
-  border: 2px solid rgba(227, 189, 87, 0.5);
   box-shadow: 0 22px 60px rgba(3, 10, 24, 0.6);
   margin-bottom: 2rem;
 }
