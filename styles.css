@@ -191,11 +191,10 @@ p, li, label { font-family: var(--font-ui); }
 .hero-logo {
   display: block;
   width: 100%;
-  max-width: 440px;
+  max-width: 500px;
   height: auto;
-  border-radius: 16px;
-  box-shadow: 0 22px 60px rgba(3, 10, 24, 0.6);
-  margin-bottom: 2rem;
+  margin: 0 0 2rem;
+  background: radial-gradient(ellipse 60% 56% at 48% 46%, rgba(246, 231, 189, 0.95) 0%, rgba(246, 231, 189, 0.45) 40%, rgba(246, 231, 189, 0) 70%);
 }
 
 .hero h1 { color: var(--text-light); }
