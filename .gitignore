@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Thumbnail cache
+._*
+Thumbs.db
+
+# Editor temp files
+*~
+*.swp
+*.swo
+
+# Nothing else to ignore — this is a static site
