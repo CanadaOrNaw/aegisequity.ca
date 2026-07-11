@@ -1,12 +1,13 @@
 # Aegis Equity Corp.
 
-Trade Operations Support — static website for aegisequity.ca.
+Custom Technology Builds — static website for aegisequity.ca.
 
 ## Files
 
 - `index.html` — main site
 - `styles.css` — all styles
-- `logo.png` — Aegis Equity Corp. logo (transparent background)
+- `shield-mark.svg` — current favicon / compact shield mark
+- `logo.png` and `logo-mark.png` — legacy raster assets retained but not used by the current page
 
 ## Deployment
 

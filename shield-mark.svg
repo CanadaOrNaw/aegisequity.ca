@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 112" role="img" aria-labelledby="title">
+  <title>Aegis shield mark</title>
+  <defs>
+    <linearGradient id="gold" x1="18" y1="10" x2="78" y2="102" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff0a6"/>
+      <stop offset="0.48" stop-color="#e3bd57"/>
+      <stop offset="1" stop-color="#a9822f"/>
+    </linearGradient>
+  </defs>
+  <path d="M48 4 86 21v35c0 24-13 42-38 52C23 98 10 80 10 56V21L48 4Z" fill="#07162e"/>
+  <path d="M48 10 80 24v31c0 20-10 36-32 46C26 91 16 75 16 55V24l32-14Z" fill="none" stroke="url(#gold)" stroke-width="5"/>
+  <path d="M44 25h8v27h27v8H52v31h-8V60H17v-8h27V25Z" fill="url(#gold)"/>
+</svg>
