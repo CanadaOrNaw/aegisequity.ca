@@ -168,7 +168,7 @@ main {
 }
 
 .hero {
-  min-height: clamp(720px, 88vh, 860px);
+  min-height: clamp(620px, 78vh, 780px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -247,7 +247,7 @@ h1 span {
 
 .build-console {
   width: min(100%, 980px);
-  margin-top: 3.4rem;
+  margin: 3.4rem auto 0;
   text-align: left;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -371,6 +371,7 @@ code {
 .systems,
 .work,
 .process,
+.console-section,
 .contact {
   width: min(100% - 3rem, 1100px);
   margin: 0 auto;
@@ -671,6 +672,7 @@ h2 {
   .systems,
   .work,
   .process,
+  .console-section,
   .contact {
     padding-top: 4.25rem;
   }
