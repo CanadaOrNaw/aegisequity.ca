@@ -5,3 +5,6 @@ exclude:
   - CLAUDE.md
   - AGENTS.md
   - CONTEXT.md
+  - content
+  - build-blog.py
+  - tests
