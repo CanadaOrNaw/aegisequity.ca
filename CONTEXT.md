@@ -18,6 +18,8 @@ Read `CLAUDE.md` first: it routes and holds no content. Change the source, not g
 | the site | `index.html styles.css` |
 | the live domain binding — do not remove | `CNAME` |
 | brand assets | `logo*.png shield-mark.svg` |
+| the blog (generated) | `blog/`, `sitemap.xml`, the homepage preview, from `content/blog/` via `build-blog.py` |
+| site checks | `tests/check-site.py` |
 
 ## Human check
 
