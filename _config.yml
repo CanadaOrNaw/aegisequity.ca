@@ -1,0 +1,7 @@
+# GitHub Pages builds this site with Jekyll. Keep repo-internal
+# documentation out of the published site.
+exclude:
+  - README.md
+  - CLAUDE.md
+  - AGENTS.md
+  - CONTEXT.md
