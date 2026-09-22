@@ -2,11 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://aegisequity.ca/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-22</lastmod>
   </url>
   <url>
     <loc>https://aegisequity.ca/blog/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://aegisequity.ca/blog/solar-power-for-remote-sensors/</loc>
+    <lastmod>2026-09-22</lastmod>
   </url>
   <url>
     <loc>https://aegisequity.ca/blog/custom-3d-printed-parts-that-fit/</loc>
