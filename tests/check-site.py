@@ -70,7 +70,18 @@ for path, page in pages.items():
         for banned in ('certified', 'code-compliant', 'engineer-stamped', 'guarantee'):
             assert banned not in body.lower(), f"Unsupported claim '{banned}' in {path}"
 
-# The contact section ships in mailto-draft mode until an Aegis-owned key is installed.
+# Keep the buyer-facing homepage and its structured data aligned with real services.
+home = ROOT / 'index.html'
+home_text = home.read_text()
+home_schema = pages[home].schemas[0]['@graph']
+by_type = {node['@type']: node for node in home_schema}
+assert {'Organization', 'WebSite', 'Service'} <= by_type.keys(), 'Missing factual business schema'
+assert by_type['Service']['provider']['@id'] == by_type['Organization']['@id']
+assert by_type['WebSite']['publisher']['@id'] == by_type['Organization']['@id']
+assert 'Durham Region and the Kawarthas' in home_text
+assert 'Can you make a single replacement part?' in home_text
+assert 'Can you combine hardware and software?' in home_text
+assert 'licensed engineering sign-off' in home_text
 check_markup(ROOT)
 
 sitemap = ET.parse(ROOT / 'sitemap.xml')

@@ -138,7 +138,9 @@ if count != 1:
 (ROOT / "index.html").write_text(home)
 
 lastmod = max(p["date_modified"] for p in posts)
-urls = [("/", lastmod), ("/blog/", lastmod)] + [(p["url"], p["date_modified"]) for p in posts]
+# Keep the homepage date current when its service copy changes independently of the blog.
+homepage_lastmod = max(lastmod, "2026-09-22")
+urls = [("/", homepage_lastmod), ("/blog/", lastmod)] + [(p["url"], p["date_modified"]) for p in posts]
 (ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
                                   + ''.join(f'  <url>\n    <loc>{BASE}{e(u)}</loc>\n    <lastmod>{d}</lastmod>\n  </url>\n' for u, d in urls) + '</urlset>\n')
 items = []
