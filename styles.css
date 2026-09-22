@@ -588,11 +588,12 @@ a {
 /* ---------- CONTACT ---------- */
 .contact {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
   gap: 3rem;
   max-width: 1040px;
   margin: 0 auto;
-  align-items: center;
+  align-items: start;
+  scroll-margin-top: 68px;
 }
 
 .contact h2 {
@@ -602,11 +603,11 @@ a {
   letter-spacing: -0.02em;
 }
 
-.contact>div>p {
+.contact-intro > p:not(.eyebrow) {
   color: var(--muted);
   font-size: 0.92rem;
   line-height: 1.6;
-  margin: 0;
+  margin: 0 0 1.8rem;
 }
 
 .contact-panel {
@@ -625,6 +626,159 @@ a {
   text-decoration: none;
   font-family: var(--mono);
   font-size: 0.86rem;
+  overflow-wrap: anywhere;
+}
+
+.inquiry-form {
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel-strong);
+}
+
+.inquiry-form h3 {
+  font-size: 1.3rem;
+  margin: 0 0 0.6rem;
+}
+
+.form-mode,
+.form-privacy,
+.form-help {
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+.form-mode {
+  margin: 0 0 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-field {
+  margin-bottom: 1.2rem;
+  min-width: 0;
+}
+
+.form-field label {
+  display: block;
+  font-size: 0.84rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-field label span[aria-hidden="true"] {
+  color: var(--gold-strong);
+}
+
+.form-field .optional {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid rgba(126, 163, 223, 0.4);
+  border-radius: var(--radius);
+  background: var(--navy-900);
+  color: var(--ink);
+  font: inherit;
+  font-size: 1rem;
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 8rem;
+}
+
+.form-field select {
+  color-scheme: dark;
+}
+
+.form-field input:focus-visible,
+.form-field select:focus-visible,
+.form-field textarea:focus-visible,
+.inquiry-form button:focus-visible,
+.contact-panel a:focus-visible,
+.form-status:focus-visible {
+  outline: 2px solid var(--gold-strong);
+  outline-offset: 3px;
+}
+
+.form-help {
+  margin: 0.5rem 0 0;
+}
+
+.form-privacy {
+  margin: 0 0 1.2rem;
+}
+
+.inquiry-form button {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.inquiry-form button:disabled {
+  cursor: wait;
+  opacity: 0.68;
+}
+
+.form-status {
+  margin: 1rem 0 0;
+  line-height: 1.5;
+}
+
+.form-status:empty {
+  display: none;
+}
+
+.form-status[data-state="error"] {
+  color: #ffb5a8;
+}
+
+.form-status[data-state="success"] {
+  color: var(--green);
+}
+
+.form-honeypot {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .form-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ---------- THANK YOU ---------- */
+.thank-you {
+  max-width: 720px;
+  min-height: 100vh;
+  padding: clamp(8rem, 20vh, 12rem) 2rem 4rem;
+  margin: 0 auto;
+}
+
+.thank-you h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: 0 0 1.5rem;
+}
+
+.thank-you p:not(.eyebrow) {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.thank-you .btn {
+  display: inline-block;
+  margin-top: 1.5rem;
 }
 
 /* ---------- RESPONSIVE ---------- */

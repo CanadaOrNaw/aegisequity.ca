@@ -7,6 +7,8 @@ import json
 import re
 import xml.etree.ElementTree as ET
 
+from test_inquiry import check_markup
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -35,15 +37,16 @@ class Page(HTMLParser):
         if self.in_schema: self.schemas.append(json.loads(value))
 
 
-files = [ROOT / 'index.html'] + sorted((ROOT / 'blog').rglob('*.html'))
+files = [ROOT / 'index.html', ROOT / 'thank-you.html'] + sorted((ROOT / 'blog').rglob('*.html'))
 pages = {path: Page(path.read_text()) for path in files}
 links = 0
 for path, page in pages.items():
     text = path.read_text()
     assert page.h1s == 1, f"Expected one H1: {path}"
     assert len(page.description) == 1 and page.description[0], f"Missing description: {path}"
-    assert len(page.canonical) == 1, f"Missing canonical: {path}"
-    assert 'noindex' not in text, f"noindex on {path}"
+    assert len(page.canonical) == (0 if path == ROOT / 'thank-you.html' else 1), f"Unexpected canonical: {path}"
+    if path != ROOT / 'thank-you.html':
+        assert 'noindex' not in text, f"noindex on {path}"
     assert '—' not in re.sub(r'<script.*?</script>', '', text, flags=re.S) or path == ROOT / 'index.html', f"Em dash in {path}"
     for link in page.links:
         parsed = urlsplit(link)
@@ -67,6 +70,9 @@ for path, page in pages.items():
         for banned in ('certified', 'code-compliant', 'engineer-stamped', 'guarantee'):
             assert banned not in body.lower(), f"Unsupported claim '{banned}' in {path}"
 
+# The contact section ships in mailto-draft mode until an Aegis-owned key is installed.
+check_markup(ROOT)
+
 sitemap = ET.parse(ROOT / 'sitemap.xml')
 locations = [x.text for x in sitemap.findall('.//{*}loc')]
 assert len(locations) == len(set(locations)), "Duplicate sitemap URLs"
@@ -75,7 +81,10 @@ for url in locations:
     if target.is_dir(): target /= 'index.html'
     assert target.exists(), f"Missing sitemap destination: {url}"
 for path, page in pages.items():
-    assert page.canonical[0] in locations, f"Page not in sitemap: {path}"
+    if path == ROOT / 'thank-you.html':
+        assert not page.canonical and 'name="robots" content="noindex"' in path.read_text(), "Thank-you must be unindexed"
+    else:
+        assert page.canonical[0] in locations, f"Page not in sitemap: {path}"
 articles = [p for p in files if p.parent not in (ROOT, ROOT / 'blog')]
 rss = ET.parse(ROOT / 'blog/feed.xml')
 assert len(rss.findall('.//item')) == len(articles), "RSS item count differs from articles"

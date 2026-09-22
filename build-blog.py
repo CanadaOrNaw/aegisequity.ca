@@ -85,8 +85,8 @@ def card(post, heading="h2"):
 
 
 cta = ('<aside class="post-cta"><p class="eyebrow">start</p><h2>Have a problem like this?</h2>'
-       '<p>Send photos, measurements, device details, what you tried and what success looks like.</p>'
-       '<a class="btn primary" href="mailto:admin@aegisequity.ca?subject=Custom%20Build%20Inquiry">Describe the problem</a>'
+       '<p>Start with a brief overview of the problem. We can discuss photos and technical details after first contact.</p>'
+       '<a class="btn primary" href="/#contact">Describe the problem</a>'
        '<a class="btn secondary" href="/#systems">See the systems</a></aside>')
 
 blog_dir = ROOT / "blog"
