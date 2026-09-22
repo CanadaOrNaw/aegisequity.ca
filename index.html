@@ -223,11 +223,11 @@
           <span>Durham Region and the Kawarthas</span>
         </div>
       </div>
-      <form id="project-inquiry" class="inquiry-form" action="mailto:admin@aegisequity.ca?subject=Custom%20Build%20Inquiry" method="post" enctype="text/plain" aria-labelledby="form-heading">
+      <form id="project-inquiry" class="inquiry-form" action="https://api.web3forms.com/submit" method="post" aria-labelledby="form-heading">
         <h3 id="form-heading">Project inquiry</h3>
-        <p class="form-mode">Online sending is not active yet. Completing this form opens an email draft in your mail app; review and send it there. You can also email or call us directly.</p>
-        <input type="hidden" name="access_key" value="AEGIS_WEB3FORMS_ACCESS_KEY_REQUIRED" disabled>
-        <input type="hidden" name="redirect" value="https://aegisequity.ca/thank-you.html" disabled>
+        <p class="form-mode">Submit your outline here. We will review it and reply by email. You can also email or call us directly.</p>
+        <input type="hidden" name="access_key" value="af80a728-0302-468d-8d83-fe78e8ecc214">
+        <input type="hidden" name="redirect" value="https://aegisequity.ca/thank-you.html">
         <input type="hidden" name="subject" value="Aegis project inquiry">
         <div class="form-honeypot" aria-hidden="true">
           <label for="inquiry-botcheck">Leave this box unchecked</label>
@@ -265,8 +265,8 @@
           <textarea id="inquiry-message" name="message" rows="5" minlength="20" maxlength="1200" aria-describedby="message-help" required></textarea>
           <p id="message-help" class="form-help">A few sentences are enough. No photos, credentials, serial numbers, or precise locations here.</p>
         </div>
-        <p class="form-privacy">Your details are used to respond to your inquiry. Email drafts go through your mail app; when online sending is activated, Web3Forms processes submissions for delivery to Aegis at admin@aegisequity.ca.</p>
-        <button class="btn primary" type="submit">Prepare email draft</button>
+        <p class="form-privacy">Your details are used to respond to your inquiry. Web3Forms processes submissions for delivery to Aegis at admin@aegisequity.ca.</p>
+        <button class="btn primary" type="submit">Send inquiry</button>
         <p id="inquiry-status" class="form-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1"></p>
       </form>
     </section>
