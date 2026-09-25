@@ -26,7 +26,7 @@ This repo serves a live customer-facing domain. Deleting the GitHub remote takes
 
 ## Weekly blog
 
-The Aegis OpenClaw agent publishes one article every Tuesday at 09:00 (`~/.openclaw/workspace-aegis/AEGIS-WEEKLY-BLOG.md`). The queue, log and automation record live in `~/02_business/Aegis Engineered Solutions/blog/`.
+The Aegis OpenClaw agent publishes one article every Tuesday at 09:00 (`~/02_business/agent-workspaces/aegis/AEGIS-WEEKLY-BLOG.md`). The queue, log and automation record live in `~/02_business/Aegis Engineered Solutions/blog/`.
 
 ## Related
 
