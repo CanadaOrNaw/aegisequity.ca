@@ -1,0 +1,32 @@
+<p>A local camera dashboard should make the important view or device state easy to find without forcing someone through several separate apps. The useful starting point is not how many camera tiles fit on a screen. It is what a person needs to notice, confirm or open quickly.</p>
+<p>This guide covers planning a bounded dashboard for local camera feeds and device status. It does not assume a particular camera brand or claim that every device exposes the same controls. Confirm what each camera or recorder supports before designing the interface.</p>
+
+<h2 id="define-the-job">Define the job before choosing the layout</h2>
+<p>Write down the questions the dashboard must answer. A homeowner might need to see whether an entrance camera is available and open its live view. A workshop might need one overview feed plus the status of a few local devices. A small property might need a compact screen that shows which feeds are online before anyone drives out to investigate.</p>
+<p>Keep this list short. If a requested tile does not help someone make a decision, it probably does not belong on the main screen. Secondary views can hold detail without making the first view noisy.</p>
+<p>For each item, record its source, the expected update behaviour and what should happen when it is unavailable. That inventory exposes compatibility questions before interface work begins.</p>
+
+<h2 id="map-local-sources">Map the cameras, recorder and network path</h2>
+<p>Identify where every feed comes from. It may come directly from a camera, from a recorder or from an existing local service. Record the device model, its local address or discovery method, the supported stream or interface, and who manages its credentials. Do not copy passwords into a planning document or source file.</p>
+<p>Draw the local path from the camera to the screen. Include network switches, wireless links, recorders and the device that will run the dashboard. This helps separate a display problem from a camera or network problem. A dashboard cannot repair a feed that never reaches it.</p>
+<p>Decide whether the screen must remain useful when the internet connection is down. A system described as local still needs every required part to work on the local network. If a camera depends on a vendor cloud for viewing, verify that constraint rather than assuming it can supply a direct local feed.</p>
+
+<h2 id="choose-a-clear-default-view">Choose a clear default view</h2>
+<p>Give the most important view enough room to be understood. A grid of many equal tiles can make every image too small. A better pattern may be one primary view, a few smaller previews and simple status indicators for the rest.</p>
+<p>Use plain labels that match the place or purpose, such as “front entrance” or “workbench,” rather than model numbers. Keep controls close to the item they affect. If selecting a preview opens a larger view, make that behaviour obvious and provide a direct way back.</p>
+<p>Design for the real display. Note its resolution, physical size, viewing distance and input method. Buttons that work with a mouse at a desk may be awkward on a touch screen mounted across a room. Test the interface at the intended size instead of judging it only in a development window.</p>
+
+<h2 id="show-failure-states">Show failures instead of hiding them</h2>
+<p>An empty or frozen tile can look like a quiet scene. The dashboard should distinguish an unavailable feed from a valid image. Use a clear status label and, where the source supports it, show when the last valid update arrived.</p>
+<p>Plan several ordinary failure cases: a camera restarts, a recorder is offline, the dashboard device loses its local connection, a feed takes longer to load, or a device address changes. The interface should remain understandable even when only part of the system works.</p>
+<p>Avoid endless automatic retry loops that hide a persistent fault. A bounded retry and a visible error give the owner something useful to diagnose. Keep a simple check sequence with the handoff notes: confirm device power, confirm local network access, confirm the source service, then restart only the affected component if appropriate.</p>
+
+<h2 id="protect-access">Keep access and privacy in the scope</h2>
+<p>Camera views can reveal private spaces and routines. Decide who may open the dashboard, where the display will sit and whether the device needs a screen lock or separate local account. Show only the feeds needed for the stated job.</p>
+<p>Keep credentials out of page code, screenshots and documentation intended for general sharing. Use the authentication method supported by the camera or recorder, and document where access is managed without recording the secret itself. Apply software and device updates through the vendor's supported process.</p>
+<p>If remote access is requested later, treat it as a separate scope. Exposing a local dashboard directly to the public internet is not a substitute for a properly designed remote-access method.</p>
+
+<h2 id="plan-the-handoff">Plan maintenance and handoff</h2>
+<p>A useful handoff explains how to start the dashboard, what each status means, where device access is managed and how to restore the normal view. Include a source inventory, a simple network map, the dashboard files and notes about any device-specific dependency.</p>
+<p>Test the normal path and the failure states on the actual display. Confirm that labels remain readable, the layout adapts if the window size changes and an unavailable feed does not block the rest of the screen. Record the expected result so a future change can be checked against it.</p>
+<p>Aegis Engineered Solutions builds bounded camera dashboards, monitoring panels and local device interfaces with a written scope and tested handoff. To start a conversation, send the camera and recorder models, a sketch of the local network, photos of the intended display location, the views you need and what success looks like by <a href="mailto:admin@aegisequity.ca">email</a>, or call <a href="tel:+17053413980">(705) 341-3980</a>.</p>

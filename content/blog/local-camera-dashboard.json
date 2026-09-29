@@ -1,0 +1,11 @@
+{
+  "slug": "local-camera-dashboard",
+  "title": "How to Plan a Useful Local Camera Dashboard",
+  "seo_title": "Local Camera Dashboard | A Practical Planning Guide",
+  "description": "Plan a local camera dashboard around the views, device status, failures and handoff details you need, without turning one screen into another source of clutter.",
+  "keyword": "local camera dashboard",
+  "date_published": "2026-09-29",
+  "date_modified": "2026-09-29",
+  "category": "Dashboards and local devices",
+  "excerpt": "A useful camera dashboard is not a wall of tiny video tiles. Start with the decisions the screen must support, then plan views, status, failure states and a maintainable handoff."
+}
