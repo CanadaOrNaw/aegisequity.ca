@@ -1,0 +1,44 @@
+<p>Meshtastic node setup in Ontario comes down to three decisions made before any radio is switched on: where the node will sit, how it will stay powered and what will protect it from weather. Get those right and the software side is mostly configuration. Get them wrong and no setting will fix a node buried behind a metal wall or a battery that gives up in January.</p>
+<p>This guide is for a technical homeowner, farm or small business planning one or two nodes on rural property. It stays general: confirm the details for your specific board, antenna and firmware version against the Meshtastic documentation before you build.</p>
+
+<h2 id="what-a-node-does">Decide what the node is for</h2>
+<p>A Meshtastic node is a small low-power radio that passes short messages and sensor readings across a mesh. Write down the job first. Is it a handheld you carry, a fixed node that extends coverage to a barn or shop, or a remote node that reports a sensor reading? The job decides the placement, the power budget and the enclosure.</p>
+<p>Be honest about range. Low-power radio performs best with a clear path between antennas. Trees, hills, buildings and metal roofing all cut it down, and a node that works on the bench can disappoint once it is installed. Plan to test before you commit to a permanent mounting.</p>
+
+<h2 id="placement">Place the antenna before you place the box</h2>
+<p>Height and a clear view matter more than raw transmit power. A node mounted higher with fewer obstructions between it and its neighbours will usually do more for the mesh than a stronger radio low to the ground.</p>
+<ul>
+<li>Keep the antenna outside or at the edge of the enclosure, away from large metal surfaces, which can detune it and block the signal.</li>
+<li>Mount the antenna vertically unless the manufacturer says otherwise.</li>
+<li>Keep it clear of other transmitters, power supplies and noisy electronics where you can.</li>
+<li>Prefer a spot you can reach safely for maintenance. A perfect location nobody can reach will not get serviced.</li>
+</ul>
+<p>Before drilling anything, hold the node at the intended height, using a pole or ladder, and check whether it reaches the nodes around it. Move it a few metres and compare. Record what you find.</p>
+
+<h2 id="power">Plan power around the worst month</h2>
+<p>A node that sends occasional messages draws little, but a fixed outdoor node still has to survive a long, dark stretch of winter. Size the power system for the weakest time of year, not the best.</p>
+<p>Start by listing the loads: the radio board, any sensors, and anything that wakes the node regularly. Then decide the source. A small USB-powered setup is fine for a node near a building. A solar and battery setup suits a remote spot, and the battery capacity and panel size should come from your measured load and the winter sun you actually get.</p>
+<p>Cold matters. Lithium-ion cells should not be charged below freezing, so a battery in an exposed enclosure needs a charge controller or board that protects against it, or a better-protected location. Check the battery and charger specifications rather than assuming they handle cold. Any work on mains or grid-connected wiring is a job for a licensed electrician.</p>
+
+<h2 id="enclosure">Choose an enclosure that handles weather</h2>
+<p>Outdoor nodes face rain, snow, sun, ice and condensation. A sealed box that traps moisture can fail as surely as an open one.</p>
+<ul>
+<li>Use an enclosure designed to keep water out, and seal every cable entry with a gland or equivalent. Point entries downward so water does not run in along the cable.</li>
+<li>Allow for temperature swings. Sun on a dark box can heat the electronics well above air temperature, and condensation can form when it cools.</li>
+<li>Choose materials that tolerate sunlight and cold. Some printed plastics soften or become brittle outdoors, so confirm the material suits the exposure.</li>
+<li>Support the weight and wind load of the mounting with solid fasteners, and strain-relieve every cable.</li>
+<li>Label the unit with a way to identify it, so a stranger who finds it knows it is not abandoned.</li>
+</ul>
+
+<h2 id="configuration">Configure it deliberately</h2>
+<p>Set the radio region to match the frequency band where you operate, and use hardware built for that band. Give each node a clear name so you can tell them apart on a map or in a list.</p>
+<p>Avoid giving every node a role that makes it repeat everything. A larger number of nodes all rebroadcasting can clog a small mesh. Read the current Meshtastic guidance on roles, and reserve repeater-style roles for nodes that are well placed and meant to carry traffic for others. Treat any channel key as a secret: keep it out of shared documents and screenshots.</p>
+<p>Keep a simple record of each node: its name, location, hardware, firmware version and power source. Update it whenever something changes.</p>
+
+<h2 id="test-and-maintain">Test, then plan to maintain it</h2>
+<p>Run the node for a few days before final mounting, and watch whether its battery behaves as expected and whether it stays reachable. After mounting, test again at the real height and compare with your earlier notes.</p>
+<p>Then schedule a look at the unit. Seals age, connectors loosen and firmware moves on. A short written checklist, covering the enclosure, cable entries, antenna connector, battery and firmware, makes the next visit quick.</p>
+
+<h2 id="what-to-send">What to send if you want help</h2>
+<p>Aegis Engineered Solutions plans and builds Meshtastic nodes, sensors, repeaters and weather-ready enclosures, with local setup in Durham Region and the Kawarthas. Every project starts as a written scope. Aegis does not provide electrical certification, and licensed electrical work is done by a licensed electrician.</p>
+<p>To start, send photos of the proposed location, the approximate height and distance to other nodes, the hardware you already have, how it will be powered, what you have tried and what success looks like. Reach out by <a href="mailto:admin@aegisequity.ca">email</a> or call <a href="tel:+17053413980">(705) 341-3980</a>.</p>
