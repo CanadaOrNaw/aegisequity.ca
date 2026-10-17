@@ -8,3 +8,6 @@ exclude:
   - content
   - build-blog.py
   - tests
+  - docs
+  - .docs-check
+  - .githooks

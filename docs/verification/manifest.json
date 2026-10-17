@@ -1,0 +1,1177 @@
+{
+  "schema": 1,
+  "project": "aegis-site",
+  "author": "aegis-site assigned source-audit/content author (not independent reviewer)",
+  "sources": [
+    {
+      "path": ".githooks/docs-pre-commit",
+      "role": "external_integration_adapter; generated wrapper delegating to fleet-index documentation enforcement; complete source read"
+    },
+    {
+      "path": ".gitignore",
+      "role": "repository_config; OS/editor rules plus recursive docs-scoped generated/private-output ignores and exact canonical verification exceptions; initial full read plus final Task5E recursive delta review"
+    },
+    {
+      "path": "AGENTS.md",
+      "role": "project_contract; agent route; older than CLAUDE in detailed file inventory; complete source read"
+    },
+    {
+      "path": "CLAUDE.md",
+      "role": "project_contract; owner route with blog commands and stale automation wording; complete source read"
+    },
+    {
+      "path": "CNAME",
+      "role": "publication_config; custom-domain binding; complete source read"
+    },
+    {
+      "path": "CONTEXT.md",
+      "role": "project_contract; workspace source/generated ownership; complete source read"
+    },
+    {
+      "path": "LICENSE",
+      "role": "project_contract; proprietary-license boundary; complete source read"
+    },
+    {
+      "path": "README.md",
+      "role": "project_contract; usage, commands, provider history and approval limits; complete source read"
+    },
+    {
+      "path": "_config.yml",
+      "role": "publication_config; Jekyll publish exclusions; complete source read"
+    },
+    {
+      "path": "build-blog.py",
+      "role": "authored_tool; blog generator and metadata/HTML templates; complete source read"
+    },
+    {
+      "path": "content/blog/custom-3d-printed-parts-that-fit.html",
+      "role": "authored_blog_body; trusted public article HTML consumed verbatim by generator; complete source read"
+    },
+    {
+      "path": "content/blog/custom-3d-printed-parts-that-fit.json",
+      "role": "authored_blog_metadata; article metadata consumed by generator; complete source read"
+    },
+    {
+      "path": "content/blog/local-camera-dashboard.html",
+      "role": "authored_blog_body; trusted public article HTML consumed verbatim by generator; complete source read"
+    },
+    {
+      "path": "content/blog/local-camera-dashboard.json",
+      "role": "authored_blog_metadata; article metadata consumed by generator; complete source read"
+    },
+    {
+      "path": "content/blog/meshtastic-node-setup-ontario.html",
+      "role": "authored_blog_body; trusted public article HTML consumed verbatim by generator; complete source read"
+    },
+    {
+      "path": "content/blog/meshtastic-node-setup-ontario.json",
+      "role": "authored_blog_metadata; article metadata consumed by generator; complete source read"
+    },
+    {
+      "path": "content/blog/scope-custom-tech-project.html",
+      "role": "authored_blog_body; trusted public article HTML consumed verbatim by generator; complete source read"
+    },
+    {
+      "path": "content/blog/scope-custom-tech-project.json",
+      "role": "authored_blog_metadata; article metadata consumed by generator; complete source read"
+    },
+    {
+      "path": "content/blog/solar-power-for-remote-sensors.html",
+      "role": "authored_blog_body; trusted public article HTML consumed verbatim by generator; complete source read"
+    },
+    {
+      "path": "content/blog/solar-power-for-remote-sensors.json",
+      "role": "authored_blog_metadata; article metadata consumed by generator; complete source read"
+    },
+    {
+      "path": "docs/CONTEXT.md",
+      "role": "authored_private_handbook; existing private handbook/contract; route and dated status, not sufficient project specification; complete source read"
+    },
+    {
+      "path": "index.html",
+      "role": "authored_public_page; homepage and form, with generated preview island; complete source read; routing identifier redacted before output"
+    },
+    {
+      "path": "inquiry.js",
+      "role": "authored_browser_code; progressive-enhancement inquiry state machine; complete source read"
+    },
+    {
+      "path": "robots.txt",
+      "role": "publication_config; crawler and sitemap discovery; complete source read"
+    },
+    {
+      "path": "shield-mark.svg",
+      "role": "brand_asset; authored current vector brand mark/favicon; complete source read"
+    },
+    {
+      "path": "styles.css",
+      "role": "authored_style; home/form/thank-you/blog layout and design tokens; complete source read"
+    },
+    {
+      "path": "tests/activate-inquiry.py",
+      "role": "authored_owner_tool; interactive initial activation helper; inspected but never executed; complete source read"
+    },
+    {
+      "path": "tests/check-site.py",
+      "role": "authored_test; offline local regression test; executed; complete source read"
+    },
+    {
+      "path": "tests/test-inquiry.mjs",
+      "role": "authored_test; offline local regression test; executed; complete source read"
+    },
+    {
+      "path": "tests/test_inquiry.py",
+      "role": "authored_test; offline local regression test; executed; complete source read"
+    },
+    {
+      "path": "thank-you.html",
+      "role": "authored_public_page; native form response landing page; complete source read"
+    }
+  ],
+  "excluded": [
+    {
+      "path": "8e324adee52718aeea89f03ff6357daf.txt",
+      "reason": "Public host-verification artifact; metadata/hash only. Token contents not read/copied; preserve for domain owner."
+    },
+    {
+      "path": "blog/custom-3d-printed-parts-that-fit/index.html",
+      "reason": "Generated public product owned by build-blog.py; structurally inspected, all five authored body matches checked; not independent authored implementation input."
+    },
+    {
+      "path": "blog/feed.xml",
+      "reason": "Generated public product owned by build-blog.py; structurally inspected, all five authored body matches checked; not independent authored implementation input."
+    },
+    {
+      "path": "blog/index.html",
+      "reason": "Generated public product owned by build-blog.py; structurally inspected, all five authored body matches checked; not independent authored implementation input."
+    },
+    {
+      "path": "blog/local-camera-dashboard/index.html",
+      "reason": "Generated public product owned by build-blog.py; structurally inspected, all five authored body matches checked; not independent authored implementation input."
+    },
+    {
+      "path": "blog/meshtastic-node-setup-ontario/index.html",
+      "reason": "Generated public product owned by build-blog.py; structurally inspected, all five authored body matches checked; not independent authored implementation input."
+    },
+    {
+      "path": "blog/scope-custom-tech-project/index.html",
+      "reason": "Generated public product owned by build-blog.py; structurally inspected, all five authored body matches checked; not independent authored implementation input."
+    },
+    {
+      "path": "blog/solar-power-for-remote-sensors/index.html",
+      "reason": "Generated public product owned by build-blog.py; structurally inspected, all five authored body matches checked; not independent authored implementation input."
+    },
+    {
+      "path": "googledf779ae90efe8e8f.html",
+      "reason": "Public host-verification artifact; metadata/hash only. Token contents not read/copied; preserve for domain owner."
+    },
+    {
+      "path": "logo-mark.png",
+      "reason": "Retained public raster binary, metadata/hash inventoried; no executable interface or image-content review. logo.png remains used by OG/schema metadata."
+    },
+    {
+      "path": "logo.png",
+      "reason": "Retained public raster binary, metadata/hash inventoried; no executable interface or image-content review. logo.png remains used by OG/schema metadata."
+    },
+    {
+      "path": "sitemap.xml",
+      "reason": "Generated public product owned by build-blog.py; structurally inspected, all five authored body matches checked; not independent authored implementation input."
+    },
+    {
+      "path": "docs/handbook/_generated/",
+      "reason": "Legacy shared-factory HTML/PDF/receipt products; metadata/hash inventoried, not canonical reader input and intentionally not rebuilt/edited."
+    },
+    {
+      "path": ".git/",
+      "reason": "Repository internals; no config/index/object inspection. Only native read-only commit/status/tracked commands, no staging or object/index writes."
+    }
+  ],
+  "pages": [
+    {
+      "id": "index",
+      "kind": "overview",
+      "sources": [
+        "README.md",
+        "CONTEXT.md",
+        "index.html",
+        "tests/check-site.py",
+        "tests/test_inquiry.py",
+        "tests/test-inquiry.mjs"
+      ]
+    },
+    {
+      "id": "collaboration",
+      "kind": "overview",
+      "sources": [
+        "README.md",
+        "CLAUDE.md",
+        "AGENTS.md",
+        "CONTEXT.md",
+        "docs/CONTEXT.md",
+        "index.html",
+        ".githooks/docs-pre-commit",
+        "build-blog.py"
+      ]
+    },
+    {
+      "id": "guide",
+      "kind": "how-to",
+      "sources": [
+        "README.md",
+        "CONTEXT.md",
+        "build-blog.py",
+        "inquiry.js"
+      ]
+    },
+    {
+      "id": "architecture",
+      "kind": "concept",
+      "sources": [
+        "CONTEXT.md",
+        "build-blog.py",
+        "inquiry.js",
+        "_config.yml",
+        "index.html",
+        "tests/activate-inquiry.py",
+        "tests/check-site.py"
+      ]
+    },
+    {
+      "id": "CONTEXT",
+      "kind": "overview",
+      "sources": [
+        "CONTEXT.md",
+        "docs/CONTEXT.md",
+        "AGENTS.md"
+      ]
+    },
+    {
+      "id": "tutorials/offline-verification",
+      "kind": "tutorial",
+      "sources": [
+        "README.md",
+        "tests/check-site.py",
+        "tests/test_inquiry.py",
+        "tests/test-inquiry.mjs"
+      ]
+    },
+    {
+      "id": "tutorials/trace-existing-article",
+      "kind": "tutorial",
+      "sources": [
+        "content/blog/scope-custom-tech-project.json",
+        "content/blog/scope-custom-tech-project.html",
+        "build-blog.py",
+        "index.html",
+        "tests/check-site.py"
+      ]
+    },
+    {
+      "id": "architecture/publication-dataflow",
+      "kind": "concept",
+      "sources": [
+        "build-blog.py",
+        "tests/check-site.py",
+        "CONTEXT.md"
+      ]
+    },
+    {
+      "id": "architecture/inquiry-lifecycle",
+      "kind": "concept",
+      "sources": [
+        "index.html",
+        "inquiry.js",
+        "thank-you.html",
+        "README.md",
+        "tests/test_inquiry.py"
+      ]
+    },
+    {
+      "id": "development/source-map-and-requirements",
+      "kind": "developer",
+      "sources": [
+        "README.md",
+        "build-blog.py",
+        "tests/check-site.py",
+        "tests/test-inquiry.mjs",
+        "styles.css",
+        "inquiry.js",
+        "tests/activate-inquiry.py",
+        "tests/test_inquiry.py",
+        "_config.yml",
+        "CNAME",
+        "robots.txt",
+        ".githooks/docs-pre-commit",
+        ".gitignore",
+        "LICENSE",
+        "thank-you.html",
+        "shield-mark.svg",
+        "index.html",
+        "content/blog/custom-3d-printed-parts-that-fit.html",
+        "content/blog/custom-3d-printed-parts-that-fit.json",
+        "content/blog/local-camera-dashboard.html",
+        "content/blog/local-camera-dashboard.json",
+        "content/blog/meshtastic-node-setup-ontario.html",
+        "content/blog/meshtastic-node-setup-ontario.json",
+        "content/blog/scope-custom-tech-project.html",
+        "content/blog/scope-custom-tech-project.json",
+        "content/blog/solar-power-for-remote-sensors.html",
+        "content/blog/solar-power-for-remote-sensors.json"
+      ]
+    },
+    {
+      "id": "development/test-strategy",
+      "kind": "developer",
+      "sources": [
+        "tests/check-site.py",
+        "tests/test_inquiry.py",
+        "tests/test-inquiry.mjs",
+        "tests/activate-inquiry.py",
+        "inquiry.js",
+        "_config.yml",
+        ".githooks/docs-pre-commit"
+      ]
+    },
+    {
+      "id": "how-to/update-article",
+      "kind": "how-to",
+      "sources": [
+        "CLAUDE.md",
+        "README.md",
+        "build-blog.py"
+      ]
+    },
+    {
+      "id": "how-to/change-layout-or-branding",
+      "kind": "how-to",
+      "sources": [
+        "index.html",
+        "build-blog.py",
+        "styles.css",
+        "README.md",
+        "shield-mark.svg"
+      ]
+    },
+    {
+      "id": "how-to/diagnose-inquiry",
+      "kind": "how-to",
+      "sources": [
+        "inquiry.js",
+        "README.md",
+        "thank-you.html",
+        "tests/activate-inquiry.py",
+        "index.html"
+      ]
+    },
+    {
+      "id": "how-to/review-publication-boundary",
+      "kind": "how-to",
+      "sources": [
+        "_config.yml",
+        "CNAME",
+        "README.md",
+        "tests/check-site.py",
+        "docs/CONTEXT.md"
+      ]
+    },
+    {
+      "id": "reference/commands",
+      "kind": "reference",
+      "sources": [
+        "README.md",
+        "build-blog.py",
+        "tests/check-site.py",
+        "tests/test_inquiry.py",
+        "tests/test-inquiry.mjs",
+        "tests/activate-inquiry.py",
+        ".githooks/docs-pre-commit"
+      ]
+    },
+    {
+      "id": "reference/blog-metadata-and-body",
+      "kind": "reference",
+      "sources": [
+        "build-blog.py",
+        "content/blog/scope-custom-tech-project.json",
+        "content/blog/scope-custom-tech-project.html",
+        "tests/check-site.py"
+      ]
+    },
+    {
+      "id": "reference/inquiry-fields-and-provider",
+      "kind": "reference",
+      "sources": [
+        "index.html",
+        "inquiry.js",
+        "tests/test_inquiry.py",
+        "thank-you.html",
+        "README.md"
+      ]
+    },
+    {
+      "id": "reference/configuration-and-discovery",
+      "kind": "reference",
+      "sources": [
+        "_config.yml",
+        "CNAME",
+        "robots.txt",
+        "build-blog.py",
+        "index.html",
+        "thank-you.html",
+        "styles.css",
+        ".gitignore",
+        "LICENSE",
+        ".githooks/docs-pre-commit",
+        "inquiry.js",
+        "tests/check-site.py"
+      ]
+    },
+    {
+      "id": "maintenance/change-impact-and-owner-links",
+      "kind": "developer",
+      "sources": [
+        "CONTEXT.md",
+        "README.md",
+        "CLAUDE.md",
+        "docs/CONTEXT.md",
+        "build-blog.py",
+        "inquiry.js",
+        "tests/check-site.py",
+        "styles.css",
+        "tests/activate-inquiry.py",
+        "tests/test_inquiry.py",
+        "tests/test-inquiry.mjs",
+        "_config.yml",
+        "CNAME"
+      ]
+    },
+    {
+      "id": "status",
+      "kind": "status",
+      "sources": [
+        "README.md",
+        "CONTEXT.md",
+        "tests/check-site.py",
+        "tests/test_inquiry.py",
+        "tests/test-inquiry.mjs",
+        "_config.yml",
+        "build-blog.py",
+        "docs/CONTEXT.md"
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "blog-generator",
+      "kind": "cli",
+      "source": "build-blog.py",
+      "docs": [
+        "reference/commands#blog-generation--writes-publication-files",
+        "architecture/publication-dataflow",
+        "how-to/update-article"
+      ],
+      "claims": [
+        "no-application-args-or-env",
+        "script-root-and-fixed-constants",
+        "exact-read-write-set",
+        "UTC-future-publication-gate",
+        "validation-error-order",
+        "stdout-and-uncaught-failures",
+        "no-dry-run-import-guard-stale-cleanup-or-atomic-build"
+      ]
+    },
+    {
+      "id": "site-check",
+      "kind": "cli-and-test",
+      "source": "tests/check-site.py",
+      "docs": [
+        "reference/commands#read-only-checks",
+        "development/test-strategy",
+        "tutorials/offline-verification"
+      ],
+      "claims": [
+        "exact-native-command",
+        "no-script-args",
+        "offline-local-or-synthetic-effects",
+        "success-output-and-ordinary-uncaught-errors",
+        "fixture-coverage-and-non-proof-limits"
+      ]
+    },
+    {
+      "id": "form-markup-check",
+      "kind": "cli-and-test",
+      "source": "tests/test_inquiry.py",
+      "docs": [
+        "reference/commands#read-only-checks",
+        "development/test-strategy",
+        "tutorials/offline-verification"
+      ],
+      "claims": [
+        "exact-native-command",
+        "no-script-args",
+        "offline-local-or-synthetic-effects",
+        "success-output-and-ordinary-uncaught-errors",
+        "fixture-coverage-and-non-proof-limits"
+      ]
+    },
+    {
+      "id": "synthetic-controller-test",
+      "kind": "cli-and-test",
+      "source": "tests/test-inquiry.mjs",
+      "docs": [
+        "reference/commands#read-only-checks",
+        "development/test-strategy",
+        "tutorials/offline-verification"
+      ],
+      "claims": [
+        "exact-native-command",
+        "no-script-args",
+        "offline-local-or-synthetic-effects",
+        "success-output-and-ordinary-uncaught-errors",
+        "fixture-coverage-and-non-proof-limits"
+      ]
+    },
+    {
+      "id": "initial-form-activation",
+      "kind": "owner-cli",
+      "source": "tests/activate-inquiry.py",
+      "docs": [
+        "reference/commands#initial-activation--owner-only-not-rotation",
+        "how-to/diagnose-inquiry"
+      ],
+      "claims": [
+        "confirmation-and-masked-input",
+        "UUID-format-and-exact-string-validation",
+        "already-active-exits-before-prompt",
+        "atomic-single-file-write-permission-preservation",
+        "not-rotation-provider-test-or-publish"
+      ]
+    },
+    {
+      "id": "documentation-hook",
+      "kind": "external-cli-adapter",
+      "source": ".githooks/docs-pre-commit",
+      "docs": [
+        "reference/commands#external-documentation-hook-adapter",
+        "reference/configuration-and-discovery"
+      ],
+      "claims": [
+        "git-root-failure-exit2",
+        "external-checker-registry-delegation",
+        "exec-exit-propagation",
+        "effective-installation-unproven"
+      ]
+    },
+    {
+      "id": "blog-metadata",
+      "kind": "implicit-json-schema",
+      "source": "build-blog.py",
+      "docs": [
+        "reference/blog-metadata-and-body#required-metadata",
+        "architecture/publication-dataflow#validation-order-matters"
+      ],
+      "claims": [
+        "all-nine-required-fields",
+        "slug-regex-and-stem-match",
+        "date-parse-order-and-modification-check",
+        "truthiness-not-formal-types",
+        "future-date-skip-order",
+        "extra-keys-ignored",
+        "sort-and-minimum-post"
+      ]
+    },
+    {
+      "id": "article-html-body",
+      "kind": "trusted-html-input",
+      "source": "build-blog.py",
+      "docs": [
+        "reference/blog-metadata-and-body#html-body-and-headings",
+        "architecture/publication-dataflow#rendering-and-trust"
+      ],
+      "claims": [
+        "sibling-file",
+        "body-verbatim-not-sanitized",
+        "exact-h2-id-TOC",
+        "word-count-rounding-and-floor",
+        "escaped-metadata-and-JSONLD"
+      ]
+    },
+    {
+      "id": "template-helpers",
+      "kind": "internal-python",
+      "source": "build-blog.py",
+      "docs": [
+        "reference/commands#internal-helpers",
+        "development/source-map-and-requirements"
+      ],
+      "claims": [
+        "page-signature-and-trusted-body",
+        "card-default-h2-homepage-h3",
+        "top-level-import-side-effects"
+      ]
+    },
+    {
+      "id": "activation-transform",
+      "kind": "internal-python",
+      "source": "tests/activate-inquiry.py",
+      "docs": [
+        "reference/commands#internal-helpers"
+      ],
+      "claims": [
+        "activate-source-key-return-or-ValueError",
+        "exact-dormant-mode-only"
+      ]
+    },
+    {
+      "id": "test-parser-helpers",
+      "kind": "internal-python",
+      "source": "tests/test_inquiry.py",
+      "docs": [
+        "reference/commands#internal-helpers",
+        "development/test-strategy#current-tree-python-checks"
+      ],
+      "claims": [
+        "Inquiry-parser-and-check-markup-root",
+        "active-dormant-and-field-assertions"
+      ]
+    },
+    {
+      "id": "page-parser",
+      "kind": "internal-python",
+      "source": "tests/check-site.py",
+      "docs": [
+        "reference/commands#internal-helpers",
+        "development/test-strategy#current-tree-python-checks"
+      ],
+      "claims": [
+        "Page-content-collector",
+        "local-link-anchor-metadata-schema-policy-assertions"
+      ]
+    },
+    {
+      "id": "node-harness",
+      "kind": "internal-test-fixture",
+      "source": "tests/test-inquiry.mjs",
+      "docs": [
+        "reference/commands#internal-helpers",
+        "development/test-strategy#synthetic-javascript-fixture"
+      ],
+      "claims": [
+        "harness-defaults-and-stub-factories",
+        "fake-fetch-no-network",
+        "covered-and-uncovered-cases"
+      ]
+    },
+    {
+      "id": "inquiry-markup-fields",
+      "kind": "html-form",
+      "source": "index.html",
+      "docs": [
+        "reference/inquiry-fields-and-provider#form-fields",
+        "architecture/inquiry-lifecycle"
+      ],
+      "claims": [
+        "all-hidden-and-visible-field-contracts",
+        "type-required-length-autocomplete-options",
+        "labels-live-status-honeypot-no-upload",
+        "active-native-POST-and-default-encoding"
+      ]
+    },
+    {
+      "id": "inquiry-enhancement",
+      "kind": "browser-state-machine",
+      "source": "inquiry.js",
+      "docs": [
+        "reference/inquiry-fields-and-provider#enhanced-request",
+        "architecture/inquiry-lifecycle",
+        "how-to/diagnose-inquiry"
+      ],
+      "claims": [
+        "guard-before-listeners",
+        "in-memory-sending-sent-repeat-lock",
+        "browser-validation-and-bot-gate",
+        "JSON-headers-FormData-minus-redirect",
+        "20000ms-abort-finally",
+        "HTTP-ok-and-literal-success",
+        "429-specific-only-after-JSON-parse-vs-generic-vs-exception",
+        "retention-reset-focus-and-button-state",
+        "no-automatic-retry-or-mailbox-proof"
+      ]
+    },
+    {
+      "id": "thank-you",
+      "kind": "static-outcome-page",
+      "source": "thank-you.html",
+      "docs": [
+        "architecture/inquiry-lifecycle#acceptance-is-not-receipt",
+        "reference/configuration-and-discovery#seo-structured-data-and-feeds"
+      ],
+      "claims": [
+        "noindex-no-canonical",
+        "direct-visit-not-proof",
+        "provider-acceptance-not-inbox-receipt"
+      ]
+    },
+    {
+      "id": "publication-exclusions",
+      "kind": "jekyll-config",
+      "source": "_config.yml",
+      "docs": [
+        "reference/configuration-and-discovery#publication-files",
+        "how-to/review-publication-boundary"
+      ],
+      "claims": [
+        "complete-exclusion-list",
+        "intent-not-hosted-artifact-proof",
+        "raw-server-does-not-apply-Jekyll-exclusions"
+      ]
+    },
+    {
+      "id": "domain-binding",
+      "kind": "pages-config",
+      "source": "CNAME",
+      "docs": [
+        "reference/configuration-and-discovery#publication-files",
+        "how-to/review-publication-boundary"
+      ],
+      "claims": [
+        "declared-custom-domain",
+        "preserve-live-owner-boundary"
+      ]
+    },
+    {
+      "id": "crawler-policy",
+      "kind": "static-config",
+      "source": "robots.txt",
+      "docs": [
+        "reference/configuration-and-discovery#publication-files"
+      ],
+      "claims": [
+        "allow-all-and-sitemap-url",
+        "advisory-not-access-control"
+      ]
+    },
+    {
+      "id": "discovery-products",
+      "kind": "RSS-sitemap-JSONLD",
+      "source": "build-blog.py",
+      "docs": [
+        "reference/configuration-and-discovery#seo-structured-data-and-feeds",
+        "reference/blog-metadata-and-body#generated-contracts"
+      ],
+      "claims": [
+        "home-blog-article-URL-and-lastmod",
+        "RSS2-Atom-self-link-UTC-midnight-excerpt",
+        "Blog-BlogPosting-Breadcrumb-schema",
+        "logo-image-author-publisher-language",
+        "preview-two-and-hardcoded-home-floor"
+      ]
+    },
+    {
+      "id": "homepage-schema-and-example-copy",
+      "kind": "HTML-JSONLD",
+      "source": "index.html",
+      "docs": [
+        "architecture",
+        "reference/configuration-and-discovery#seo-structured-data-and-feeds",
+        "collaboration"
+      ],
+      "claims": [
+        "Organization-WebSite-Service-links",
+        "service-scope-and-illustrative-not-implemented-CLI-or-camera-API"
+      ]
+    },
+    {
+      "id": "styles-and-responsive",
+      "kind": "CSS",
+      "source": "styles.css",
+      "docs": [
+        "how-to/change-layout-or-branding",
+        "reference/configuration-and-discovery#fixed-values-and-inputs"
+      ],
+      "claims": [
+        "token-source",
+        "700-form-columns-900-collapse",
+        "focus-status-honeypot-presentation",
+        "not-rendered-acceptance"
+      ]
+    },
+    {
+      "id": "brand-vector",
+      "kind": "SVG",
+      "source": "shield-mark.svg",
+      "docs": [
+        "how-to/change-layout-or-branding",
+        "development/source-map-and-requirements"
+      ],
+      "claims": [
+        "visible-brand-and-favicon-vs-raster-metadata",
+        "retain-image-assets-without-content-copy"
+      ]
+    },
+    {
+      "id": "repository-policy",
+      "kind": "config",
+      "source": ".gitignore",
+      "docs": [
+        "reference/configuration-and-discovery#repository-and-integration-boundaries"
+      ],
+      "claims": [
+        "OS-editor-ignore-rules",
+        "recursive-docs-generated-dependency-fixture-directory-ignores",
+        "recursive-handbook-env-prefix-suffix-credentials-log-db-ignores",
+        "exact-manifest-review-JSON-exceptions",
+        "authored-Markdown-sidebar-remain-eligible",
+        "unapproved-assets-ignored",
+        "supporting-author-checks-JSON-local-ignored",
+        "ignore-not-index-untrack-or-publication-security-policy"
+      ]
+    },
+    {
+      "id": "proprietary-license",
+      "kind": "license",
+      "source": "LICENSE",
+      "docs": [
+        "reference/configuration-and-discovery#repository-and-integration-boundaries"
+      ],
+      "claims": [
+        "all-rights-reserved-not-open-source"
+      ]
+    },
+    {
+      "id": "article-source-custom-3d-printed-parts-that-fit-html",
+      "kind": "public-editorial-source",
+      "source": "content/blog/custom-3d-printed-parts-that-fit.html",
+      "docs": [
+        "development/source-map-and-requirements",
+        "reference/blog-metadata-and-body"
+      ],
+      "claims": [
+        "metadata-body-pair-reviewed",
+        "educational-public-content-not-private-client-proof-or-device-API"
+      ]
+    },
+    {
+      "id": "article-source-custom-3d-printed-parts-that-fit-json",
+      "kind": "public-editorial-source",
+      "source": "content/blog/custom-3d-printed-parts-that-fit.json",
+      "docs": [
+        "development/source-map-and-requirements",
+        "reference/blog-metadata-and-body"
+      ],
+      "claims": [
+        "metadata-body-pair-reviewed",
+        "educational-public-content-not-private-client-proof-or-device-API"
+      ]
+    },
+    {
+      "id": "article-source-local-camera-dashboard-html",
+      "kind": "public-editorial-source",
+      "source": "content/blog/local-camera-dashboard.html",
+      "docs": [
+        "development/source-map-and-requirements",
+        "reference/blog-metadata-and-body"
+      ],
+      "claims": [
+        "metadata-body-pair-reviewed",
+        "educational-public-content-not-private-client-proof-or-device-API"
+      ]
+    },
+    {
+      "id": "article-source-local-camera-dashboard-json",
+      "kind": "public-editorial-source",
+      "source": "content/blog/local-camera-dashboard.json",
+      "docs": [
+        "development/source-map-and-requirements",
+        "reference/blog-metadata-and-body"
+      ],
+      "claims": [
+        "metadata-body-pair-reviewed",
+        "educational-public-content-not-private-client-proof-or-device-API"
+      ]
+    },
+    {
+      "id": "article-source-meshtastic-node-setup-ontario-html",
+      "kind": "public-editorial-source",
+      "source": "content/blog/meshtastic-node-setup-ontario.html",
+      "docs": [
+        "development/source-map-and-requirements",
+        "reference/blog-metadata-and-body"
+      ],
+      "claims": [
+        "metadata-body-pair-reviewed",
+        "educational-public-content-not-private-client-proof-or-device-API"
+      ]
+    },
+    {
+      "id": "article-source-meshtastic-node-setup-ontario-json",
+      "kind": "public-editorial-source",
+      "source": "content/blog/meshtastic-node-setup-ontario.json",
+      "docs": [
+        "development/source-map-and-requirements",
+        "reference/blog-metadata-and-body"
+      ],
+      "claims": [
+        "metadata-body-pair-reviewed",
+        "educational-public-content-not-private-client-proof-or-device-API"
+      ]
+    },
+    {
+      "id": "article-source-scope-custom-tech-project-html",
+      "kind": "public-editorial-source",
+      "source": "content/blog/scope-custom-tech-project.html",
+      "docs": [
+        "development/source-map-and-requirements",
+        "tutorials/trace-existing-article"
+      ],
+      "claims": [
+        "metadata-body-pair-reviewed",
+        "educational-public-content-not-private-client-proof-or-device-API"
+      ]
+    },
+    {
+      "id": "article-source-scope-custom-tech-project-json",
+      "kind": "public-editorial-source",
+      "source": "content/blog/scope-custom-tech-project.json",
+      "docs": [
+        "development/source-map-and-requirements",
+        "tutorials/trace-existing-article"
+      ],
+      "claims": [
+        "metadata-body-pair-reviewed",
+        "educational-public-content-not-private-client-proof-or-device-API"
+      ]
+    },
+    {
+      "id": "article-source-solar-power-for-remote-sensors-html",
+      "kind": "public-editorial-source",
+      "source": "content/blog/solar-power-for-remote-sensors.html",
+      "docs": [
+        "development/source-map-and-requirements",
+        "reference/blog-metadata-and-body"
+      ],
+      "claims": [
+        "metadata-body-pair-reviewed",
+        "educational-public-content-not-private-client-proof-or-device-API"
+      ]
+    },
+    {
+      "id": "article-source-solar-power-for-remote-sensors-json",
+      "kind": "public-editorial-source",
+      "source": "content/blog/solar-power-for-remote-sensors.json",
+      "docs": [
+        "development/source-map-and-requirements",
+        "reference/blog-metadata-and-body"
+      ],
+      "claims": [
+        "metadata-body-pair-reviewed",
+        "educational-public-content-not-private-client-proof-or-device-API"
+      ]
+    },
+    {
+      "id": "authority-README-md",
+      "kind": "owner-contract",
+      "source": "README.md",
+      "docs": [
+        "collaboration",
+        "maintenance/change-impact-and-owner-links",
+        "CONTEXT"
+      ],
+      "claims": [
+        "existing-authority-and-approval-routes",
+        "stale-route-limits",
+        "one-fact-owner-no-copied-private-tracker"
+      ]
+    },
+    {
+      "id": "authority-CLAUDE-md",
+      "kind": "owner-contract",
+      "source": "CLAUDE.md",
+      "docs": [
+        "collaboration",
+        "maintenance/change-impact-and-owner-links",
+        "CONTEXT"
+      ],
+      "claims": [
+        "existing-authority-and-approval-routes",
+        "stale-route-limits",
+        "one-fact-owner-no-copied-private-tracker"
+      ]
+    },
+    {
+      "id": "authority-AGENTS-md",
+      "kind": "owner-contract",
+      "source": "AGENTS.md",
+      "docs": [
+        "collaboration",
+        "maintenance/change-impact-and-owner-links",
+        "CONTEXT"
+      ],
+      "claims": [
+        "existing-authority-and-approval-routes",
+        "stale-route-limits",
+        "one-fact-owner-no-copied-private-tracker"
+      ]
+    },
+    {
+      "id": "authority-CONTEXT-md",
+      "kind": "owner-contract",
+      "source": "CONTEXT.md",
+      "docs": [
+        "collaboration",
+        "maintenance/change-impact-and-owner-links",
+        "CONTEXT"
+      ],
+      "claims": [
+        "existing-authority-and-approval-routes",
+        "stale-route-limits",
+        "one-fact-owner-no-copied-private-tracker"
+      ]
+    },
+    {
+      "id": "authority-docs-CONTEXT-md",
+      "kind": "owner-contract",
+      "source": "docs/CONTEXT.md",
+      "docs": [
+        "collaboration",
+        "maintenance/change-impact-and-owner-links",
+        "CONTEXT"
+      ],
+      "claims": [
+        "existing-authority-and-approval-routes",
+        "stale-route-limits",
+        "one-fact-owner-no-copied-private-tracker"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "site",
+      "page": "tutorials/offline-verification",
+      "command": [
+        "python3",
+        "-B",
+        "tests/check-site.py"
+      ],
+      "effects": "Offline local reads; Python -B prevents bytecode writes, Node uses synthetic DOM/fetch; no request, service, source write, inbox or credential access.",
+      "expected": "PASS: 8 pages, 161 internal links, article metadata, 7 sitemap URLs and RSS."
+    },
+    {
+      "id": "markup",
+      "page": "tutorials/offline-verification",
+      "command": [
+        "python3",
+        "-B",
+        "tests/test_inquiry.py"
+      ],
+      "effects": "Offline local reads; Python -B prevents bytecode writes, Node uses synthetic DOM/fetch; no request, service, source write, inbox or credential access.",
+      "expected": "PASS: inquiry form is labeled and correctly configured for its current mode."
+    },
+    {
+      "id": "browser_logic",
+      "page": "tutorials/offline-verification",
+      "command": [
+        "node",
+        "tests/test-inquiry.mjs"
+      ],
+      "effects": "Offline local reads; Python -B prevents bytecode writes, Node uses synthetic DOM/fetch; no request, service, source write, inbox or credential access.",
+      "expected": "PASS: dormant fallback, validation, honeypot, duplicate guard, success and error responses."
+    }
+  ],
+  "tasks": [
+    {
+      "id": "first-local-check",
+      "role": "first-use",
+      "start": "index",
+      "pages": [
+        "tutorials/offline-verification",
+        "development/test-strategy",
+        "status"
+      ],
+      "success": "Reader runs all three exact commands offline, observes exit0/current outputs, explains why no delivery/build/visual proof is established."
+    },
+    {
+      "id": "trace-real-article",
+      "role": "first-use",
+      "start": "index",
+      "pages": [
+        "tutorials/trace-existing-article",
+        "reference/blog-metadata-and-body",
+        "architecture/publication-dataflow"
+      ],
+      "success": "Reader identifies real source pair, validation order and five output types without importing/running generator; explains future-date and stale-output limits."
+    },
+    {
+      "id": "plan-approved-article-edit",
+      "role": "maintainer",
+      "start": "guide",
+      "pages": [
+        "how-to/update-article",
+        "reference/blog-metadata-and-body",
+        "reference/commands",
+        "maintenance/change-impact-and-owner-links"
+      ],
+      "success": "Reader locates correct source, nine fields/body/TOC conventions, complete write set, checks and old-URL/approval boundary; no live or write step required for doc trial."
+    },
+    {
+      "id": "diagnose-ambiguous-submit",
+      "role": "maintainer",
+      "start": "index",
+      "pages": [
+        "how-to/diagnose-inquiry",
+        "architecture/inquiry-lifecycle",
+        "reference/inquiry-fields-and-provider",
+        "status"
+      ],
+      "success": "Reader maps exception/success/thank-you states to acceptance-vs-receipt and asks owner before retry, without sending or rerunning activation."
+    },
+    {
+      "id": "review-layout-impact",
+      "role": "developer",
+      "start": "index",
+      "pages": [
+        "how-to/change-layout-or-branding",
+        "development/source-map-and-requirements",
+        "development/test-strategy"
+      ],
+      "success": "Reader identifies homepage header regex coupling, visible SVG versus metadata logo, responsive rules and missing browser evidence."
+    },
+    {
+      "id": "protect-publication",
+      "role": "maintainer",
+      "start": "collaboration",
+      "pages": [
+        "how-to/review-publication-boundary",
+        "reference/configuration-and-discovery",
+        "status"
+      ],
+      "success": "Reader names complete intended exclusions, limited local assertion coverage, CNAME preservation and hosted artifact owner gate without running a server or deploy."
+    }
+  ],
+  "not_applicable": [
+    {
+      "topic": "application-install-or-package-manager",
+      "reason": "No package/dependency lock/installer in reviewed tree. Existing stdlib/builtin runtime commands are documented, minimum versions unpinned."
+    },
+    {
+      "topic": "local-server-REST-GraphQL-OpenAPI-auth-database-payments-uploads",
+      "reason": "Static site and external form client only; no such repository implementation."
+    },
+    {
+      "topic": "application-env-precedence",
+      "reason": "All six executable files reviewed: no app environment-variable inputs or config precedence system; no env contents read."
+    },
+    {
+      "topic": "device-GPU-desktop-camera-Meshtastic-power-runtime",
+      "reason": "Public educational/service scope copy, not hardware/control implementation in this repository."
+    },
+    {
+      "topic": "in-repo-CI-deploy-DNS-provisioning",
+      "reason": "No workflow or provisioning implementation present; declared Pages/domain lives across external owners."
+    },
+    {
+      "topic": "generator-browser-provider-delivery-acceptance-suite",
+      "reason": "Not shipped fixture coverage; explicit source-derived gaps and unrun live boundaries documented, not fabricated tests."
+    }
+  ]
+}

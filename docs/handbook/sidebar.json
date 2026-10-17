@@ -1,0 +1,60 @@
+[
+  "index",
+  "collaboration",
+  {
+    "type": "category",
+    "label": "Start and work safely",
+    "collapsed": false,
+    "items": [
+      "guide",
+      "tutorials/offline-verification",
+      "tutorials/trace-existing-article"
+    ]
+  },
+  {
+    "type": "category",
+    "label": "Architecture",
+    "items": [
+      "architecture",
+      "architecture/publication-dataflow",
+      "architecture/inquiry-lifecycle"
+    ]
+  },
+  {
+    "type": "category",
+    "label": "Developer guide",
+    "items": [
+      "development/source-map-and-requirements",
+      "development/test-strategy"
+    ]
+  },
+  {
+    "type": "category",
+    "label": "How-to",
+    "items": [
+      "how-to/update-article",
+      "how-to/change-layout-or-branding",
+      "how-to/diagnose-inquiry",
+      "how-to/review-publication-boundary"
+    ]
+  },
+  {
+    "type": "category",
+    "label": "Technical reference",
+    "items": [
+      "reference/commands",
+      "reference/blog-metadata-and-body",
+      "reference/inquiry-fields-and-provider",
+      "reference/configuration-and-discovery"
+    ]
+  },
+  {
+    "type": "category",
+    "label": "Maintenance and evidence",
+    "items": [
+      "maintenance/change-impact-and-owner-links",
+      "status",
+      "CONTEXT"
+    ]
+  }
+]

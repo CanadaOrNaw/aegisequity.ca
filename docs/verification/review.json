@@ -1,0 +1,1226 @@
+{
+  "schema": 1,
+  "project": "aegis-site",
+  "reviewed_at": "2026-10-17T14:44:20.298395+00:00",
+  "snapshot": {
+    "source_hashes": {
+      ".githooks/docs-pre-commit": "842e2f7b7f9eeeb4bd901a1e9b2260040b2e6904ef507dc4551eec8774402256",
+      ".gitignore": "a1b569082d7a9bddc522bc176f3203f50aa09ac75e5f408f657540febd28d872",
+      "AGENTS.md": "f29f9d078a35fd83a9633dc59e3930f1fb5e6973dfd3c77c08ec7b86178f1ab3",
+      "CLAUDE.md": "8fa7a2003c1cea597e3a854e9d008559b86e36a6f46f9a7001b9152c40f88808",
+      "CNAME": "2b6276e53c98cec29494ec2792a767cd531adc871b4d254b3736a783b9011409",
+      "CONTEXT.md": "e9ba1e6b846784faa423893c6a6effbeace01232af243e77f629498360bad873",
+      "LICENSE": "e727d6c7b808cbc723fd3a862a5e0b47a4fac7695a8be4e7369ff3becac29505",
+      "README.md": "738edadb3530255fd6f48889a83c8ee67f7c8eea6ddf634b9c3ebe9cfa50f3b1",
+      "_config.yml": "eb678eb4fa598a185c225525c877d3c4ed47500827aedc462b3dea550385dfef",
+      "build-blog.py": "bc2a70ff3072ccdcc75ca6f4456f9b2f67616c0444b755a08f24866732f6259e",
+      "content/blog/custom-3d-printed-parts-that-fit.html": "6d758038682df6c45c5c97c9e69365f84edb28a0d69de4f5568533cb01b25aeb",
+      "content/blog/custom-3d-printed-parts-that-fit.json": "03dc9a6f29d3b57b985eb4988a500003aa8f077b86c3ff401bf7e5c5078f4c1e",
+      "content/blog/local-camera-dashboard.html": "c680eb00afeb30d486719f9e47636cb5a4d2631e9a686ecd00d93b94a6397d7f",
+      "content/blog/local-camera-dashboard.json": "a05876a8b857874de8c3373a2dda98e0588aeadb97afd0d7b2bc51b2e5ff0842",
+      "content/blog/meshtastic-node-setup-ontario.html": "0de4d5684388b03808c314b62ddec868d583385bd85ead4b4ed15c1a3676f854",
+      "content/blog/meshtastic-node-setup-ontario.json": "89bcafe32e371b8c76fd02171494cc6a985148e6eab0b7111ab86cac1a9c0abc",
+      "content/blog/scope-custom-tech-project.html": "584115469e2b6064c83753581adfa8b4d4b235e2a1328b6b7742191860c054c9",
+      "content/blog/scope-custom-tech-project.json": "74dd99e9c8fdc5acaa76c01c3eb70ab3bf2f969f20ee713700aa5e426a29c29f",
+      "content/blog/solar-power-for-remote-sensors.html": "a9b9fe70d3108b4ff8afbbc8fe32703d8c6ebea2b98e9fbe29a5b41301e8ccb8",
+      "content/blog/solar-power-for-remote-sensors.json": "d328747109c329c4f2796c7c28ea870abb6950626d727a5a1c21db677135fa4b",
+      "docs/CONTEXT.md": "3e87de94936ddd759b16ee9a5e6432a796f6b096b33b295bca2ae78d8e501c29",
+      "index.html": "f98e7b37dd50373536e237ff5d4cf6f1c2f0c440e70e4102194b22b52b943d55",
+      "inquiry.js": "b578273170d55daf30c0fecdce218d02e8e0f4a428ff289a149793f8c3448509",
+      "robots.txt": "aa015819e747ce41d995df83b0ec12888ac3b24533efeef32516dd6807c04ac5",
+      "shield-mark.svg": "281e70322e8c1db39e9fe32c919327c55509876a4de64383c57c6f67eb7af892",
+      "styles.css": "e2fbbb95a6b7da7a079e5afa4eaf00122456ac73d77a11714a51f1c8a5a3095a",
+      "tests/activate-inquiry.py": "74bdeb496167bc7b38676b6389cf406b19277ec22f60eb72bf91f6e265529be2",
+      "tests/check-site.py": "f9319d1e8e91eb4ea0c152e85191c8dc0bd583ebc33c32c3e762591cf0220c55",
+      "tests/test-inquiry.mjs": "2097530a753a1f1de3e9fbd8c698e73035204ddacf220135a638f01bc50e7a53",
+      "tests/test_inquiry.py": "da108ecbc1dd32911cddef596d0e997c659e4d589f7d6d8e8fd3e43249c2d87c",
+      "thank-you.html": "66c03558efc8a137dc600fe4d1477193e9b1d017d8a033d435b79c7b588252a5"
+    },
+    "doc_hashes": {
+      "CONTEXT.md": "4ca5432c900abd58cd8734b90d782c0005091ebb9b51101f4683b2a5ffc0a7ae",
+      "architecture.md": "69a3b6c656ffa0afe2c66a7088258d3770c7634c03e62fa499c342650107c7d0",
+      "collaboration.md": "6f40f17f0b808b3d1014dc9a059097eaa8013c09670c43762e1841bec2ce4ed1",
+      "guide.md": "a6ee0dc34e4e01d0cbf4125dc3c9ed2a1dcbd7299453e0ab094c0fd7354d0852",
+      "index.md": "453e4118a17075f682a363ae387ca33ce0e9ad1e47676a445c87bc75e5ccc17d",
+      "status.md": "7285a48672e4c4871263b82ccc488a73d72a4eb0d63432c4b5f52466a3292f7b",
+      "architecture/inquiry-lifecycle.md": "0fe778778436c8eac43de65956adf47f49ccb43c57aea78e53890277eb7a2edb",
+      "architecture/publication-dataflow.md": "8fff0a48ddcd50a870945e7680be9b146cdbb35caab602aa3e03626bbd27c6b4",
+      "development/source-map-and-requirements.md": "0a72043403caf1236af967973337ddd4001a8039173803f32e970c20454928c1",
+      "development/test-strategy.md": "33c845ca2fafa5626b30f2a281870810e572d87bdbdea81fd980c755bd19a91f",
+      "how-to/change-layout-or-branding.md": "51c41e98e05b6ffc2c2516dfa550273b8c3cfe0b32c39f3859d6abf8b1f4dd67",
+      "how-to/diagnose-inquiry.md": "0c08d8d42a1da2e72ebfcf55bb7c7c3083ce124cf52f206322cde4f0ebaccd22",
+      "how-to/review-publication-boundary.md": "e5ebb5a21f01c0e29448c3882bb5453972789e6aba3a5e4296d656ae6c4494e9",
+      "how-to/update-article.md": "d3d648595c121fd15ad85c85cf7785f24b7ef410a2766730137b158e836916e5",
+      "maintenance/change-impact-and-owner-links.md": "0c59e363415ce59664e629e0ad20426297940e28240336207262e356474cca65",
+      "reference/blog-metadata-and-body.md": "c96d6768da58593b14506343d2135dff46a566f263b6aa8d096c29587fc47a02",
+      "reference/commands.md": "83a8e410f3ca23bac0e383eec4a3c1ba49bad9e3a44fe949cefda2bd452fb062",
+      "reference/configuration-and-discovery.md": "b00d8b6f0ddeb41dc2fab765951a4ac4779db5addcbf154ad438855e190bb366",
+      "reference/inquiry-fields-and-provider.md": "5b9df276ebc73f85c77ef8c7530edf0cae959895a2688d2a9a56cbd7d8846f3c",
+      "tutorials/offline-verification.md": "b6dd5b11dd28df56f13eb07ed1731480f1e7502f2909bed75cf0b9dab4cc5cf7",
+      "tutorials/trace-existing-article.md": "fb083fe0d776c0b114595bab585911032e0c5fc26769e5c30bdbecc377a894c4",
+      "sidebar.json": "983990a40f042bd4cd84e15f1fe7f1c3eeab83850799be9f3e9aac40dc7c4a6f"
+    },
+    "manifest_hash": "352268f8377068e19b3301d3136ea7e8cdd312653129e9b18e4a65439b7fd9bb",
+    "canonical_review_file_hash": "1ebb7f2357a9d99a2b5da0c8bfc7c3a9a1775bd27e39724fc1cfdc2b3dfc8d97",
+    "author_checks_hash": "003d8f89f14987481390484450b9d5ef627316e15d626a415fe4a75fab0afd33",
+    "native_adapter_snapshot": {
+      "doc_hashes": {
+        "CONTEXT.md": "4ca5432c900abd58cd8734b90d782c0005091ebb9b51101f4683b2a5ffc0a7ae",
+        "architecture.md": "69a3b6c656ffa0afe2c66a7088258d3770c7634c03e62fa499c342650107c7d0",
+        "architecture/inquiry-lifecycle.md": "0fe778778436c8eac43de65956adf47f49ccb43c57aea78e53890277eb7a2edb",
+        "architecture/publication-dataflow.md": "8fff0a48ddcd50a870945e7680be9b146cdbb35caab602aa3e03626bbd27c6b4",
+        "collaboration.md": "6f40f17f0b808b3d1014dc9a059097eaa8013c09670c43762e1841bec2ce4ed1",
+        "development/source-map-and-requirements.md": "0a72043403caf1236af967973337ddd4001a8039173803f32e970c20454928c1",
+        "development/test-strategy.md": "33c845ca2fafa5626b30f2a281870810e572d87bdbdea81fd980c755bd19a91f",
+        "guide.md": "a6ee0dc34e4e01d0cbf4125dc3c9ed2a1dcbd7299453e0ab094c0fd7354d0852",
+        "how-to/change-layout-or-branding.md": "51c41e98e05b6ffc2c2516dfa550273b8c3cfe0b32c39f3859d6abf8b1f4dd67",
+        "how-to/diagnose-inquiry.md": "0c08d8d42a1da2e72ebfcf55bb7c7c3083ce124cf52f206322cde4f0ebaccd22",
+        "how-to/review-publication-boundary.md": "e5ebb5a21f01c0e29448c3882bb5453972789e6aba3a5e4296d656ae6c4494e9",
+        "how-to/update-article.md": "d3d648595c121fd15ad85c85cf7785f24b7ef410a2766730137b158e836916e5",
+        "index.md": "453e4118a17075f682a363ae387ca33ce0e9ad1e47676a445c87bc75e5ccc17d",
+        "maintenance/change-impact-and-owner-links.md": "0c59e363415ce59664e629e0ad20426297940e28240336207262e356474cca65",
+        "reference/blog-metadata-and-body.md": "c96d6768da58593b14506343d2135dff46a566f263b6aa8d096c29587fc47a02",
+        "reference/commands.md": "83a8e410f3ca23bac0e383eec4a3c1ba49bad9e3a44fe949cefda2bd452fb062",
+        "reference/configuration-and-discovery.md": "b00d8b6f0ddeb41dc2fab765951a4ac4779db5addcbf154ad438855e190bb366",
+        "reference/inquiry-fields-and-provider.md": "5b9df276ebc73f85c77ef8c7530edf0cae959895a2688d2a9a56cbd7d8846f3c",
+        "sidebar.json": "983990a40f042bd4cd84e15f1fe7f1c3eeab83850799be9f3e9aac40dc7c4a6f",
+        "status.md": "7285a48672e4c4871263b82ccc488a73d72a4eb0d63432c4b5f52466a3292f7b",
+        "tutorials/offline-verification.md": "b6dd5b11dd28df56f13eb07ed1731480f1e7502f2909bed75cf0b9dab4cc5cf7",
+        "tutorials/trace-existing-article.md": "fb083fe0d776c0b114595bab585911032e0c5fc26769e5c30bdbecc377a894c4"
+      },
+      "manifest_hash": "352268f8377068e19b3301d3136ea7e8cdd312653129e9b18e4a65439b7fd9bb",
+      "source_hashes": {
+        ".githooks/docs-pre-commit": "842e2f7b7f9eeeb4bd901a1e9b2260040b2e6904ef507dc4551eec8774402256",
+        ".gitignore": "a1b569082d7a9bddc522bc176f3203f50aa09ac75e5f408f657540febd28d872",
+        "AGENTS.md": "f29f9d078a35fd83a9633dc59e3930f1fb5e6973dfd3c77c08ec7b86178f1ab3",
+        "CLAUDE.md": "8fa7a2003c1cea597e3a854e9d008559b86e36a6f46f9a7001b9152c40f88808",
+        "CNAME": "2b6276e53c98cec29494ec2792a767cd531adc871b4d254b3736a783b9011409",
+        "CONTEXT.md": "e9ba1e6b846784faa423893c6a6effbeace01232af243e77f629498360bad873",
+        "LICENSE": "e727d6c7b808cbc723fd3a862a5e0b47a4fac7695a8be4e7369ff3becac29505",
+        "README.md": "738edadb3530255fd6f48889a83c8ee67f7c8eea6ddf634b9c3ebe9cfa50f3b1",
+        "_config.yml": "eb678eb4fa598a185c225525c877d3c4ed47500827aedc462b3dea550385dfef",
+        "build-blog.py": "bc2a70ff3072ccdcc75ca6f4456f9b2f67616c0444b755a08f24866732f6259e",
+        "content/blog/custom-3d-printed-parts-that-fit.html": "6d758038682df6c45c5c97c9e69365f84edb28a0d69de4f5568533cb01b25aeb",
+        "content/blog/custom-3d-printed-parts-that-fit.json": "03dc9a6f29d3b57b985eb4988a500003aa8f077b86c3ff401bf7e5c5078f4c1e",
+        "content/blog/local-camera-dashboard.html": "c680eb00afeb30d486719f9e47636cb5a4d2631e9a686ecd00d93b94a6397d7f",
+        "content/blog/local-camera-dashboard.json": "a05876a8b857874de8c3373a2dda98e0588aeadb97afd0d7b2bc51b2e5ff0842",
+        "content/blog/meshtastic-node-setup-ontario.html": "0de4d5684388b03808c314b62ddec868d583385bd85ead4b4ed15c1a3676f854",
+        "content/blog/meshtastic-node-setup-ontario.json": "89bcafe32e371b8c76fd02171494cc6a985148e6eab0b7111ab86cac1a9c0abc",
+        "content/blog/scope-custom-tech-project.html": "584115469e2b6064c83753581adfa8b4d4b235e2a1328b6b7742191860c054c9",
+        "content/blog/scope-custom-tech-project.json": "74dd99e9c8fdc5acaa76c01c3eb70ab3bf2f969f20ee713700aa5e426a29c29f",
+        "content/blog/solar-power-for-remote-sensors.html": "a9b9fe70d3108b4ff8afbbc8fe32703d8c6ebea2b98e9fbe29a5b41301e8ccb8",
+        "content/blog/solar-power-for-remote-sensors.json": "d328747109c329c4f2796c7c28ea870abb6950626d727a5a1c21db677135fa4b",
+        "docs/CONTEXT.md": "3e87de94936ddd759b16ee9a5e6432a796f6b096b33b295bca2ae78d8e501c29",
+        "index.html": "f98e7b37dd50373536e237ff5d4cf6f1c2f0c440e70e4102194b22b52b943d55",
+        "inquiry.js": "b578273170d55daf30c0fecdce218d02e8e0f4a428ff289a149793f8c3448509",
+        "robots.txt": "aa015819e747ce41d995df83b0ec12888ac3b24533efeef32516dd6807c04ac5",
+        "shield-mark.svg": "281e70322e8c1db39e9fe32c919327c55509876a4de64383c57c6f67eb7af892",
+        "styles.css": "e2fbbb95a6b7da7a079e5afa4eaf00122456ac73d77a11714a51f1c8a5a3095a",
+        "tests/activate-inquiry.py": "74bdeb496167bc7b38676b6389cf406b19277ec22f60eb72bf91f6e265529be2",
+        "tests/check-site.py": "f9319d1e8e91eb4ea0c152e85191c8dc0bd583ebc33c32c3e762591cf0220c55",
+        "tests/test-inquiry.mjs": "2097530a753a1f1de3e9fbd8c698e73035204ddacf220135a638f01bc50e7a53",
+        "tests/test_inquiry.py": "da108ecbc1dd32911cddef596d0e997c659e4d589f7d6d8e8fd3e43249c2d87c",
+        "thank-you.html": "66c03558efc8a137dc600fe4d1477193e9b1d017d8a033d435b79c7b588252a5"
+      }
+    },
+    "commit": "not queried; no Git commands authorized or run by project reviewer",
+    "prior_unaided_trial_snapshot_retained": true,
+    "current_source_delta_only": [
+      ".gitignore"
+    ],
+    "current_reader_delta_only": [
+      "development/source-map-and-requirements.md",
+      "reference/configuration-and-discovery.md"
+    ]
+  },
+  "impact": {
+    "base": "Independent reviewer retained prior_accepted_snapshot and initial docs-first trials, then accepted exact current recursive-policy delta; see claim_review.independent_evidence for unchanged complete provenance.",
+    "changed_paths": [
+      ".gitignore",
+      "docs/handbook/development/source-map-and-requirements.md",
+      "docs/handbook/reference/configuration-and-discovery.md",
+      "docs/verification/manifest.json"
+    ],
+    "affected_pages": [
+      "development/source-map-and-requirements",
+      "reference/configuration-and-discovery"
+    ],
+    "affected_interfaces": [
+      "repository-policy"
+    ],
+    "no_doc_impact": [
+      "Other30 declared sources are hash-identical to prior independently reviewed snapshot; every other reader/sidebar hash unchanged. N1 response-order correction and original docs-first reader trials are preserved without rerunning or attributing author help.",
+      "_config.yml and CNAME exact hashes unchanged; existing docs/.docs-check/.githooks public exclusions not relaxed. No host artifact or deployment claim."
+    ],
+    "independent_current_delta": {
+      "reviewed_at": "2026-10-17T14:44:20.298395+00:00",
+      "decision": "accepted for exact current recursive ignore-policy source/claim delta; prior semantic and unaided task review preserved",
+      "reviewer": "Aegis-site independent documentation reviewer; prime-agent child session 01a14a3c-1d91-74f9-9456-0b7b2650fc64; not the author",
+      "scope": "Only full current .gitignore, exact two reader-page diffs, manifest repository-policy mapping, current author review/evidence snapshots and exact authorized schemas/native bounded adapter. No full review restart or app test rerun.",
+      "actual_source": {
+        "path": ".gitignore",
+        "sha256": "a1b569082d7a9bddc522bc176f3203f50aa09ac75e5f408f657540febd28d872",
+        "lines": 30,
+        "read": "complete current rule text and actual diff, not author hash-only acknowledgment"
+      },
+      "actual_reader_deltas": {
+        "development/source-map-and-requirements.md": "0a72043403caf1236af967973337ddd4001a8039173803f32e970c20454928c1",
+        "reference/configuration-and-discovery.md": "b00d8b6f0ddeb41dc2fab765951a4ac4779db5addcbf154ad438855e190bb366"
+      },
+      "manifest_hash": "352268f8377068e19b3301d3136ea7e8cdd312653129e9b18e4a65439b7fd9bb",
+      "source_claim_observations": [
+        "Both changed source_ref ranges are now .gitignore#L1-L30 and exist in actual source.",
+        "Reference names every actual /docs/**/_generated/,.generated/,build/,node_modules/,.fixture/ recursive directory rule and all recursive handbook .env*,*.env,credentials*,*.log,*.db forms; .env* suffix interpretation matches source.",
+        "Exact manifest/review verification exceptions, unapproved assets deny, root /.docs-check/, ordinary authored Markdown/sidebar contribution path and ignored local supporting author-checks are preserved.",
+        "Reference states otherwise-untracked scope, no already-tracked index removal and no runtime/publication/privacy guarantee; no local Git/index effectiveness proof invented.",
+        "Source map role and manifest repository-policy claims agree with actual current rule purpose and two-page source mapping. No application-wide policy or app/test source changed.",
+        "Other30 declared sources are hash-identical to prior independently reviewed snapshot; every other reader/sidebar hash unchanged. N1 response-order correction and original docs-first reader trials are preserved without rerunning or attributing author help.",
+        "_config.yml and CNAME exact hashes unchanged; existing docs/.docs-check/.githooks public exclusions not relaxed. No host artifact or deployment claim."
+      ],
+      "checks": [
+        {
+          "command": "/usr/bin/python3 -B _system/documentation/site/scripts/portal.py snapshot --project aegis-site",
+          "cwd": "/home/zack/Projects/fleet-index",
+          "exit": 0,
+          "stdout": "{\n  \"doc_hashes\": {\n    \"CONTEXT.md\": \"4ca5432c900abd58cd8734b90d782c0005091ebb9b51101f4683b2a5ffc0a7ae\",\n    \"architecture.md\": \"69a3b6c656ffa0afe2c66a7088258d3770c7634c03e62fa499c342650107c7d0\",\n    \"architecture/inquiry-lifecycle.md\": \"0fe778778436c8eac43de65956adf47f49ccb43c57aea78e53890277eb7a2edb\",\n    \"architecture/publication-dataflow.md\": \"8fff0a48ddcd50a870945e7680be9b146cdbb35caab602aa3e03626bbd27c6b4\",\n    \"collaboration.md\": \"6f40f17f0b808b3d1014dc9a059097eaa8013c09670c43762e1841bec2ce4ed1\",\n    \"development/source-map-and-requirements.md\": \"0a72043403caf1236af967973337ddd4001a8039173803f32e970c20454928c1\",\n    \"development/test-strategy.md\": \"33c845ca2fafa5626b30f2a281870810e572d87bdbdea81fd980c755bd19a91f\",\n    \"guide.md\": \"a6ee0dc34e4e01d0cbf4125dc3c9ed2a1dcbd7299453e0ab094c0fd7354d0852\",\n    \"how-to/change-layout-or-branding.md\": \"51c41e98e05b6ffc2c2516dfa550273b8c3cfe0b32c39f3859d6abf8b1f4dd67\",\n    \"how-to/diagnose-inquiry.md\": \"0c08d8d42a1da2e72ebfcf55bb7c7c3083ce124cf52f206322cde4f0ebaccd22\",\n    \"how-to/review-publication-boundary.md\": \"e5ebb5a21f01c0e29448c3882bb5453972789e6aba3a5e4296d656ae6c4494e9\",\n    \"how-to/update-article.md\": \"d3d648595c121fd15ad85c85cf7785f24b7ef410a2766730137b158e836916e5\",\n    \"index.md\": \"453e4118a17075f682a363ae387ca33ce0e9ad1e47676a445c87bc75e5ccc17d\",\n    \"maintenance/change-impact-and-owner-links.md\": \"0c59e363415ce59664e629e0ad20426297940e28240336207262e356474cca65\",\n    \"reference/blog-metadata-and-body.md\": \"c96d6768da58593b14506343d2135dff46a566f263b6aa8d096c29587fc47a02\",\n    \"reference/commands.md\": \"83a8e410f3ca23bac0e383eec4a3c1ba49bad9e3a44fe949cefda2bd452fb062\",\n    \"reference/configuration-and-discovery.md\": \"b00d8b6f0ddeb41dc2fab765951a4ac4779db5addcbf154ad438855e190bb366\",\n    \"reference/inquiry-fields-and-provider.md\": \"5b9df276ebc73f85c77ef8c7530edf0cae959895a2688d2a9a56cbd7d8846f3c\",\n    \"sidebar.json\": \"983990a40f042bd4cd84e15f1fe7f1c3eeab83850799be9f3e9aac40dc7c4a6f\",\n    \"status.md\": \"7285a48672e4c4871263b82ccc488a73d72a4eb0d63432c4b5f52466a3292f7b\",\n    \"tutorials/offline-verification.md\": \"b6dd5b11dd28df56f13eb07ed1731480f1e7502f2909bed75cf0b9dab4cc5cf7\",\n    \"tutorials/trace-existing-article.md\": \"fb083fe0d776c0b114595bab585911032e0c5fc26769e5c30bdbecc377a894c4\"\n  },\n  \"manifest_hash\": \"352268f8377068e19b3301d3136ea7e8cdd312653129e9b18e4a65439b7fd9bb\",\n  \"source_hashes\": {\n    \".githooks/docs-pre-commit\": \"842e2f7b7f9eeeb4bd901a1e9b2260040b2e6904ef507dc4551eec8774402256\",\n    \".gitignore\": \"a1b569082d7a9bddc522bc176f3203f50aa09ac75e5f408f657540febd28d872\",\n    \"AGENTS.md\": \"f29f9d078a35fd83a9633dc59e3930f1fb5e6973dfd3c77c08ec7b86178f1ab3\",\n    \"CLAUDE.md\": \"8fa7a2003c1cea597e3a854e9d008559b86e36a6f46f9a7001b9152c40f88808\",\n    \"CNAME\": \"2b6276e53c98cec29494ec2792a767cd531adc871b4d254b3736a783b9011409\",\n    \"CONTEXT.md\": \"e9ba1e6b846784faa423893c6a6effbeace01232af243e77f629498360bad873\",\n    \"LICENSE\": \"e727d6c7b808cbc723fd3a862a5e0b47a4fac7695a8be4e7369ff3becac29505\",\n    \"README.md\": \"738edadb3530255fd6f48889a83c8ee67f7c8eea6ddf634b9c3ebe9cfa50f3b1\",\n    \"_config.yml\": \"eb678eb4fa598a185c225525c877d3c4ed47500827aedc462b3dea550385dfef\",\n    \"build-blog.py\": \"bc2a70ff3072ccdcc75ca6f4456f9b2f67616c0444b755a08f24866732f6259e\",\n    \"content/blog/custom-3d-printed-parts-that-fit.html\": \"6d758038682df6c45c5c97c9e69365f84edb28a0d69de4f5568533cb01b25aeb\",\n    \"content/blog/custom-3d-printed-parts-that-fit.json\": \"03dc9a6f29d3b57b985eb4988a500003aa8f077b86c3ff401bf7e5c5078f4c1e\",\n    \"content/blog/local-camera-dashboard.html\": \"c680eb00afeb30d486719f9e47636cb5a4d2631e9a686ecd00d93b94a6397d7f\",\n    \"content/blog/local-camera-dashboard.json\": \"a05876a8b857874de8c3373a2dda98e0588aeadb97afd0d7b2bc51b2e5ff0842\",\n    \"content/blog/meshtastic-node-setup-ontario.html\": \"0de4d5684388b03808c314b62ddec868d583385bd85ead4b4ed15c1a3676f854\",\n    \"content/blog/meshtastic-node-setup-ontario.json\": \"89bcafe32e371b8c76fd02171494cc6a985148e6eab0b7111ab86cac1a9c0abc\",\n    \"content/blog/scope-custom-tech-project.html\": \"584115469e2b6064c83753581adfa8b4d4b235e2a1328b6b7742191860c054c9\",\n    \"content/blog/scope-custom-tech-project.json\": \"74dd99e9c8fdc5acaa76c01c3eb70ab3bf2f969f20ee713700aa5e426a29c29f\",\n    \"content/blog/solar-power-for-remote-sensors.html\": \"a9b9fe70d3108b4ff8afbbc8fe32703d8c6ebea2b98e9fbe29a5b41301e8ccb8\",\n    \"content/blog/solar-power-for-remote-sensors.json\": \"d328747109c329c4f2796c7c28ea870abb6950626d727a5a1c21db677135fa4b\",\n    \"docs/CONTEXT.md\": \"3e87de94936ddd759b16ee9a5e6432a796f6b096b33b295bca2ae78d8e501c29\",\n    \"index.html\": \"f98e7b37dd50373536e237ff5d4cf6f1c2f0c440e70e4102194b22b52b943d55\",\n    \"inquiry.js\": \"b578273170d55daf30c0fecdce218d02e8e0f4a428ff289a149793f8c3448509\",\n    \"robots.txt\": \"aa015819e747ce41d995df83b0ec12888ac3b24533efeef32516dd6807c04ac5\",\n    \"shield-mark.svg\": \"281e70322e8c1db39e9fe32c919327c55509876a4de64383c57c6f67eb7af892\",\n    \"styles.css\": \"e2fbbb95a6b7da7a079e5afa4eaf00122456ac73d77a11714a51f1c8a5a3095a\",\n    \"tests/activate-inquiry.py\": \"74bdeb496167bc7b38676b6389cf406b19277ec22f60eb72bf91f6e265529be2\",\n    \"tests/check-site.py\": \"f9319d1e8e91eb4ea0c152e85191c8dc0bd583ebc33c32c3e762591cf0220c55\",\n    \"tests/test-inquiry.mjs\": \"2097530a753a1f1de3e9fbd8c698e73035204ddacf220135a638f01bc50e7a53\",\n    \"tests/test_inquiry.py\": \"da108ecbc1dd32911cddef596d0e997c659e4d589f7d6d8e8fd3e43249c2d87c\",\n    \"thank-you.html\": \"66c03558efc8a137dc600fe4d1477193e9b1d017d8a033d435b79c7b588252a5\"\n  }\n}\n",
+          "duration_seconds": 0.5389482399914414,
+          "effects": "Parent-authorized exact project-scoped read-only shape/integrity/pending-state adapter; no build/approval/index/network/app action"
+        },
+        {
+          "command": "/usr/bin/python3 -B _system/documentation/site/scripts/portal.py check --project aegis-site --json",
+          "cwd": "/home/zack/Projects/fleet-index",
+          "exit": 1,
+          "stdout": "{\n  \"projects\": {\n    \"aegis-site\": {\n      \"reason\": \"review changes-required\",\n      \"state\": \"pending\"\n    }\n  },\n  \"schema\": 1\n}\n",
+          "duration_seconds": 0.5627017270307988,
+          "effects": "Parent-authorized exact project-scoped read-only shape/integrity/pending-state adapter; no build/approval/index/network/app action"
+        }
+      ],
+      "native_snapshot_matches_independent_hashes": true,
+      "canonical_author_decision": "changes-required",
+      "canonical_receipt_reviewer_writes": false,
+      "control_effectiveness_boundary": "Task5E independent control acceptance remains parent provenance; this reviewer did not run Git/check-ignore/index probes or inspect other project sources. No arbitrary-secret exclusion promise.",
+      "assumptions_and_constants": "No constants changed by reviewer. Current documentation claims reviewed against actual rules; owner approval/runtime/publication and whole submitted-index gates separate."
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 -B tests/check-site.py",
+      "cwd": "/home/zack/02_business/aegisequity.ca",
+      "environment": "existing project-documented host runtime; no project virtualenv or dependency manifest present",
+      "exit": 0,
+      "stdout": "PASS: 8 pages, 161 internal links, article metadata, 7 sitemap URLs and RSS.\n",
+      "duration_seconds": 0.1073450050316751,
+      "effects": "Safe explicit offline public-file fixtures. Python reads/parses current public files and configuration; imported test_inquiry is guarded and read-only; -B prevents pyc writes. Node reads inquiry.js, evaluates in VM where fetch/FormData/DOM are local stubs, uses no real network, clears timers. No generator/helper/service/Git operation called.",
+      "outcome": "PASS: 8 pages, 161 internal links, article metadata, 7 sitemap URLs and RSS.",
+      "evidence": "/tmp/hermes-docs-redo-2026-10-16/aegis-site-independent-review.json#/checks/0"
+    },
+    {
+      "command": "python3 -B tests/test_inquiry.py",
+      "cwd": "/home/zack/02_business/aegisequity.ca",
+      "environment": "existing project-documented host runtime; no project virtualenv or dependency manifest present",
+      "exit": 0,
+      "stdout": "PASS: inquiry form is labeled and correctly configured for its current mode.\n",
+      "duration_seconds": 0.05796491401270032,
+      "effects": "Safe explicit offline public-file fixtures. Python reads/parses current public files and configuration; imported test_inquiry is guarded and read-only; -B prevents pyc writes. Node reads inquiry.js, evaluates in VM where fetch/FormData/DOM are local stubs, uses no real network, clears timers. No generator/helper/service/Git operation called.",
+      "outcome": "PASS: inquiry form is labeled and correctly configured for its current mode.",
+      "evidence": "/tmp/hermes-docs-redo-2026-10-16/aegis-site-independent-review.json#/checks/1"
+    },
+    {
+      "command": "node tests/test-inquiry.mjs",
+      "cwd": "/home/zack/02_business/aegisequity.ca",
+      "environment": "existing project-documented host runtime; no project virtualenv or dependency manifest present",
+      "exit": 0,
+      "stdout": "PASS: dormant fallback, validation, honeypot, duplicate guard, success and error responses.\n",
+      "duration_seconds": 0.08323289197869599,
+      "effects": "Safe explicit offline public-file fixtures. Python reads/parses current public files and configuration; imported test_inquiry is guarded and read-only; -B prevents pyc writes. Node reads inquiry.js, evaluates in VM where fetch/FormData/DOM are local stubs, uses no real network, clears timers. No generator/helper/service/Git operation called.",
+      "outcome": "PASS: dormant fallback, validation, honeypot, duplicate guard, success and error responses.",
+      "evidence": "/tmp/hermes-docs-redo-2026-10-16/aegis-site-independent-review.json#/checks/2"
+    },
+    {
+      "command": "python3 --version",
+      "cwd": "/home/zack/02_business/aegisequity.ca",
+      "environment": "existing project-documented host runtime; no project virtualenv or dependency manifest present",
+      "exit": 0,
+      "stdout": "Python 3.15.0\n",
+      "duration_seconds": 0.01683853508438915,
+      "effects": "runtime version output only",
+      "outcome": "Python 3.15.0",
+      "evidence": "/tmp/hermes-docs-redo-2026-10-16/aegis-site-independent-review.json#/checks/3"
+    },
+    {
+      "command": "node --version",
+      "cwd": "/home/zack/02_business/aegisequity.ca",
+      "environment": "existing project-documented host runtime; no project virtualenv or dependency manifest present",
+      "exit": 0,
+      "stdout": "v26.11.1\n",
+      "duration_seconds": 0.027438452001661062,
+      "effects": "runtime version output only",
+      "outcome": "v26.11.1",
+      "evidence": "/tmp/hermes-docs-redo-2026-10-16/aegis-site-independent-review.json#/checks/4"
+    },
+    {
+      "command": "python3 -B tests/check-site.py",
+      "phase": "post-ignore-policy-doc-delta independent rerun",
+      "cwd": "/home/zack/02_business/aegisequity.ca",
+      "environment": "existing Python3.15.0/Nodev26.11.1 project-documented host runtime; no installs",
+      "exit": 0,
+      "stdout": "PASS: 8 pages, 161 internal links, article metadata, 7 sitemap URLs and RSS.\n",
+      "duration_seconds": 0.10847493994515389,
+      "effects": "Safe explicit offline public-file fixtures. Python reads/parses current public files and configuration; imported test_inquiry is guarded and read-only; -B prevents pyc writes. Node reads inquiry.js, evaluates in VM where fetch/FormData/DOM are local stubs, uses no real network, clears timers. No generator/helper/service/Git operation called.",
+      "outcome": "PASS: 8 pages, 161 internal links, article metadata, 7 sitemap URLs and RSS.",
+      "evidence": "/tmp/hermes-docs-redo-2026-10-16/aegis-site-independent-review.json#/checks/5"
+    },
+    {
+      "command": "python3 -B tests/test_inquiry.py",
+      "phase": "post-ignore-policy-doc-delta independent rerun",
+      "cwd": "/home/zack/02_business/aegisequity.ca",
+      "environment": "existing Python3.15.0/Nodev26.11.1 project-documented host runtime; no installs",
+      "exit": 0,
+      "stdout": "PASS: inquiry form is labeled and correctly configured for its current mode.\n",
+      "duration_seconds": 0.059200261952355504,
+      "effects": "Safe explicit offline public-file fixtures. Python reads/parses current public files and configuration; imported test_inquiry is guarded and read-only; -B prevents pyc writes. Node reads inquiry.js, evaluates in VM where fetch/FormData/DOM are local stubs, uses no real network, clears timers. No generator/helper/service/Git operation called.",
+      "outcome": "PASS: inquiry form is labeled and correctly configured for its current mode.",
+      "evidence": "/tmp/hermes-docs-redo-2026-10-16/aegis-site-independent-review.json#/checks/6"
+    },
+    {
+      "command": "node tests/test-inquiry.mjs",
+      "phase": "post-ignore-policy-doc-delta independent rerun",
+      "cwd": "/home/zack/02_business/aegisequity.ca",
+      "environment": "existing Python3.15.0/Nodev26.11.1 project-documented host runtime; no installs",
+      "exit": 0,
+      "stdout": "PASS: dormant fallback, validation, honeypot, duplicate guard, success and error responses.\n",
+      "duration_seconds": 0.08143231889698654,
+      "effects": "Safe explicit offline public-file fixtures. Python reads/parses current public files and configuration; imported test_inquiry is guarded and read-only; -B prevents pyc writes. Node reads inquiry.js, evaluates in VM where fetch/FormData/DOM are local stubs, uses no real network, clears timers. No generator/helper/service/Git operation called.",
+      "outcome": "PASS: dormant fallback, validation, honeypot, duplicate guard, success and error responses.",
+      "evidence": "/tmp/hermes-docs-redo-2026-10-16/aegis-site-independent-review.json#/checks/7"
+    },
+    {
+      "command": "/usr/bin/python3 -B _system/documentation/site/scripts/portal.py snapshot --project aegis-site",
+      "cwd": "/home/zack/Projects/fleet-index",
+      "exit": 0,
+      "stdout": "{\n  \"doc_hashes\": {\n    \"CONTEXT.md\": \"4ca5432c900abd58cd8734b90d782c0005091ebb9b51101f4683b2a5ffc0a7ae\",\n    \"architecture.md\": \"69a3b6c656ffa0afe2c66a7088258d3770c7634c03e62fa499c342650107c7d0\",\n    \"architecture/inquiry-lifecycle.md\": \"0fe778778436c8eac43de65956adf47f49ccb43c57aea78e53890277eb7a2edb\",\n    \"architecture/publication-dataflow.md\": \"8fff0a48ddcd50a870945e7680be9b146cdbb35caab602aa3e03626bbd27c6b4\",\n    \"collaboration.md\": \"6f40f17f0b808b3d1014dc9a059097eaa8013c09670c43762e1841bec2ce4ed1\",\n    \"development/source-map-and-requirements.md\": \"0a72043403caf1236af967973337ddd4001a8039173803f32e970c20454928c1\",\n    \"development/test-strategy.md\": \"33c845ca2fafa5626b30f2a281870810e572d87bdbdea81fd980c755bd19a91f\",\n    \"guide.md\": \"a6ee0dc34e4e01d0cbf4125dc3c9ed2a1dcbd7299453e0ab094c0fd7354d0852\",\n    \"how-to/change-layout-or-branding.md\": \"51c41e98e05b6ffc2c2516dfa550273b8c3cfe0b32c39f3859d6abf8b1f4dd67\",\n    \"how-to/diagnose-inquiry.md\": \"0c08d8d42a1da2e72ebfcf55bb7c7c3083ce124cf52f206322cde4f0ebaccd22\",\n    \"how-to/review-publication-boundary.md\": \"e5ebb5a21f01c0e29448c3882bb5453972789e6aba3a5e4296d656ae6c4494e9\",\n    \"how-to/update-article.md\": \"d3d648595c121fd15ad85c85cf7785f24b7ef410a2766730137b158e836916e5\",\n    \"index.md\": \"453e4118a17075f682a363ae387ca33ce0e9ad1e47676a445c87bc75e5ccc17d\",\n    \"maintenance/change-impact-and-owner-links.md\": \"0c59e363415ce59664e629e0ad20426297940e28240336207262e356474cca65\",\n    \"reference/blog-metadata-and-body.md\": \"c96d6768da58593b14506343d2135dff46a566f263b6aa8d096c29587fc47a02\",\n    \"reference/commands.md\": \"83a8e410f3ca23bac0e383eec4a3c1ba49bad9e3a44fe949cefda2bd452fb062\",\n    \"reference/configuration-and-discovery.md\": \"b00d8b6f0ddeb41dc2fab765951a4ac4779db5addcbf154ad438855e190bb366\",\n    \"reference/inquiry-fields-and-provider.md\": \"5b9df276ebc73f85c77ef8c7530edf0cae959895a2688d2a9a56cbd7d8846f3c\",\n    \"sidebar.json\": \"983990a40f042bd4cd84e15f1fe7f1c3eeab83850799be9f3e9aac40dc7c4a6f\",\n    \"status.md\": \"7285a48672e4c4871263b82ccc488a73d72a4eb0d63432c4b5f52466a3292f7b\",\n    \"tutorials/offline-verification.md\": \"b6dd5b11dd28df56f13eb07ed1731480f1e7502f2909bed75cf0b9dab4cc5cf7\",\n    \"tutorials/trace-existing-article.md\": \"fb083fe0d776c0b114595bab585911032e0c5fc26769e5c30bdbecc377a894c4\"\n  },\n  \"manifest_hash\": \"352268f8377068e19b3301d3136ea7e8cdd312653129e9b18e4a65439b7fd9bb\",\n  \"source_hashes\": {\n    \".githooks/docs-pre-commit\": \"842e2f7b7f9eeeb4bd901a1e9b2260040b2e6904ef507dc4551eec8774402256\",\n    \".gitignore\": \"a1b569082d7a9bddc522bc176f3203f50aa09ac75e5f408f657540febd28d872\",\n    \"AGENTS.md\": \"f29f9d078a35fd83a9633dc59e3930f1fb5e6973dfd3c77c08ec7b86178f1ab3\",\n    \"CLAUDE.md\": \"8fa7a2003c1cea597e3a854e9d008559b86e36a6f46f9a7001b9152c40f88808\",\n    \"CNAME\": \"2b6276e53c98cec29494ec2792a767cd531adc871b4d254b3736a783b9011409\",\n    \"CONTEXT.md\": \"e9ba1e6b846784faa423893c6a6effbeace01232af243e77f629498360bad873\",\n    \"LICENSE\": \"e727d6c7b808cbc723fd3a862a5e0b47a4fac7695a8be4e7369ff3becac29505\",\n    \"README.md\": \"738edadb3530255fd6f48889a83c8ee67f7c8eea6ddf634b9c3ebe9cfa50f3b1\",\n    \"_config.yml\": \"eb678eb4fa598a185c225525c877d3c4ed47500827aedc462b3dea550385dfef\",\n    \"build-blog.py\": \"bc2a70ff3072ccdcc75ca6f4456f9b2f67616c0444b755a08f24866732f6259e\",\n    \"content/blog/custom-3d-printed-parts-that-fit.html\": \"6d758038682df6c45c5c97c9e69365f84edb28a0d69de4f5568533cb01b25aeb\",\n    \"content/blog/custom-3d-printed-parts-that-fit.json\": \"03dc9a6f29d3b57b985eb4988a500003aa8f077b86c3ff401bf7e5c5078f4c1e\",\n    \"content/blog/local-camera-dashboard.html\": \"c680eb00afeb30d486719f9e47636cb5a4d2631e9a686ecd00d93b94a6397d7f\",\n    \"content/blog/local-camera-dashboard.json\": \"a05876a8b857874de8c3373a2dda98e0588aeadb97afd0d7b2bc51b2e5ff0842\",\n    \"content/blog/meshtastic-node-setup-ontario.html\": \"0de4d5684388b03808c314b62ddec868d583385bd85ead4b4ed15c1a3676f854\",\n    \"content/blog/meshtastic-node-setup-ontario.json\": \"89bcafe32e371b8c76fd02171494cc6a985148e6eab0b7111ab86cac1a9c0abc\",\n    \"content/blog/scope-custom-tech-project.html\": \"584115469e2b6064c83753581adfa8b4d4b235e2a1328b6b7742191860c054c9\",\n    \"content/blog/scope-custom-tech-project.json\": \"74dd99e9c8fdc5acaa76c01c3eb70ab3bf2f969f20ee713700aa5e426a29c29f\",\n    \"content/blog/solar-power-for-remote-sensors.html\": \"a9b9fe70d3108b4ff8afbbc8fe32703d8c6ebea2b98e9fbe29a5b41301e8ccb8\",\n    \"content/blog/solar-power-for-remote-sensors.json\": \"d328747109c329c4f2796c7c28ea870abb6950626d727a5a1c21db677135fa4b\",\n    \"docs/CONTEXT.md\": \"3e87de94936ddd759b16ee9a5e6432a796f6b096b33b295bca2ae78d8e501c29\",\n    \"index.html\": \"f98e7b37dd50373536e237ff5d4cf6f1c2f0c440e70e4102194b22b52b943d55\",\n    \"inquiry.js\": \"b578273170d55daf30c0fecdce218d02e8e0f4a428ff289a149793f8c3448509\",\n    \"robots.txt\": \"aa015819e747ce41d995df83b0ec12888ac3b24533efeef32516dd6807c04ac5\",\n    \"shield-mark.svg\": \"281e70322e8c1db39e9fe32c919327c55509876a4de64383c57c6f67eb7af892\",\n    \"styles.css\": \"e2fbbb95a6b7da7a079e5afa4eaf00122456ac73d77a11714a51f1c8a5a3095a\",\n    \"tests/activate-inquiry.py\": \"74bdeb496167bc7b38676b6389cf406b19277ec22f60eb72bf91f6e265529be2\",\n    \"tests/check-site.py\": \"f9319d1e8e91eb4ea0c152e85191c8dc0bd583ebc33c32c3e762591cf0220c55\",\n    \"tests/test-inquiry.mjs\": \"2097530a753a1f1de3e9fbd8c698e73035204ddacf220135a638f01bc50e7a53\",\n    \"tests/test_inquiry.py\": \"da108ecbc1dd32911cddef596d0e997c659e4d589f7d6d8e8fd3e43249c2d87c\",\n    \"thank-you.html\": \"66c03558efc8a137dc600fe4d1477193e9b1d017d8a033d435b79c7b588252a5\"\n  }\n}\n",
+      "duration_seconds": 0.5389482399914414,
+      "effects": "Parent-authorized exact project-scoped read-only shape/integrity/pending-state adapter; no build/approval/index/network/app action",
+      "environment": "/home/zack/Projects/fleet-index; parent-authorized native project-scoped shared adapter",
+      "outcome": "Native exact project snapshot collected current source/docs/manifest hashes.",
+      "evidence": "/tmp/hermes-docs-redo-2026-10-16/aegis-site-independent-review.json#/current_delta/checks/0"
+    },
+    {
+      "command": "/usr/bin/python3 -B _system/documentation/site/scripts/portal.py check --project aegis-site --json",
+      "cwd": "/home/zack/Projects/fleet-index",
+      "exit": 1,
+      "stdout": "{\n  \"projects\": {\n    \"aegis-site\": {\n      \"reason\": \"review changes-required\",\n      \"state\": \"pending\"\n    }\n  },\n  \"schema\": 1\n}\n",
+      "duration_seconds": 0.5627017270307988,
+      "effects": "Parent-authorized exact project-scoped read-only shape/integrity/pending-state adapter; no build/approval/index/network/app action",
+      "environment": "/home/zack/Projects/fleet-index; parent-authorized native project-scoped shared adapter",
+      "outcome": "Expected author state at independent review: pending, review changes-required; exit1 was not a correctness rejection.",
+      "evidence": "/tmp/hermes-docs-redo-2026-10-16/aegis-site-independent-review.json#/current_delta/checks/1"
+    }
+  ],
+  "claim_review": {
+    "reviewer": "Aegis-site independent documentation reviewer; prime-agent child session 01a14a3c-1d91-74f9-9456-0b7b2650fc64; not the author",
+    "claims": [
+      {
+        "id": "generator-inputs-and-defaults",
+        "docs": [
+          "reference/commands",
+          "reference/blog-metadata-and-body",
+          "architecture/publication-dataflow"
+        ],
+        "sources": [
+          "build-blog.py:13-45,48-84,92-155"
+        ],
+        "observation": "Fixed root/base/author; no CLI/env parser or import guard. Slug/date checks precede future UTC skip, six metadata values truthiness checked after skip, body read verbatim. Descending stored-date/slug sort, min one eligible post, words/200 Python round floor1, preview2 and 2026-09-22 homepage floor all match. Wrong-type metadata/date errors are not hidden by stronger schema claims.",
+        "result": "matches",
+        "method": "complete source inspection; no generator execution"
+      },
+      {
+        "id": "generator-errors-products-and-extension",
+        "docs": [
+          "architecture/publication-dataflow",
+          "how-to/update-article",
+          "tutorials/trace-existing-article"
+        ],
+        "sources": [
+          "build-blog.py:18-22,92-155",
+          "content/blog/scope-custom-tech-project.json:1-11",
+          "content/blog/scope-custom-tech-project.html:1-30"
+        ],
+        "observation": "Exact homepage header and h2-id regex coupling match. Writes article/listing before preview count; homepage before sitemap/RSS; no stale deletion or transaction. All five public body sources are contained in products. Scope article matches five output kinds, newest preview and both dates. Article edits/generation correctly owner-gated.",
+        "result": "matches",
+        "method": "complete source and existing product inspection; read-only maintenance walkthrough"
+      },
+      {
+        "id": "form-contracts-native-enhanced",
+        "docs": [
+          "reference/inquiry-fields-and-provider",
+          "architecture/inquiry-lifecycle",
+          "how-to/diagnose-inquiry"
+        ],
+        "sources": [
+          "index.html:247-291",
+          "inquiry.js:1-79",
+          "thank-you.html:27-32"
+        ],
+        "observation": "All 9 field names, hidden subject/redirect, required/max/min/autocomplete/select values and status attributes match. Active POST has default encoding; enhanced guard, FormData minus redirect, JSON headers, literal success/HTTP OK, timeout20000 and finally state match. 429/false/HTTP/parse/network errors retain entries, success reset/page-lifetime lock, no retry/persistence/inbox observer. Routing value not copied. Native provider flow is labelled owner/README contract, not observed runtime proof. Final3-page correction explicitly documents JSON parsing precedence including non-JSON429; independently compared to source and correct.",
+        "result": "matches",
+        "method": "complete source inspection plus actual stubbed controller/markup checks"
+      },
+      {
+        "id": "activation-and-command-helper-interfaces",
+        "docs": [
+          "reference/commands",
+          "how-to/diagnose-inquiry"
+        ],
+        "sources": [
+          "tests/activate-inquiry.py:13-63",
+          ".githooks/docs-pre-commit:1-4",
+          "tests/check-site.py:15-37",
+          "tests/test_inquiry.py:12-85",
+          "tests/test-inquiry.mjs:10-45"
+        ],
+        "observation": "Activation confirmation, masked UUID input, exact migration occurrence validation, current-active early SystemExit, tempfile/permission/replace behavior match; helper is not rotation or regression test. Documented page/card/activate/check_markup/parser/harness signatures match. Wrapper resolves Git root then external exec, exit2 on root failure; installation remains unknown.",
+        "result": "matches",
+        "method": "complete inspection only; no activation, Git or hook execution"
+      },
+      {
+        "id": "tests-and-native-requirements",
+        "docs": [
+          "tutorials/offline-verification",
+          "development/test-strategy",
+          "development/source-map-and-requirements",
+          "status"
+        ],
+        "sources": [
+          "tests/check-site.py:1-105",
+          "tests/test_inquiry.py:1-85",
+          "tests/test-inquiry.mjs:1-102",
+          "inquiry.js:45-79"
+        ],
+        "observation": "All 3 commands/effects/outputs match independent runs. Python stdlib and Node builtins only; actual no real fetch. Assert/O warning accurate. Stated no generator/browser/native POST/real timeout/provider/inbox coverage is accurate. No package/version/installer/CI/environment/dependency manifest found; host versions not a support promise.",
+        "result": "matches",
+        "method": "complete source inspection; 3 native offline commands exit0"
+      },
+      {
+        "id": "styles-layout-and-branding",
+        "docs": [
+          "how-to/change-layout-or-branding",
+          "development/source-map-and-requirements",
+          "reference/configuration-and-discovery"
+        ],
+        "sources": [
+          "styles.css:1-1068",
+          "index.html:8-37,228-291",
+          "shield-mark.svg:1-13",
+          "build-blog.py:18-22,48-84"
+        ],
+        "observation": "CSS tokens/local fonts, form min700 two columns, max900 home/blog collapse, honeypot display:none, focus/status and SVG vs retained raster metadata ownership match. No visual/mobile/a11y/browser acceptance fabricated.",
+        "result": "matches",
+        "method": "complete CSS/HTML/SVG/source inspection, no rendering"
+      },
+      {
+        "id": "publication-discovery-security",
+        "docs": [
+          "how-to/review-publication-boundary",
+          "reference/configuration-and-discovery",
+          "architecture",
+          "status"
+        ],
+        "sources": [
+          "_config.yml:1-13",
+          "CNAME:1",
+          "robots.txt:1-4",
+          "build-blog.py:48-77,105-154",
+          "index.html:6-17",
+          "thank-you.html:8",
+          "tests/check-site.py:87-104",
+          "LICENSE:1-7"
+        ],
+        "observation": "Complete Jekyll exclude list protects docs (handbook/verification descendants), .docs-check and .githooks by intended config. Test only asserts content/build-blog/tests. CNAME unchanged. RSS/sitemap/JSONLD/noindex/local metadata claims match. Robots/ignore/noindex not access control. No build or host artifact checked; no deployment/indexing/analytics/lead result proof invented. Proprietary license accurately described.",
+        "result": "matches within inspection boundary",
+        "method": "complete config/source inspection; public-file fixture only"
+      },
+      {
+        "id": "ownership-and-collaboration",
+        "docs": [
+          "index",
+          "collaboration",
+          "CONTEXT",
+          "guide",
+          "maintenance/change-impact-and-owner-links",
+          "status"
+        ],
+        "sources": [
+          "README.md:14-39",
+          "AGENTS.md:1-29",
+          "CLAUDE.md:1-36",
+          "CONTEXT.md:1-26",
+          "docs/CONTEXT.md:1-5",
+          "index.html:39-208"
+        ],
+        "observation": "Purpose/current local demonstrations, blockers, contributor path, approval ownership and decisions discoverable. Public illustrative service/camera/console copy not claimed to be app/device implementation or completed client work. Source-owned business/hosting records not copied; stale OpenClaw/Agrippa routes acknowledged not restarted. No extra private records crawl used.",
+        "result": "matches",
+        "method": "complete current owner/public source and manual reading"
+      },
+      {
+        "id": "repository-ignore-policy-current-drift",
+        "docs": [
+          "reference/configuration-and-discovery",
+          "development/source-map-and-requirements"
+        ],
+        "sources": [
+          ".gitignore:1-33"
+        ],
+        "observation": "Concurrent .gitignore lines15-33 delta was fully reread. Both citations now L1-L33; bounded untracked-doc ignore rules, exact canonical JSON exceptions, local support evidence, assets approval, existing tracked-file and privacy/publication caveats are accurately documented. Current manifest interface includes these claims. No check-ignore/index command or effectiveness claim made.",
+        "result": "matches after independently reviewed correction",
+        "method": "exact post-check hash comparison then complete changed file read"
+      }
+    ],
+    "privacy_observations": {
+      "no_machine_abs_or_home_tilde": true,
+      "no_routing_value_in_docs": true,
+      "no_executable_imports": true,
+      "no_analytics_or_lead_success_claim": true,
+      "public_copy_is_not_operational_implementation": true,
+      "private_docs_explicit": true,
+      "no_live_acceptance_claim": true
+    },
+    "source_product_observations": {
+      "content/blog/custom-3d-printed-parts-that-fit.html": true,
+      "content/blog/local-camera-dashboard.html": true,
+      "content/blog/meshtastic-node-setup-ontario.html": true,
+      "content/blog/scope-custom-tech-project.html": true,
+      "content/blog/solar-power-for-remote-sensors.html": true
+    },
+    "publication_boundary": {
+      "configured_exclusions": [
+        "README.md",
+        "CLAUDE.md",
+        "AGENTS.md",
+        "CONTEXT.md",
+        "content",
+        "build-blog.py",
+        "tests",
+        "docs",
+        ".docs-check",
+        ".githooks"
+      ],
+      "required_private_paths_excluded_by_docs_parent": true,
+      "handbook_and_verification_descend_from_docs": true,
+      "no_actual_artifact_examined": true,
+      "local_assertion_scope": [
+        "content",
+        "build-blog.py",
+        "tests"
+      ],
+      "CNAME_preserved": true
+    },
+    "findings": [
+      "{\"authority\": \"Concurrent change is preserved; reviewer made no source/docs/receipt edits.\", \"category\": \"exact-current-input-and-complete-source-coverage\", \"claim\": \"Current reference describes only OS/editor ignore rules and cites .gitignore#L1-L13; the submitted author receipt binds the pre-change ignore file.\", \"exact_current_sha256\": \"3d14f063385e2ec872e64923c0f50ab7df02d5011de66f44d8f3812a6b3d8477\", \"exact_old_sha256\": \"9b740d75764e443417f223675079ba6157206a5aeb7d7ca275655e2aceb0881c\", \"id\": \"AEGIS-R1\", \"impact\": \"This is meaningful first-party repository/workflow configuration. The current source snapshot differs from the frozen author receipt and its complete configuration coverage no longer describes the whole file. Generated/private ignore behavior is not a publication or secrecy guarantee, and asset blanket-ignore behavior affects future documentation contributions.\", \"paths\": [\".gitignore\", \"docs/handbook/reference/configuration-and-discovery.md\", \"docs/handbook/development/source-map-and-requirements.md\", \"docs/verification/review.json\"], \"required\": false, \"resolution\": {\"actual_delta_paths\": [\"docs/handbook/development/source-map-and-requirements.md\", \"docs/handbook/reference/configuration-and-discovery.md\", \"docs/verification/author-checks.json\", \"docs/verification/manifest.json\", \"docs/verification/review.json\"], \"author_assistance\": \"none for reader trials; concurrent author correction independently inspected, not accepted on author report or hash alone\", \"observed_resolution\": \"Both source citations now L1-L33. Configuration reference lists bounded documentation ignore groups, exact manifest/review exceptions, otherwise-untracked semantics, local ignored author-checks, existing tracked-file caveat and no publication/privacy guarantee. Source map names bounded rules/exceptions. Manifest repository-policy interface expanded to exact claims. All changes match current source; renewed safe checks3/3 pass.\", \"reviewed_at\": \"2026-10-17T14:31:07.198161+00:00\", \"source\": \"current .gitignore:1-33 complete reread\", \"source_hash\": \"3d14f063385e2ec872e64923c0f50ab7df02d5011de66f44d8f3812a6b3d8477\", \"source_or_canonical_writes_by_reviewer\": false}, \"severity\": \"important\", \"smallest_fix\": \"Author updates configuration/discovery to summarize documentation artifact/private ignore rules and manifest/review exceptions (without claiming security), extends both .gitignore source_ref ranges to current lines, checks source-map contribution implications, then requests renewed exact claim/input review. Do not change application code or treat a hash refresh alone as the fix.\", \"source_evidence\": \".gitignore now has lines15-33: /docs/verification/* with manifest/review exceptions, handbook assets/generated/build/node_modules/fixture/env/credentials/log/db exclusions, and /.docs-check/.\", \"status\": \"resolved in current reviewed snapshot\"}",
+      "{\"category\": \"failure-behavior-precision\", \"claim\": \"HTTP429 gets a specific retry-later message.\", \"id\": \"AEGIS-N1\", \"impact\": \"Docs already separately name JSON parse exceptions, so this is not a contradicted overall model or a live delivery blocker. A short qualification avoids a maintainer reading status alone as sufficient to predict UI.\", \"paths\": [\"docs/handbook/architecture/inquiry-lifecycle.md\", \"docs/handbook/reference/inquiry-fields-and-provider.md\"], \"required\": false, \"resolution\": {\"observed_resolution\": \"All three pages now explicitly require response JSON to parse before429/generic HTTP state dispatch; non-JSON429 takes ambiguous-delivery catch. Manifest claim reflects order. This matches code inspection; no dedicated non-JSON429 fixture was added/run and no live request occurred.\", \"paths\": [\"docs/handbook/architecture/inquiry-lifecycle.md\", \"docs/handbook/how-to/diagnose-inquiry.md\", \"docs/handbook/reference/inquiry-fields-and-provider.md\", \"docs/verification/manifest.json\"], \"result\": \"resolved by independent exact delta/source comparison\", \"reviewed_at\": \"2026-10-17T14:32:13.314273+00:00\", \"source\": \"inquiry.js:56-71 and existing test-inquiry.mjs:73-90\"}, \"severity\": \"minor\", \"smallest_fix\": \"Prefer “After JSON parsing succeeds, HTTP429 gets…” in the reference/state explanation; preserve the separate parse-exception route. No new test/live request needed.\", \"source_evidence\": \"inquiry.js:56 parses JSON before status dispatch at57-60. An HTTP429 with invalid/non-JSON body reaches catch69-71 and the ambiguous-delivery message; supplied429 fixture at tests/test-inquiry.mjs:75 uses parseable JSON.\", \"status\": \"resolved in current reviewed snapshot\"}"
+    ],
+    "final_recursive_policy_observations": [
+      "Both changed source_ref ranges are now .gitignore#L1-L30 and exist in actual source.",
+      "Reference names every actual /docs/**/_generated/,.generated/,build/,node_modules/,.fixture/ recursive directory rule and all recursive handbook .env*,*.env,credentials*,*.log,*.db forms; .env* suffix interpretation matches source.",
+      "Exact manifest/review verification exceptions, unapproved assets deny, root /.docs-check/, ordinary authored Markdown/sidebar contribution path and ignored local supporting author-checks are preserved.",
+      "Reference states otherwise-untracked scope, no already-tracked index removal and no runtime/publication/privacy guarantee; no local Git/index effectiveness proof invented.",
+      "Source map role and manifest repository-policy claims agree with actual current rule purpose and two-page source mapping. No application-wide policy or app/test source changed.",
+      "Other30 declared sources are hash-identical to prior independently reviewed snapshot; every other reader/sidebar hash unchanged. N1 response-order correction and original docs-first reader trials are preserved without rerunning or attributing author help.",
+      "_config.yml and CNAME exact hashes unchanged; existing docs/.docs-check/.githooks public exclusions not relaxed. No host artifact or deployment claim."
+    ],
+    "changed_claims": [
+      "generator-inputs-and-defaults: Fixed root/base/author; no CLI/env parser or import guard. Slug/date checks precede future UTC skip, six metadata values truthiness checked after skip, body read verbatim. Descending stored-date/slug sort, min one eligible post, words/200 Python round floor1, preview2 and 2026-09-22 homepage floor all match. Wrong-type metadata/date errors are not hidden by stronger schema claims.",
+      "generator-errors-products-and-extension: Exact homepage header and h2-id regex coupling match. Writes article/listing before preview count; homepage before sitemap/RSS; no stale deletion or transaction. All five public body sources are contained in products. Scope article matches five output kinds, newest preview and both dates. Article edits/generation correctly owner-gated.",
+      "form-contracts-native-enhanced: All 9 field names, hidden subject/redirect, required/max/min/autocomplete/select values and status attributes match. Active POST has default encoding; enhanced guard, FormData minus redirect, JSON headers, literal success/HTTP OK, timeout20000 and finally state match. 429/false/HTTP/parse/network errors retain entries, success reset/page-lifetime lock, no retry/persistence/inbox observer. Routing value not copied. Native provider flow is labelled owner/README contract, not observed runtime proof. Final3-page correction explicitly documents JSON parsing precedence including non-JSON429; independently compared to source and correct.",
+      "activation-and-command-helper-interfaces: Activation confirmation, masked UUID input, exact migration occurrence validation, current-active early SystemExit, tempfile/permission/replace behavior match; helper is not rotation or regression test. Documented page/card/activate/check_markup/parser/harness signatures match. Wrapper resolves Git root then external exec, exit2 on root failure; installation remains unknown.",
+      "tests-and-native-requirements: All 3 commands/effects/outputs match independent runs. Python stdlib and Node builtins only; actual no real fetch. Assert/O warning accurate. Stated no generator/browser/native POST/real timeout/provider/inbox coverage is accurate. No package/version/installer/CI/environment/dependency manifest found; host versions not a support promise.",
+      "styles-layout-and-branding: CSS tokens/local fonts, form min700 two columns, max900 home/blog collapse, honeypot display:none, focus/status and SVG vs retained raster metadata ownership match. No visual/mobile/a11y/browser acceptance fabricated.",
+      "publication-discovery-security: Complete Jekyll exclude list protects docs (handbook/verification descendants), .docs-check and .githooks by intended config. Test only asserts content/build-blog/tests. CNAME unchanged. RSS/sitemap/JSONLD/noindex/local metadata claims match. Robots/ignore/noindex not access control. No build or host artifact checked; no deployment/indexing/analytics/lead result proof invented. Proprietary license accurately described.",
+      "ownership-and-collaboration: Purpose/current local demonstrations, blockers, contributor path, approval ownership and decisions discoverable. Public illustrative service/camera/console copy not claimed to be app/device implementation or completed client work. Source-owned business/hosting records not copied; stale OpenClaw/Agrippa routes acknowledged not restarted. No extra private records crawl used.",
+      "repository-ignore-policy-current-drift: Concurrent .gitignore lines15-33 delta was fully reread. Both citations now L1-L33; bounded untracked-doc ignore rules, exact canonical JSON exceptions, local support evidence, assets approval, existing tracked-file and privacy/publication caveats are accurately documented. Current manifest interface includes these claims. No check-ignore/index command or effectiveness claim made."
+    ],
+    "source_observations": "generator-inputs-and-defaults [build-blog.py:13-45,48-84,92-155]: Fixed root/base/author; no CLI/env parser or import guard. Slug/date checks precede future UTC skip, six metadata values truthiness checked after skip, body read verbatim. Descending stored-date/slug sort, min one eligible post, words/200 Python round floor1, preview2 and 2026-09-22 homepage floor all match. Wrong-type metadata/date errors are not hidden by stronger schema claims.\n\ngenerator-errors-products-and-extension [build-blog.py:18-22,92-155; content/blog/scope-custom-tech-project.json:1-11; content/blog/scope-custom-tech-project.html:1-30]: Exact homepage header and h2-id regex coupling match. Writes article/listing before preview count; homepage before sitemap/RSS; no stale deletion or transaction. All five public body sources are contained in products. Scope article matches five output kinds, newest preview and both dates. Article edits/generation correctly owner-gated.\n\nform-contracts-native-enhanced [index.html:247-291; inquiry.js:1-79; thank-you.html:27-32]: All 9 field names, hidden subject/redirect, required/max/min/autocomplete/select values and status attributes match. Active POST has default encoding; enhanced guard, FormData minus redirect, JSON headers, literal success/HTTP OK, timeout20000 and finally state match. 429/false/HTTP/parse/network errors retain entries, success reset/page-lifetime lock, no retry/persistence/inbox observer. Routing value not copied. Native provider flow is labelled owner/README contract, not observed runtime proof. Final3-page correction explicitly documents JSON parsing precedence including non-JSON429; independently compared to source and correct.\n\nactivation-and-command-helper-interfaces [tests/activate-inquiry.py:13-63; .githooks/docs-pre-commit:1-4; tests/check-site.py:15-37; tests/test_inquiry.py:12-85; tests/test-inquiry.mjs:10-45]: Activation confirmation, masked UUID input, exact migration occurrence validation, current-active early SystemExit, tempfile/permission/replace behavior match; helper is not rotation or regression test. Documented page/card/activate/check_markup/parser/harness signatures match. Wrapper resolves Git root then external exec, exit2 on root failure; installation remains unknown.\n\ntests-and-native-requirements [tests/check-site.py:1-105; tests/test_inquiry.py:1-85; tests/test-inquiry.mjs:1-102; inquiry.js:45-79]: All 3 commands/effects/outputs match independent runs. Python stdlib and Node builtins only; actual no real fetch. Assert/O warning accurate. Stated no generator/browser/native POST/real timeout/provider/inbox coverage is accurate. No package/version/installer/CI/environment/dependency manifest found; host versions not a support promise.\n\nstyles-layout-and-branding [styles.css:1-1068; index.html:8-37,228-291; shield-mark.svg:1-13; build-blog.py:18-22,48-84]: CSS tokens/local fonts, form min700 two columns, max900 home/blog collapse, honeypot display:none, focus/status and SVG vs retained raster metadata ownership match. No visual/mobile/a11y/browser acceptance fabricated.\n\npublication-discovery-security [_config.yml:1-13; CNAME:1; robots.txt:1-4; build-blog.py:48-77,105-154; index.html:6-17; thank-you.html:8; tests/check-site.py:87-104; LICENSE:1-7]: Complete Jekyll exclude list protects docs (handbook/verification descendants), .docs-check and .githooks by intended config. Test only asserts content/build-blog/tests. CNAME unchanged. RSS/sitemap/JSONLD/noindex/local metadata claims match. Robots/ignore/noindex not access control. No build or host artifact checked; no deployment/indexing/analytics/lead result proof invented. Proprietary license accurately described.\n\nownership-and-collaboration [README.md:14-39; AGENTS.md:1-29; CLAUDE.md:1-36; CONTEXT.md:1-26; docs/CONTEXT.md:1-5; index.html:39-208]: Purpose/current local demonstrations, blockers, contributor path, approval ownership and decisions discoverable. Public illustrative service/camera/console copy not claimed to be app/device implementation or completed client work. Source-owned business/hosting records not copied; stale OpenClaw/Agrippa routes acknowledged not restarted. No extra private records crawl used.\n\nrepository-ignore-policy-current-drift [.gitignore:1-33]: Concurrent .gitignore lines15-33 delta was fully reread. Both citations now L1-L33; bounded untracked-doc ignore rules, exact canonical JSON exceptions, local support evidence, assets approval, existing tracked-file and privacy/publication caveats are accurately documented. Current manifest interface includes these claims. No check-ignore/index command or effectiveness claim made.\n\nFinal recursive-policy observations:\nBoth changed source_ref ranges are now .gitignore#L1-L30 and exist in actual source.\nReference names every actual /docs/**/_generated/,.generated/,build/,node_modules/,.fixture/ recursive directory rule and all recursive handbook .env*,*.env,credentials*,*.log,*.db forms; .env* suffix interpretation matches source.\nExact manifest/review verification exceptions, unapproved assets deny, root /.docs-check/, ordinary authored Markdown/sidebar contribution path and ignored local supporting author-checks are preserved.\nReference states otherwise-untracked scope, no already-tracked index removal and no runtime/publication/privacy guarantee; no local Git/index effectiveness proof invented.\nSource map role and manifest repository-policy claims agree with actual current rule purpose and two-page source mapping. No application-wide policy or app/test source changed.\nOther30 declared sources are hash-identical to prior independently reviewed snapshot; every other reader/sidebar hash unchanged. N1 response-order correction and original docs-first reader trials are preserved without rerunning or attributing author help.\n_config.yml and CNAME exact hashes unchanged; existing docs/.docs-check/.githooks public exclusions not relaxed. No host artifact or deployment claim.",
+    "test_observations": "Safe explicit offline public-file fixtures. Python reads/parses current public files and configuration; imported test_inquiry is guarded and read-only; -B prevents pyc writes. Node reads inquiry.js, evaluates in VM where fetch/FormData/DOM are local stubs, uses no real network, clears timers. No generator/helper/service/Git operation called.\n\npython3 -B tests/check-site.py -> exit 0: PASS: 8 pages, 161 internal links, article metadata, 7 sitemap URLs and RSS.\npython3 -B tests/test_inquiry.py -> exit 0: PASS: inquiry form is labeled and correctly configured for its current mode.\nnode tests/test-inquiry.mjs -> exit 0: PASS: dormant fallback, validation, honeypot, duplicate guard, success and error responses.\npython3 --version -> exit 0: Python 3.15.0\nnode --version -> exit 0: v26.11.1\npython3 -B tests/check-site.py -> exit 0: PASS: 8 pages, 161 internal links, article metadata, 7 sitemap URLs and RSS.\npython3 -B tests/test_inquiry.py -> exit 0: PASS: inquiry form is labeled and correctly configured for its current mode.\nnode tests/test-inquiry.mjs -> exit 0: PASS: dormant fallback, validation, honeypot, duplicate guard, success and error responses.\n\nRead all schema fields and compare manifest/author receipt with actual used JSON-schema keywords; native official bounded snapshot also exits0. This standalone receipt is not canonical review.schema.json content.\n\naccepted for exact current recursive ignore-policy source/claim delta; prior semantic and unaided task review preserved",
+    "resolutions": [
+      "AEGIS-R1: Both source citations now L1-L33. Configuration reference lists bounded documentation ignore groups, exact manifest/review exceptions, otherwise-untracked semantics, local ignored author-checks, existing tracked-file caveat and no publication/privacy guarantee. Source map names bounded rules/exceptions. Manifest repository-policy interface expanded to exact claims. All changes match current source; renewed safe checks3/3 pass.",
+      "AEGIS-N1: All three pages now explicitly require response JSON to parse before429/generic HTTP state dispatch; non-JSON429 takes ambiguous-delivery catch. Manifest claim reflects order. This matches code inspection; no dedicated non-JSON429 fixture was added/run and no live request occurred.",
+      "Both changed source_ref ranges are now .gitignore#L1-L30 and exist in actual source.",
+      "Reference names every actual /docs/**/_generated/,.generated/,build/,node_modules/,.fixture/ recursive directory rule and all recursive handbook .env*,*.env,credentials*,*.log,*.db forms; .env* suffix interpretation matches source.",
+      "Exact manifest/review verification exceptions, unapproved assets deny, root /.docs-check/, ordinary authored Markdown/sidebar contribution path and ignored local supporting author-checks are preserved.",
+      "Reference states otherwise-untracked scope, no already-tracked index removal and no runtime/publication/privacy guarantee; no local Git/index effectiveness proof invented.",
+      "Source map role and manifest repository-policy claims agree with actual current rule purpose and two-page source mapping. No application-wide policy or app/test source changed.",
+      "Other30 declared sources are hash-identical to prior independently reviewed snapshot; every other reader/sidebar hash unchanged. N1 response-order correction and original docs-first reader trials are preserved without rerunning or attributing author help.",
+      "_config.yml and CNAME exact hashes unchanged; existing docs/.docs-check/.githooks public exclusions not relaxed. No host artifact or deployment claim."
+    ],
+    "independent_evidence": {
+      "report_schema": "standalone-independent-review-1; not canonical review.json and not an invented shared schema",
+      "root": "/home/zack/02_business/aegisequity.ca",
+      "spec_verdict": {
+        "decision": "pass within project documentation/source-claim/reader-review scope",
+        "reason": "Current recursive policy corrected and independently checked against full rule text; complete prior semantic/interface/reader review preserved. Exact current source/docs/sidebar/manifest bytes match official native snapshot; exact schemas read. No whole-site/index/runtime/business approval implied."
+      },
+      "quality_verdict": {
+        "decision": "pass",
+        "reason": "Prior complete task-led topic tree and unaided first-use/maintainer trial findings preserved. Both initial findings and later recursive-policy citation/coverage gap resolved by exact source-grounded delta review."
+      },
+      "scope": {
+        "writes_authorized": [
+          "/tmp/hermes-docs-redo-2026-10-16/aegis-site-independent-review.md",
+          "/tmp/hermes-docs-redo-2026-10-16/aegis-site-independent-review.json"
+        ],
+        "project_writes": false,
+        "canonical_receipt_write": false,
+        "git_or_index_commands": false,
+        "shared_site_commands": "Parent later authorized ONLY native project-scoped portal snapshot/check; two read-only commands ran. No build/site/index/hook or broader shared command.",
+        "subagents": false,
+        "network_or_business_actions": false,
+        "other_project_or_private_record_crawl": false,
+        "authority_routes_read": [
+          "/home/zack/02_business/AGENTS.md",
+          "/home/zack/02_business/CONTEXT.md",
+          "assigned project AGENTS/CLAUDE/CONTEXT/README/docs CONTEXT",
+          "required fleet-index documentation POLICY.md"
+        ],
+        "constants_changed": [],
+        "assumptions": [
+          "Current native Python/Node installed commands are acceptable only for reviewed offline tests; not a supported-version matrix.",
+          "Existing root contracts provide routing/approval provenance, not proof of current live hosting or mail delivery.",
+          "Historical generated products are excluded and not accepted new reader content."
+        ]
+      },
+      "input_order": {
+        "first_read": "owning instructions, review contract and assignment brief",
+        "before_source_or_author_report": {
+          "recorded_at": "2026-10-17T14:21:02.667204+00:00",
+          "author_report_read": false,
+          "implementation_read": false,
+          "author_assistance": "none",
+          "first_use": {
+            "task": "Choose and follow the safe offline checkout-verification route",
+            "route": [
+              "docs/handbook/index.md: Choose a task -> Offline verification tutorial",
+              "docs/handbook/sidebar.json: Start and work safely -> tutorials/offline-verification",
+              "docs/handbook/tutorials/offline-verification.md"
+            ],
+            "starting_state": "Read-only reviewer, no runtime/build/network/Git/dependency operations authorized; existing commands not yet effects-audited.",
+            "observations": [
+              "Prerequisites clearly name existing Python/Node and repository root; no install fallback.",
+              "Three commands and exact expected snapshot outputs are discoverable, with no-live-delivery/visual proof limits and assertion-mode warning.",
+              "Recovery points to source map and forbids generated-output patching, inquiry sends/key rotation/publication."
+            ],
+            "ambiguity_or_limit": "Execution paused before the first command for mandated implementation effects review; tutorial source citations make that review possible. No author clarification needed.",
+            "chosen_commands": [
+              "python3 -B tests/check-site.py",
+              "python3 -B tests/test_inquiry.py",
+              "node tests/test-inquiry.mjs"
+            ]
+          },
+          "maintainer": {
+            "task": "Trace the approved existing scope-custom-tech-project article without editing or generation",
+            "route": [
+              "docs/handbook/index.md: Understand one real source-to-page example -> tutorials/trace-existing-article.md",
+              "docs/handbook/how-to/update-article.md: safe first task -> tutorials/trace-existing-article.md",
+              "docs/handbook/tutorials/trace-existing-article.md -> reference/blog-metadata-and-body.md"
+            ],
+            "starting_state": "No article/source change or generator execution authorized.",
+            "observations": [
+              "Read-only trace explicitly distinguishes source pairs from five generated product types.",
+              "The workflow explains date gating, exact heading IDs, body trust, stale output and generator import side effects.",
+              "Article-edit guide is correctly gated by topic/claim approval and does not supply a push command."
+            ],
+            "ambiguity_or_limit": "The requested trace necessarily reaches implementation/products. Paused at step 1 until this unaided route record exists; source/product correspondence and all predicted values still unverified at this point.",
+            "expected_files": [
+              "content/blog/scope-custom-tech-project.json",
+              "content/blog/scope-custom-tech-project.html",
+              "build-blog.py",
+              "blog/scope-custom-tech-project/index.html",
+              "blog/index.html",
+              "index.html",
+              "sitemap.xml",
+              "blog/feed.xml"
+            ]
+          }
+        },
+        "then": "After the unaided route record: assigned author report/original audit/private manifest and author receipt, current implementation plus all remaining reader pages; then complete source/product/config/coverage comparison and native effects-reviewed checks. No author task guidance or clarification was used."
+      },
+      "coverage": {
+        "non_git_file_count": 71,
+        "meaningful_source_inputs": 31,
+        "canonical_markdown_pages": 21,
+        "sidebar_files": 1,
+        "private_evidence_files": 3,
+        "interfaces": 40,
+        "unclassified_current_files": [],
+        "all_authored_source_reads": "31 declared authored implementation/config/contract inputs read in full, including every executable file (6), all CSS, SVG, public HTML, all five article metadata/body pairs, publication/repository config and owner docs. .gitignore reread completely after drift.",
+        "generated_public_products": "8 current generated public files structurally inspected; all 5 body-source direct containments pass; excluded as independently authored implementation.",
+        "exclusions": "Git internals not opened. Retained raster binaries, public host-verification tokens and historical generated private handbook products hash-only, contents not reviewed. No external business records/secret values/private datasets opened.",
+        "applicability": {
+          "public_authored_pages": [
+            "index.html except generated preview",
+            "thank-you.html"
+          ],
+          "layout_templates": "Embedded page/card/schema templates in build-blog.py and index.html shared header; no separate Jekyll _layouts/_includes.",
+          "data": "content/blog contains 5 exact JSON/HTML pairs; no separate _data or DB.",
+          "style_script": "Entire styles.css and inquiry.js; shield-mark.svg reviewed.",
+          "jekyll": "Complete _config.yml exclude setting and CNAME/robots/discovery, source-only artifact intent.",
+          "dependencies": "Existing Python standard-library modules and Node builtins; no package/dependency/version manifest/installer, .env template or dedicated env present.",
+          "workflows": "Article/layout/inquiry/publication maintenance, 3 offline checks, owner activation helper, external hook adapter; no in-repo CI/deploy workflow.",
+          "security": "Public routing identifier not recopied, trusted HTML, browser limits/provider vs inbox, proprietary rights, intended exclusions vs actual artifact and current ignore policy.",
+          "nonexistent_interfaces": "No local server/backend/auth/database/payment/upload/REST/GraphQL/OpenAPI/plugin/device runtime or app environment precedence interface; expressly N/A, not filled with invented setup."
+        },
+        "reader_tree_checks": {
+          "actual_markdown_ids_equal_manifest": true,
+          "sidebar_covers_all_pages_once": true,
+          "source_ref_manifest_mismatches": [],
+          "citation_line_range_errors": [],
+          "relative_markdown_links_observations": [],
+          "privacy_scan_matches": {
+            "absolute_machine_path": [],
+            "react_import": [],
+            "raw_source_link": []
+          }
+        },
+        "interface_anchor_observations": [],
+        "every_declared_source_has_interface": true,
+        "current_gap": "None within project source/documentation scope; final recursive policy L1-L30/actual rules/mapping confirmed."
+      },
+      "effects_review": {
+        "reviewed_at": "2026-10-17T14:21:32.926194+00:00",
+        "files": [
+          "tests/check-site.py",
+          "tests/test_inquiry.py",
+          "tests/test-inquiry.mjs",
+          "inquiry.js"
+        ],
+        "result": "Safe explicit offline public-file fixtures. Python reads/parses current public files and configuration; imported test_inquiry is guarded and read-only; -B prevents pyc writes. Node reads inquiry.js, evaluates in VM where fetch/FormData/DOM are local stubs, uses no real network, clears timers. No generator/helper/service/Git operation called."
+      },
+      "correction_line_evidence": {
+        "ignore_reference": [
+          60
+        ],
+        "ignore_reference_citation": [
+          17
+        ],
+        "ignore_developer_citation": [
+          21
+        ],
+        "429_concept": [
+          46
+        ],
+        "429_reference": [
+          49
+        ]
+      },
+      "schema_and_integration_limits": {
+        "manifest_and_author_receipt_read": true,
+        "exact_shared_schema_read": true,
+        "schema_observations": "Exact schema files previously read in full, hashes unchanged on followup. Current manifest actual delta changes only role/claim strings, no schema structure; official current project snapshot exits0. Canonical author review still changes-required; check exits1 pending that decision. Shape/integrity is not semantic approval.",
+        "canonical_receipt": "Reviewer never writes canonical review.json. Author/parent may only faithfully normalize actual independent testimony for current exact accepted snapshot; do not substitute reviewer identity or runtime approval.",
+        "shared_validation": "Only parent-authorized project-scoped snapshot/check ran; no stage/index/hook/build/browser/hosted artifact/release. Parent owns whole submitted-index and integration acceptance."
+      },
+      "handoff": "Current exact project documentation snapshot accepted within independent source/claim/reader scope. Preserve prior unaided task evidence and N1 review. Canonical receipt remains author changes-required until faithful normalization; no automatic claim/runtime acceptance. Parent performs separate complete submitted-index/shared integration/public artifact/human gates. No app tests rerun or app/source repair.",
+      "schemas": {
+        "read_at": "2026-10-17T14:39:24.872283+00:00",
+        "exact_paths": {
+          "manifest.schema.json": "/home/zack/Projects/fleet-index/_system/documentation/site/schemas/manifest.schema.json",
+          "review.schema.json": "/home/zack/Projects/fleet-index/_system/documentation/site/schemas/review.schema.json"
+        },
+        "hashes": {
+          "manifest.schema.json": "5fbe3c987a6a8b2c6aa3d2ff4724cd7b5aba8861342598140c8993871a7fc30a",
+          "review.schema.json": "570d6042950937f3505df077f13e31a64ce8dd03977801dbd244fe895a6145d0"
+        },
+        "structural_inspection_errors": {
+          "manifest.schema.json": [],
+          "review.schema.json": []
+        },
+        "method": "Read all schema fields and compare manifest/author receipt with actual used JSON-schema keywords; native official bounded snapshot also exits0. This standalone receipt is not canonical review.schema.json content.",
+        "native_snapshot": {
+          "command": "/usr/bin/python3 -B _system/documentation/site/scripts/portal.py snapshot --project aegis-site",
+          "cwd": "/home/zack/Projects/fleet-index",
+          "exit": 0,
+          "stdout": "{\n  \"doc_hashes\": {\n    \"CONTEXT.md\": \"4ca5432c900abd58cd8734b90d782c0005091ebb9b51101f4683b2a5ffc0a7ae\",\n    \"architecture.md\": \"69a3b6c656ffa0afe2c66a7088258d3770c7634c03e62fa499c342650107c7d0\",\n    \"architecture/inquiry-lifecycle.md\": \"0fe778778436c8eac43de65956adf47f49ccb43c57aea78e53890277eb7a2edb\",\n    \"architecture/publication-dataflow.md\": \"8fff0a48ddcd50a870945e7680be9b146cdbb35caab602aa3e03626bbd27c6b4\",\n    \"collaboration.md\": \"6f40f17f0b808b3d1014dc9a059097eaa8013c09670c43762e1841bec2ce4ed1\",\n    \"development/source-map-and-requirements.md\": \"a49328b038133254f9ede396737ace5f0bca37b9bdec77834ef35b89a186ff87\",\n    \"development/test-strategy.md\": \"33c845ca2fafa5626b30f2a281870810e572d87bdbdea81fd980c755bd19a91f\",\n    \"guide.md\": \"a6ee0dc34e4e01d0cbf4125dc3c9ed2a1dcbd7299453e0ab094c0fd7354d0852\",\n    \"how-to/change-layout-or-branding.md\": \"51c41e98e05b6ffc2c2516dfa550273b8c3cfe0b32c39f3859d6abf8b1f4dd67\",\n    \"how-to/diagnose-inquiry.md\": \"0c08d8d42a1da2e72ebfcf55bb7c7c3083ce124cf52f206322cde4f0ebaccd22\",\n    \"how-to/review-publication-boundary.md\": \"e5ebb5a21f01c0e29448c3882bb5453972789e6aba3a5e4296d656ae6c4494e9\",\n    \"how-to/update-article.md\": \"d3d648595c121fd15ad85c85cf7785f24b7ef410a2766730137b158e836916e5\",\n    \"index.md\": \"453e4118a17075f682a363ae387ca33ce0e9ad1e47676a445c87bc75e5ccc17d\",\n    \"maintenance/change-impact-and-owner-links.md\": \"0c59e363415ce59664e629e0ad20426297940e28240336207262e356474cca65\",\n    \"reference/blog-metadata-and-body.md\": \"c96d6768da58593b14506343d2135dff46a566f263b6aa8d096c29587fc47a02\",\n    \"reference/commands.md\": \"83a8e410f3ca23bac0e383eec4a3c1ba49bad9e3a44fe949cefda2bd452fb062\",\n    \"reference/configuration-and-discovery.md\": \"4598f15a45da73fded48c05f4008d6e93a6f5f297dddec6d7aa44777768b5251\",\n    \"reference/inquiry-fields-and-provider.md\": \"5b9df276ebc73f85c77ef8c7530edf0cae959895a2688d2a9a56cbd7d8846f3c\",\n    \"sidebar.json\": \"983990a40f042bd4cd84e15f1fe7f1c3eeab83850799be9f3e9aac40dc7c4a6f\",\n    \"status.md\": \"7285a48672e4c4871263b82ccc488a73d72a4eb0d63432c4b5f52466a3292f7b\",\n    \"tutorials/offline-verification.md\": \"b6dd5b11dd28df56f13eb07ed1731480f1e7502f2909bed75cf0b9dab4cc5cf7\",\n    \"tutorials/trace-existing-article.md\": \"fb083fe0d776c0b114595bab585911032e0c5fc26769e5c30bdbecc377a894c4\"\n  },\n  \"manifest_hash\": \"0cea8a062f7cb389ad672f8cf796648f1caaed616e1c3dcb0ba5fdb02ae63de4\",\n  \"source_hashes\": {\n    \".githooks/docs-pre-commit\": \"842e2f7b7f9eeeb4bd901a1e9b2260040b2e6904ef507dc4551eec8774402256\",\n    \".gitignore\": \"a1b569082d7a9bddc522bc176f3203f50aa09ac75e5f408f657540febd28d872\",\n    \"AGENTS.md\": \"f29f9d078a35fd83a9633dc59e3930f1fb5e6973dfd3c77c08ec7b86178f1ab3\",\n    \"CLAUDE.md\": \"8fa7a2003c1cea597e3a854e9d008559b86e36a6f46f9a7001b9152c40f88808\",\n    \"CNAME\": \"2b6276e53c98cec29494ec2792a767cd531adc871b4d254b3736a783b9011409\",\n    \"CONTEXT.md\": \"e9ba1e6b846784faa423893c6a6effbeace01232af243e77f629498360bad873\",\n    \"LICENSE\": \"e727d6c7b808cbc723fd3a862a5e0b47a4fac7695a8be4e7369ff3becac29505\",\n    \"README.md\": \"738edadb3530255fd6f48889a83c8ee67f7c8eea6ddf634b9c3ebe9cfa50f3b1\",\n    \"_config.yml\": \"eb678eb4fa598a185c225525c877d3c4ed47500827aedc462b3dea550385dfef\",\n    \"build-blog.py\": \"bc2a70ff3072ccdcc75ca6f4456f9b2f67616c0444b755a08f24866732f6259e\",\n    \"content/blog/custom-3d-printed-parts-that-fit.html\": \"6d758038682df6c45c5c97c9e69365f84edb28a0d69de4f5568533cb01b25aeb\",\n    \"content/blog/custom-3d-printed-parts-that-fit.json\": \"03dc9a6f29d3b57b985eb4988a500003aa8f077b86c3ff401bf7e5c5078f4c1e\",\n    \"content/blog/local-camera-dashboard.html\": \"c680eb00afeb30d486719f9e47636cb5a4d2631e9a686ecd00d93b94a6397d7f\",\n    \"content/blog/local-camera-dashboard.json\": \"a05876a8b857874de8c3373a2dda98e0588aeadb97afd0d7b2bc51b2e5ff0842\",\n    \"content/blog/meshtastic-node-setup-ontario.html\": \"0de4d5684388b03808c314b62ddec868d583385bd85ead4b4ed15c1a3676f854\",\n    \"content/blog/meshtastic-node-setup-ontario.json\": \"89bcafe32e371b8c76fd02171494cc6a985148e6eab0b7111ab86cac1a9c0abc\",\n    \"content/blog/scope-custom-tech-project.html\": \"584115469e2b6064c83753581adfa8b4d4b235e2a1328b6b7742191860c054c9\",\n    \"content/blog/scope-custom-tech-project.json\": \"74dd99e9c8fdc5acaa76c01c3eb70ab3bf2f969f20ee713700aa5e426a29c29f\",\n    \"content/blog/solar-power-for-remote-sensors.html\": \"a9b9fe70d3108b4ff8afbbc8fe32703d8c6ebea2b98e9fbe29a5b41301e8ccb8\",\n    \"content/blog/solar-power-for-remote-sensors.json\": \"d328747109c329c4f2796c7c28ea870abb6950626d727a5a1c21db677135fa4b\",\n    \"docs/CONTEXT.md\": \"3e87de94936ddd759b16ee9a5e6432a796f6b096b33b295bca2ae78d8e501c29\",\n    \"index.html\": \"f98e7b37dd50373536e237ff5d4cf6f1c2f0c440e70e4102194b22b52b943d55\",\n    \"inquiry.js\": \"b578273170d55daf30c0fecdce218d02e8e0f4a428ff289a149793f8c3448509\",\n    \"robots.txt\": \"aa015819e747ce41d995df83b0ec12888ac3b24533efeef32516dd6807c04ac5\",\n    \"shield-mark.svg\": \"281e70322e8c1db39e9fe32c919327c55509876a4de64383c57c6f67eb7af892\",\n    \"styles.css\": \"e2fbbb95a6b7da7a079e5afa4eaf00122456ac73d77a11714a51f1c8a5a3095a\",\n    \"tests/activate-inquiry.py\": \"74bdeb496167bc7b38676b6389cf406b19277ec22f60eb72bf91f6e265529be2\",\n    \"tests/check-site.py\": \"f9319d1e8e91eb4ea0c152e85191c8dc0bd583ebc33c32c3e762591cf0220c55\",\n    \"tests/test-inquiry.mjs\": \"2097530a753a1f1de3e9fbd8c698e73035204ddacf220135a638f01bc50e7a53\",\n    \"tests/test_inquiry.py\": \"da108ecbc1dd32911cddef596d0e997c659e4d589f7d6d8e8fd3e43249c2d87c\",\n    \"thank-you.html\": \"66c03558efc8a137dc600fe4d1477193e9b1d017d8a033d435b79c7b588252a5\"\n  }\n}\n",
+          "effects": "Parent-authorized project-scoped source/shape/integrity read only; no approval or build"
+        },
+        "native_check": {
+          "command": "/usr/bin/python3 -B _system/documentation/site/scripts/portal.py check --project aegis-site --json",
+          "cwd": "/home/zack/Projects/fleet-index",
+          "exit": 1,
+          "stdout": "{\n  \"projects\": {\n    \"aegis-site\": {\n      \"reason\": \"review changes-required\",\n      \"state\": \"pending\"\n    }\n  },\n  \"schema\": 1\n}\n",
+          "effects": "Parent-authorized project-scoped read only; pending review changes-required is expected author state, not correctness rejection"
+        },
+        "current_followup_hashes": {
+          "manifest.schema.json": "5fbe3c987a6a8b2c6aa3d2ff4724cd7b5aba8861342598140c8993871a7fc30a",
+          "review.schema.json": "570d6042950937f3505df077f13e31a64ce8dd03977801dbd244fe895a6145d0"
+        },
+        "final_native_snapshot": {
+          "command": "/usr/bin/python3 -B _system/documentation/site/scripts/portal.py snapshot --project aegis-site",
+          "cwd": "/home/zack/Projects/fleet-index",
+          "exit": 0,
+          "stdout": "{\n  \"doc_hashes\": {\n    \"CONTEXT.md\": \"4ca5432c900abd58cd8734b90d782c0005091ebb9b51101f4683b2a5ffc0a7ae\",\n    \"architecture.md\": \"69a3b6c656ffa0afe2c66a7088258d3770c7634c03e62fa499c342650107c7d0\",\n    \"architecture/inquiry-lifecycle.md\": \"0fe778778436c8eac43de65956adf47f49ccb43c57aea78e53890277eb7a2edb\",\n    \"architecture/publication-dataflow.md\": \"8fff0a48ddcd50a870945e7680be9b146cdbb35caab602aa3e03626bbd27c6b4\",\n    \"collaboration.md\": \"6f40f17f0b808b3d1014dc9a059097eaa8013c09670c43762e1841bec2ce4ed1\",\n    \"development/source-map-and-requirements.md\": \"0a72043403caf1236af967973337ddd4001a8039173803f32e970c20454928c1\",\n    \"development/test-strategy.md\": \"33c845ca2fafa5626b30f2a281870810e572d87bdbdea81fd980c755bd19a91f\",\n    \"guide.md\": \"a6ee0dc34e4e01d0cbf4125dc3c9ed2a1dcbd7299453e0ab094c0fd7354d0852\",\n    \"how-to/change-layout-or-branding.md\": \"51c41e98e05b6ffc2c2516dfa550273b8c3cfe0b32c39f3859d6abf8b1f4dd67\",\n    \"how-to/diagnose-inquiry.md\": \"0c08d8d42a1da2e72ebfcf55bb7c7c3083ce124cf52f206322cde4f0ebaccd22\",\n    \"how-to/review-publication-boundary.md\": \"e5ebb5a21f01c0e29448c3882bb5453972789e6aba3a5e4296d656ae6c4494e9\",\n    \"how-to/update-article.md\": \"d3d648595c121fd15ad85c85cf7785f24b7ef410a2766730137b158e836916e5\",\n    \"index.md\": \"453e4118a17075f682a363ae387ca33ce0e9ad1e47676a445c87bc75e5ccc17d\",\n    \"maintenance/change-impact-and-owner-links.md\": \"0c59e363415ce59664e629e0ad20426297940e28240336207262e356474cca65\",\n    \"reference/blog-metadata-and-body.md\": \"c96d6768da58593b14506343d2135dff46a566f263b6aa8d096c29587fc47a02\",\n    \"reference/commands.md\": \"83a8e410f3ca23bac0e383eec4a3c1ba49bad9e3a44fe949cefda2bd452fb062\",\n    \"reference/configuration-and-discovery.md\": \"b00d8b6f0ddeb41dc2fab765951a4ac4779db5addcbf154ad438855e190bb366\",\n    \"reference/inquiry-fields-and-provider.md\": \"5b9df276ebc73f85c77ef8c7530edf0cae959895a2688d2a9a56cbd7d8846f3c\",\n    \"sidebar.json\": \"983990a40f042bd4cd84e15f1fe7f1c3eeab83850799be9f3e9aac40dc7c4a6f\",\n    \"status.md\": \"7285a48672e4c4871263b82ccc488a73d72a4eb0d63432c4b5f52466a3292f7b\",\n    \"tutorials/offline-verification.md\": \"b6dd5b11dd28df56f13eb07ed1731480f1e7502f2909bed75cf0b9dab4cc5cf7\",\n    \"tutorials/trace-existing-article.md\": \"fb083fe0d776c0b114595bab585911032e0c5fc26769e5c30bdbecc377a894c4\"\n  },\n  \"manifest_hash\": \"352268f8377068e19b3301d3136ea7e8cdd312653129e9b18e4a65439b7fd9bb\",\n  \"source_hashes\": {\n    \".githooks/docs-pre-commit\": \"842e2f7b7f9eeeb4bd901a1e9b2260040b2e6904ef507dc4551eec8774402256\",\n    \".gitignore\": \"a1b569082d7a9bddc522bc176f3203f50aa09ac75e5f408f657540febd28d872\",\n    \"AGENTS.md\": \"f29f9d078a35fd83a9633dc59e3930f1fb5e6973dfd3c77c08ec7b86178f1ab3\",\n    \"CLAUDE.md\": \"8fa7a2003c1cea597e3a854e9d008559b86e36a6f46f9a7001b9152c40f88808\",\n    \"CNAME\": \"2b6276e53c98cec29494ec2792a767cd531adc871b4d254b3736a783b9011409\",\n    \"CONTEXT.md\": \"e9ba1e6b846784faa423893c6a6effbeace01232af243e77f629498360bad873\",\n    \"LICENSE\": \"e727d6c7b808cbc723fd3a862a5e0b47a4fac7695a8be4e7369ff3becac29505\",\n    \"README.md\": \"738edadb3530255fd6f48889a83c8ee67f7c8eea6ddf634b9c3ebe9cfa50f3b1\",\n    \"_config.yml\": \"eb678eb4fa598a185c225525c877d3c4ed47500827aedc462b3dea550385dfef\",\n    \"build-blog.py\": \"bc2a70ff3072ccdcc75ca6f4456f9b2f67616c0444b755a08f24866732f6259e\",\n    \"content/blog/custom-3d-printed-parts-that-fit.html\": \"6d758038682df6c45c5c97c9e69365f84edb28a0d69de4f5568533cb01b25aeb\",\n    \"content/blog/custom-3d-printed-parts-that-fit.json\": \"03dc9a6f29d3b57b985eb4988a500003aa8f077b86c3ff401bf7e5c5078f4c1e\",\n    \"content/blog/local-camera-dashboard.html\": \"c680eb00afeb30d486719f9e47636cb5a4d2631e9a686ecd00d93b94a6397d7f\",\n    \"content/blog/local-camera-dashboard.json\": \"a05876a8b857874de8c3373a2dda98e0588aeadb97afd0d7b2bc51b2e5ff0842\",\n    \"content/blog/meshtastic-node-setup-ontario.html\": \"0de4d5684388b03808c314b62ddec868d583385bd85ead4b4ed15c1a3676f854\",\n    \"content/blog/meshtastic-node-setup-ontario.json\": \"89bcafe32e371b8c76fd02171494cc6a985148e6eab0b7111ab86cac1a9c0abc\",\n    \"content/blog/scope-custom-tech-project.html\": \"584115469e2b6064c83753581adfa8b4d4b235e2a1328b6b7742191860c054c9\",\n    \"content/blog/scope-custom-tech-project.json\": \"74dd99e9c8fdc5acaa76c01c3eb70ab3bf2f969f20ee713700aa5e426a29c29f\",\n    \"content/blog/solar-power-for-remote-sensors.html\": \"a9b9fe70d3108b4ff8afbbc8fe32703d8c6ebea2b98e9fbe29a5b41301e8ccb8\",\n    \"content/blog/solar-power-for-remote-sensors.json\": \"d328747109c329c4f2796c7c28ea870abb6950626d727a5a1c21db677135fa4b\",\n    \"docs/CONTEXT.md\": \"3e87de94936ddd759b16ee9a5e6432a796f6b096b33b295bca2ae78d8e501c29\",\n    \"index.html\": \"f98e7b37dd50373536e237ff5d4cf6f1c2f0c440e70e4102194b22b52b943d55\",\n    \"inquiry.js\": \"b578273170d55daf30c0fecdce218d02e8e0f4a428ff289a149793f8c3448509\",\n    \"robots.txt\": \"aa015819e747ce41d995df83b0ec12888ac3b24533efeef32516dd6807c04ac5\",\n    \"shield-mark.svg\": \"281e70322e8c1db39e9fe32c919327c55509876a4de64383c57c6f67eb7af892\",\n    \"styles.css\": \"e2fbbb95a6b7da7a079e5afa4eaf00122456ac73d77a11714a51f1c8a5a3095a\",\n    \"tests/activate-inquiry.py\": \"74bdeb496167bc7b38676b6389cf406b19277ec22f60eb72bf91f6e265529be2\",\n    \"tests/check-site.py\": \"f9319d1e8e91eb4ea0c152e85191c8dc0bd583ebc33c32c3e762591cf0220c55\",\n    \"tests/test-inquiry.mjs\": \"2097530a753a1f1de3e9fbd8c698e73035204ddacf220135a638f01bc50e7a53\",\n    \"tests/test_inquiry.py\": \"da108ecbc1dd32911cddef596d0e997c659e4d589f7d6d8e8fd3e43249c2d87c\",\n    \"thank-you.html\": \"66c03558efc8a137dc600fe4d1477193e9b1d017d8a033d435b79c7b588252a5\"\n  }\n}\n",
+          "duration_seconds": 0.5389482399914414,
+          "effects": "Parent-authorized exact project-scoped read-only shape/integrity/pending-state adapter; no build/approval/index/network/app action"
+        },
+        "final_native_check": {
+          "command": "/usr/bin/python3 -B _system/documentation/site/scripts/portal.py check --project aegis-site --json",
+          "cwd": "/home/zack/Projects/fleet-index",
+          "exit": 1,
+          "stdout": "{\n  \"projects\": {\n    \"aegis-site\": {\n      \"reason\": \"review changes-required\",\n      \"state\": \"pending\"\n    }\n  },\n  \"schema\": 1\n}\n",
+          "duration_seconds": 0.5627017270307988,
+          "effects": "Parent-authorized exact project-scoped read-only shape/integrity/pending-state adapter; no build/approval/index/network/app action"
+        }
+      },
+      "current_delta": {
+        "reviewed_at": "2026-10-17T14:44:20.298395+00:00",
+        "decision": "accepted for exact current recursive ignore-policy source/claim delta; prior semantic and unaided task review preserved",
+        "reviewer": "Aegis-site independent documentation reviewer; prime-agent child session 01a14a3c-1d91-74f9-9456-0b7b2650fc64; not the author",
+        "scope": "Only full current .gitignore, exact two reader-page diffs, manifest repository-policy mapping, current author review/evidence snapshots and exact authorized schemas/native bounded adapter. No full review restart or app test rerun.",
+        "actual_source": {
+          "path": ".gitignore",
+          "sha256": "a1b569082d7a9bddc522bc176f3203f50aa09ac75e5f408f657540febd28d872",
+          "lines": 30,
+          "read": "complete current rule text and actual diff, not author hash-only acknowledgment"
+        },
+        "actual_reader_deltas": {
+          "development/source-map-and-requirements.md": "0a72043403caf1236af967973337ddd4001a8039173803f32e970c20454928c1",
+          "reference/configuration-and-discovery.md": "b00d8b6f0ddeb41dc2fab765951a4ac4779db5addcbf154ad438855e190bb366"
+        },
+        "manifest_hash": "352268f8377068e19b3301d3136ea7e8cdd312653129e9b18e4a65439b7fd9bb",
+        "source_claim_observations": [
+          "Both changed source_ref ranges are now .gitignore#L1-L30 and exist in actual source.",
+          "Reference names every actual /docs/**/_generated/,.generated/,build/,node_modules/,.fixture/ recursive directory rule and all recursive handbook .env*,*.env,credentials*,*.log,*.db forms; .env* suffix interpretation matches source.",
+          "Exact manifest/review verification exceptions, unapproved assets deny, root /.docs-check/, ordinary authored Markdown/sidebar contribution path and ignored local supporting author-checks are preserved.",
+          "Reference states otherwise-untracked scope, no already-tracked index removal and no runtime/publication/privacy guarantee; no local Git/index effectiveness proof invented.",
+          "Source map role and manifest repository-policy claims agree with actual current rule purpose and two-page source mapping. No application-wide policy or app/test source changed.",
+          "Other30 declared sources are hash-identical to prior independently reviewed snapshot; every other reader/sidebar hash unchanged. N1 response-order correction and original docs-first reader trials are preserved without rerunning or attributing author help.",
+          "_config.yml and CNAME exact hashes unchanged; existing docs/.docs-check/.githooks public exclusions not relaxed. No host artifact or deployment claim."
+        ],
+        "checks": [
+          {
+            "command": "/usr/bin/python3 -B _system/documentation/site/scripts/portal.py snapshot --project aegis-site",
+            "cwd": "/home/zack/Projects/fleet-index",
+            "exit": 0,
+            "stdout": "{\n  \"doc_hashes\": {\n    \"CONTEXT.md\": \"4ca5432c900abd58cd8734b90d782c0005091ebb9b51101f4683b2a5ffc0a7ae\",\n    \"architecture.md\": \"69a3b6c656ffa0afe2c66a7088258d3770c7634c03e62fa499c342650107c7d0\",\n    \"architecture/inquiry-lifecycle.md\": \"0fe778778436c8eac43de65956adf47f49ccb43c57aea78e53890277eb7a2edb\",\n    \"architecture/publication-dataflow.md\": \"8fff0a48ddcd50a870945e7680be9b146cdbb35caab602aa3e03626bbd27c6b4\",\n    \"collaboration.md\": \"6f40f17f0b808b3d1014dc9a059097eaa8013c09670c43762e1841bec2ce4ed1\",\n    \"development/source-map-and-requirements.md\": \"0a72043403caf1236af967973337ddd4001a8039173803f32e970c20454928c1\",\n    \"development/test-strategy.md\": \"33c845ca2fafa5626b30f2a281870810e572d87bdbdea81fd980c755bd19a91f\",\n    \"guide.md\": \"a6ee0dc34e4e01d0cbf4125dc3c9ed2a1dcbd7299453e0ab094c0fd7354d0852\",\n    \"how-to/change-layout-or-branding.md\": \"51c41e98e05b6ffc2c2516dfa550273b8c3cfe0b32c39f3859d6abf8b1f4dd67\",\n    \"how-to/diagnose-inquiry.md\": \"0c08d8d42a1da2e72ebfcf55bb7c7c3083ce124cf52f206322cde4f0ebaccd22\",\n    \"how-to/review-publication-boundary.md\": \"e5ebb5a21f01c0e29448c3882bb5453972789e6aba3a5e4296d656ae6c4494e9\",\n    \"how-to/update-article.md\": \"d3d648595c121fd15ad85c85cf7785f24b7ef410a2766730137b158e836916e5\",\n    \"index.md\": \"453e4118a17075f682a363ae387ca33ce0e9ad1e47676a445c87bc75e5ccc17d\",\n    \"maintenance/change-impact-and-owner-links.md\": \"0c59e363415ce59664e629e0ad20426297940e28240336207262e356474cca65\",\n    \"reference/blog-metadata-and-body.md\": \"c96d6768da58593b14506343d2135dff46a566f263b6aa8d096c29587fc47a02\",\n    \"reference/commands.md\": \"83a8e410f3ca23bac0e383eec4a3c1ba49bad9e3a44fe949cefda2bd452fb062\",\n    \"reference/configuration-and-discovery.md\": \"b00d8b6f0ddeb41dc2fab765951a4ac4779db5addcbf154ad438855e190bb366\",\n    \"reference/inquiry-fields-and-provider.md\": \"5b9df276ebc73f85c77ef8c7530edf0cae959895a2688d2a9a56cbd7d8846f3c\",\n    \"sidebar.json\": \"983990a40f042bd4cd84e15f1fe7f1c3eeab83850799be9f3e9aac40dc7c4a6f\",\n    \"status.md\": \"7285a48672e4c4871263b82ccc488a73d72a4eb0d63432c4b5f52466a3292f7b\",\n    \"tutorials/offline-verification.md\": \"b6dd5b11dd28df56f13eb07ed1731480f1e7502f2909bed75cf0b9dab4cc5cf7\",\n    \"tutorials/trace-existing-article.md\": \"fb083fe0d776c0b114595bab585911032e0c5fc26769e5c30bdbecc377a894c4\"\n  },\n  \"manifest_hash\": \"352268f8377068e19b3301d3136ea7e8cdd312653129e9b18e4a65439b7fd9bb\",\n  \"source_hashes\": {\n    \".githooks/docs-pre-commit\": \"842e2f7b7f9eeeb4bd901a1e9b2260040b2e6904ef507dc4551eec8774402256\",\n    \".gitignore\": \"a1b569082d7a9bddc522bc176f3203f50aa09ac75e5f408f657540febd28d872\",\n    \"AGENTS.md\": \"f29f9d078a35fd83a9633dc59e3930f1fb5e6973dfd3c77c08ec7b86178f1ab3\",\n    \"CLAUDE.md\": \"8fa7a2003c1cea597e3a854e9d008559b86e36a6f46f9a7001b9152c40f88808\",\n    \"CNAME\": \"2b6276e53c98cec29494ec2792a767cd531adc871b4d254b3736a783b9011409\",\n    \"CONTEXT.md\": \"e9ba1e6b846784faa423893c6a6effbeace01232af243e77f629498360bad873\",\n    \"LICENSE\": \"e727d6c7b808cbc723fd3a862a5e0b47a4fac7695a8be4e7369ff3becac29505\",\n    \"README.md\": \"738edadb3530255fd6f48889a83c8ee67f7c8eea6ddf634b9c3ebe9cfa50f3b1\",\n    \"_config.yml\": \"eb678eb4fa598a185c225525c877d3c4ed47500827aedc462b3dea550385dfef\",\n    \"build-blog.py\": \"bc2a70ff3072ccdcc75ca6f4456f9b2f67616c0444b755a08f24866732f6259e\",\n    \"content/blog/custom-3d-printed-parts-that-fit.html\": \"6d758038682df6c45c5c97c9e69365f84edb28a0d69de4f5568533cb01b25aeb\",\n    \"content/blog/custom-3d-printed-parts-that-fit.json\": \"03dc9a6f29d3b57b985eb4988a500003aa8f077b86c3ff401bf7e5c5078f4c1e\",\n    \"content/blog/local-camera-dashboard.html\": \"c680eb00afeb30d486719f9e47636cb5a4d2631e9a686ecd00d93b94a6397d7f\",\n    \"content/blog/local-camera-dashboard.json\": \"a05876a8b857874de8c3373a2dda98e0588aeadb97afd0d7b2bc51b2e5ff0842\",\n    \"content/blog/meshtastic-node-setup-ontario.html\": \"0de4d5684388b03808c314b62ddec868d583385bd85ead4b4ed15c1a3676f854\",\n    \"content/blog/meshtastic-node-setup-ontario.json\": \"89bcafe32e371b8c76fd02171494cc6a985148e6eab0b7111ab86cac1a9c0abc\",\n    \"content/blog/scope-custom-tech-project.html\": \"584115469e2b6064c83753581adfa8b4d4b235e2a1328b6b7742191860c054c9\",\n    \"content/blog/scope-custom-tech-project.json\": \"74dd99e9c8fdc5acaa76c01c3eb70ab3bf2f969f20ee713700aa5e426a29c29f\",\n    \"content/blog/solar-power-for-remote-sensors.html\": \"a9b9fe70d3108b4ff8afbbc8fe32703d8c6ebea2b98e9fbe29a5b41301e8ccb8\",\n    \"content/blog/solar-power-for-remote-sensors.json\": \"d328747109c329c4f2796c7c28ea870abb6950626d727a5a1c21db677135fa4b\",\n    \"docs/CONTEXT.md\": \"3e87de94936ddd759b16ee9a5e6432a796f6b096b33b295bca2ae78d8e501c29\",\n    \"index.html\": \"f98e7b37dd50373536e237ff5d4cf6f1c2f0c440e70e4102194b22b52b943d55\",\n    \"inquiry.js\": \"b578273170d55daf30c0fecdce218d02e8e0f4a428ff289a149793f8c3448509\",\n    \"robots.txt\": \"aa015819e747ce41d995df83b0ec12888ac3b24533efeef32516dd6807c04ac5\",\n    \"shield-mark.svg\": \"281e70322e8c1db39e9fe32c919327c55509876a4de64383c57c6f67eb7af892\",\n    \"styles.css\": \"e2fbbb95a6b7da7a079e5afa4eaf00122456ac73d77a11714a51f1c8a5a3095a\",\n    \"tests/activate-inquiry.py\": \"74bdeb496167bc7b38676b6389cf406b19277ec22f60eb72bf91f6e265529be2\",\n    \"tests/check-site.py\": \"f9319d1e8e91eb4ea0c152e85191c8dc0bd583ebc33c32c3e762591cf0220c55\",\n    \"tests/test-inquiry.mjs\": \"2097530a753a1f1de3e9fbd8c698e73035204ddacf220135a638f01bc50e7a53\",\n    \"tests/test_inquiry.py\": \"da108ecbc1dd32911cddef596d0e997c659e4d589f7d6d8e8fd3e43249c2d87c\",\n    \"thank-you.html\": \"66c03558efc8a137dc600fe4d1477193e9b1d017d8a033d435b79c7b588252a5\"\n  }\n}\n",
+            "duration_seconds": 0.5389482399914414,
+            "effects": "Parent-authorized exact project-scoped read-only shape/integrity/pending-state adapter; no build/approval/index/network/app action"
+          },
+          {
+            "command": "/usr/bin/python3 -B _system/documentation/site/scripts/portal.py check --project aegis-site --json",
+            "cwd": "/home/zack/Projects/fleet-index",
+            "exit": 1,
+            "stdout": "{\n  \"projects\": {\n    \"aegis-site\": {\n      \"reason\": \"review changes-required\",\n      \"state\": \"pending\"\n    }\n  },\n  \"schema\": 1\n}\n",
+            "duration_seconds": 0.5627017270307988,
+            "effects": "Parent-authorized exact project-scoped read-only shape/integrity/pending-state adapter; no build/approval/index/network/app action"
+          }
+        ],
+        "native_snapshot_matches_independent_hashes": true,
+        "canonical_author_decision": "changes-required",
+        "canonical_receipt_reviewer_writes": false,
+        "control_effectiveness_boundary": "Task5E independent control acceptance remains parent provenance; this reviewer did not run Git/check-ignore/index probes or inspect other project sources. No arbitrary-secret exclusion promise.",
+        "assumptions_and_constants": "No constants changed by reviewer. Current documentation claims reviewed against actual rules; owner approval/runtime/publication and whole submitted-index gates separate."
+      },
+      "prior_accepted_snapshot": {
+        "source_hashes": {
+          ".githooks/docs-pre-commit": "842e2f7b7f9eeeb4bd901a1e9b2260040b2e6904ef507dc4551eec8774402256",
+          ".gitignore": "3d14f063385e2ec872e64923c0f50ab7df02d5011de66f44d8f3812a6b3d8477",
+          "AGENTS.md": "f29f9d078a35fd83a9633dc59e3930f1fb5e6973dfd3c77c08ec7b86178f1ab3",
+          "CLAUDE.md": "8fa7a2003c1cea597e3a854e9d008559b86e36a6f46f9a7001b9152c40f88808",
+          "CNAME": "2b6276e53c98cec29494ec2792a767cd531adc871b4d254b3736a783b9011409",
+          "CONTEXT.md": "e9ba1e6b846784faa423893c6a6effbeace01232af243e77f629498360bad873",
+          "LICENSE": "e727d6c7b808cbc723fd3a862a5e0b47a4fac7695a8be4e7369ff3becac29505",
+          "README.md": "738edadb3530255fd6f48889a83c8ee67f7c8eea6ddf634b9c3ebe9cfa50f3b1",
+          "_config.yml": "eb678eb4fa598a185c225525c877d3c4ed47500827aedc462b3dea550385dfef",
+          "build-blog.py": "bc2a70ff3072ccdcc75ca6f4456f9b2f67616c0444b755a08f24866732f6259e",
+          "content/blog/custom-3d-printed-parts-that-fit.html": "6d758038682df6c45c5c97c9e69365f84edb28a0d69de4f5568533cb01b25aeb",
+          "content/blog/custom-3d-printed-parts-that-fit.json": "03dc9a6f29d3b57b985eb4988a500003aa8f077b86c3ff401bf7e5c5078f4c1e",
+          "content/blog/local-camera-dashboard.html": "c680eb00afeb30d486719f9e47636cb5a4d2631e9a686ecd00d93b94a6397d7f",
+          "content/blog/local-camera-dashboard.json": "a05876a8b857874de8c3373a2dda98e0588aeadb97afd0d7b2bc51b2e5ff0842",
+          "content/blog/meshtastic-node-setup-ontario.html": "0de4d5684388b03808c314b62ddec868d583385bd85ead4b4ed15c1a3676f854",
+          "content/blog/meshtastic-node-setup-ontario.json": "89bcafe32e371b8c76fd02171494cc6a985148e6eab0b7111ab86cac1a9c0abc",
+          "content/blog/scope-custom-tech-project.html": "584115469e2b6064c83753581adfa8b4d4b235e2a1328b6b7742191860c054c9",
+          "content/blog/scope-custom-tech-project.json": "74dd99e9c8fdc5acaa76c01c3eb70ab3bf2f969f20ee713700aa5e426a29c29f",
+          "content/blog/solar-power-for-remote-sensors.html": "a9b9fe70d3108b4ff8afbbc8fe32703d8c6ebea2b98e9fbe29a5b41301e8ccb8",
+          "content/blog/solar-power-for-remote-sensors.json": "d328747109c329c4f2796c7c28ea870abb6950626d727a5a1c21db677135fa4b",
+          "docs/CONTEXT.md": "3e87de94936ddd759b16ee9a5e6432a796f6b096b33b295bca2ae78d8e501c29",
+          "index.html": "f98e7b37dd50373536e237ff5d4cf6f1c2f0c440e70e4102194b22b52b943d55",
+          "inquiry.js": "b578273170d55daf30c0fecdce218d02e8e0f4a428ff289a149793f8c3448509",
+          "robots.txt": "aa015819e747ce41d995df83b0ec12888ac3b24533efeef32516dd6807c04ac5",
+          "shield-mark.svg": "281e70322e8c1db39e9fe32c919327c55509876a4de64383c57c6f67eb7af892",
+          "styles.css": "e2fbbb95a6b7da7a079e5afa4eaf00122456ac73d77a11714a51f1c8a5a3095a",
+          "tests/activate-inquiry.py": "74bdeb496167bc7b38676b6389cf406b19277ec22f60eb72bf91f6e265529be2",
+          "tests/check-site.py": "f9319d1e8e91eb4ea0c152e85191c8dc0bd583ebc33c32c3e762591cf0220c55",
+          "tests/test-inquiry.mjs": "2097530a753a1f1de3e9fbd8c698e73035204ddacf220135a638f01bc50e7a53",
+          "tests/test_inquiry.py": "da108ecbc1dd32911cddef596d0e997c659e4d589f7d6d8e8fd3e43249c2d87c",
+          "thank-you.html": "66c03558efc8a137dc600fe4d1477193e9b1d017d8a033d435b79c7b588252a5"
+        },
+        "doc_hashes": {
+          "CONTEXT.md": "4ca5432c900abd58cd8734b90d782c0005091ebb9b51101f4683b2a5ffc0a7ae",
+          "architecture.md": "69a3b6c656ffa0afe2c66a7088258d3770c7634c03e62fa499c342650107c7d0",
+          "collaboration.md": "6f40f17f0b808b3d1014dc9a059097eaa8013c09670c43762e1841bec2ce4ed1",
+          "guide.md": "a6ee0dc34e4e01d0cbf4125dc3c9ed2a1dcbd7299453e0ab094c0fd7354d0852",
+          "index.md": "453e4118a17075f682a363ae387ca33ce0e9ad1e47676a445c87bc75e5ccc17d",
+          "status.md": "7285a48672e4c4871263b82ccc488a73d72a4eb0d63432c4b5f52466a3292f7b",
+          "architecture/inquiry-lifecycle.md": "0fe778778436c8eac43de65956adf47f49ccb43c57aea78e53890277eb7a2edb",
+          "architecture/publication-dataflow.md": "8fff0a48ddcd50a870945e7680be9b146cdbb35caab602aa3e03626bbd27c6b4",
+          "development/source-map-and-requirements.md": "a49328b038133254f9ede396737ace5f0bca37b9bdec77834ef35b89a186ff87",
+          "development/test-strategy.md": "33c845ca2fafa5626b30f2a281870810e572d87bdbdea81fd980c755bd19a91f",
+          "how-to/change-layout-or-branding.md": "51c41e98e05b6ffc2c2516dfa550273b8c3cfe0b32c39f3859d6abf8b1f4dd67",
+          "how-to/diagnose-inquiry.md": "0c08d8d42a1da2e72ebfcf55bb7c7c3083ce124cf52f206322cde4f0ebaccd22",
+          "how-to/review-publication-boundary.md": "e5ebb5a21f01c0e29448c3882bb5453972789e6aba3a5e4296d656ae6c4494e9",
+          "how-to/update-article.md": "d3d648595c121fd15ad85c85cf7785f24b7ef410a2766730137b158e836916e5",
+          "maintenance/change-impact-and-owner-links.md": "0c59e363415ce59664e629e0ad20426297940e28240336207262e356474cca65",
+          "reference/blog-metadata-and-body.md": "c96d6768da58593b14506343d2135dff46a566f263b6aa8d096c29587fc47a02",
+          "reference/commands.md": "83a8e410f3ca23bac0e383eec4a3c1ba49bad9e3a44fe949cefda2bd452fb062",
+          "reference/configuration-and-discovery.md": "4598f15a45da73fded48c05f4008d6e93a6f5f297dddec6d7aa44777768b5251",
+          "reference/inquiry-fields-and-provider.md": "5b9df276ebc73f85c77ef8c7530edf0cae959895a2688d2a9a56cbd7d8846f3c",
+          "tutorials/offline-verification.md": "b6dd5b11dd28df56f13eb07ed1731480f1e7502f2909bed75cf0b9dab4cc5cf7",
+          "tutorials/trace-existing-article.md": "fb083fe0d776c0b114595bab585911032e0c5fc26769e5c30bdbecc377a894c4",
+          "sidebar.json": "983990a40f042bd4cd84e15f1fe7f1c3eeab83850799be9f3e9aac40dc7c4a6f"
+        },
+        "manifest_hash": "0cea8a062f7cb389ad672f8cf796648f1caaed616e1c3dcb0ba5fdb02ae63de4",
+        "canonical_review_file_hash": "f7768b855be55897d6a0cabcaf910238a0bb83994f6b393b98a770050817945c",
+        "author_checks_hash": "d52d95e5e7d6bf8ed5a886bc39867602459d48a950796c4e8fc8e9a23e7ec250",
+        "commit": "not independently queried; author/audit report 268fa4cbaad83897f76a39d55e767f865bdf000e, no Git access authorized",
+        "initial_author_snapshot_match": {
+          "source_hashes_match_author": true,
+          "doc_hashes_match_author": true,
+          "manifest_hash_matches_author": true,
+          "source_paths": 31,
+          "reader_markdown_pages": 21,
+          "interfaces": 40
+        },
+        "initial_source_hashes": {
+          ".githooks/docs-pre-commit": "842e2f7b7f9eeeb4bd901a1e9b2260040b2e6904ef507dc4551eec8774402256",
+          ".gitignore": "9b740d75764e443417f223675079ba6157206a5aeb7d7ca275655e2aceb0881c",
+          "AGENTS.md": "f29f9d078a35fd83a9633dc59e3930f1fb5e6973dfd3c77c08ec7b86178f1ab3",
+          "CLAUDE.md": "8fa7a2003c1cea597e3a854e9d008559b86e36a6f46f9a7001b9152c40f88808",
+          "CNAME": "2b6276e53c98cec29494ec2792a767cd531adc871b4d254b3736a783b9011409",
+          "CONTEXT.md": "e9ba1e6b846784faa423893c6a6effbeace01232af243e77f629498360bad873",
+          "LICENSE": "e727d6c7b808cbc723fd3a862a5e0b47a4fac7695a8be4e7369ff3becac29505",
+          "README.md": "738edadb3530255fd6f48889a83c8ee67f7c8eea6ddf634b9c3ebe9cfa50f3b1",
+          "_config.yml": "eb678eb4fa598a185c225525c877d3c4ed47500827aedc462b3dea550385dfef",
+          "build-blog.py": "bc2a70ff3072ccdcc75ca6f4456f9b2f67616c0444b755a08f24866732f6259e",
+          "content/blog/custom-3d-printed-parts-that-fit.html": "6d758038682df6c45c5c97c9e69365f84edb28a0d69de4f5568533cb01b25aeb",
+          "content/blog/custom-3d-printed-parts-that-fit.json": "03dc9a6f29d3b57b985eb4988a500003aa8f077b86c3ff401bf7e5c5078f4c1e",
+          "content/blog/local-camera-dashboard.html": "c680eb00afeb30d486719f9e47636cb5a4d2631e9a686ecd00d93b94a6397d7f",
+          "content/blog/local-camera-dashboard.json": "a05876a8b857874de8c3373a2dda98e0588aeadb97afd0d7b2bc51b2e5ff0842",
+          "content/blog/meshtastic-node-setup-ontario.html": "0de4d5684388b03808c314b62ddec868d583385bd85ead4b4ed15c1a3676f854",
+          "content/blog/meshtastic-node-setup-ontario.json": "89bcafe32e371b8c76fd02171494cc6a985148e6eab0b7111ab86cac1a9c0abc",
+          "content/blog/scope-custom-tech-project.html": "584115469e2b6064c83753581adfa8b4d4b235e2a1328b6b7742191860c054c9",
+          "content/blog/scope-custom-tech-project.json": "74dd99e9c8fdc5acaa76c01c3eb70ab3bf2f969f20ee713700aa5e426a29c29f",
+          "content/blog/solar-power-for-remote-sensors.html": "a9b9fe70d3108b4ff8afbbc8fe32703d8c6ebea2b98e9fbe29a5b41301e8ccb8",
+          "content/blog/solar-power-for-remote-sensors.json": "d328747109c329c4f2796c7c28ea870abb6950626d727a5a1c21db677135fa4b",
+          "docs/CONTEXT.md": "3e87de94936ddd759b16ee9a5e6432a796f6b096b33b295bca2ae78d8e501c29",
+          "index.html": "f98e7b37dd50373536e237ff5d4cf6f1c2f0c440e70e4102194b22b52b943d55",
+          "inquiry.js": "b578273170d55daf30c0fecdce218d02e8e0f4a428ff289a149793f8c3448509",
+          "robots.txt": "aa015819e747ce41d995df83b0ec12888ac3b24533efeef32516dd6807c04ac5",
+          "shield-mark.svg": "281e70322e8c1db39e9fe32c919327c55509876a4de64383c57c6f67eb7af892",
+          "styles.css": "e2fbbb95a6b7da7a079e5afa4eaf00122456ac73d77a11714a51f1c8a5a3095a",
+          "tests/activate-inquiry.py": "74bdeb496167bc7b38676b6389cf406b19277ec22f60eb72bf91f6e265529be2",
+          "tests/check-site.py": "f9319d1e8e91eb4ea0c152e85191c8dc0bd583ebc33c32c3e762591cf0220c55",
+          "tests/test-inquiry.mjs": "2097530a753a1f1de3e9fbd8c698e73035204ddacf220135a638f01bc50e7a53",
+          "tests/test_inquiry.py": "da108ecbc1dd32911cddef596d0e997c659e4d589f7d6d8e8fd3e43249c2d87c",
+          "thank-you.html": "66c03558efc8a137dc600fe4d1477193e9b1d017d8a033d435b79c7b588252a5"
+        },
+        "current_difference_from_author": {},
+        "stable_since_post_check_snapshot": true,
+        "all_project_non_git_hashes": {
+          ".gitignore": "3d14f063385e2ec872e64923c0f50ab7df02d5011de66f44d8f3812a6b3d8477",
+          "8e324adee52718aeea89f03ff6357daf.txt": "cee1f30b3a9c00f55dfd79dff3c22c05224f1242a8bf629f3730129cf89fd0d7",
+          "AGENTS.md": "f29f9d078a35fd83a9633dc59e3930f1fb5e6973dfd3c77c08ec7b86178f1ab3",
+          "CLAUDE.md": "8fa7a2003c1cea597e3a854e9d008559b86e36a6f46f9a7001b9152c40f88808",
+          "CNAME": "2b6276e53c98cec29494ec2792a767cd531adc871b4d254b3736a783b9011409",
+          "CONTEXT.md": "e9ba1e6b846784faa423893c6a6effbeace01232af243e77f629498360bad873",
+          "LICENSE": "e727d6c7b808cbc723fd3a862a5e0b47a4fac7695a8be4e7369ff3becac29505",
+          "README.md": "738edadb3530255fd6f48889a83c8ee67f7c8eea6ddf634b9c3ebe9cfa50f3b1",
+          "_config.yml": "eb678eb4fa598a185c225525c877d3c4ed47500827aedc462b3dea550385dfef",
+          "build-blog.py": "bc2a70ff3072ccdcc75ca6f4456f9b2f67616c0444b755a08f24866732f6259e",
+          "googledf779ae90efe8e8f.html": "959e001b9c1d57182861daf9044fdfad111d396a7cd2fb7f76da117d0551f4f2",
+          "index.html": "f98e7b37dd50373536e237ff5d4cf6f1c2f0c440e70e4102194b22b52b943d55",
+          "inquiry.js": "b578273170d55daf30c0fecdce218d02e8e0f4a428ff289a149793f8c3448509",
+          "logo-mark.png": "f54a12d00550a6b8f25d16876d16fb89533f04f0e48a427eda564798b585b098",
+          "logo.png": "cce771ce1c1bc1eaab9c6bf74d04ce69346a66f63dccbf9220b1a522692ee675",
+          "robots.txt": "aa015819e747ce41d995df83b0ec12888ac3b24533efeef32516dd6807c04ac5",
+          "shield-mark.svg": "281e70322e8c1db39e9fe32c919327c55509876a4de64383c57c6f67eb7af892",
+          "sitemap.xml": "fe4654bbec15b8a657de8801cb4121491f9ebca9dd8142f885cec5ef52c0c547",
+          "styles.css": "e2fbbb95a6b7da7a079e5afa4eaf00122456ac73d77a11714a51f1c8a5a3095a",
+          "thank-you.html": "66c03558efc8a137dc600fe4d1477193e9b1d017d8a033d435b79c7b588252a5",
+          ".githooks/docs-pre-commit": "842e2f7b7f9eeeb4bd901a1e9b2260040b2e6904ef507dc4551eec8774402256",
+          "blog/feed.xml": "4578d712d00195e654d2e8e1d93ec27835141a56a766241a7541189f61f132c6",
+          "blog/index.html": "d09ba4cdd63a172de8f8c6df70c0993692d576bf83d60dcbe794e03f387a1aeb",
+          "blog/custom-3d-printed-parts-that-fit/index.html": "5f048ca5e2a205496c755af1222598dca503844da97ab80b20d234c1d9139494",
+          "blog/local-camera-dashboard/index.html": "d3074db7ed81438b73f6b2214e73173a6b6eebf3cd4d99142e47f0a10d64215e",
+          "blog/meshtastic-node-setup-ontario/index.html": "410328da9c2879315e59f27cc5d1725a6fd3fe689a70aa285e167245bf10e634",
+          "blog/scope-custom-tech-project/index.html": "4d66ad3e912bbcd88a04e6be3327fc6d6bdc1e7776b095431538f4986589f5a3",
+          "blog/solar-power-for-remote-sensors/index.html": "6081ab812f22d1549f27471a0f3d6031f090bb02eebf0c83222d911e575f97a1",
+          "content/blog/custom-3d-printed-parts-that-fit.html": "6d758038682df6c45c5c97c9e69365f84edb28a0d69de4f5568533cb01b25aeb",
+          "content/blog/custom-3d-printed-parts-that-fit.json": "03dc9a6f29d3b57b985eb4988a500003aa8f077b86c3ff401bf7e5c5078f4c1e",
+          "content/blog/local-camera-dashboard.html": "c680eb00afeb30d486719f9e47636cb5a4d2631e9a686ecd00d93b94a6397d7f",
+          "content/blog/local-camera-dashboard.json": "a05876a8b857874de8c3373a2dda98e0588aeadb97afd0d7b2bc51b2e5ff0842",
+          "content/blog/meshtastic-node-setup-ontario.html": "0de4d5684388b03808c314b62ddec868d583385bd85ead4b4ed15c1a3676f854",
+          "content/blog/meshtastic-node-setup-ontario.json": "89bcafe32e371b8c76fd02171494cc6a985148e6eab0b7111ab86cac1a9c0abc",
+          "content/blog/scope-custom-tech-project.html": "584115469e2b6064c83753581adfa8b4d4b235e2a1328b6b7742191860c054c9",
+          "content/blog/scope-custom-tech-project.json": "74dd99e9c8fdc5acaa76c01c3eb70ab3bf2f969f20ee713700aa5e426a29c29f",
+          "content/blog/solar-power-for-remote-sensors.html": "a9b9fe70d3108b4ff8afbbc8fe32703d8c6ebea2b98e9fbe29a5b41301e8ccb8",
+          "content/blog/solar-power-for-remote-sensors.json": "d328747109c329c4f2796c7c28ea870abb6950626d727a5a1c21db677135fa4b",
+          "docs/CONTEXT.md": "3e87de94936ddd759b16ee9a5e6432a796f6b096b33b295bca2ae78d8e501c29",
+          "docs/handbook/CONTEXT.md": "4ca5432c900abd58cd8734b90d782c0005091ebb9b51101f4683b2a5ffc0a7ae",
+          "docs/handbook/architecture.md": "69a3b6c656ffa0afe2c66a7088258d3770c7634c03e62fa499c342650107c7d0",
+          "docs/handbook/collaboration.md": "6f40f17f0b808b3d1014dc9a059097eaa8013c09670c43762e1841bec2ce4ed1",
+          "docs/handbook/guide.md": "a6ee0dc34e4e01d0cbf4125dc3c9ed2a1dcbd7299453e0ab094c0fd7354d0852",
+          "docs/handbook/index.md": "453e4118a17075f682a363ae387ca33ce0e9ad1e47676a445c87bc75e5ccc17d",
+          "docs/handbook/sidebar.json": "983990a40f042bd4cd84e15f1fe7f1c3eeab83850799be9f3e9aac40dc7c4a6f",
+          "docs/handbook/status.md": "7285a48672e4c4871263b82ccc488a73d72a4eb0d63432c4b5f52466a3292f7b",
+          "docs/handbook/_generated/Status.pdf": "18d88421c60afeea81620739a38ab01390f986e13296827bf1df621e14dd4a02",
+          "docs/handbook/_generated/index.html": "c43002f23cfed1d90b86968bcfbf206bbe4d3497521feaa605b05ede456f50d8",
+          "docs/handbook/_generated/receipt.json": "1ed8eb0ef1342a203fb1d378703e9716300e9d7997483d19a30452e0f7c15402",
+          "docs/handbook/architecture/inquiry-lifecycle.md": "0fe778778436c8eac43de65956adf47f49ccb43c57aea78e53890277eb7a2edb",
+          "docs/handbook/architecture/publication-dataflow.md": "8fff0a48ddcd50a870945e7680be9b146cdbb35caab602aa3e03626bbd27c6b4",
+          "docs/handbook/development/source-map-and-requirements.md": "a49328b038133254f9ede396737ace5f0bca37b9bdec77834ef35b89a186ff87",
+          "docs/handbook/development/test-strategy.md": "33c845ca2fafa5626b30f2a281870810e572d87bdbdea81fd980c755bd19a91f",
+          "docs/handbook/how-to/change-layout-or-branding.md": "51c41e98e05b6ffc2c2516dfa550273b8c3cfe0b32c39f3859d6abf8b1f4dd67",
+          "docs/handbook/how-to/diagnose-inquiry.md": "0c08d8d42a1da2e72ebfcf55bb7c7c3083ce124cf52f206322cde4f0ebaccd22",
+          "docs/handbook/how-to/review-publication-boundary.md": "e5ebb5a21f01c0e29448c3882bb5453972789e6aba3a5e4296d656ae6c4494e9",
+          "docs/handbook/how-to/update-article.md": "d3d648595c121fd15ad85c85cf7785f24b7ef410a2766730137b158e836916e5",
+          "docs/handbook/maintenance/change-impact-and-owner-links.md": "0c59e363415ce59664e629e0ad20426297940e28240336207262e356474cca65",
+          "docs/handbook/reference/blog-metadata-and-body.md": "c96d6768da58593b14506343d2135dff46a566f263b6aa8d096c29587fc47a02",
+          "docs/handbook/reference/commands.md": "83a8e410f3ca23bac0e383eec4a3c1ba49bad9e3a44fe949cefda2bd452fb062",
+          "docs/handbook/reference/configuration-and-discovery.md": "4598f15a45da73fded48c05f4008d6e93a6f5f297dddec6d7aa44777768b5251",
+          "docs/handbook/reference/inquiry-fields-and-provider.md": "5b9df276ebc73f85c77ef8c7530edf0cae959895a2688d2a9a56cbd7d8846f3c",
+          "docs/handbook/tutorials/offline-verification.md": "b6dd5b11dd28df56f13eb07ed1731480f1e7502f2909bed75cf0b9dab4cc5cf7",
+          "docs/handbook/tutorials/trace-existing-article.md": "fb083fe0d776c0b114595bab585911032e0c5fc26769e5c30bdbecc377a894c4",
+          "docs/verification/author-checks.json": "d52d95e5e7d6bf8ed5a886bc39867602459d48a950796c4e8fc8e9a23e7ec250",
+          "docs/verification/manifest.json": "0cea8a062f7cb389ad672f8cf796648f1caaed616e1c3dcb0ba5fdb02ae63de4",
+          "docs/verification/review.json": "f7768b855be55897d6a0cabcaf910238a0bb83994f6b393b98a770050817945c",
+          "tests/activate-inquiry.py": "74bdeb496167bc7b38676b6389cf406b19277ec22f60eb72bf91f6e265529be2",
+          "tests/check-site.py": "f9319d1e8e91eb4ea0c152e85191c8dc0bd583ebc33c32c3e762591cf0220c55",
+          "tests/test-inquiry.mjs": "2097530a753a1f1de3e9fbd8c698e73035204ddacf220135a638f01bc50e7a53",
+          "tests/test_inquiry.py": "da108ecbc1dd32911cddef596d0e997c659e4d589f7d6d8e8fd3e43249c2d87c"
+        },
+        "excluded_legacy_product_hashes": {
+          "docs/handbook/_generated/Status.pdf": "18d88421c60afeea81620739a38ab01390f986e13296827bf1df621e14dd4a02",
+          "docs/handbook/_generated/index.html": "c43002f23cfed1d90b86968bcfbf206bbe4d3497521feaa605b05ede456f50d8",
+          "docs/handbook/_generated/receipt.json": "1ed8eb0ef1342a203fb1d378703e9716300e9d7997483d19a30452e0f7c15402"
+        },
+        "legacy_products_accepted": false,
+        "concurrent_delta_history": {
+          "initial_source_drift": {
+            ".gitignore": {
+              "old": "9b740d75764e443417f223675079ba6157206a5aeb7d7ca275655e2aceb0881c",
+              "current": "3d14f063385e2ec872e64923c0f50ab7df02d5011de66f44d8f3812a6b3d8477"
+            }
+          },
+          "documentation_and_manifest_correction": {
+            "reviewed_at": "2026-10-17T14:31:07.198161+00:00",
+            "actual_delta_paths": [
+              "docs/handbook/development/source-map-and-requirements.md",
+              "docs/handbook/reference/configuration-and-discovery.md",
+              "docs/verification/author-checks.json",
+              "docs/verification/manifest.json",
+              "docs/verification/review.json"
+            ],
+            "source": "current .gitignore:1-33 complete reread",
+            "source_hash": "3d14f063385e2ec872e64923c0f50ab7df02d5011de66f44d8f3812a6b3d8477",
+            "observed_resolution": "Both source citations now L1-L33. Configuration reference lists bounded documentation ignore groups, exact manifest/review exceptions, otherwise-untracked semantics, local ignored author-checks, existing tracked-file caveat and no publication/privacy guarantee. Source map names bounded rules/exceptions. Manifest repository-policy interface expanded to exact claims. All changes match current source; renewed safe checks3/3 pass.",
+            "author_assistance": "none for reader trials; concurrent author correction independently inspected, not accepted on author report or hash alone",
+            "source_or_canonical_writes_by_reviewer": false
+          },
+          "response_order_correction": {
+            "reviewed_at": "2026-10-17T14:32:13.314273+00:00",
+            "source": "inquiry.js:56-71 and existing test-inquiry.mjs:73-90",
+            "paths": [
+              "docs/handbook/architecture/inquiry-lifecycle.md",
+              "docs/handbook/how-to/diagnose-inquiry.md",
+              "docs/handbook/reference/inquiry-fields-and-provider.md",
+              "docs/verification/manifest.json"
+            ],
+            "observed_resolution": "All three pages now explicitly require response JSON to parse before429/generic HTTP state dispatch; non-JSON429 takes ambiguous-delivery catch. Manifest claim reflects order. This matches code inspection; no dedicated non-JSON429 fixture was added/run and no live request occurred.",
+            "result": "resolved by independent exact delta/source comparison"
+          }
+        },
+        "current_author_freeze_match": {
+          "source": true,
+          "docs": true,
+          "manifest": true
+        }
+      },
+      "current_observed_bounded_snapshot": {
+        "doc_hashes": {
+          "CONTEXT.md": "4ca5432c900abd58cd8734b90d782c0005091ebb9b51101f4683b2a5ffc0a7ae",
+          "architecture.md": "69a3b6c656ffa0afe2c66a7088258d3770c7634c03e62fa499c342650107c7d0",
+          "architecture/inquiry-lifecycle.md": "0fe778778436c8eac43de65956adf47f49ccb43c57aea78e53890277eb7a2edb",
+          "architecture/publication-dataflow.md": "8fff0a48ddcd50a870945e7680be9b146cdbb35caab602aa3e03626bbd27c6b4",
+          "collaboration.md": "6f40f17f0b808b3d1014dc9a059097eaa8013c09670c43762e1841bec2ce4ed1",
+          "development/source-map-and-requirements.md": "0a72043403caf1236af967973337ddd4001a8039173803f32e970c20454928c1",
+          "development/test-strategy.md": "33c845ca2fafa5626b30f2a281870810e572d87bdbdea81fd980c755bd19a91f",
+          "guide.md": "a6ee0dc34e4e01d0cbf4125dc3c9ed2a1dcbd7299453e0ab094c0fd7354d0852",
+          "how-to/change-layout-or-branding.md": "51c41e98e05b6ffc2c2516dfa550273b8c3cfe0b32c39f3859d6abf8b1f4dd67",
+          "how-to/diagnose-inquiry.md": "0c08d8d42a1da2e72ebfcf55bb7c7c3083ce124cf52f206322cde4f0ebaccd22",
+          "how-to/review-publication-boundary.md": "e5ebb5a21f01c0e29448c3882bb5453972789e6aba3a5e4296d656ae6c4494e9",
+          "how-to/update-article.md": "d3d648595c121fd15ad85c85cf7785f24b7ef410a2766730137b158e836916e5",
+          "index.md": "453e4118a17075f682a363ae387ca33ce0e9ad1e47676a445c87bc75e5ccc17d",
+          "maintenance/change-impact-and-owner-links.md": "0c59e363415ce59664e629e0ad20426297940e28240336207262e356474cca65",
+          "reference/blog-metadata-and-body.md": "c96d6768da58593b14506343d2135dff46a566f263b6aa8d096c29587fc47a02",
+          "reference/commands.md": "83a8e410f3ca23bac0e383eec4a3c1ba49bad9e3a44fe949cefda2bd452fb062",
+          "reference/configuration-and-discovery.md": "b00d8b6f0ddeb41dc2fab765951a4ac4779db5addcbf154ad438855e190bb366",
+          "reference/inquiry-fields-and-provider.md": "5b9df276ebc73f85c77ef8c7530edf0cae959895a2688d2a9a56cbd7d8846f3c",
+          "sidebar.json": "983990a40f042bd4cd84e15f1fe7f1c3eeab83850799be9f3e9aac40dc7c4a6f",
+          "status.md": "7285a48672e4c4871263b82ccc488a73d72a4eb0d63432c4b5f52466a3292f7b",
+          "tutorials/offline-verification.md": "b6dd5b11dd28df56f13eb07ed1731480f1e7502f2909bed75cf0b9dab4cc5cf7",
+          "tutorials/trace-existing-article.md": "fb083fe0d776c0b114595bab585911032e0c5fc26769e5c30bdbecc377a894c4"
+        },
+        "manifest_hash": "352268f8377068e19b3301d3136ea7e8cdd312653129e9b18e4a65439b7fd9bb",
+        "source_hashes": {
+          ".githooks/docs-pre-commit": "842e2f7b7f9eeeb4bd901a1e9b2260040b2e6904ef507dc4551eec8774402256",
+          ".gitignore": "a1b569082d7a9bddc522bc176f3203f50aa09ac75e5f408f657540febd28d872",
+          "AGENTS.md": "f29f9d078a35fd83a9633dc59e3930f1fb5e6973dfd3c77c08ec7b86178f1ab3",
+          "CLAUDE.md": "8fa7a2003c1cea597e3a854e9d008559b86e36a6f46f9a7001b9152c40f88808",
+          "CNAME": "2b6276e53c98cec29494ec2792a767cd531adc871b4d254b3736a783b9011409",
+          "CONTEXT.md": "e9ba1e6b846784faa423893c6a6effbeace01232af243e77f629498360bad873",
+          "LICENSE": "e727d6c7b808cbc723fd3a862a5e0b47a4fac7695a8be4e7369ff3becac29505",
+          "README.md": "738edadb3530255fd6f48889a83c8ee67f7c8eea6ddf634b9c3ebe9cfa50f3b1",
+          "_config.yml": "eb678eb4fa598a185c225525c877d3c4ed47500827aedc462b3dea550385dfef",
+          "build-blog.py": "bc2a70ff3072ccdcc75ca6f4456f9b2f67616c0444b755a08f24866732f6259e",
+          "content/blog/custom-3d-printed-parts-that-fit.html": "6d758038682df6c45c5c97c9e69365f84edb28a0d69de4f5568533cb01b25aeb",
+          "content/blog/custom-3d-printed-parts-that-fit.json": "03dc9a6f29d3b57b985eb4988a500003aa8f077b86c3ff401bf7e5c5078f4c1e",
+          "content/blog/local-camera-dashboard.html": "c680eb00afeb30d486719f9e47636cb5a4d2631e9a686ecd00d93b94a6397d7f",
+          "content/blog/local-camera-dashboard.json": "a05876a8b857874de8c3373a2dda98e0588aeadb97afd0d7b2bc51b2e5ff0842",
+          "content/blog/meshtastic-node-setup-ontario.html": "0de4d5684388b03808c314b62ddec868d583385bd85ead4b4ed15c1a3676f854",
+          "content/blog/meshtastic-node-setup-ontario.json": "89bcafe32e371b8c76fd02171494cc6a985148e6eab0b7111ab86cac1a9c0abc",
+          "content/blog/scope-custom-tech-project.html": "584115469e2b6064c83753581adfa8b4d4b235e2a1328b6b7742191860c054c9",
+          "content/blog/scope-custom-tech-project.json": "74dd99e9c8fdc5acaa76c01c3eb70ab3bf2f969f20ee713700aa5e426a29c29f",
+          "content/blog/solar-power-for-remote-sensors.html": "a9b9fe70d3108b4ff8afbbc8fe32703d8c6ebea2b98e9fbe29a5b41301e8ccb8",
+          "content/blog/solar-power-for-remote-sensors.json": "d328747109c329c4f2796c7c28ea870abb6950626d727a5a1c21db677135fa4b",
+          "docs/CONTEXT.md": "3e87de94936ddd759b16ee9a5e6432a796f6b096b33b295bca2ae78d8e501c29",
+          "index.html": "f98e7b37dd50373536e237ff5d4cf6f1c2f0c440e70e4102194b22b52b943d55",
+          "inquiry.js": "b578273170d55daf30c0fecdce218d02e8e0f4a428ff289a149793f8c3448509",
+          "robots.txt": "aa015819e747ce41d995df83b0ec12888ac3b24533efeef32516dd6807c04ac5",
+          "shield-mark.svg": "281e70322e8c1db39e9fe32c919327c55509876a4de64383c57c6f67eb7af892",
+          "styles.css": "e2fbbb95a6b7da7a079e5afa4eaf00122456ac73d77a11714a51f1c8a5a3095a",
+          "tests/activate-inquiry.py": "74bdeb496167bc7b38676b6389cf406b19277ec22f60eb72bf91f6e265529be2",
+          "tests/check-site.py": "f9319d1e8e91eb4ea0c152e85191c8dc0bd583ebc33c32c3e762591cf0220c55",
+          "tests/test-inquiry.mjs": "2097530a753a1f1de3e9fbd8c698e73035204ddacf220135a638f01bc50e7a53",
+          "tests/test_inquiry.py": "da108ecbc1dd32911cddef596d0e997c659e4d589f7d6d8e8fd3e43249c2d87c",
+          "thank-you.html": "66c03558efc8a137dc600fe4d1477193e9b1d017d8a033d435b79c7b588252a5"
+        }
+      },
+      "report_path": "/tmp/hermes-docs-redo-2026-10-16/aegis-site-independent-review.json",
+      "report_sha256": "00224d648bdce51d07180d63d1312b471f8c3465b5b84ffc71fb344c262934d9"
+    }
+  },
+  "task_trials": [
+    {
+      "reader": "Aegis-site independent documentation reviewer; prime-agent child session 01a14a3c-1d91-74f9-9456-0b7b2650fc64; not the author",
+      "task": "first-local-check",
+      "role": "first-use",
+      "starting_state": "Read-only reviewer, no runtime/build/network/Git/dependency operations authorized; existing commands not yet effects-audited.",
+      "route": [
+        "docs/handbook/index.md: Choose a task -> Offline verification tutorial",
+        "docs/handbook/sidebar.json: Start and work safely -> tutorials/offline-verification",
+        "docs/handbook/tutorials/offline-verification.md"
+      ],
+      "author_assistance": "none",
+      "ambiguity_before_source": "Execution paused before the first command for mandated implementation effects review; tutorial source citations make that review possible. No author clarification needed.",
+      "commands": [
+        "python3 -B tests/check-site.py",
+        "python3 -B tests/test_inquiry.py",
+        "node tests/test-inquiry.mjs"
+      ],
+      "observed_result": "All 3 exact offline commands independently exit0 with documented output. Native Python3.15.0/Nodev26.11.1. No generator/service/live request. Reader can distinguish local/stub proof from delivery/build/visual acceptance.",
+      "result": "pass within offline task"
+    },
+    {
+      "reader": "Aegis-site independent documentation reviewer; prime-agent child session 01a14a3c-1d91-74f9-9456-0b7b2650fc64; not the author",
+      "task": "trace-real-article",
+      "role": "developer/content-maintainer",
+      "starting_state": "No article/source change or generator execution authorized.",
+      "route": [
+        "docs/handbook/index.md: Understand one real source-to-page example -> tutorials/trace-existing-article.md",
+        "docs/handbook/how-to/update-article.md: safe first task -> tutorials/trace-existing-article.md",
+        "docs/handbook/tutorials/trace-existing-article.md -> reference/blog-metadata-and-body.md"
+      ],
+      "author_assistance": "none",
+      "ambiguity_before_source": "The requested trace necessarily reaches implementation/products. Paused at step 1 until this unaided route record exists; source/product correspondence and all predicted values still unverified at this point.",
+      "walkthrough": {
+        "pair_dates": [
+          "2026-10-13",
+          "2026-10-13"
+        ],
+        "slug_stem_matches": true,
+        "all_nine_fields": true,
+        "raw_body_matches_existing_page": true,
+        "h2_contents_ids": [
+          "describe-the-job",
+          "map-the-constraints",
+          "smallest-useful-version",
+          "illustrative-example",
+          "plan-the-handoff",
+          "what-to-send"
+        ],
+        "listing_has_real_title": true,
+        "preview_has_real_title": true,
+        "sitemap_has_URL_and_modification": true,
+        "RSS_has_title_link_excerpt": true,
+        "generator_never_imported_or_executed": true,
+        "source_backed_order": "slug/date validation, future UTC filter, truthy fields/body, descending stored-date/slug sort; article/listing, preview, sitemap, RSS; no stale deletion/atomic build"
+      },
+      "maintenance_plan": {
+        "author_assistance": "none",
+        "documentation_route_before_source": [
+          "index -> how-to/update-article",
+          "how-to/update-article -> tutorials/trace-existing-article",
+          "how-to/update-article -> reference/blog-metadata-and-body",
+          "reference/commands"
+        ],
+        "planned_edit_surface": [
+          "content/blog/scope-custom-tech-project.json",
+          "content/blog/scope-custom-tech-project.html"
+        ],
+        "identified_fields": [
+          "slug",
+          "title",
+          "seo_title",
+          "description",
+          "keyword",
+          "date_published",
+          "date_modified",
+          "category",
+          "excerpt"
+        ],
+        "identified_outputs": [
+          "blog/<eligible-slug>/index.html",
+          "blog/index.html",
+          "index.html BLOG-PREVIEW island",
+          "sitemap.xml",
+          "blog/feed.xml"
+        ],
+        "identified_gates": [
+          "owner approval of topic/public claims",
+          "UTC publication eligibility and modification ordering",
+          "owner-approved old URL behavior if rename/remove/future-redate",
+          "intentional generator write review",
+          "three local checks",
+          "owner approval of source + generated diff before publication"
+        ],
+        "commands_intentionally_not_run": [
+          "python3 -B build-blog.py"
+        ],
+        "ambiguity_or_failure": "None needing author assistance. Actual source edit/generation/publication deliberately not performed. Successful result is a source-backed maintenance plan/read-only trace, not an executed edit or a rebuilt product.",
+        "observed_result": "All documented nine metadata fields, exact h2-id TOC/body trust, write order and stale/partial-output limits matched source. The five existing product types contain the chosen real article."
+      },
+      "observed_result": "Chosen real pair, 9 fields, dates, source trust/heading rules, existing 5 output types and complete future write set identified accurately from docs, then checked against source. No source edit/generator run/publication or product-freshness proof claimed.",
+      "result": "pass as read-only source-backed maintenance walkthrough, not an executed edit",
+      "original_independent_task": "trace-real-article-and-plan-approved-edit",
+      "manifest_task_mapping": "Faithful ID mapping to existing trace-real-article manifest task; original combined maintainer trial and its maintenance_plan retained unchanged. This does not invent a separately executed edit or second independent trial."
+    }
+  ],
+  "limits": [
+    "No source/config/canonical docs/receipt writes; only assigned /tmp review reports.",
+    "No generator/import, activation helper, app runtime/server/preview/Jekyll/Pages build, deployment, Git/index/staging/hook, install/dependency repair, DNS/host/provider/account/mailbox/form/email/customer action.",
+    "No live publishing, working deployment, analytics/conversion/lead results, ownership rights, delivery, inbox, browser/mobile/a11y/visual or business approval acceptance asserted.",
+    "All generated historical handbook products excluded, not inspected/rendered or accepted; existing changed products left untouched.",
+    "Source mutations observed during review are unattributed concurrent drift, not assigned to a process.",
+    "No canonical acceptance from matching hashes; exact source/page/nav/manifest and actual claim/task observations required.",
+    "Later parent authorization allowed only exact two schema files and bounded native portal snapshot/check. Results are shape/integrity/pending state only, not current content acceptance."
+  ],
+  "decision": "accepted"
+}

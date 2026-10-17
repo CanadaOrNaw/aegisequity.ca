@@ -1,0 +1,79 @@
+---
+title: Source map and requirements
+description: Find every authored module, supported edit surface and actual runtime
+  dependency.
+kind: developer
+source_ref:
+- README.md#L5-L39
+- build-blog.py#L6-L22
+- build-blog.py#L48-L84
+- tests/check-site.py#L3-L12
+- tests/test-inquiry.mjs#L1-L38
+- styles.css#L1-L21
+- styles.css#L755-L1068
+- inquiry.js#L29-L55
+- tests/activate-inquiry.py#L7-L63
+- tests/test_inquiry.py#L12-L85
+- _config.yml#L1-L13
+- CNAME#L1
+- robots.txt#L1-L4
+- .githooks/docs-pre-commit#L1-L4
+- .gitignore#L1-L30
+- LICENSE#L1-L7
+- thank-you.html#L1-L34
+- shield-mark.svg#L1-L13
+- index.html#L6-L291
+- content/blog/custom-3d-printed-parts-that-fit.html
+- content/blog/custom-3d-printed-parts-that-fit.json
+- content/blog/local-camera-dashboard.html
+- content/blog/local-camera-dashboard.json
+- content/blog/meshtastic-node-setup-ontario.html
+- content/blog/meshtastic-node-setup-ontario.json
+- content/blog/scope-custom-tech-project.html
+- content/blog/scope-custom-tech-project.json
+- content/blog/solar-power-for-remote-sensors.html
+- content/blog/solar-power-for-remote-sensors.json
+---
+
+# Source map and requirements
+
+Start with the existing checkout and installed `python3`/`node`. No `package.json`, `pyproject.toml`, requirements/lockfile, Gemfile, Makefile, environment template or in-repo CI/deploy workflow is present in the reviewed tree. Do not add a speculative installation stack to use these docs.
+
+## Authored modules and ownership
+
+| Path | Responsibility and edit consequence |
+| --- | --- |
+| `index.html` | Public homepage, service schema, header template, form and generated preview island; do not hand-edit the preview |
+| `styles.css` | Tokens and main/form/thank-you/blog styles; form column breakpoint at 700 px, major layout collapse at 900 px |
+| `inquiry.js` | Guarded, in-memory enhanced submit state machine; no imports or backend |
+| `thank-you.html` | Noindex native success landing; direct visit is not proof |
+| `shield-mark.svg` | Current visible brand/favicon; two raster logos are retained, with `logo.png` used by metadata |
+| `build-blog.py` | Top-level generator; helpers `page(...)` and `card(...)`; importing runs writes |
+| `content/blog/` | Five JSON/body pairs: custom printed parts, remote sensor power, camera dashboard planning, Meshtastic planning and custom-project scoping |
+| `tests/check-site.py` | Top-level current-tree assertions; imports `check_markup` |
+| `tests/test_inquiry.py` | `Inquiry` parser and `check_markup(root=ROOT)` plus CLI |
+| `tests/test-inquiry.mjs` | Test-only `harness(...)` creates synthetic browser objects and fetch responses in `vm` |
+| `tests/activate-inquiry.py` | Owner-only `activate(source, key)` transformation and interactive initial migration writer; not a regression test or rotation tool |
+| `_config.yml`, `CNAME`, `robots.txt` | Publish exclusions, declared domain and crawler discovery |
+| Root docs/contracts, `.gitignore`, `LICENSE`, hook adapter | Ownership/approval routes, OS/editor hygiene plus recursive docs-scoped generated/private-output ignores and exact manifest/review exceptions, proprietary rights and external documentation-check delegation |
+
+The host-verification artifacts and retained raster assets have no executable interface. Generated `blog/`, sitemap and handbook views are products, not additional first-party module implementations. All authored modules and article pairs were read for this manual; private records, Git internals and binary token/image contents were not documentation inputs.
+
+## Native requirements
+
+Python uses only `datetime`, `email.utils`, `html`, `json`, `pathlib`, `re`, `html.parser`, `urllib.parse`, XML ElementTree and, for activation, `getpass`, `os`, `tempfile`. Node testing uses only `node:assert/strict`, `node:fs` and `node:vm`, plus runtime AbortController/timers. Existing command syntax is in [reference](../reference/commands.md).
+
+No minimum Python/Node versions are pinned. Passing checks in this checkout establishes only that the current host tools handled them, not a version support promise. There are no application environment-variable reads or precedence layers.
+
+Browser enhancement requires `fetch`, `FormData`, `AbortController`, `Object.fromEntries` and native form validation. There is no documented browser support matrix. CSS uses modern grid, custom properties and backdrop/mask effects. A synthetic Node test does not establish browser rendering, accessibility or mobile behavior.
+
+## Actual extension points
+
+- **New article:** matching JSON/body files are discovered by generator glob; category is free text. Follow [schema](../reference/blog-metadata-and-body.md) and [approved edit flow](../how-to/update-article.md).
+- **Article contents navigation:** exact `h2` ID markup is recognized. There is no Markdown parser/plugin system.
+- **Presentation:** change homepage/CSS or `page`/`card`/schema templates. Header formatting changes affect generated pages.
+- **Form fields:** HTML successful controls become payload data; update markup and synthetic test assumptions alongside behavior. No backend route or validation schema is provided.
+
+There is no plugin registry, public package API or device integration code to extend. Advertised maker/device projects and sample console data describe possible service scopes, not modules hidden elsewhere in this tree.
+
+Next: [test strategy](test-strategy.md), [internal helper reference](../reference/commands.md#internal-helpers), [impact map](../maintenance/change-impact-and-owner-links.md).
