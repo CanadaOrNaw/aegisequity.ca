@@ -1,22 +1,8 @@
 ---
-title: Change impact and owner links
-description: Review affected products, tests and docs while preserving existing status
-  and business ownership.
-kind: developer
-source_ref:
-- CONTEXT.md#L10-L26
-- README.md#L24-L39
-- CLAUDE.md#L12-L36
-- docs/CONTEXT.md#L1-L5
-- build-blog.py#L18-L155
-- inquiry.js#L1-L79
-- tests/check-site.py#L40-L105
-- styles.css#L588-L1068
-- tests/activate-inquiry.py#L28-L63
-- tests/test_inquiry.py#L44-L85
-- tests/test-inquiry.mjs#L10-L102
-- _config.yml#L1-L13
-- CNAME#L1
+title: "Change impact and owner links"
+description: "Review affected products, tests and docs while preserving existing status and business ownership."
+kind: "developer"
+source_ref: ["CONTEXT.md", "README.md#L24-L39", "CLAUDE.md", "docs/CONTEXT.md#L1-L5", "build-blog.py#L18-L155", "inquiry.js#L1-L79", "tests/check-site.py#L40-L105", "styles.css#L588-L1068", "tests/activate-inquiry.py#L28-L63", "tests/test_inquiry.py#L44-L85", "tests/test-inquiry.mjs#L10-L102", "_config.yml#L1-L13", "CNAME#L1"]
 ---
 
 # Change impact and owner links

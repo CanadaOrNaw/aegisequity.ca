@@ -1,13 +1,8 @@
 ---
-title: Generation and publication dataflow
-description: Understand validation order, coupled HTML inputs and partial or stale
-  generation failures.
-kind: concept
-source_ref:
-- build-blog.py#L18-L45
-- build-blog.py#L48-L155
-- tests/check-site.py#L40-L105
-- CONTEXT.md#L10-L22
+title: "Generation and publication dataflow"
+description: "Understand validation order, coupled HTML inputs and partial or stale generation failures."
+kind: "concept"
+source_ref: ["build-blog.py#L18-L45", "build-blog.py#L48-L155", "tests/check-site.py#L40-L105", "CONTEXT.md"]
 ---
 
 # Generation and publication dataflow

@@ -1,15 +1,8 @@
 ---
-title: Aegis website
-description: Maintain the actual static website, article generator and inquiry integration
-  safely.
-kind: overview
-source_ref:
-- README.md#L3-L39
-- CONTEXT.md#L3-L26
-- index.html#L159-L165
-- tests/check-site.py#L105
-- tests/test_inquiry.py#L83-L85
-- tests/test-inquiry.mjs#L102
+title: "Aegis website"
+description: "Maintain the actual static website, article generator and inquiry integration safely."
+kind: "overview"
+source_ref: ["README.md#L3-L39", "CONTEXT.md", "index.html#L159-L165", "tests/check-site.py#L105", "tests/test_inquiry.py#L83-L85", "tests/test-inquiry.mjs#L102", "CONTEXT.md"]
 ---
 
 # Aegis website
@@ -41,3 +34,7 @@ The public service boundaries exclude licensed engineering sign-off, electrical/
 Edit authored source, not generated article pages or the homepage's generated preview island. A local build does not authorize a push, domain change or form submission. Keep business records, routing identifiers and private documentation out of the public artifact. [Publication review](how-to/review-publication-boundary.md) explains what the current exclusions do and do not prove.
 
 **Source authority:** `README.md:3-39` and `CONTEXT.md:3-26`. For maintainer routes, use the [working guide](guide.md) and [source map](development/source-map-and-requirements.md).
+
+## Source and creative gates
+
+The root contract selects current article/component source and the existing generator/check workflow. Content is drafted against the approved company facts and task purpose, then reviewed before an authorized public action. Generated article pages are artifacts, not the facts/style authority. Current runtime/job routes come from the scripts owner; retained OpenClaw/Agrippa references are history.

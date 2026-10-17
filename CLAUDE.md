@@ -26,11 +26,11 @@ This repo serves a live customer-facing domain. Deleting the GitHub remote takes
 
 ## Weekly blog
 
-The Aegis OpenClaw agent publishes one article every Tuesday at 09:00 (`~/02_business/agent-workspaces/aegis/AEGIS-WEEKLY-BLOG.md`). The queue, log and automation record live in `~/02_business/Aegis Engineered Solutions/blog/`.
+The existing job front door and current runtime are owned by `~/scripts/CLAUDE.md` and `~/scripts/claude-agents/CONTEXT.md`; the Aegis owner controls the weekly article workflow. Queue/log facts remain with `~/02_business/Aegis Engineered Solutions/blog/`. Retained OpenClaw prompts are history, not runtime authority.
 
 ## Related
 
 - `~/Projects/fleet-index` — every device, path and git history, and what happens to each
-- `~/Projects/agrippa` — the AI system being built on top
+- `~/Projects/fleet-index/08_retirement/target-architecture.md` - Agrippa retirement history, not a live dependency
 
 Read [handbook](docs/handbook/index.md) and its status before work. Before handoff, follow the [living-docs contract](file:///home/zack/Projects/fleet-index/_system/documentation/POLICY.md): review evidence, refresh canonical pages/status, rebuild views and pass working/staged checks.

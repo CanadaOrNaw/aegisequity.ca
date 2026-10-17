@@ -1,12 +1,8 @@
 ---
-title: Handbook ownership
-description: Define this project’s reader pages, private evidence and maintained source
-  boundaries.
-kind: overview
-source_ref:
-- CONTEXT.md#L10-L26
-- docs/CONTEXT.md#L1-L5
-- AGENTS.md#L17-L29
+title: "Handbook ownership"
+description: "Define this project’s reader pages, private evidence and maintained source boundaries."
+kind: "overview"
+source_ref: ["CONTEXT.md", "docs/CONTEXT.md#L1-L5", "AGENTS.md"]
 ---
 
 # Handbook ownership

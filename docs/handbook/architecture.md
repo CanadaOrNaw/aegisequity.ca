@@ -1,16 +1,8 @@
 ---
-title: Architecture map
-description: See source/product ownership and the boundaries between browser, generator,
-  provider and hosting.
-kind: concept
-source_ref:
-- CONTEXT.md#L14-L22
-- build-blog.py#L13-L155
-- inquiry.js#L1-L79
-- _config.yml#L1-L13
-- index.html#L6-L208
-- tests/activate-inquiry.py#L1-L63
-- tests/check-site.py#L1-L105
+title: "Architecture map"
+description: "See source/product ownership and the boundaries between browser, generator, provider and hosting."
+kind: "concept"
+source_ref: ["CONTEXT.md", "build-blog.py#L13-L155", "inquiry.js#L1-L79", "_config.yml#L1-L13", "index.html#L6-L208", "tests/activate-inquiry.py#L1-L63", "tests/check-site.py#L1-L105"]
 ---
 
 # Architecture map

@@ -1,13 +1,8 @@
 ---
-title: Update an approved article
-description: Edit real source pairs and review the full generated write set without
-  implying publication approval.
-kind: how-to
-source_ref:
-- CLAUDE.md#L12-L14
-- README.md#L24-L39
-- build-blog.py#L25-L45
-- build-blog.py#L92-L155
+title: "Update an approved article"
+description: "Edit real source pairs and review the full generated write set without implying publication approval."
+kind: "how-to"
+source_ref: ["CLAUDE.md", "README.md#L24-L39", "build-blog.py#L25-L45", "build-blog.py#L92-L155"]
 ---
 
 # Update an approved article

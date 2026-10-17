@@ -1,17 +1,8 @@
 ---
-title: Collaboration and working state
-description: Understand purpose, ownership, evidence, decisions and the contribution
-  path without duplicating a work tracker.
-kind: overview
-source_ref:
-- README.md#L14-L39
-- CLAUDE.md#L12-L36
-- AGENTS.md#L17-L29
-- CONTEXT.md#L10-L26
-- docs/CONTEXT.md#L1-L5
-- index.html#L146-L165
-- .githooks/docs-pre-commit#L1-L4
-- build-blog.py#L92-L155
+title: "Collaboration and working state"
+description: "Understand purpose, ownership, evidence, decisions and the contribution path without duplicating a work tracker."
+kind: "overview"
+source_ref: ["README.md#L14-L39", "CLAUDE.md", "AGENTS.md", "CONTEXT.md", "docs/CONTEXT.md#L1-L5", "index.html#L146-L165", ".githooks/docs-pre-commit#L1-L4", "build-blog.py#L92-L155"]
 ---
 
 # Collaboration and working state

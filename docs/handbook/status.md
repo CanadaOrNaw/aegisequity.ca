@@ -1,17 +1,8 @@
 ---
-title: Verification status and limits
-description: Dated local evidence, historical provider failure and live unknowns;
-  not a duplicate business work queue.
-kind: status
-source_ref:
-- README.md#L22-L39
-- CONTEXT.md#L3-L26
-- tests/check-site.py#L40-L105
-- tests/test_inquiry.py#L44-L85
-- tests/test-inquiry.mjs#L48-L102
-- _config.yml#L1-L13
-- build-blog.py#L25-L155
-- docs/CONTEXT.md#L1-L5
+title: "Verification status and limits"
+description: "Dated local evidence, historical provider failure and live unknowns; not a duplicate business work queue."
+kind: "status"
+source_ref: ["README.md#L22-L39", "CONTEXT.md", "tests/check-site.py#L40-L105", "tests/test_inquiry.py#L44-L85", "tests/test-inquiry.mjs#L48-L102", "_config.yml#L1-L13", "build-blog.py#L25-L155", "docs/CONTEXT.md#L1-L5"]
 ---
 
 # Verification status and limits

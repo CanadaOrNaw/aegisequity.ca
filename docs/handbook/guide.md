@@ -1,13 +1,8 @@
 ---
-title: Working guide
-description: Pick the right safe workflow for articles, layout, form failures and
-  publication review.
-kind: how-to
-source_ref:
-- README.md#L20-L39
-- CONTEXT.md#L10-L22
-- build-blog.py#L131-L155
-- inquiry.js#L25-L79
+title: "Working guide"
+description: "Pick the right safe workflow for articles, layout, form failures and publication review."
+kind: "how-to"
+source_ref: ["README.md#L20-L39", "CONTEXT.md", "build-blog.py#L131-L155", "inquiry.js#L25-L79"]
 ---
 
 # Working guide
