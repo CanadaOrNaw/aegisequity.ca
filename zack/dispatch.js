@@ -53,11 +53,19 @@
     },
     "17:00": {
       time: "17:00 EDT",
-      unit: "harwick-social-weekly-drafts.timer + media CLI (Colab A100)",
+      unit: "harwick-social-weekly-drafts.timer + aegis-social-weekly-drafts",
       field: "Cleaning paver screed, loading equipment onto trailer, wrapping job site.",
-      machine: "Runs 3-round fact-check gate on 9 weekly social drafts (232s, PASS), publishes 17:00 Reel, and queues on-demand A100/Framefields media renders.",
+      machine: "Runs 3-round fact-check gate on 9 weekly social drafts (232s, PASS), publishes 17:00 Reel, and logs pass receipts.",
       sysId: "SYS-07",
       shiftFlap: "17:00 PASS "
+    },
+    "20:00": {
+      time: "20:00 EDT",
+      unit: "render.ts + plate-pipeline.py (WebGPU + Wan 2.2 I2V)",
+      field: "Off-shift · Field equipment secured at yard.",
+      machine: "Renders 1080p30 Framefields broadcast compositions (measure.py kick/RMS sync, PACE=1.25) & conforms Wan 2.2 I2V plates with drift checks.",
+      sysId: "SYS-08",
+      shiftFlap: "20:00 1080P"
     }
   };
 
@@ -238,28 +246,83 @@
     },
     "SYS-07": {
       code: "SYS-07",
-      name: "Field Heavy Equipment & Generative Media Pipeline",
-      flap: "8YRS + A100",
-      flapEmployer: "A100 WORKER",
-      flapClient: "8+ YRS CREW",
-      badge: "PAVER / ROLLER · COLAB CLI",
-      schedule: "07:00 Field · On-Demand GPU",
-      whatItDoes: "Eight-plus years operating asphalt pavers, skid steers, steel-drum and pneumatic rollers, and directing paving crews—paired with a 6-stage gated generative media pipeline driving a local RTX 3070 Ti, an on-demand Colab A100 CLI worker, and Framefields WebGPU motion graphics.",
-      howBuilt: "Built the 'media' CLI worker to spin up Colab A100 GPUs on demand, run Z-Image-Turbo / Qwen-Image / Wan I2V animation variants, log every take on a contact sheet, and shut down compute immediately to protect budget, while rendering Kokoro/ACE-Step audio and ffmpeg mastering locally.",
+      name: "Field Heavy Equipment & Site Operations",
+      flap: "8+ YRS CREW",
+      flapEmployer: "8 YRS FIELD",
+      flapClient: "OPERATOR ON",
+      badge: "PAVER / ROLLER · CLASS G",
+      schedule: "07:00 Field Shift",
+      whatItDoes: "Eight-plus years operating asphalt pavers, skid steers, steel-drum and pneumatic rollers, and directing live paving crews on residential, commercial, and municipal sites across Ontario.",
+      howBuilt: "Hands-on field operations: grading gravel bases with skid steers, checking slopes and water runoff, operating the asphalt paver screed, setting compaction roller patterns, managing hot-mix delivery schedules, and enforcing Ontario health and safety standards.",
       specs: [
         ["Heavy Equipment", "Asphalt paver, skid steer, steel-drum & pneumatic rollers, dump truck & trailer"],
         ["Field Credentials", "8+ years paving/excavation/grading · Ontario Class G · First Aid & CPR (2025) · WHMIS"],
-        ["Generative Stack", "Z-Image-Turbo, Qwen-Image, Wan 2.2 I2V (Colab A100 CLI), ACE-Step 1.5, Kokoro TTS"],
-        ["Quality Control Gate", "6-stage folder contract; contact-sheet take selection (e.g. 7 speed takes -> 3.5x locked)"]
+        ["Site Directing", "Crew coordination, hot-mix asphalt logistics, asphalt thickness & compaction QA"],
+        ["Field Subcontracting", "Available for equipment operation and project management across Kawartha Lakes & Durham"]
       ],
-      receipt: `[Pipeline Gate Log: Gears Breakcore Contact Sheet]
-- Stage 1 (Still): Approved high-res source frame locked
-- Stage 2 (Animation Matrix): 7 speed variants rendered on A100 via 'media' CLI (speeds 2.0, 2.5, 3.0, 3.25, 3.5, 3.75, 4.0)
-- Gate Verdict: Speed 3.5 selected for mechanical lock; 6 takes rejected -> assembled to 54-min 1440p master
-- Next Lab Builds: Framefields WebGPU system explainers ("How the Machine Runs" & "Dex-1B 18ms") in active render`,
+      receipt: `[Harwick Field Operations & Heavy Machinery Record]
+- Equipment: Asphalt Pavers, Steel-Drum Rollers, Pneumatic Rollers, Skid Steers
+- Safety & Licences: Ontario Class G, First Aid & CPR (Certified 2025), WHMIS
+- Site Experience: Residential Driveways, Commercial Plazas, Agricultural Barn Lanes, Municipal Approaches
+- Status: Active Field Operations · Cannington Base`,
       links: [
         { label: "Inspect Full Plate ↓", href: "#plate-sys-07" },
-        { label: "Hire / Subcontract ↓", href: "#hire-zack" }
+        { label: "Harwick Route Map ↗", href: "https://canadaornaw.github.io/harwick-route" },
+        { label: "Subcontract Inquiry ↓", href: "#hire-aegis" }
+      ]
+    },
+    "SYS-08": {
+      code: "SYS-08",
+      name: "Commercial Video Production Pipeline (WebGPU + Wan 2.2)",
+      flap: "1080P30 QA ",
+      flapEmployer: "WEBGPU + WAN",
+      flapClient: "BROADCAST QA",
+      badge: "WEBGPU 1080P30 · HYBRID I2V",
+      schedule: "On-Demand Pipeline",
+      whatItDoes: "Dual-track broadcast video pipeline combining deterministic code-first WebGPU motion graphics (Framefields) with gated on-demand Wan 2.2 image-to-video diffusion and beat-synchronized audio mastering.",
+      howBuilt: "Track 1: Pure Framefields TypeScript engine with measure.py kick/RMS extraction, PACE=1.25 scaling, zero-tilt orthographic rules, and automated WebGPU qa: true rendering. Track 2: 5-stage plate-pipeline.py CLI (stage, previs, animate, inspect, conform) solving 1056x704 squash, drift telemetry, and 1080p conform.",
+      specs: [
+        ["WebGPU Motion Engine", "Framefields TypeScript headless compositor (Pieces 1 & 2 rendered at 1080p30)"],
+        ["Audio Beat-Sync", "measure.py audio envelope extraction (kick & RMS peaks) driving layout pace"],
+        ["Diffusion Conform CLI", "plate-pipeline.py 5-stage CLI (stage, previs, animate, inspect, conform)"],
+        ["Drift Gate Telemetry", "8-frame diagnostic strips (*-strip.png) + drift telemetry report (*-report.json)"]
+      ],
+      receipt: `$ python3 scripts/plate-pipeline.py stage --crops paver,apron,roller,finish
+[STAGE PASS] Generated 3:2 (1056x704) staging-grid.png (bottle-crop verified)
+$ python3 scripts/plate-pipeline.py inspect --shot paver
+[INSPECT PASS] 8-frame strip build/piece3/inspect/paver-strip.png drift=0.082 < 0.120
+$ npm run render-spot
+[RENDER PASS] Conformed 1920x1080 @ 30fps master plates in build/piece3/final.mp4 (qa: true)`,
+      links: [
+        { label: "Inspect Full Plate ↓", href: "#plate-sys-08" },
+        { label: "Watch Piece 01 (SYS-01) ↑", href: "#plate-sys-01" },
+        { label: "Watch Piece 02 (SYS-02) ↑", href: "#plate-sys-02" }
+      ]
+    },
+    "SYS-09": {
+      code: "SYS-09",
+      name: "Harwick Route: Interactive Season Map & Field GIS",
+      flap: "GIS 2026 MAP",
+      flapEmployer: "VECTOR GIS  ",
+      flapClient: "FIELD PROOF ",
+      badge: "LIVE ON GITHUB PAGES · SVG GIS",
+      schedule: "2026 Season Live",
+      whatItDoes: "Vector-accurate, hand-painted interactive web GIS documenting Harwick Paving's full 2026 paving season across Kawartha Lakes and Durham Region, featuring interactive project pins, compaction logs, tonnage, and photographic field evidence.",
+      howBuilt: "Static zero-dependency interactive map built with SVG coordinate projections, responsive mobile touch controls, township boundary overlays, and live project detail cards. Deployed via GitHub Pages HTTPS.",
+      specs: [
+        ["Territory Coverage", "Kawartha Lakes, Durham Region, Brock, Scugog, Victoria County"],
+        ["Map Architecture", "Zero-dependency interactive vector SVG projection with responsive canvas"],
+        ["Live Deployment", "canadaornaw.github.io/harwick-route (GitHub Pages HTTPS)"],
+        ["Operational Integration", "Synchronized with weekly job receipts and field coordinates"]
+      ],
+      receipt: `[Harwick Route Field GIS Engine: canadaornaw.github.io/harwick-route]
+- Deployment: https://canadaornaw.github.io/harwick-route (HTTPS)
+- Coverage: Kawartha Lakes & Durham Region paving corridors
+- Layer Stack: Hand-painted vector base, coordinate-projected job pins, project detail modals
+- Field Verification: Compaction test results, asphalt mix tonnages, equipment loadouts logged`,
+      links: [
+        { label: "Inspect Full Plate ↓", href: "#plate-sys-09" },
+        { label: "Open Live Map ↗", href: "https://canadaornaw.github.io/harwick-route" }
       ]
     }
   };
@@ -410,13 +473,13 @@
     if (thesisEl) {
       if (mode === "employer") {
         thesisEl.textContent =
-          "EMPLOYER & TECHNICAL VIEW: Highlighting 5 engineering & field-ops systems — multi-agent automation, Dex-1B model training (81.5% human-label accuracy, 18 ms), 7-camera local vision, and OpenClaw upstream fixes.";
+          "EMPLOYER & TECHNICAL VIEW: Highlighting 6 engineering & media systems — multi-agent automation, Dex-1B model training (81.5% human-label accuracy, 18 ms), 7-camera local vision, OpenClaw fixes, WebGPU broadcast media, and Harwick Route GIS.";
       } else if (mode === "client") {
         thesisEl.textContent =
-          "AEGIS CLIENT & SUBCONTRACT VIEW: Highlighting 4 commercial delivery systems — the $650/mo Done-For-You Local Marketing Plan, $900 Website Rebuilds, custom 3D-printed / IoT hardware, and heavy equipment field operations.";
+          "AEGIS CLIENT & SUBCONTRACT VIEW: Highlighting 5 commercial delivery systems — the $650/mo Done-For-You Local Marketing Plan, $900 Website Rebuilds, custom 3D-printed / IoT hardware, heavy equipment field operations, and Harwick Route GIS.";
       } else {
         thesisEl.textContent =
-          "UNIFIED CONTROL ROOM: Showing all 7 production AI, web, hardware, and field systems built and operated by Zack Harper across Harwick Paving Ltd. and Aegis Engineered Solutions.";
+          "UNIFIED CONTROL ROOM: Showing all 9 production AI, web, hardware, media, mapping, and field systems built and operated by Zack Harper across Harwick Paving Ltd. and Aegis Engineered Solutions.";
       }
     }
 
@@ -466,6 +529,26 @@
         setAudienceMode(mode);
       });
     });
+
+    // Check for submission return
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get("submitted") === "zack") {
+      const targetCard = document.getElementById("hire-zack");
+      if (targetCard) {
+        const alert = document.createElement("div");
+        alert.className = "form-feedback-alert";
+        alert.textContent = "✓ INQUIRY TRANSMITTED: Thank you. Your message has been encrypted and delivered directly to Zack's personal inbox.";
+        targetCard.querySelector(".plate-header-bar")?.after(alert);
+      }
+    } else if (urlParams.get("submitted") === "aegis") {
+      const targetCard = document.getElementById("hire-aegis");
+      if (targetCard) {
+        const alert = document.createElement("div");
+        alert.className = "form-feedback-alert";
+        alert.textContent = "✓ INQUIRY TRANSMITTED: Thank you. Your scope request has been delivered to admin@aegisequity.ca. Written scope provided before any paid work.";
+        targetCard.querySelector(".plate-header-bar")?.after(alert);
+      }
+    }
 
     setShiftHour("06:30", false);
     renderInspector("SYS-01", false);

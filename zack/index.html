@@ -35,7 +35,7 @@
     </div>
 
     <div class="mode-rocker" role="group" aria-label="Filter dispatch board by visitor path">
-      <button type="button" class="mode-btn" data-mode="all" aria-pressed="true">ALL SYSTEMS (7)</button>
+      <button type="button" class="mode-btn" data-mode="all" aria-pressed="true">ALL SYSTEMS (9)</button>
       <button type="button" class="mode-btn" data-mode="employer" aria-pressed="false">FOR EMPLOYERS &amp; HIRING</button>
       <button type="button" class="mode-btn" data-mode="client" aria-pressed="false">FOR CLIENTS &amp; AEGIS</button>
     </div>
@@ -77,7 +77,7 @@
           </p>
 
           <p id="hero-mode-note" class="hero-subcopy">
-            UNIFIED CONTROL ROOM: Showing all 7 production AI, web, hardware, and field systems built and operated by Zack Harper across Harwick Paving Ltd. and Aegis Engineered Solutions.
+            UNIFIED CONTROL ROOM: Showing all 9 production AI, web, hardware, media, mapping, and field systems built and operated by Zack Harper across Harwick Paving Ltd. and Aegis Engineered Solutions.
           </p>
 
           <div class="stamped-ratings-grid" aria-label="Rated operational specifications">
@@ -141,6 +141,7 @@
                 <button type="button" role="tab" class="shift-hour-btn" data-hour="09:05" aria-selected="false">09:05</button>
                 <button type="button" role="tab" class="shift-hour-btn" data-hour="14:00" aria-selected="false">14:00</button>
                 <button type="button" role="tab" class="shift-hour-btn" data-hour="17:00" aria-selected="false">17:00</button>
+                <button type="button" role="tab" class="shift-hour-btn" data-hour="20:00" aria-selected="false">20:00</button>
               </div>
             </div>
             <div class="shift-dual-readout">
@@ -215,9 +216,25 @@
 
             <button type="button" class="dispatch-row" data-sys="SYS-07" data-audience="employer,client" aria-expanded="false">
               <span class="row-code">SYS-07</span>
-              <span class="row-schedule">Field + A100 CLI</span>
-              <span class="row-system-name">Heavy Equipment &amp; Generative Media</span>
-              <span class="flap-strip" aria-label="8YRS + A100"></span>
+              <span class="row-schedule">07:00 Field Shift</span>
+              <span class="row-system-name">Heavy Equipment &amp; Site Operations</span>
+              <span class="flap-strip" aria-label="8+ YRS CREW"></span>
+              <span class="row-action-cell">OPEN SPEC ↓</span>
+            </button>
+
+            <button type="button" class="dispatch-row" data-sys="SYS-08" data-audience="employer,client" aria-expanded="false">
+              <span class="row-code">SYS-08</span>
+              <span class="row-schedule">20:00 / WebGPU</span>
+              <span class="row-system-name">Commercial Video Pipeline (WebGPU + Wan 2.2)</span>
+              <span class="flap-strip status-gold" aria-label="1080P30 QA "></span>
+              <span class="row-action-cell">OPEN SPEC ↓</span>
+            </button>
+
+            <button type="button" class="dispatch-row" data-sys="SYS-09" data-audience="employer,client" aria-expanded="false">
+              <span class="row-code">SYS-09</span>
+              <span class="row-schedule">2026 Season Live</span>
+              <span class="row-system-name">Harwick Route: Interactive Season Map &amp; GIS</span>
+              <span class="flap-strip status-green" aria-label="GIS 2026 MAP"></span>
               <span class="row-action-cell">OPEN SPEC ↓</span>
             </button>
           </div>
@@ -384,6 +401,25 @@
             </div>
           </div>
         </div>
+
+        <div class="plate-video-card">
+          <div class="video-player-wrap">
+            <video controls preload="metadata" poster="videos/grid-machine.png" playsinline>
+              <source src="videos/machine-runs.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="video-meta-bar">
+            <div class="video-title-wrap">
+              <h4 class="video-title">PIECE 01 · "HOW THE MACHINE RUNS"</h4>
+              <p class="video-desc">Deterministic Framefields WebGPU live system film · Closed-loop 39-timer architecture, claim-verification gate &amp; Telegram morning dispatch.</p>
+            </div>
+            <div class="video-meta-tags">
+              <span class="video-runtime-pill">45s · 1080p30 · 12 MB</span>
+              <a class="video-direct-link" href="videos/machine-runs.mp4" target="_blank" rel="noopener">Direct MP4 ↗</a>
+            </div>
+          </div>
+        </div>
       </article>
 
       <!-- PLATE SYS-02 -->
@@ -469,6 +505,25 @@
             <div class="schematic-caption">
               <span>140,620 DECISION INDEX REQUESTS · SKILL 12.99 (3× STOCK LAYA)</span>
               <a href="https://github.com/CanadaOrNaw/dex" target="_blank" rel="noopener">Inspect Repo &amp; Ablations ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="plate-video-card">
+          <div class="video-player-wrap">
+            <video controls preload="metadata" poster="videos/grid-dex.png" playsinline>
+              <source src="videos/dex-explainer.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="video-meta-bar">
+            <div class="video-title-wrap">
+              <h4 class="video-title">PIECE 02 · "DEX-1B 18MS DECISION EXPLAINER"</h4>
+              <p class="video-desc">Ettin-1B bidirectional encoder benchmark film · 81.5% human-label accuracy, 18 ms single forward pass &amp; zero-token inference.</p>
+            </div>
+            <div class="video-meta-tags">
+              <span class="video-runtime-pill">30s · 1080p30 · 5.4 MB</span>
+              <a class="video-direct-link" href="videos/dex-explainer.mp4" target="_blank" rel="noopener">Direct MP4 ↗</a>
             </div>
           </div>
         </div>
@@ -784,61 +839,193 @@
           <svg class="rivet br"><use href="#hex-fastener"></use></svg>
         </div>
         <div class="plate-title-row">
-          <h3>SYS-07 · Field Heavy Equipment &amp; Gated Generative Media Pipeline</h3>
+          <h3>SYS-07 · Field Heavy Equipment Operations &amp; Site Directing</h3>
           <div class="plate-serial-strip">
             <span class="serial-tag gold">FIELD: 8+ YRS PAVER / ROLLER / SKID STEER</span>
             <span class="serial-tag">CERTIFIED: CLASS G · FIRST AID &amp; CPR (2025)</span>
-            <span class="serial-tag green">GPU: RTX 3070 Ti + COLAB A100 CLI</span>
+            <span class="serial-tag green">STATUS: ACTIVE FIELD OPERATOR · ON</span>
           </div>
         </div>
         <div class="plate-body-grid">
           <div class="plate-narrative">
             <p>
-              <strong>Operational Edge:</strong> Eight-plus years operating asphalt pavers, skid steers, steel-drum and pneumatic rollers, grading gravel bases, ordering hot-mix asphalt, and directing crews on live residential and commercial sites. I know firsthand why industrial sensors, cameras, and software tools have to hold up in rain, dust, heat shimmer, and glare.
+              <strong>Operational Edge:</strong> Eight-plus years operating asphalt pavers, skid steers, steel-drum and pneumatic rollers, grading gravel bases, ordering hot-mix asphalt, and directing crews on live residential, commercial, and municipal sites across Ontario. I know firsthand why industrial sensors, cameras, and software tools have to hold up in rain, dust, heat shimmer, and glare.
             </p>
             <p>
-              <strong>Generative Media Discipline:</strong> I run generative video and audio the same way I run a job site: to spec, with a written gate at every stage (<code>concept → still → animation → music → assembly → upload</code>). My custom <code>media</code> CLI spins up Colab A100 GPUs on demand, runs Z-Image-Turbo, Qwen-Image, and Wan 2.2 image-to-video speed variants, logs every take on a contact sheet (e.g., testing 7 animation speeds from <code>2.0</code> to <code>4.0</code> and locking <code>speed 3.5</code> before assembling a 54-minute 1440p master), and immediately powers down the remote GPU while local Vulkan/ffmpeg jobs master the audio.
+              <strong>Real Field Responsibility:</strong> Managing live asphalt jobs means solving site-slope problems in real time: coordinating gravel sub-base compaction, setting screed angle and Crown/Invert on the paver, monitoring asphalt delivery temperatures (140°C–160°C hot-mix window), setting multi-pass breakdown and finish rolling patterns to eliminate ridges, and keeping site safety strict under live traffic.
             </p>
             <div class="plate-spec-matrix">
               <div class="spec-cell">
                 <span class="spec-cell-label">Heavy Machinery</span>
-                <span class="spec-cell-val">Asphalt Paver · Skid Steer · Rollers</span>
+                <span class="spec-cell-val">Asphalt Paver · Skid Steer · Rollers · Float</span>
               </div>
               <div class="spec-cell">
                 <span class="spec-cell-label">Licences &amp; Safety</span>
                 <span class="spec-cell-val">Ontario Class G · First Aid &amp; CPR · WHMIS</span>
               </div>
               <div class="spec-cell">
-                <span class="spec-cell-label">Compute Orchestration</span>
-                <span class="spec-cell-val">Local RTX 3070 Ti + On-Demand A100 CLI</span>
+                <span class="spec-cell-label">Territory</span>
+                <span class="spec-cell-val">Kawartha Lakes · Durham Region · Brock</span>
               </div>
               <div class="spec-cell">
-                <span class="spec-cell-label">In Production Now</span>
-                <span class="spec-cell-val">Framefields WebGPU System Explainers</span>
+                <span class="spec-cell-label">Subcontracting</span>
+                <span class="spec-cell-val">Machine Operation &amp; Site Management</span>
               </div>
             </div>
           </div>
 
           <div class="schematic-box">
-            <pre class="receipt-terminal" style="margin:0;">[Generative Media &amp; WebGPU Video Lab Status]
+            <pre class="receipt-terminal" style="margin:0;">[Harwick Heavy Equipment Fleet &amp; Field Dispatch Log]
 
-STAGE GATE CONTRACT (6 STAGES):
-01 Concept Lock -> 02 Approved Reference Still -> 03 Multi-Take I2V Matrix
--> 04 Local Audio/Music (Kokoro / ACE-Step 1.5) -> 05 ffmpeg Loudness Master
--> 06 Contact Sheet &amp; Upload Verification
-
-VERIFIED CONTACT SHEET RECORD (Gears Breakcore):
-- Source Still: Locked 1440p mechanical reference
-- Take Matrix: 7 animation takes rendered on A100 (speeds 2.0..4.0)
-- Editorial Gate: 6 takes rejected for cadence/drift; speed 3.5 locked
-
-UPCOMING PORTFOLIO REELS (IN ACTIVE RENDER):
-- Piece 01 (Framefields WebGPU): "How the Machine Runs" (45s live system diagram)
-- Piece 02 (Framefields WebGPU): "Dex-1B 18ms Decision Explainer" (30s benchmark)
-- Piece 03 &amp; 04: Camera-true Harwick equipment spot &amp; multi-shot character lock</pre>
+- Primary Machinery: Asphalt Paver (screed &amp; tractor), Steel-Drum Rollers,
+  Pneumatic Rollers, Skid Steers, Dump Truck &amp; Equipment Float
+- Safety &amp; Compliance: Ontario Class G, Standard First Aid &amp; CPR Level C (2025), WHMIS
+- Project Scope: Commercial Plazas, Agricultural Barn Runways, Municipal Aprons,
+  Residential Driveways
+- Field Standards: Slopes graded to drainage spec, asphalt compacted to density,
+  joints sealed against Ontario freeze-thaw cycles
+- Base: Cannington Yard · Operational Reach: Kawartha Lakes &amp; Durham Region</pre>
             <div class="schematic-caption">
-              <span>SPEC-DRIVEN PIPELINE · ZERO UNGATED COMPUTE</span>
-              <a href="#hire-zack">Request Contact Sheet / Reel →</a>
+              <span>GENUINE FIELD OPERATOR · ZERO DESK-ONLY THEORY</span>
+              <a href="#hire-aegis">Subcontract Inquiry ↓</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PLATE SYS-08 -->
+      <article id="plate-sys-08" class="system-spec-plate">
+        <div class="plate-rivets" aria-hidden="true">
+          <svg class="rivet tl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet tr"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet bl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet br"><use href="#hex-fastener"></use></svg>
+        </div>
+        <div class="plate-title-row">
+          <h3>SYS-08 · Commercial Video Production Pipeline: Framefields WebGPU &amp; Hybrid Wan 2.2 I2V</h3>
+          <div class="plate-serial-strip">
+            <span class="serial-tag gold">TRACK 1: FRAMEFIELDS WEBGPU (1080P30)</span>
+            <span class="serial-tag">TRACK 2: HYBRID WAN 2.2 I2V + FINISHING</span>
+            <span class="serial-tag green">CLI: PLATE-PIPELINE.PY (5-STAGE)</span>
+          </div>
+        </div>
+        <div class="plate-body-grid">
+          <div class="plate-narrative">
+            <p>
+              <strong>The Commercial Video Problem:</strong> Technical studios evaluate <em>editorial judgment, timing, and production reliability</em>, not raw tool clicks. Uncontrolled diffusion produces warping wheels, melting mechanical linkages, and squashed aspect ratios, while naive code-motion lacks musical rhythm and holds.
+            </p>
+            <p>
+              <strong>Two-Track Gated Architecture (<a href="#spec-plates">PIPELINE.md</a>):</strong>
+            </p>
+            <ul style="margin: 0.35rem 0 0.85rem 1.15rem; padding: 0; font-size: 0.88rem; color: var(--ink-200); line-height: 1.55;">
+              <li><strong>Track 1 (Pure Framefields System Films — Pieces 1 &amp; 2):</strong> Verified fact lock, <code>measure.py</code> kick/RMS envelope extraction, global <code>PACE = 1.25</code> scaling via <code>scaleNodesPace()</code>, Zero-Tilt Orthographic Rule, ≥ 3.0s reading holds, zero-warning <code>film.lint()</code>, keyframe + contact-grid gates, and WebGPU <code>qa: true</code> render.</li>
+              <li><strong>Track 2 (Hybrid Wan 2.2 I2V + Framefields Finishing — Piece 3):</strong> Solves <code>job_animate.py</code>'s non-aspect-preserving 1056×704 squash, <code>animate.mp4</code> collisions, ground-clutter cropping, and late-frame diffusion drift.</li>
+              <li><strong>Executable Hybrid CLI (<code>plate-pipeline.py</code>):</strong> 5-stage pipeline (<code>stage</code>, <code>previs</code>, <code>animate</code>, <code>inspect</code>, <code>conform</code>) with 3:2 focal crops, 8-frame diagnostic strips (<code>*-strip.png</code>), drift telemetry reports (<code>*-report.json</code>), and conformed 1920×1080 @ 30fps master plates in <code>film-spot.ts</code>.</li>
+            </ul>
+            <div class="plate-spec-matrix">
+              <div class="spec-cell">
+                <span class="spec-cell-label">WebGPU Motion Engine</span>
+                <span class="spec-cell-val">Framefields TypeScript Compositor (1080p30)</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Audio Envelope Sync</span>
+                <span class="spec-cell-val">measure.py Kick &amp; RMS Envelope Extraction</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Diffusion Conform CLI</span>
+                <span class="spec-cell-val">plate-pipeline.py (5-Stage Python CLI)</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Drift Telemetry Gate</span>
+                <span class="spec-cell-val">8-Frame Diagnostic Strips + Report JSON</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="schematic-box">
+            <pre class="receipt-terminal" style="margin:0;">[Track 1 &amp; 2 Production Pipeline CLI: scripts/plate-pipeline.py]
+
+$ python3 scripts/measure.py --audio audio/track.wav --output build/envelope.json
+[AUDIO PASS] Kick &amp; RMS envelope extracted; PACE=1.25 locked
+
+$ python3 scripts/plate-pipeline.py stage --crops paver,apron,roller,finish
+[STAGE PASS] Generated 3:2 (1056x704) staging-grid.png (bottle-crop verified)
+
+$ python3 scripts/plate-pipeline.py animate --shot paver --seed 42
+[COLAB WAN 2.2 PASS] Staged I2V animation rendered on A100
+
+$ python3 scripts/plate-pipeline.py inspect --shot paver --drift-threshold 0.12
+[INSPECT PASS] 8-frame strip build/piece3/inspect/paver-strip.png drift=0.082 &lt; 0.120
+
+$ python3 scripts/plate-pipeline.py conform --shot paver --plate build/piece3/plates/paver-seed42.mp4 --start 0 --duration 4.2
+$ npm run render-spot
+[RENDER PASS] Conformed 1920x1080 @ 30fps broadcast master in build/piece3/final.mp4 (qa: true)</pre>
+            <div class="schematic-caption">
+              <span>SPEC-DRIVEN PIPELINE · ZERO UNCHECKED DIFFUSION DRIFT</span>
+              <a href="#hire-zack">Request Commercial Reel →</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PLATE SYS-09 -->
+      <article id="plate-sys-09" class="system-spec-plate">
+        <div class="plate-rivets" aria-hidden="true">
+          <svg class="rivet tl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet tr"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet bl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet br"><use href="#hex-fastener"></use></svg>
+        </div>
+        <div class="plate-title-row">
+          <h3>SYS-09 · Harwick Route: Interactive Paving Season Map &amp; Field GIS Engine</h3>
+          <div class="plate-serial-strip">
+            <span class="serial-tag gold">DEPLOYED: CANADAORNAW.GITHUB.IO/HARWICK-ROUTE</span>
+            <span class="serial-tag">STACK: ZERO-DEP SVG + LEAFLET / CANVAS</span>
+            <span class="serial-tag green">COVERAGE: KAWARTHA LAKES &amp; DURHAM</span>
+          </div>
+        </div>
+        <div class="plate-body-grid">
+          <div class="plate-narrative">
+            <p>
+              <strong>Operational Problem:</strong> Paving operations cover hundreds of square miles across rural Ontario townships. Prospective commercial clients and municipalities need proof of physical presence, equipment mobilization history, and real job footprints—not generic stock photos.
+            </p>
+            <p>
+              <strong>Engineered System:</strong> Hand-painted, vector-accurate interactive route map documenting Harwick Paving's entire 2026 paving season across Kawartha Lakes and Durham Region (<a href="https://canadaornaw.github.io/harwick-route" target="_blank" rel="noopener">canadaornaw.github.io/harwick-route</a>). Built with custom SVG coordinate projections, responsive mobile touch controls, township boundary overlays, and live project detail cards featuring compaction logs, tonnages, and photographic field evidence.
+            </p>
+            <div class="plate-spec-matrix">
+              <div class="spec-cell">
+                <span class="spec-cell-label">Territory Coverage</span>
+                <span class="spec-cell-val">Kawartha Lakes · Durham Region · Brock · Scugog</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Map Architecture</span>
+                <span class="spec-cell-val">Zero-Dependency Interactive Vector SVG Projection</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Live Deployment</span>
+                <span class="spec-cell-val">canadaornaw.github.io/harwick-route (HTTPS)</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Field Integration</span>
+                <span class="spec-cell-val">Synchronized with Weekly Job Receipts &amp; Coords</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="schematic-box">
+            <pre class="receipt-terminal" style="margin:0;">[Harwick Route Field GIS Engine: canadaornaw.github.io/harwick-route]
+
+- Territory: Kawartha Lakes, Durham Region, Brock, Scugog, Victoria County
+- Job Classifications: Commercial Plazas, Agricultural Barn Runways,
+  Municipal Road Approaches, Residential Driveways
+- Layer Stack: Hand-painted vector base, coordinate-projected job pins,
+  project detail modals, equipment tracking
+- Field Verification: Compaction test results, asphalt mix tonnages,
+  before/after photographic evidence
+- Status: Live production deployment on GitHub Pages HTTPS</pre>
+            <div class="schematic-caption">
+              <span>LIVE INTERACTIVE GEOGRAPHIC PORTFOLIO</span>
+              <a href="https://canadaornaw.github.io/harwick-route" target="_blank" rel="noopener">Open Harwick Route Map (canadaornaw.github.io/harwick-route) ↗</a>
             </div>
           </div>
         </div>
@@ -914,6 +1101,12 @@ UPCOMING PORTFOLIO REELS (IN ACTIVE RENDER):
             <td data-label="Zack in the Field (Physical Shift)">Cleaning equipment, loading trailers, and closing out the site.</td>
             <td data-label="Workstation at Base (Autonomous Execution)">Generates next week's Harwick and Aegis social posts, runs up to 3 automated fact-check repair rounds against <code>facts.md</code>, and logs <code>PASS</code> receipts to disk.</td>
           </tr>
+          <tr>
+            <td class="shift-time-cell" data-label="Time (EDT)">20:00 – 21:00</td>
+            <td class="shift-unit-cell" data-label="Systemd Timer / Service">render.ts · plate-pipeline.py (WebGPU + Wan 2.2)</td>
+            <td data-label="Zack in the Field (Physical Shift)">Off-shift. Equipment washed, fueled, and parked at yard.</td>
+            <td data-label="Workstation at Base (Autonomous Execution)">Headless WebGPU rendering (<code>npm run render-spot</code>), <code>measure.py</code> audio envelope synchronization, and 8-frame drift strip validation.</td>
+          </tr>
         </tbody>
       </table>
     </section>
@@ -958,6 +1151,61 @@ UPCOMING PORTFOLIO REELS (IN ACTIVE RENDER):
               <strong>First 30 Days on Your Team:</strong> Week 1 shadow every role and inventory every manual copy-paste; Week 2 ship the top two highest-leverage automations with verification gates; Weeks 3–4 document the runbooks and work down the backlog.
             </li>
           </ul>
+
+          <form class="dispatch-inquiry-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="7e5c3449-1902-46d7-95d4-8c7564a289b2">
+            <input type="hidden" name="redirect" value="https://aegisequity.ca/zack/?submitted=zack#hire-zack">
+            <input type="hidden" name="subject" value="Zack Harper · Portfolio &amp; Technical Hiring Inquiry">
+            <input type="hidden" name="from_name" value="Zack Harper Dispatch Board">
+            
+            <div style="display:none;" aria-hidden="true">
+              <label for="botcheck-zack">Bot check</label>
+              <input type="checkbox" name="botcheck" id="botcheck-zack">
+            </div>
+
+            <div class="inquiry-grid">
+              <div class="form-group">
+                <label for="zack-name">Your Name / Organization <span class="required-star">*</span></label>
+                <input type="text" id="zack-name" name="name" placeholder="e.g. Sarah Chen · TS Manufacturing" required autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label for="zack-email">Work Email <span class="required-star">*</span></label>
+                <input type="email" id="zack-email" name="email" placeholder="sarah@company.com" required autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label for="zack-phone">Phone / Signal (Optional)</label>
+                <input type="tel" id="zack-phone" name="phone" placeholder="705-555-0199" autocomplete="tel">
+              </div>
+
+              <div class="form-group">
+                <label for="zack-intent">Engagement Scope <span class="required-star">*</span></label>
+                <select id="zack-intent" name="intent" required>
+                  <option value="" disabled selected>Select Scope...</option>
+                  <option value="Full-Time / Permanent Role (AI Automation / ML / Vision)">Full-Time / Permanent Role (AI Automation / ML / Vision)</option>
+                  <option value="Contract / Sprint Automation Build">Contract / Sprint Automation Build</option>
+                  <option value="Commercial Video &amp; WebGPU Production">Commercial Video &amp; WebGPU Production</option>
+                  <option value="Applied Computer Vision &amp; Frigate / VLM">Applied Computer Vision &amp; Frigate / VLM</option>
+                  <option value="Technical Consultation / Direct Chat">Technical Consultation / Direct Chat</option>
+                </select>
+              </div>
+
+              <div class="form-group inquiry-full">
+                <label for="zack-message">Project Scope, Role Details, or Operational Bottleneck <span class="required-star">*</span></label>
+                <textarea id="zack-message" name="message" rows="4" placeholder="Describe the role you're hiring for, what needs building, or what repetitive bottleneck you need engineered out of your operation..." required minlength="15"></textarea>
+              </div>
+            </div>
+
+            <div class="form-action-bar">
+              <button type="submit" class="tactile-btn gold">
+                TRANSMIT INQUIRY TO ZACK HARPER →
+              </button>
+              <span class="form-privacy-note">
+                Direct encrypted delivery to Zack's personal inbox · Fast direct reply
+              </span>
+            </div>
+          </form>
         </div>
 
         <div class="hero-cta-row">
@@ -1001,6 +1249,61 @@ UPCOMING PORTFOLIO REELS (IN ACTIVE RENDER):
               <strong>Equipment &amp; Field Subcontracting:</strong> Experienced operator (paver, skid steer, rollers, tractor, truck &amp; trailer; Class G, First Aid &amp; CPR, WHMIS) available for seasonal or subcontract site work.
             </li>
           </ul>
+
+          <form class="dispatch-inquiry-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="af80a728-0302-468d-8d83-fe78e8ecc214">
+            <input type="hidden" name="redirect" value="https://aegisequity.ca/zack/?submitted=aegis#hire-aegis">
+            <input type="hidden" name="subject" value="Aegis Engineered Solutions · Client / Project Inquiry">
+            <input type="hidden" name="from_name" value="Aegis Client Inquiry (via Zack Portfolio)">
+            
+            <div style="display:none;" aria-hidden="true">
+              <label for="botcheck-aegis">Bot check</label>
+              <input type="checkbox" name="botcheck" id="botcheck-aegis">
+            </div>
+
+            <div class="inquiry-grid">
+              <div class="form-group">
+                <label for="aegis-name">Your Name / Business <span class="required-star">*</span></label>
+                <input type="text" id="aegis-name" name="name" placeholder="e.g. Dave Miller · Miller Farm Supply" required autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label for="aegis-email">Email Address <span class="required-star">*</span></label>
+                <input type="email" id="aegis-email" name="email" placeholder="dave@millerfarmsupply.ca" required autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label for="aegis-phone">Phone Number <span class="required-star">*</span></label>
+                <input type="tel" id="aegis-phone" name="phone" placeholder="705-555-0144" required autocomplete="tel">
+              </div>
+
+              <div class="form-group">
+                <label for="aegis-service">Service Required <span class="required-star">*</span></label>
+                <select id="aegis-service" name="service" required>
+                  <option value="" disabled selected>Select Service...</option>
+                  <option value="Done-For-You Local Marketing ($650/mo)">Done-For-You Local Marketing ($650/mo)</option>
+                  <option value="Fast Website Rebuild ($900 one-time)">Fast Website Rebuild ($900 one-time)</option>
+                  <option value="Custom 3D-Printed Hardware / Enclosures / IoT">Custom 3D-Printed Hardware / Enclosures / IoT</option>
+                  <option value="Heavy Equipment &amp; Field Subcontracting">Heavy Equipment &amp; Field Subcontracting</option>
+                  <option value="Other / Custom Practical Build">Other / Custom Practical Build</option>
+                </select>
+              </div>
+
+              <div class="form-group inquiry-full">
+                <label for="aegis-message">Project Description or Problem <span class="required-star">*</span></label>
+                <textarea id="aegis-message" name="message" rows="4" placeholder="Describe your property, project, website, or marketing needs in Durham Region / Kawartha Lakes..." required minlength="15"></textarea>
+              </div>
+            </div>
+
+            <div class="form-action-bar">
+              <button type="submit" class="tactile-btn gold">
+                TRANSMIT TO AEGIS ENGINEERED SOLUTIONS →
+              </button>
+              <span class="form-privacy-note">
+                Direct delivery to admin@aegisequity.ca · Written scope before any paid work
+              </span>
+            </div>
+          </form>
         </div>
 
         <div class="hero-cta-row">
