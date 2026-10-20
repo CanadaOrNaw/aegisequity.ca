@@ -126,6 +126,10 @@
     {
       "path": "thank-you.html",
       "role": "authored_public_page; native form response landing page; complete source read"
+    },
+    {
+      "path": "zack/",
+      "role": "authored_public_page; /zack/ personal portfolio page for Zack Harper (HTML, dispatch.js, styles, fonts, brand asset, video poster grids); complete source read"
     }
   ],
   "excluded": [
