@@ -1,0 +1,1025 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zack Harper · AI Systems Builder &amp; Paving Operator | Aegis Engineered Solutions</title>
+  <meta name="description" content="Portfolio and operational dispatch board of Zack Harper, founder of Aegis Engineered Solutions and co-owner of Harwick Paving Ltd. Production AI agents, Dex-1B decision model, 7-camera local vision, and commercial web/automation systems.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/shield-mark.svg">
+  <script src="dispatch.js" defer></script>
+</head>
+<body>
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden;">
+    <symbol id="hex-fastener" viewBox="0 0 16 16">
+      <polygon points="8,1 14,4.5 14,11.5 8,15 2,11.5 2,4.5" fill="#101f38" stroke="#efc65d" stroke-width="1.35"/>
+      <circle cx="8" cy="8" r="3.4" fill="#07101e" stroke="#c49a38" stroke-width="1"/>
+      <line x1="5.4" y1="8" x2="10.6" y2="8" stroke="#efc65d" stroke-width="1.25" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+  <a class="skip-link" href="#main-control">Skip to dispatch board</a>
+
+  <header class="control-topbar">
+    <div class="brand-cluster">
+      <a class="brand-link" href="#main-control">
+        <img class="brand-shield" src="assets/shield-mark.svg" alt="Aegis shield mark" width="26" height="30">
+        <span class="brand-identity">
+          <span class="brand-name">Zack Harper</span>
+          <span class="brand-sub">Aegis Engineered Solutions · ON</span>
+        </span>
+      </a>
+      <span class="station-coords" title="Workstation and field base coordinates">
+        <span class="led-dot" aria-hidden="true"></span>
+        <span>44.348°N, 79.037°W · 39 TIMERS</span>
+      </span>
+    </div>
+
+    <div class="mode-rocker" role="group" aria-label="Filter dispatch board by visitor path">
+      <button type="button" class="mode-btn" data-mode="all" aria-pressed="true">ALL SYSTEMS (7)</button>
+      <button type="button" class="mode-btn" data-mode="employer" aria-pressed="false">FOR EMPLOYERS &amp; HIRING</button>
+      <button type="button" class="mode-btn" data-mode="client" aria-pressed="false">FOR CLIENTS &amp; AEGIS</button>
+    </div>
+
+    <nav class="topbar-actions" aria-label="Direct actions">
+      <a class="top-action-link" href="#spec-plates">Spec Plates</a>
+      <a class="top-action-link" href="#one-day-running">24h Shift Log</a>
+      <a class="top-action-link" href="https://github.com/CanadaOrNaw" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="top-action-link primary-cta" href="#hire-zack">Hire / Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-control" class="control-room-shell">
+    <!-- FIRST VIEWPORT: MASTER EQUIPMENT SPEC PLATE + LIVE SPLIT-FLAP DISPATCH BOARD -->
+    <section class="command-deck" aria-label="Master identity plate and operational dispatch board">
+      <!-- LEFT: MASTER OPERATOR / BUILDER SPEC PLATE -->
+      <article class="spec-plate">
+        <div class="plate-rivets" aria-hidden="true">
+          <svg class="rivet tl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet tr"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet bl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet br"><use href="#hex-fastener"></use></svg>
+        </div>
+
+        <div>
+          <div class="plate-header-bar">
+            <h1 class="hero-title">Zack Harper</h1>
+            <span class="plate-stamp-badge">PLATE ZH-2026</span>
+          </div>
+
+          <div class="hero-role-banner">
+            <span class="role-chip">Founder, Aegis Engineered Solutions</span>
+            <span class="role-chip">VP Operations &amp; Co-Owner, Harwick Paving Ltd.</span>
+            <span class="role-chip cyan">Cannington / Kawartha Lakes, ON</span>
+          </div>
+
+          <p class="hero-thesis">
+            I operate heavy asphalt equipment in the field by day and engineer the autonomous AI agents, decision models, and local vision systems that run my businesses around the clock.
+          </p>
+
+          <p id="hero-mode-note" class="hero-subcopy">
+            UNIFIED CONTROL ROOM: Showing all 7 production AI, web, hardware, and field systems built and operated by Zack Harper across Harwick Paving Ltd. and Aegis Engineered Solutions.
+          </p>
+
+          <div class="stamped-ratings-grid" aria-label="Rated operational specifications">
+            <div class="rating-cell">
+              <span class="rating-val">39 Timers · 3 Agents</span>
+              <span class="rating-desc">81 YouTube videos &amp; daily Reels fact-checked against approved company facts before API scheduling</span>
+            </div>
+            <div class="rating-cell">
+              <span class="rating-val">Dex-1B · 81.5% · 18 ms</span>
+              <span class="rating-desc">1.1B encoder + custom decision head trained on home RTX 3070 Ti; Apache-2.0 on Hugging Face</span>
+            </div>
+            <div class="rating-cell">
+              <span class="rating-val">OpenClaw #142018</span>
+              <span class="rating-desc">Credited contributor on ~390k-star agent project; 3× "diamond lobster" P1 &amp; security issues</span>
+            </div>
+            <div class="rating-cell">
+              <span class="rating-val">8+ Yrs Heavy Field Ops</span>
+              <span class="rating-desc">Asphalt paver, skid steer, steel/pneumatic rollers, crew direction, 7-camera Frigate vision &amp; CAD</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-cta-row">
+          <a class="tactile-btn gold" href="#hire-zack">Hiring Managers →</a>
+          <a class="tactile-btn ghost" href="#hire-aegis">Aegis Clients ($650/mo) →</a>
+          <a class="tactile-btn ghost" href="tel:+17053413980">705-341-3980</a>
+          <a class="tactile-btn ghost" href="mailto:Zack.Harper@pm.me">Zack.Harper@pm.me</a>
+        </div>
+      </article>
+
+      <!-- RIGHT: THE SPLIT-FLAP DISPATCH BOARD + 24-HOUR SHIFT SCRUBBER -->
+      <section class="dispatch-board-housing" aria-labelledby="dispatch-board-title">
+        <div class="plate-rivets" aria-hidden="true">
+          <svg class="rivet tl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet tr"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet bl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet br"><use href="#hex-fastener"></use></svg>
+        </div>
+
+        <div>
+          <div class="board-top-bar">
+            <h2 id="dispatch-board-title" class="board-heading">The Dispatch Board</h2>
+            <div class="board-telemetry-meta">
+              <span class="telemetry-pill">
+                <span class="led-dot" aria-hidden="true"></span>
+                <span>GENUINE EXECUTION RECORDS</span>
+              </span>
+              <span>SELECT ANY ROW TO OPEN SPEC PLATE</span>
+            </div>
+          </div>
+
+          <!-- ONE DAY, RUNNING: INTERACTIVE SHIFT SCRUBBER -->
+          <div class="shift-scrubber-bar" aria-label="One Day, Running 24-hour shift scrubber">
+            <div class="shift-scrubber-head">
+              <span id="shift-active-unit" class="shift-scrubber-title">06:30 EDT · claude-agents-brief.timer + harwick-call-list.timer</span>
+              <div class="shift-step-buttons" role="tablist" aria-label="Select shift hour">
+                <button type="button" role="tab" class="shift-hour-btn" data-hour="02:49" aria-selected="false">02:49</button>
+                <button type="button" role="tab" class="shift-hour-btn" data-hour="06:20" aria-selected="false">06:20</button>
+                <button type="button" role="tab" class="shift-hour-btn" data-hour="06:30" aria-selected="true">06:30</button>
+                <button type="button" role="tab" class="shift-hour-btn" data-hour="07:30" aria-selected="false">07:30</button>
+                <button type="button" role="tab" class="shift-hour-btn" data-hour="09:05" aria-selected="false">09:05</button>
+                <button type="button" role="tab" class="shift-hour-btn" data-hour="14:00" aria-selected="false">14:00</button>
+                <button type="button" role="tab" class="shift-hour-btn" data-hour="17:00" aria-selected="false">17:00</button>
+              </div>
+            </div>
+            <div class="shift-dual-readout">
+              <div class="shift-lane">
+                <span class="shift-lane-tag">ZACK IN THE FIELD (OPERATOR)</span>
+                <span id="shift-field-readout" class="shift-lane-val">En route to Kawartha Lakes job site; reading Telegram brief on phone.</span>
+              </div>
+              <div class="shift-lane">
+                <span class="shift-lane-tag">WORKSTATION AT BASE (AUTONOMOUS)</span>
+                <span id="shift-machine-readout" class="shift-lane-val">morning_brief.py reads disk/systemd state (atilla, harwick, aegis heartbeats, 24h job receipts, quota governor, money radar) &amp; sends one Telegram brief.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7-ROW SPLIT-FLAP BOARD -->
+          <div class="dispatch-col-headers" aria-hidden="true">
+            <span>PLATE</span>
+            <span>SCHEDULE / RATE</span>
+            <span>SYSTEM DESIGNATION</span>
+            <span>VERIFIED TELEMETRY</span>
+            <span style="text-align:right;">ACTION</span>
+          </div>
+
+          <div class="dispatch-table" role="list">
+            <button type="button" class="dispatch-row is-active" data-sys="SYS-01" data-audience="employer,client" aria-expanded="true">
+              <span class="row-code">SYS-01</span>
+              <span class="row-schedule">06:30 / 17:00 EDT</span>
+              <span class="row-system-name">Harwick Marketing &amp; Ops Engine</span>
+              <span class="flap-strip status-green" aria-label="81 VIDEOS"></span>
+              <span class="row-action-cell">OPEN SPEC ↓</span>
+            </button>
+
+            <button type="button" class="dispatch-row" data-sys="SYS-02" data-audience="employer" aria-expanded="false">
+              <span class="row-code">SYS-02</span>
+              <span class="row-schedule">18 ms / 1-pass</span>
+              <span class="row-system-name">Dex-1B Decision Model (Ettin-1B)</span>
+              <span class="flap-strip status-cyan" aria-label="81.5% 18MS"></span>
+              <span class="row-action-cell">OPEN SPEC ↓</span>
+            </button>
+
+            <button type="button" class="dispatch-row" data-sys="SYS-03" data-audience="employer" aria-expanded="false">
+              <span class="row-code">SYS-03</span>
+              <span class="row-schedule">Continuous 24/7</span>
+              <span class="row-system-name">Echo Home: Voice, LLM &amp; 7-Cam Vision</span>
+              <span class="flap-strip status-green" aria-label="7 CAM 5 RM"></span>
+              <span class="row-action-cell">OPEN SPEC ↓</span>
+            </button>
+
+            <button type="button" class="dispatch-row" data-sys="SYS-04" data-audience="employer" aria-expanded="false">
+              <span class="row-code">SYS-04</span>
+              <span class="row-schedule">Merged #142018</span>
+              <span class="row-system-name">OpenClaw Kernel &amp; Gateway Fixes</span>
+              <span class="flap-strip" aria-label="PR #142018"></span>
+              <span class="row-action-cell">OPEN SPEC ↓</span>
+            </button>
+
+            <button type="button" class="dispatch-row" data-sys="SYS-05" data-audience="client" aria-expanded="false">
+              <span class="row-code">SYS-05</span>
+              <span class="row-schedule">Mon 06:30 / Thu</span>
+              <span class="row-system-name">B2B Lead Engine &amp; Financial Audit</span>
+              <span class="flap-strip status-cyan" aria-label="1443 SITES"></span>
+              <span class="row-action-cell">OPEN SPEC ↓</span>
+            </button>
+
+            <button type="button" class="dispatch-row" data-sys="SYS-06" data-audience="client" aria-expanded="false">
+              <span class="row-code">SYS-06</span>
+              <span class="row-schedule">Thu 09:05 EDT</span>
+              <span class="row-system-name">Aegis Client Web, SEO &amp; CAD Builds</span>
+              <span class="flap-strip status-green" aria-label="CLIENT PAID"></span>
+              <span class="row-action-cell">OPEN SPEC ↓</span>
+            </button>
+
+            <button type="button" class="dispatch-row" data-sys="SYS-07" data-audience="employer,client" aria-expanded="false">
+              <span class="row-code">SYS-07</span>
+              <span class="row-schedule">Field + A100 CLI</span>
+              <span class="row-system-name">Heavy Equipment &amp; Generative Media</span>
+              <span class="flap-strip" aria-label="8YRS + A100"></span>
+              <span class="row-action-cell">OPEN SPEC ↓</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="board-footer-bar">
+          <span>HEARTBEATS: atilla (idle 4s) · harwick (idle 2s) · aegis (idle 3s)</span>
+          <span>QUOTA GOVERNOR: OK · SYSTEMD FAILED UNITS: 0</span>
+        </div>
+      </section>
+    </section>
+
+    <!-- ACTIVE SYSTEM INSPECTOR (UPDATES ON BOARD CLICK) -->
+    <section id="active-inspector" class="inspector-section" aria-label="Selected system execution inspector">
+      <div class="inspector-console">
+        <div class="plate-rivets" aria-hidden="true">
+          <svg class="rivet tl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet tr"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet bl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet br"><use href="#hex-fastener"></use></svg>
+        </div>
+
+        <div class="inspector-top-bar">
+          <h2 id="inspector-title" class="inspector-heading">SYS-01 — Harwick Autonomous Marketing &amp; Ops Engine</h2>
+          <div class="inspector-meta-tags">
+            <span id="inspector-code" class="meta-tag">PLATE SYS-01</span>
+            <span id="inspector-schedule" class="meta-tag">06:20 / 06:30 / 17:00 EDT</span>
+            <span id="inspector-badge" class="meta-tag green">VERIFIED · 39 TIMERS · PASS</span>
+          </div>
+        </div>
+
+        <div class="inspector-grid">
+          <div class="inspector-story">
+            <h3>What It Does</h3>
+            <p id="inspector-what">
+              Runs daily marketing and morning operations for Harwick Paving Ltd.: selects weekly topics from a keyword rotation, drafts Facebook, Instagram, and YouTube posts, enforces a multi-round fact-check against an approved company fact sheet before scheduling, and sends a 06:30 Telegram morning briefing.
+            </p>
+            <h3>How I Built It</h3>
+            <p id="inspector-how">
+              Three isolated Claude Code agents (atilla, harwick, aegis) orchestrated by 39 systemd user timers, Python dispatchers (agent_job.py, morning_brief.py, harwick_money_radar.py), YouTube Data API, and Meta Planner automation with a 3-round claim verification gate.
+            </p>
+            <table class="spec-kv-table" aria-label="Selected system specifications">
+              <tbody id="inspector-specs-body">
+                <tr><th scope="row">Active Timers</th><td>39 systemd user timers (net-watch, brief, rolling calendar, rank check)</td></tr>
+                <tr><th scope="row">Published Output</th><td>81 YouTube Shorts &amp; explainers + daily FB/IG Reels on 28-day rolling window</td></tr>
+                <tr><th scope="row">Fact-Check Gate</th><td>Up to 3 automated repair rounds against approved facts.md; 0 unverified claims</td></tr>
+                <tr><th scope="row">Agent Isolation</th><td>3 workspaces (atilla, harwick, aegis) with JSON job receipts &amp; heartbeat checks</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="inspector-receipt-box">
+            <h3>Verifiable Execution Record (Raw Disk Receipt)</h3>
+            <pre id="inspector-receipt" class="receipt-terminal">{
+  "id": "20261011T170009-harwick-social-weekly-drafts",
+  "job": "harwick-social-weekly-drafts",
+  "agent": "harwick",
+  "status": "PASS",
+  "startedAt": "2026-10-11T21:00:10.689Z",
+  "finishedAt": "2026-10-11T21:04:02.745Z",
+  "durationMs": 232056,
+  "answer": "Harwick social drafts for 2026-W42 are ready to review. All 9 posts pass the checker (round 2 of 3)."
+}</pre>
+            <div id="inspector-links" class="inspector-links">
+              <a class="tactile-btn gold" href="#plate-sys-01">Inspect Full Plate ↓</a>
+              <a class="tactile-btn ghost" href="https://canadaornaw.github.io/harwick-route" target="_blank" rel="noopener">Harwick Route Map ↗</a>
+              <a class="tactile-btn ghost" href="https://www.youtube.com/@HarwickPavingLtd" target="_blank" rel="noopener">@HarwickPavingLtd YouTube ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: STAMPED EQUIPMENT SPEC PLATES (ALL 7 SYSTEMS) -->
+    <div id="spec-plates" class="section-header-bar">
+      <h2>Equipment Spec Plates · Production Systems Ledger</h2>
+      <span class="section-header-meta">STAMPED RATINGS · ARCHITECTURE SCHEMATICS · VERIFIED RECEIPTS</span>
+    </div>
+
+    <div class="plates-ledger">
+      <!-- PLATE SYS-01 -->
+      <article id="plate-sys-01" class="system-spec-plate">
+        <div class="plate-rivets" aria-hidden="true">
+          <svg class="rivet tl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet tr"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet bl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet br"><use href="#hex-fastener"></use></svg>
+        </div>
+        <div class="plate-title-row">
+          <h3>SYS-01 · Harwick Autonomous Marketing &amp; Operations Engine</h3>
+          <div class="plate-serial-strip">
+            <span class="serial-tag gold">MODEL: HARWICK-OPS-2026</span>
+            <span class="serial-tag">DUTY: DAILY 06:20 / 06:30 / 17:00</span>
+            <span class="serial-tag green">STATUS: 81 VIDEOS · 39 TIMERS ACTIVE</span>
+          </div>
+        </div>
+        <div class="plate-body-grid">
+          <div class="plate-narrative">
+            <p>
+              <strong>Operational Problem:</strong> Running a commercial and residential paving company in the Kawarthas leaves zero office hours during paving season for daily social content, search-ranking audits, tender monitoring, or morning inbox triage.
+            </p>
+            <p>
+              <strong>Engineered System:</strong> Every week the pipeline pulls the next keyword rotation, drafts posts for Facebook, Instagram, and YouTube, and runs a mechanical claim checker against an approved company fact sheet (<code>facts.md</code>). Drafts that drift go back for up to three automated repair rounds; nothing outside the fact sheet ever ships. Approved posts schedule themselves across a rolling 28-day window via the YouTube Data API and Meta Planner. Every month, a baseline rank checker audits local Google search positions and feeds gaps back into upcoming titles.
+            </p>
+            <div class="plate-spec-matrix">
+              <div class="spec-cell">
+                <span class="spec-cell-label">Video &amp; Social Output</span>
+                <span class="spec-cell-val">81 YouTube Videos · Daily FB/IG Reels</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Verification Gate</span>
+                <span class="spec-cell-val">3-Round Fact-Check vs. facts.md</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Agent Fleet</span>
+                <span class="spec-cell-val">atilla · harwick · aegis (JSON receipts)</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Morning Briefing</span>
+                <span class="spec-cell-val">06:30 EDT Telegram Digest (6 states)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="schematic-box">
+            <svg viewBox="0 0 520 210" role="img" aria-label="Harwick marketing and operations pipeline schematic">
+              <rect x="6" y="6" width="508" height="198" rx="6" fill="#050a14" stroke="#283c5f" stroke-width="1"/>
+              <!-- Nodes -->
+              <rect x="20" y="28" width="105" height="54" rx="4" fill="#0b1628" stroke="#efc65d" stroke-width="1.2"/>
+              <text x="72" y="49" fill="#ffe182" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" text-anchor="middle">KEYWORD ROTATION</text>
+              <text x="72" y="66" fill="#c6d4ea" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">Sun 17:00 Timer</text>
+
+              <line x1="125" y1="55" x2="152" y2="55" stroke="#efc65d" stroke-width="1.5"/>
+              <polygon points="152,55 146,51 146,59" fill="#efc65d"/>
+
+              <rect x="154" y="28" width="110" height="54" rx="4" fill="#0b1628" stroke="#6cc9ff" stroke-width="1.2"/>
+              <text x="209" y="49" fill="#8cd6ff" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" text-anchor="middle">DRAFT GENERATOR</text>
+              <text x="209" y="66" fill="#c6d4ea" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">9 Posts / Week</text>
+
+              <line x1="264" y1="55" x2="291" y2="55" stroke="#6cc9ff" stroke-width="1.5"/>
+              <polygon points="291,55 285,51 285,59" fill="#6cc9ff"/>
+
+              <rect x="293" y="22" width="108" height="66" rx="4" fill="#10223d" stroke="#58e6a9" stroke-width="1.4"/>
+              <text x="347" y="43" fill="#58e6a9" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" text-anchor="middle">FACT-CHECK GATE</text>
+              <text x="347" y="58" fill="#eef4ff" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">vs. facts.md</text>
+              <text x="347" y="73" fill="#efc65d" font-family="JetBrains Mono, monospace" font-size="8.5" text-anchor="middle">Max 3 Fix Rounds</text>
+
+              <line x1="401" y1="55" x2="424" y2="55" stroke="#58e6a9" stroke-width="1.5"/>
+              <polygon points="424,55 418,51 418,59" fill="#58e6a9"/>
+
+              <rect x="426" y="28" width="74" height="54" rx="4" fill="#0b1628" stroke="#efc65d" stroke-width="1.2"/>
+              <text x="463" y="49" fill="#ffe182" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" text-anchor="middle">28-DAY API</text>
+              <text x="463" y="66" fill="#c6d4ea" font-family="JetBrains Mono, monospace" font-size="8.5" text-anchor="middle">YT + Meta</text>
+
+              <!-- Lower Telemetry Rail -->
+              <rect x="20" y="116" width="480" height="68" rx="4" fill="#08111f" stroke="#283c5f" stroke-width="1"/>
+              <text x="34" y="136" fill="#efc65d" font-family="JetBrains Mono, monospace" font-size="9.5" font-weight="700">RECEIPT: 20261011T170009-harwick-social-weekly-drafts.done.json</text>
+              <text x="34" y="154" fill="#58e6a9" font-family="JetBrains Mono, monospace" font-size="9">status: "PASS" · durationMs: 232056 · "All 9 posts pass the checker (round 2 of 3)"</text>
+              <text x="34" y="171" fill="#96aac6" font-family="JetBrains Mono, monospace" font-size="8.5">06:30 morning_brief.py -> Verified / Running / Stale / Unknown / Failed / Gated</text>
+            </svg>
+            <div class="schematic-caption">
+              <span>SCHEMATIC 01 · CLOSED-LOOP FACT-CHECK &amp; SCHEDULER</span>
+              <a href="https://canadaornaw.github.io/harwick-route" target="_blank" rel="noopener">View Harwick 2026 Route Map ↗</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PLATE SYS-02 -->
+      <article id="plate-sys-02" class="system-spec-plate">
+        <div class="plate-rivets" aria-hidden="true">
+          <svg class="rivet tl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet tr"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet bl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet br"><use href="#hex-fastener"></use></svg>
+        </div>
+        <div class="plate-title-row">
+          <h3>SYS-02 · Dex-1B: Open-Source Non-Autoregressive Decision Model</h3>
+          <div class="plate-serial-strip">
+            <span class="serial-tag gold">MODEL: CANADAORNAW/DEX-1B</span>
+            <span class="serial-tag">ARCH: ETTIN-1B ENCODER (784M TUNED)</span>
+            <span class="serial-tag green">LATENCY: 18 MS · APACHE-2.0</span>
+          </div>
+        </div>
+        <div class="plate-body-grid">
+          <div class="plate-narrative">
+            <p>
+              <strong>Operational Problem:</strong> Calling a commercial decision API for every classification, routing, or command-gating check in an agent loop costs money per call and adds 780–890 ms of network latency.
+            </p>
+            <p>
+              <strong>Engineered System:</strong> I built and released <strong>Dex-1B</strong> (<a href="https://github.com/CanadaOrNaw/dex" target="_blank" rel="noopener">github.com/CanadaOrNaw/dex</a> · <a href="https://huggingface.co/CanadaOrNaw/dex-1b" target="_blank" rel="noopener">huggingface.co/CanadaOrNaw/dex-1b</a>), a local drop-in replacement for the TypeSafe Jev API (<code>POST /v1/systemone</code>). It pairs the 1.1B-parameter bidirectional Ettin encoder (784M parameters fine-tuned; embeddings and lowest 7 of 28 layers frozen) with a custom typed decision head trained from scratch on my own RTX 3070 Ti (8 GB) in <code>bfloat16</code>. Trained for 3 epochs against strictly proper scoring rules (cross-entropy + KL divergence) with 30% option shuffling across ~1,080 distinct instruction wordings.
+            </p>
+            <div class="plate-spec-matrix">
+              <div class="spec-cell">
+                <span class="spec-cell-label">Everyday Use Cases (1,244 q)</span>
+                <span class="spec-cell-val">81.5% (vs. Paid API 84.6% · Laya 68.2%)</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Command Gating Accuracy</span>
+                <span class="spec-cell-val">93.3% (vs. Stock Laya 47.5%)</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Unseen Tasks Ablation Gain</span>
+                <span class="spec-cell-val">+4.0 pts (wording) + 5.2 pts (1.1B body)</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Single-Pass Inference</span>
+                <span class="spec-cell-val">18 ms / decision · 2.4 GB VRAM (bf16)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="schematic-box">
+            <div style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--gold-100); font-weight: 700; margin-bottom: 0.55rem;">
+              HUMAN-LABEL BENCHMARK VERIFICATION (RTX 3070 Ti · bfloat16)
+            </div>
+            <div class="benchmark-chart" aria-label="Dex-1B accuracy vs paid JEV API and Stock Laya">
+              <div class="bench-row">
+                <span>Dex-1B (10 Everyday)</span>
+                <div class="bench-track"><div class="bench-fill" style="width: 81.5%;"></div></div>
+                <span class="tabular" style="text-align:right; color:var(--gold-100); font-weight:700;">81.5%</span>
+              </div>
+              <div class="bench-row">
+                <span>Paid JEV API (Ref)</span>
+                <div class="bench-track"><div class="bench-fill cyan" style="width: 84.6%;"></div></div>
+                <span class="tabular" style="text-align:right;">84.6%</span>
+              </div>
+              <div class="bench-row">
+                <span>Stock Laya (395M)</span>
+                <div class="bench-track"><div class="bench-fill muted" style="width: 68.2%;"></div></div>
+                <span class="tabular" style="text-align:right;">68.2%</span>
+              </div>
+              <div class="bench-row">
+                <span>Dex-1B (Cmd Gating)</span>
+                <div class="bench-track"><div class="bench-fill" style="width: 93.3%;"></div></div>
+                <span class="tabular" style="text-align:right; color:var(--green-200); font-weight:700;">93.3%</span>
+              </div>
+              <div class="bench-row">
+                <span>Dex-1B (Unseen Tasks)</span>
+                <div class="bench-track"><div class="bench-fill" style="width: 74.4%;"></div></div>
+                <span class="tabular" style="text-align:right; color:var(--gold-100); font-weight:700;">74.4%</span>
+              </div>
+              <div class="bench-row">
+                <span>Calibration Error (ECE)</span>
+                <div class="bench-track"><div class="bench-fill cyan" style="width: 94.2%;"></div></div>
+                <span class="tabular" style="text-align:right;">0.058</span>
+              </div>
+            </div>
+            <div class="schematic-caption">
+              <span>140,620 DECISION INDEX REQUESTS · SKILL 12.99 (3× STOCK LAYA)</span>
+              <a href="https://github.com/CanadaOrNaw/dex" target="_blank" rel="noopener">Inspect Repo &amp; Ablations ↗</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PLATE SYS-03 -->
+      <article id="plate-sys-03" class="system-spec-plate">
+        <div class="plate-rivets" aria-hidden="true">
+          <svg class="rivet tl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet tr"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet bl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet br"><use href="#hex-fastener"></use></svg>
+        </div>
+        <div class="plate-title-row">
+          <h3>SYS-03 · Echo Home: Whole-House Local Voice &amp; 7-Camera Vision</h3>
+          <div class="plate-serial-strip">
+            <span class="serial-tag gold">MODEL: ECHO-HOME-LOCAL</span>
+            <span class="serial-tag">AUDIO: 5-ROOM PIPEWIRE + KOKORO</span>
+            <span class="serial-tag green">VISION: 7 CAMERAS · FRIGATE + VLM</span>
+          </div>
+        </div>
+        <div class="plate-body-grid">
+          <div class="plate-narrative">
+            <p>
+              <strong>Operational Problem:</strong> Cloud smart speakers leak audio, rely on rigid command menus, and cannot reason over local security cameras or workstation tools.
+            </p>
+            <p>
+              <strong>Engineered System:</strong> Built a whole-house voice and vision system running 100% locally. A custom-trained <code>"Echo"</code> wake-word model (openWakeWord) feeds <code>whisper.cpp</code> speech-to-text into a local LLM agent (<code>llama.cpp</code> on Vulkan) that calls its own tools (time, weather, Exa search, local files, persistent memory) without hardcoded menus, speaking back through <code>Kokoro</code> neural TTS across a five-room PipeWire audio matrix. For computer vision, <code>Frigate</code> runs person and vehicle detection across seven cameras (including custom ESP32 camera nodes) with dual tuned CPU detectors so high-motion feeds never starve secondary cameras, paired with local Vision-Language Model evaluation on dark and low-frame-rate footage.
+            </p>
+            <div class="plate-spec-matrix">
+              <div class="spec-cell">
+                <span class="spec-cell-label">Speech &amp; Reasoning</span>
+                <span class="spec-cell-val">openWakeWord -> whisper.cpp -> Vulkan LLM</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Synthesis &amp; Routing</span>
+                <span class="spec-cell-val">Kokoro Local TTS · 5-Room Audio Matrix</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Camera Network</span>
+                <span class="spec-cell-val">7 Cameras (RTSP + ESP32) on Frigate NVR</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Vision QA Discipline</span>
+                <span class="spec-cell-val">Dual Detector Balancing + Night VLM Eval</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="schematic-box">
+            <svg viewBox="0 0 520 200" role="img" aria-label="Echo Home local voice and 7-camera computer vision topology">
+              <rect x="6" y="6" width="508" height="188" rx="6" fill="#050a14" stroke="#283c5f" stroke-width="1"/>
+              <!-- Voice Row -->
+              <rect x="20" y="24" width="104" height="58" rx="4" fill="#0b1628" stroke="#efc65d" stroke-width="1.2"/>
+              <text x="72" y="46" fill="#ffe182" font-family="JetBrains Mono, monospace" font-size="9.5" font-weight="700" text-anchor="middle">WAKE + STT</text>
+              <text x="72" y="64" fill="#c6d4ea" font-family="JetBrains Mono, monospace" font-size="8.5" text-anchor="middle">"Echo" + whisper.cpp</text>
+
+              <line x1="124" y1="53" x2="152" y2="53" stroke="#efc65d" stroke-width="1.5"/>
+              <rect x="154" y="24" width="176" height="58" rx="4" fill="#10223d" stroke="#58e6a9" stroke-width="1.4"/>
+              <text x="242" y="45" fill="#58e6a9" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" text-anchor="middle">LOCAL VULKAN LLM AGENT</text>
+              <text x="242" y="62" fill="#eef4ff" font-family="JetBrains Mono, monospace" font-size="8.5" text-anchor="middle">Tool Loop: Time · Weather · Files · Search</text>
+
+              <line x1="330" y1="53" x2="358" y2="53" stroke="#58e6a9" stroke-width="1.5"/>
+              <rect x="360" y="24" width="140" height="58" rx="4" fill="#0b1628" stroke="#6cc9ff" stroke-width="1.2"/>
+              <text x="430" y="46" fill="#8cd6ff" font-family="JetBrains Mono, monospace" font-size="9.5" font-weight="700" text-anchor="middle">KOKORO TTS</text>
+              <text x="430" y="64" fill="#c6d4ea" font-family="JetBrains Mono, monospace" font-size="8.5" text-anchor="middle">5-Room PipeWire Matrix</text>
+
+              <!-- Vision Row -->
+              <rect x="20" y="108" width="145" height="64" rx="4" fill="#0b1628" stroke="#6cc9ff" stroke-width="1.2"/>
+              <text x="92" y="131" fill="#8cd6ff" font-family="JetBrains Mono, monospace" font-size="9.5" font-weight="700" text-anchor="middle">7 CAMERA STREAMS</text>
+              <text x="92" y="149" fill="#c6d4ea" font-family="JetBrains Mono, monospace" font-size="8.5" text-anchor="middle">PoE/RTSP + Custom ESP32</text>
+
+              <line x1="165" y1="140" x2="195" y2="140" stroke="#6cc9ff" stroke-width="1.5"/>
+              <rect x="197" y="108" width="150" height="64" rx="4" fill="#0b1628" stroke="#efc65d" stroke-width="1.2"/>
+              <text x="272" y="131" fill="#ffe182" font-family="JetBrains Mono, monospace" font-size="9.5" font-weight="700" text-anchor="middle">FRIGATE NVR</text>
+              <text x="272" y="149" fill="#c6d4ea" font-family="JetBrains Mono, monospace" font-size="8.5" text-anchor="middle">2x Tuned CPU Detectors</text>
+
+              <line x1="347" y1="140" x2="375" y2="140" stroke="#efc65d" stroke-width="1.5"/>
+              <rect x="377" y="108" width="123" height="64" rx="4" fill="#0b1628" stroke="#58e6a9" stroke-width="1.2"/>
+              <text x="438" y="131" fill="#58e6a9" font-family="JetBrains Mono, monospace" font-size="9.5" font-weight="700" text-anchor="middle">VLM BENCHMARK</text>
+              <text x="438" y="149" fill="#c6d4ea" font-family="JetBrains Mono, monospace" font-size="8.5" text-anchor="middle">Low-Light &amp; Hallucination QA</text>
+            </svg>
+            <div class="schematic-caption">
+              <span>SCHEMATIC 03 · ZERO-CLOUD VOICE &amp; MULTI-CAMERA VISION</span>
+              <span>RTX 3070 Ti + ESP32 NODES</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PLATE SYS-04 -->
+      <article id="plate-sys-04" class="system-spec-plate">
+        <div class="plate-rivets" aria-hidden="true">
+          <svg class="rivet tl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet tr"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet bl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet br"><use href="#hex-fastener"></use></svg>
+        </div>
+        <div class="plate-title-row">
+          <h3>SYS-04 · OpenClaw Upstream Kernel &amp; Security Contributions</h3>
+          <div class="plate-serial-strip">
+            <span class="serial-tag gold">REPO: OPENCLAW/OPENCLAW (~390K STARS)</span>
+            <span class="serial-tag">RATING: 3× DIAMOND LOBSTER</span>
+            <span class="serial-tag green">CREDITED FIX: #142018 (PR #116259)</span>
+          </div>
+        </div>
+        <div class="plate-body-grid">
+          <div class="plate-narrative">
+            <p>
+              <strong>Operational Problem:</strong> Under sustained session writes, the OpenClaw agent runtime would enter a session transcript reconciliation livelock, blocking the Node.js main thread and freezing all message channel transports simultaneously.
+            </p>
+            <p>
+              <strong>Engineered Fix &amp; Security Audits:</strong> I isolated the exact source-level reproduction in <code>Session transcript projection reconcile</code> (<a href="https://github.com/openclaw/openclaw/issues/115908" target="_blank" rel="noopener">Issue #115908</a>, rated P1 and <code>diamond lobster</code>) and designed the fix architecture (<a href="https://github.com/openclaw/openclaw/pull/116259" target="_blank" rel="noopener">PR #116259</a>) that the merged upstream fix (<strong>#142018</strong>, Sept 2026) is built on as a credited contributor. I also isolated two upstream security/auth flaws awarded the project's top <code>diamond lobster</code> rating: Gateway device-identity pairing rejection (<a href="https://github.com/openclaw/openclaw/issues/115909" target="_blank" rel="noopener">#115909</a>) and unstamped internal wake provenance at <code>before_agent_run</code> (<a href="https://github.com/openclaw/openclaw/issues/107069" target="_blank" rel="noopener">#107069</a>).
+            </p>
+            <div class="plate-spec-matrix">
+              <div class="spec-cell">
+                <span class="spec-cell-label">Merged Upstream Fix</span>
+                <span class="spec-cell-val">#142018 (Built on PR #116259)</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Issue #115908 (P1 · Closed)</span>
+                <span class="spec-cell-val">Transcript Reconcile Livelock · P1</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Issue #115909 (P1 · Security)</span>
+                <span class="spec-cell-val">Gateway Auth Pairing Deadlock · P1</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Issue #107069 (Security)</span>
+                <span class="spec-cell-val">Input Provenance Gate Bypass · SEC</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="schematic-box">
+            <pre class="receipt-terminal" style="margin:0;">[Upstream Verification: github.com/openclaw/openclaw]
+
+1. #115908 (P1 · impact:crash-loop · impact:session-state)
+   "Session transcript projection reconcile can livelock under
+    sustained writes, blocking the main thread and stalling all
+    channel transports"
+   -> clawsweeper:source-repro · issue-rating: diamond lobster
+   -> Fix designed in PR #116259 -> Credited in merged fix #142018
+
+2. #115909 (P1 · impact:security · maturity:stable)
+   "Bundled browser-copilot Gateway client can never pair: auth
+    gate rejects device-identity connections as token_missing"
+   -> clawsweeper:source-repro · issue-rating: diamond lobster
+
+3. #107069 (impact:security · clawsweeper:needs-security-review)
+   "before_agent_run receives no input provenance; several
+    producers never stamp it — internal wakes look like user input"
+   -> clawsweeper:source-repro · issue-rating: diamond lobster</pre>
+            <div class="schematic-caption">
+              <span>VERIFIED ON GITHUB PUBLIC API</span>
+              <a href="https://github.com/openclaw/openclaw/issues/115908" target="_blank" rel="noopener">Open Issue #115908 ↗</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PLATE SYS-05 -->
+      <article id="plate-sys-05" class="system-spec-plate">
+        <div class="plate-rivets" aria-hidden="true">
+          <svg class="rivet tl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet tr"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet bl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet br"><use href="#hex-fastener"></use></svg>
+        </div>
+        <div class="plate-title-row">
+          <h3>SYS-05 · B2B Commercial Lead Engine &amp; Forensic Financial Audit</h3>
+          <div class="plate-serial-strip">
+            <span class="serial-tag gold">CAMPAIGN: KAWARTHAS / DURHAM B2B</span>
+            <span class="serial-tag">CRAWLED: 1,443 WEBSITES</span>
+            <span class="serial-tag green">AUDITED: $226.7K IN / $231.2K OUT</span>
+          </div>
+        </div>
+        <div class="plate-body-grid">
+          <div class="plate-narrative">
+            <p>
+              <strong>Operational Problem:</strong> Cold-calling local businesses without knowing what is broken on their property or website wastes hours—and inside a growing contracting company, uncategorized bank feeds and QuickBooks export quirks hide real cash-flow risks.
+            </p>
+            <p>
+              <strong>Engineered System:</strong> Built a B2B discovery pipeline that executed <strong>456 town-by-category searches</strong> across the Kawarthas and Durham Region, read <strong>1,443 local business websites</strong>, and produced <strong>175 ranked commercial prospects</strong> plus <strong>49 verified web-rebuild targets</strong> (confirming live SSL errors, locked "Private Site" pages, or dead domains with direct phone numbers and call notes). On the finance side, I rebuilt Harwick Paving's four-month corporate cash picture from raw bank statements (<strong>$226,735 in / $231,219 out</strong>), proved that QuickBooks' zero-revenue export was an artifact hiding ~$376k in the GL with $157k of customer payments misposted to Inventory Asset, and mapped every loan and lease for the owners.
+            </p>
+            <div class="plate-spec-matrix">
+              <div class="spec-cell">
+                <span class="spec-cell-label">Search &amp; Crawl Volume</span>
+                <span class="spec-cell-val">456 Queries · 1,443 Sites Read</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Verified Prospect Output</span>
+                <span class="spec-cell-val">175 Commercial · 49 Web Targets</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Bank Feed Categorization</span>
+                <span class="spec-cell-val">$226,735 Inflows / $231,219 Outflows</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">General Ledger Forensics</span>
+                <span class="spec-cell-val">Traced $157k Inventory Asset Mispost</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="schematic-box">
+            <svg viewBox="0 0 520 190" role="img" aria-label="B2B lead funnel and financial reconciliation schematic">
+              <rect x="6" y="6" width="508" height="178" rx="6" fill="#050a14" stroke="#283c5f" stroke-width="1"/>
+              <rect x="22" y="24" width="142" height="58" rx="4" fill="#0b1628" stroke="#efc65d" stroke-width="1.2"/>
+              <text x="93" y="46" fill="#ffe182" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" text-anchor="middle">456 SEARCHES</text>
+              <text x="93" y="64" fill="#c6d4ea" font-family="JetBrains Mono, monospace" font-size="8.5" text-anchor="middle">Town × Trade Matrix</text>
+
+              <line x1="164" y1="53" x2="188" y2="53" stroke="#efc65d" stroke-width="1.5"/>
+              <rect x="190" y="24" width="142" height="58" rx="4" fill="#0b1628" stroke="#6cc9ff" stroke-width="1.2"/>
+              <text x="261" y="46" fill="#8cd6ff" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" text-anchor="middle">1,443 WEBSITES</text>
+              <text x="261" y="64" fill="#c6d4ea" font-family="JetBrains Mono, monospace" font-size="8.5" text-anchor="middle">Automated HTTP/DOM Check</text>
+
+              <line x1="332" y1="53" x2="356" y2="53" stroke="#6cc9ff" stroke-width="1.5"/>
+              <rect x="358" y="24" width="140" height="58" rx="4" fill="#10223d" stroke="#58e6a9" stroke-width="1.4"/>
+              <text x="428" y="46" fill="#58e6a9" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" text-anchor="middle">175 VERIFIED</text>
+              <text x="428" y="64" fill="#eef4ff" font-family="JetBrains Mono, monospace" font-size="8.5" text-anchor="middle">Ranked + Call Hook</text>
+
+              <rect x="22" y="102" width="476" height="64" rx="4" fill="#08111f" stroke="#283c5f" stroke-width="1"/>
+              <text x="36" y="124" fill="#efc65d" font-family="JetBrains Mono, monospace" font-size="9.5" font-weight="700">HARWICK 4-MONTH BANK &amp; GL RECONCILIATION</text>
+              <text x="36" y="142" fill="#eef4ff" font-family="JetBrains Mono, monospace" font-size="9">Inflows: $226,735 · Outflows: $231,219 · GL Revenue Verified: ~$376k</text>
+              <text x="36" y="157" fill="#58e6a9" font-family="JetBrains Mono, monospace" font-size="8.5">Automated Monday 06:30 call list + harwick_money_radar.py inbox monitor</text>
+            </svg>
+            <div class="schematic-caption">
+              <span>SCHEMATIC 05 · B2B LEAD FUNNEL &amp; CASH-FLOW RADAR</span>
+              <span>DURHAM REGION &amp; KAWARTHA LAKES</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PLATE SYS-06 -->
+      <article id="plate-sys-06" class="system-spec-plate">
+        <div class="plate-rivets" aria-hidden="true">
+          <svg class="rivet tl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet tr"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet bl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet br"><use href="#hex-fastener"></use></svg>
+        </div>
+        <div class="plate-title-row">
+          <h3>SYS-06 · Aegis Client Websites, Weekly SEO Pipelines &amp; Hardware Builds</h3>
+          <div class="plate-serial-strip">
+            <span class="serial-tag gold">ENTITY: AEGIS EQUITY CORP.</span>
+            <span class="serial-tag">CLIENT ACCOUNT: AEC-CR-001 (PAID)</span>
+            <span class="serial-tag green">LIVE: 3 PRODUCTION SITES + CAD</span>
+          </div>
+        </div>
+        <div class="plate-body-grid">
+          <div class="plate-narrative">
+            <p>
+              <strong>Operational Problem:</strong> Small businesses get overcharged for slow Wix/WordPress sites with broken forms, unverified email DNS, and dead blogs—and rural properties need physical enclosures, solar battery packs, and radio nodes that survive Ontario winters.
+            </p>
+            <p>
+              <strong>Engineered System:</strong> Under <strong>Aegis Engineered Solutions</strong> (<a href="https://aegisequity.ca" target="_blank" rel="noopener">aegisequity.ca</a>), I delivered the full launch for Florida catering client <a href="https://culinary-revolutionary.com/" target="_blank" rel="noopener">culinary-revolutionary.com</a> (domain transfer from Wix to Namecheap, GitHub Pages HTTPS deployment, Private Email mailbox with verified DKIM, Web3Forms routing, Google Business Profile &amp; Yelp listings) and run their recurring weekly automated SEO blog. I also built <a href="https://canadaornaw.github.io/harwick-route" target="_blank" rel="noopener">harwick-route</a>, an interactive hand-painted map portfolio of Harwick's 2026 paving season. For hardware jobs, I model and 3D-print weather-ready enclosures, solar-backed Meshtastic roof nodes, and ESP32 interfaces.
+            </p>
+            <div class="plate-spec-matrix">
+              <div class="spec-cell">
+                <span class="spec-cell-label">Client Launch (AEC-CR-001)</span>
+                <span class="spec-cell-val">culinary-revolutionary.com + DKIM + GBP</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Interactive Season Map</span>
+                <span class="spec-cell-val">canadaornaw.github.io/harwick-route</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Automated Site Quality</span>
+                <span class="spec-cell-val">build-blog.py + check-site.py Gate</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Physical CAD &amp; Radio</span>
+                <span class="spec-cell-val">Meshtastic Roof Node · Rugged Enclosures</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="schematic-box">
+            <pre class="receipt-terminal" style="margin:0;">[Verified Client &amp; Production Deployments]
+
+1. https://culinary-revolutionary.com/ (Account AEC-CR-001)
+   - Wix -> Namecheap domain transfer + GitHub Pages HTTPS
+   - chef@culinary-revolutionary.com Private Email + DKIM DNS verified
+   - Weekly SEO blog published via aegis-culinary-blog-publish.timer
+   - Invoices AEC-2026-001 &amp; AEC-2026-002 PAID (2026-09-22)
+
+2. https://aegisequity.ca/ (Aegis Engineered Solutions)
+   - Static HTML/CSS/JS + build-blog.py + tests/check-site.py
+   - Weekly engineering notes published via aegis-weekly-blog.timer
+
+3. https://canadaornaw.github.io/harwick-route
+   - Interactive hand-painted Kawartha Lakes map of 2026 paving jobs
+
+4. Physical CAD / 3D Print Jobs (~/01_making/3d-print-jobs/):
+   - 2026-08-18_meshtastic-roof-node · 2026-08-08_cyd2usb-battery-case
+   - 2026-08-07_cyd-snap-case · 2026-07-26_rugged-box</pre>
+            <div class="schematic-caption">
+              <span>ZERO-DEPENDENCY STATIC + HARDWARE DELIVERY</span>
+              <a href="https://culinary-revolutionary.com/" target="_blank" rel="noopener">Visit culinary-revolutionary.com ↗</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PLATE SYS-07 -->
+      <article id="plate-sys-07" class="system-spec-plate">
+        <div class="plate-rivets" aria-hidden="true">
+          <svg class="rivet tl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet tr"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet bl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet br"><use href="#hex-fastener"></use></svg>
+        </div>
+        <div class="plate-title-row">
+          <h3>SYS-07 · Field Heavy Equipment &amp; Gated Generative Media Pipeline</h3>
+          <div class="plate-serial-strip">
+            <span class="serial-tag gold">FIELD: 8+ YRS PAVER / ROLLER / SKID STEER</span>
+            <span class="serial-tag">CERTIFIED: CLASS G · FIRST AID &amp; CPR (2025)</span>
+            <span class="serial-tag green">GPU: RTX 3070 Ti + COLAB A100 CLI</span>
+          </div>
+        </div>
+        <div class="plate-body-grid">
+          <div class="plate-narrative">
+            <p>
+              <strong>Operational Edge:</strong> Eight-plus years operating asphalt pavers, skid steers, steel-drum and pneumatic rollers, grading gravel bases, ordering hot-mix asphalt, and directing crews on live residential and commercial sites. I know firsthand why industrial sensors, cameras, and software tools have to hold up in rain, dust, heat shimmer, and glare.
+            </p>
+            <p>
+              <strong>Generative Media Discipline:</strong> I run generative video and audio the same way I run a job site: to spec, with a written gate at every stage (<code>concept → still → animation → music → assembly → upload</code>). My custom <code>media</code> CLI spins up Colab A100 GPUs on demand, runs Z-Image-Turbo, Qwen-Image, and Wan 2.2 image-to-video speed variants, logs every take on a contact sheet (e.g., testing 7 animation speeds from <code>2.0</code> to <code>4.0</code> and locking <code>speed 3.5</code> before assembling a 54-minute 1440p master), and immediately powers down the remote GPU while local Vulkan/ffmpeg jobs master the audio.
+            </p>
+            <div class="plate-spec-matrix">
+              <div class="spec-cell">
+                <span class="spec-cell-label">Heavy Machinery</span>
+                <span class="spec-cell-val">Asphalt Paver · Skid Steer · Rollers</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Licences &amp; Safety</span>
+                <span class="spec-cell-val">Ontario Class G · First Aid &amp; CPR · WHMIS</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">Compute Orchestration</span>
+                <span class="spec-cell-val">Local RTX 3070 Ti + On-Demand A100 CLI</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-cell-label">In Production Now</span>
+                <span class="spec-cell-val">Framefields WebGPU System Explainers</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="schematic-box">
+            <pre class="receipt-terminal" style="margin:0;">[Generative Media &amp; WebGPU Video Lab Status]
+
+STAGE GATE CONTRACT (6 STAGES):
+01 Concept Lock -> 02 Approved Reference Still -> 03 Multi-Take I2V Matrix
+-> 04 Local Audio/Music (Kokoro / ACE-Step 1.5) -> 05 ffmpeg Loudness Master
+-> 06 Contact Sheet &amp; Upload Verification
+
+VERIFIED CONTACT SHEET RECORD (Gears Breakcore):
+- Source Still: Locked 1440p mechanical reference
+- Take Matrix: 7 animation takes rendered on A100 (speeds 2.0..4.0)
+- Editorial Gate: 6 takes rejected for cadence/drift; speed 3.5 locked
+
+UPCOMING PORTFOLIO REELS (IN ACTIVE RENDER):
+- Piece 01 (Framefields WebGPU): "How the Machine Runs" (45s live system diagram)
+- Piece 02 (Framefields WebGPU): "Dex-1B 18ms Decision Explainer" (30s benchmark)
+- Piece 03 &amp; 04: Camera-true Harwick equipment spot &amp; multi-shot character lock</pre>
+            <div class="schematic-caption">
+              <span>SPEC-DRIVEN PIPELINE · ZERO UNGATED COMPUTE</span>
+              <a href="#hire-zack">Request Contact Sheet / Reel →</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- SECTION 3: ONE DAY, RUNNING — FULL 24-HOUR SHIFT LOG -->
+    <div id="one-day-running" class="section-header-bar">
+      <h2>One Day, Running · 24-Hour Shift &amp; Timer Log</h2>
+      <span class="section-header-meta">REAL SYSTEMD TIMERS (39 UNITS) PAIRED WITH FIELD CREW OPERATIONS</span>
+    </div>
+
+    <section class="shift-log-container" aria-label="24-hour operational shift log">
+      <p class="shift-log-intro">
+        Every timestamp below comes from the live <code>systemctl --user list-timers</code> schedule on <code>zack-workstation</code>. While I am on a truck, grading gravel with a skid steer, or running the screed on an asphalt paver, these timers execute, verify their own output, and report to Telegram.
+      </p>
+
+      <table class="shift-log-table">
+        <thead>
+          <tr>
+            <th scope="col">Time (EDT)</th>
+            <th scope="col">Systemd Timer / Service</th>
+            <th scope="col">Zack in the Field (Physical Shift)</th>
+            <th scope="col">Workstation at Base (Autonomous Execution &amp; Verification)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="shift-time-cell" data-label="Time (EDT)">02:49</td>
+            <td class="shift-unit-cell" data-label="Systemd Timer / Service">auto_git_commit.timer</td>
+            <td data-label="Zack in the Field (Physical Shift)">Off-shift. Heavy equipment parked; asphalt plant closed.</td>
+            <td data-label="Workstation at Base (Autonomous Execution)">Runs isolated child-process Git snapshots across ~20 repositories; writes failure state if any repo is dirty or unreachable.</td>
+          </tr>
+          <tr>
+            <td class="shift-time-cell" data-label="Time (EDT)">03:30 – 05:48</td>
+            <td class="shift-unit-cell" data-label="Systemd Timer / Service">daily-clamscan · backup-staging · icm-fidelity</td>
+            <td data-label="Zack in the Field (Physical Shift)">Off-shift.</td>
+            <td data-label="Workstation at Base (Autonomous Execution)">Runs ClamAV antivirus on workstation (03:30) and Pi 3B (04:24), stages encrypted backups (03:40), and audits workspace graph fidelity (05:48).</td>
+          </tr>
+          <tr>
+            <td class="shift-time-cell" data-label="Time (EDT)">06:20</td>
+            <td class="shift-unit-cell" data-label="Systemd Timer / Service">harwick-calendar-rolling.timer</td>
+            <td data-label="Zack in the Field (Physical Shift)">Yard departure prep: checking truck, trailer brakes, and roller tie-downs.</td>
+            <td data-label="Workstation at Base (Autonomous Execution)">Advances Harwick Paving's rolling 28-day social calendar across Facebook, Instagram, and YouTube.</td>
+          </tr>
+          <tr>
+            <td class="shift-time-cell" data-label="Time (EDT)">06:30</td>
+            <td class="shift-unit-cell" data-label="Systemd Timer / Service">claude-agents-brief.timer · harwick-call-list.timer</td>
+            <td data-label="Zack in the Field (Physical Shift)">Driving to the job site; reading the morning briefing on Telegram.</td>
+            <td data-label="Workstation at Base (Autonomous Execution)"><code>morning_brief.py</code> inspects agent heartbeats (<code>atilla</code>, <code>harwick</code>, <code>aegis</code>), 24h <code>.done.json</code> job receipts, quota governor, failed units, and <code>harwick_money_radar.py</code>; Monday builds the ranked commercial call list.</td>
+          </tr>
+          <tr>
+            <td class="shift-time-cell" data-label="Time (EDT)">07:30</td>
+            <td class="shift-unit-cell" data-label="Systemd Timer / Service">harwick-tender-sweep.timer · security-log-review.timer</td>
+            <td data-label="Zack in the Field (Physical Shift)">On site: unloading skid steer and rollers; excavating and grading gravel base.</td>
+            <td data-label="Workstation at Base (Autonomous Execution)">Sweeps municipal bid boards for new paving/winter tenders; <code>security-log-review</code> checks Falco &amp; system logs (<code>2026-10-20T07:34 OK flagged=0</code>).</td>
+          </tr>
+          <tr>
+            <td class="shift-time-cell" data-label="Time (EDT)">08:00 – 09:05</td>
+            <td class="shift-unit-cell" data-label="Systemd Timer / Service">aegis-mailcheck · aegis-weekly-blog · aegis-culinary-blog-publish</td>
+            <td data-label="Zack in the Field (Physical Shift)">First load of hot-mix asphalt arrives; operating the asphalt paver and directing rakers.</td>
+            <td data-label="Workstation at Base (Autonomous Execution)">Scans Aegis inbox digest (08:00), checks corporate compliance gates (09:00), and publishes weekly SEO articles for Aegis and client Culinary Revolutionary (09:05).</td>
+          </tr>
+          <tr>
+            <td class="shift-time-cell" data-label="Time (EDT)">Continuous</td>
+            <td class="shift-unit-cell" data-label="Systemd Timer / Service">dex.service · Echo Home · net-watch · gitstack-sync</td>
+            <td data-label="Zack in the Field (Physical Shift)">Compacting asphalt with steel-drum and pneumatic rollers; checking grade and drainage.</td>
+            <td data-label="Workstation at Base (Autonomous Execution)">Dex-1B serves 18 ms local decisions on port <code>18766</code>; Frigate monitors 7 cameras; <code>claude-agents-watch</code> and <code>gitstack-sync</code> run every 5–15 minutes.</td>
+          </tr>
+          <tr>
+            <td class="shift-time-cell" data-label="Time (EDT)">17:00 – 17:30</td>
+            <td class="shift-unit-cell" data-label="Systemd Timer / Service">harwick-social-weekly-drafts · aegis-social-weekly-drafts</td>
+            <td data-label="Zack in the Field (Physical Shift)">Cleaning equipment, loading trailers, and closing out the site.</td>
+            <td data-label="Workstation at Base (Autonomous Execution)">Generates next week's Harwick and Aegis social posts, runs up to 3 automated fact-check repair rounds against <code>facts.md</code>, and logs <code>PASS</code> receipts to disk.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SECTION 4: TWO AUDIENCES, ONE OPERATOR — HIRE ZACK OR CONTRACT AEGIS -->
+    <div class="section-header-bar">
+      <h2>Work With Zack Harper · Employment, Contract &amp; Client Scopes</h2>
+      <span class="section-header-meta">DIRECT RESPONSE · CANNINGTON, ON · REMOTE OR ON-SITE</span>
+    </div>
+
+    <div class="engagement-grid">
+      <!-- PATH 1: HIRING MANAGERS & TECHNICAL TEAMS -->
+      <article id="hire-zack" class="spec-plate engagement-plate">
+        <div class="plate-rivets" aria-hidden="true">
+          <svg class="rivet tl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet tr"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet bl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet br"><use href="#hex-fastener"></use></svg>
+        </div>
+
+        <div>
+          <div class="plate-header-bar">
+            <h3>For Hiring Managers &amp; Technical Teams</h3>
+            <span class="plate-stamp-badge">AI · AUTOMATION · VISION · MEDIA</span>
+          </div>
+
+          <p>
+            Available immediately for remote or Ontario (Durham Region / Kawartha Lakes / GTA) roles in <strong>AI Automation Engineering</strong>, <strong>Applied ML &amp; Computer Vision</strong>, and <strong>Generative Media Production</strong>. I build systems that replace repetitive agency, reporting, and operations work with tested, fact-checked pipelines.
+          </p>
+
+          <ul class="offer-spec-list">
+            <li>
+              <strong>AI Automation &amp; Agent Infrastructure:</strong> Multi-agent workflows (Claude Code, custom Skills, MCP servers), Python API integrations (YouTube Data API, Meta, Google, Telegram), systemd scheduling, and mechanical claim-verification gates.
+            </li>
+            <li>
+              <strong>Applied ML &amp; Computer Vision:</strong> End-to-end encoder fine-tuning and custom head training (Dex-1B on Ettin-1B, proper scoring rules, human-label benchmarking), Frigate multi-camera NVR (RTSP + ESP32), and local VLM failure evaluation.
+            </li>
+            <li>
+              <strong>Generative Image, Video &amp; WebGPU Motion:</strong> Z-Image-Turbo, Qwen-Image, Wan 2.2 I2V via custom Colab A100 CLI worker, Kokoro TTS, ACE-Step 1.5, ffmpeg mastering, and Framefields WebGPU TypeScript compositions.
+            </li>
+            <li>
+              <strong>First 30 Days on Your Team:</strong> Week 1 shadow every role and inventory every manual copy-paste; Week 2 ship the top two highest-leverage automations with verification gates; Weeks 3–4 document the runbooks and work down the backlog.
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-cta-row">
+          <a class="tactile-btn gold" href="mailto:Zack.Harper@pm.me?subject=Interview%20%2F%20Role%20Inquiry%20%E2%80%94%20Zack%20Harper">Email Zack.Harper@pm.me →</a>
+          <a class="tactile-btn ghost" href="tel:+17053413980">Call 705-341-3980</a>
+          <a class="tactile-btn ghost" href="https://github.com/CanadaOrNaw" target="_blank" rel="noopener">github.com/CanadaOrNaw ↗</a>
+          <a class="tactile-btn ghost" href="https://huggingface.co/CanadaOrNaw/dex-1b" target="_blank" rel="noopener">HF: CanadaOrNaw/dex-1b ↗</a>
+        </div>
+      </article>
+
+      <!-- PATH 2: LOCAL BUSINESSES & SUBCONTRACTING (AEGIS ENGINEERED SOLUTIONS) -->
+      <article id="hire-aegis" class="spec-plate engagement-plate">
+        <div class="plate-rivets" aria-hidden="true">
+          <svg class="rivet tl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet tr"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet bl"><use href="#hex-fastener"></use></svg>
+          <svg class="rivet br"><use href="#hex-fastener"></use></svg>
+        </div>
+
+        <div>
+          <div class="plate-header-bar">
+            <h3>For Local Businesses &amp; Subcontracting</h3>
+            <span class="plate-stamp-badge">AEGIS ENGINEERED SOLUTIONS</span>
+          </div>
+
+          <p>
+            Practical marketing, fast websites, custom hardware builds, and heavy-equipment subcontracting for businesses in <strong>Durham Region and the Kawarthas</strong>. Every project starts with a written scope before paid work, and every marketing post is checked against your approved company facts before it goes out.
+          </p>
+
+          <ul class="offer-spec-list">
+            <li>
+              <strong>Done-For-You Local Marketing Plan — $650/month (month-to-month):</strong> 12 Facebook &amp; Instagram posts/month written for your trade and towns, 4 short Reels/Shorts from your real job photos, Google Business Profile kept active, review replies drafted within a day, and a one-page monthly ranking report. Nothing posts until you say yes.
+            </li>
+            <li>
+              <strong>Fast Website Rebuild — $900 (one-time):</strong> Phone-friendly static site (home, services, service area, gallery, quote form straight to your inbox), domain/DNS/DKIM business email connected properly, live in ~2 weeks, and you own everything.
+            </li>
+            <li>
+              <strong>Custom Hardware, Solar &amp; IoT Builds:</strong> One-off 3D-printed brackets/enclosures measured to fit the real part, solar &amp; battery setups, Meshtastic rural radio nodes, and local camera dashboards.
+            </li>
+            <li>
+              <strong>Equipment &amp; Field Subcontracting:</strong> Experienced operator (paver, skid steer, rollers, tractor, truck &amp; trailer; Class G, First Aid &amp; CPR, WHMIS) available for seasonal or subcontract site work.
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-cta-row">
+          <a class="tactile-btn gold" href="mailto:admin@aegisequity.ca?subject=Aegis%20Project%20or%20Marketing%20Inquiry">Email admin@aegisequity.ca →</a>
+          <a class="tactile-btn ghost" href="tel:+17053413980">Call 705-341-3980</a>
+          <a class="tactile-btn ghost" href="https://aegisequity.ca/" target="_blank" rel="noopener">Visit aegisequity.ca ↗</a>
+          <a class="tactile-btn ghost" href="https://culinary-revolutionary.com/" target="_blank" rel="noopener">Client Site: Culinary Revolutionary ↗</a>
+        </div>
+      </article>
+    </div>
+
+    <footer class="control-footer">
+      <div>
+        <strong>ZACK HARPER</strong> · Founder, Aegis Engineered Solutions (Aegis Equity Corp.) · Co-Owner, Harwick Paving Ltd.
+      </div>
+      <div>
+        Cannington, Ontario · <a href="tel:+17053413980">705-341-3980</a> · <a href="mailto:Zack.Harper@pm.me">Zack.Harper@pm.me</a> · <a href="mailto:admin@aegisequity.ca">admin@aegisequity.ca</a> · <a href="https://github.com/CanadaOrNaw" target="_blank" rel="noopener">github.com/CanadaOrNaw</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
