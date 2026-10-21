@@ -130,6 +130,10 @@
     {
       "path": "zack/",
       "role": "authored_public_page; /zack/ personal portfolio page for Zack Harper (HTML, dispatch.js, styles, fonts, brand asset, video poster grids); complete source read"
+    },
+    {
+      "path": "zack-v2-archive/",
+      "role": "archived_public_page; previous /zack/ portfolio (v2 dispatch board), kept for reference 2026-10-20"
     }
   ],
   "excluded": [

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Echo Home · Zack Harper</title>
+<link rel="icon" href="../assets/shield-mark.svg">
+<link rel="stylesheet" href="../fx.css">
+<link rel="stylesheet" href="../site.css">
+</head>
+<body class="case">
+<canvas id="fx-bg" aria-hidden="true"></canvas>
+
+<nav class="nav" aria-label="Main">
+  <a class="brand" href="../index.html"><img src="../assets/shield-mark.svg" alt="">Zack Harper</a>
+  <span class="links"><a href="../index.html#work">Work</a> · <a href="../index.html#day">Day</a> · <a href="../index.html#hire">Hire</a></span>
+  <a class="pill pill--solid" href="../index.html#contact">Get in touch ↗</a>
+</nav>
+
+<header class="case-head">
+  <a class="pill" href="../index.html#work">← All work</a>
+  <span class="label">SYS-03</span>
+  <h1 class="display display--lg" data-scramble>Echo Home</h1>
+  <p class="case-sub">Whole-House Local Voice &amp; 7-Camera Vision</p>
+  <div class="meta"><span class="label">MODEL: ECHO-HOME-LOCAL</span><span class="label">AUDIO: 5-ROOM PIPEWIRE + KOKORO</span><span class="label">VISION: 7 CAMERAS · FRIGATE + VLM</span></div>
+</header>
+
+<div class="fx-media case-hero wave" role="img" aria-label="Voice pipeline waveform"><svg viewBox="0 0 160 90" preserveAspectRatio="none"><g fill="currentColor"><rect x="6" width="6" y="30" height="30"/><rect x="18" width="6" y="18" height="54"/><rect x="30" width="6" y="36" height="18"/><rect x="42" width="6" y="10" height="70"/><rect x="54" width="6" y="26" height="38"/><rect x="66" width="6" y="40" height="10"/><rect x="78" width="6" y="14" height="62"/><rect x="90" width="6" y="32" height="26"/><rect x="102" width="6" y="22" height="46"/><rect x="114" width="6" y="38" height="14"/><rect x="126" width="6" y="16" height="58"/><rect x="138" width="6" y="30" height="30"/><rect x="150" width="6" y="40" height="10"/></g></svg></div>
+
+<section class="case-body">
+  <div class="case-text"><span class="label">Operational Problem</span><p>Cloud smart speakers leak audio, rely on rigid command menus, and cannot reason over local security cameras or workstation tools.</p><span class="label">Engineered System</span><p>Built a whole-house voice and vision system running 100% locally. A custom-trained "Echo" wake-word model (openWakeWord) feeds whisper.cpp speech-to-text into a local LLM agent (llama.cpp on Vulkan) that calls its own tools (time, weather, Exa search, local files, persistent memory) without hardcoded menus, speaking back through Kokoro neural TTS across a five-room PipeWire audio matrix. For computer vision, Frigate runs person and vehicle detection across seven cameras (including custom ESP32 camera nodes) with dual tuned CPU detectors so high-motion feeds never starve secondary cameras, paired with local Vision-Language Model evaluation on dark and low-frame-rate footage.</p></div>
+  <dl class="spec"><div><dt class="label">Speech &amp; Reasoning</dt><dd>openWakeWord -&gt; whisper.cpp -&gt; Vulkan LLM</dd></div><div><dt class="label">Synthesis &amp; Routing</dt><dd>Kokoro Local TTS · 5-Room Audio Matrix</dd></div><div><dt class="label">Camera Network</dt><dd>7 Cameras (RTSP + ESP32) on Frigate NVR</dd></div><div><dt class="label">Vision QA Discipline</dt><dd>Dual Detector Balancing + Night VLM Eval</dd></div></dl>
+</section>
+
+<section class="case-grid"><div class="fx-media tile"><span class="tile-k">wake word</span><span class="tile-v">"Echo"</span></div><div class="fx-media tile"><span class="tile-k">rooms</span><span class="tile-v">5</span></div><div class="fx-media tile"><span class="tile-k">cameras</span><span class="tile-v">7</span></div><div class="fx-media tile"><span class="tile-k">voice</span><span class="tile-v">Kokoro</span></div></section>
+
+<div class="case-links"></div>
+
+<a class="next" href="sys-04.html"><span class="label">Next</span><span class="display display--lg">SYS-04 →</span></a>
+
+<script src="../fx.js" defer></script>
+</body>
+</html>

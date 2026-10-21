@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenClaw · Zack Harper</title>
+<link rel="icon" href="../assets/shield-mark.svg">
+<link rel="stylesheet" href="../fx.css">
+<link rel="stylesheet" href="../site.css">
+</head>
+<body class="case">
+<canvas id="fx-bg" aria-hidden="true"></canvas>
+
+<nav class="nav" aria-label="Main">
+  <a class="brand" href="../index.html"><img src="../assets/shield-mark.svg" alt="">Zack Harper</a>
+  <span class="links"><a href="../index.html#work">Work</a> · <a href="../index.html#day">Day</a> · <a href="../index.html#hire">Hire</a></span>
+  <a class="pill pill--solid" href="../index.html#contact">Get in touch ↗</a>
+</nav>
+
+<header class="case-head">
+  <a class="pill" href="../index.html#work">← All work</a>
+  <span class="label">SYS-04</span>
+  <h1 class="display display--lg" data-scramble>OpenClaw Upstream Kernel &amp; Security Contributions</h1>
+  
+  <div class="meta"><span class="label">REPO: OPENCLAW/OPENCLAW (~390K STARS)</span><span class="label">RATING: 3× DIAMOND LOBSTER</span><span class="label">CREDITED FIX: #142018 (PR #116259)</span></div>
+</header>
+
+<div class="fx-media case-hero"><img src="../media/oc-142018.jpg" alt="Merged OpenClaw fix #142018" loading="lazy"></div>
+
+<section class="case-body">
+  <div class="case-text"><span class="label">Operational Problem</span><p>Under sustained session writes, the OpenClaw agent runtime would enter a session transcript reconciliation livelock, blocking the Node.js main thread and freezing all message channel transports simultaneously.</p><span class="label">Engineered Fix &amp; Security Audits</span><p>I isolated the exact source-level reproduction in Session transcript projection reconcile (Issue #115908, rated P1 and diamond lobster) and designed the fix architecture (PR #116259) that the merged upstream fix (#142018, Sept 2026) is built on as a credited contributor. I also isolated two upstream security/auth flaws awarded the project's top diamond lobster rating: Gateway device-identity pairing rejection (#115909) and unstamped internal wake provenance at before_agent_run (#107069).</p></div>
+  <dl class="spec"><div><dt class="label">Merged Upstream Fix</dt><dd>#142018 (Built on PR #116259)</dd></div><div><dt class="label">Issue #115908 (P1 · Closed)</dt><dd>Transcript Reconcile Livelock · P1</dd></div><div><dt class="label">Issue #115909 (P1 · Security)</dt><dd>Gateway Auth Pairing Deadlock · P1</dd></div><div><dt class="label">Issue #107069 (Security)</dt><dd>Input Provenance Gate Bypass · SEC</dd></div></dl>
+</section>
+
+<section class="case-grid"><div class="fx-media"><img src="../media/oc-116259.jpg" alt="OpenClaw PR #116259" loading="lazy"></div><div class="fx-media"><img src="../media/oc-115908.jpg" alt="OpenClaw issue #115908" loading="lazy"></div><div class="fx-media"><img src="../media/oc-115909.jpg" alt="OpenClaw issue #115909" loading="lazy"></div><div class="fx-media"><img src="../media/oc-107069.jpg" alt="OpenClaw issue #107069" loading="lazy"></div></section>
+
+<div class="case-links"><a class="pill" href="https://github.com/openclaw/openclaw/issues/115908">Issue #115908 ↗</a><a class="pill" href="https://github.com/openclaw/openclaw/pull/116259">PR #116259 ↗</a><a class="pill" href="https://github.com/openclaw/openclaw/issues/115909">#115909 ↗</a><a class="pill" href="https://github.com/openclaw/openclaw/issues/107069">#107069 ↗</a><a class="pill" href="https://github.com/openclaw/openclaw/issues/115908">Open Issue #115908 ↗ ↗</a></div>
+
+<a class="next" href="sys-05.html"><span class="label">Next</span><span class="display display--lg">SYS-05 →</span></a>
+
+<script src="../fx.js" defer></script>
+</body>
+</html>

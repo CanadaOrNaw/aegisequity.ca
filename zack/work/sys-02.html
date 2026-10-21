@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dex-1B · Zack Harper</title>
+<link rel="icon" href="../assets/shield-mark.svg">
+<link rel="stylesheet" href="../fx.css">
+<link rel="stylesheet" href="../site.css">
+</head>
+<body class="case">
+<canvas id="fx-bg" aria-hidden="true"></canvas>
+
+<nav class="nav" aria-label="Main">
+  <a class="brand" href="../index.html"><img src="../assets/shield-mark.svg" alt="">Zack Harper</a>
+  <span class="links"><a href="../index.html#work">Work</a> · <a href="../index.html#day">Day</a> · <a href="../index.html#hire">Hire</a></span>
+  <a class="pill pill--solid" href="../index.html#contact">Get in touch ↗</a>
+</nav>
+
+<header class="case-head">
+  <a class="pill" href="../index.html#work">← All work</a>
+  <span class="label">SYS-02</span>
+  <h1 class="display display--lg" data-scramble>Dex-1B</h1>
+  <p class="case-sub">Open-Source Non-Autoregressive Decision Model</p>
+  <div class="meta"><span class="label">MODEL: CANADAORNAW/DEX-1B</span><span class="label">ARCH: ETTIN-1B ENCODER (784M TUNED)</span><span class="label">LATENCY: 18 MS · APACHE-2.0</span></div>
+</header>
+
+<div class="fx-media case-hero"><video src="../media/dex-1.mp4" poster="../media/dex-1.jpg" muted loop playsinline autoplay aria-label="Dex-1B 18 ms decision explainer"></video></div>
+
+<section class="case-body">
+  <div class="case-text"><span class="label">Operational Problem</span><p>Calling a commercial decision API for every classification, routing, or command-gating check in an agent loop costs money per call and adds 780–890 ms of network latency.</p><span class="label">Engineered System</span><p>I built and released Dex-1B (github.com/CanadaOrNaw/dex · huggingface.co/CanadaOrNaw/dex-1b), a local drop-in replacement for the TypeSafe Jev API (POST /v1/systemone). It pairs the 1.1B-parameter bidirectional Ettin encoder (784M parameters fine-tuned; embeddings and lowest 7 of 28 layers frozen) with a custom typed decision head trained from scratch on my own RTX 3070 Ti (8 GB) in bfloat16. Trained for 3 epochs against strictly proper scoring rules (cross-entropy + KL divergence) with 30% option shuffling across ~1,080 distinct instruction wordings.</p></div>
+  <dl class="spec"><div><dt class="label">Everyday Use Cases (1,244 q)</dt><dd>81.5% (vs. Paid API 84.6% · Laya 68.2%)</dd></div><div><dt class="label">Command Gating Accuracy</dt><dd>93.3% (vs. Stock Laya 47.5%)</dd></div><div><dt class="label">Unseen Tasks Ablation Gain</dt><dd>+4.0 pts (wording) + 5.2 pts (1.1B body)</dd></div><div><dt class="label">Single-Pass Inference</dt><dd>18 ms / decision · 2.4 GB VRAM (bf16)</dd></div></dl>
+</section>
+
+<section class="case-grid"><div class="fx-media"><img src="../media/dex-hf.jpg" alt="Dex-1B model card on Hugging Face" loading="lazy"></div><div class="fx-media"><img src="../media/dex-gh.jpg" alt="Dex repository on GitHub" loading="lazy"></div><div class="fx-media"><img src="../media/dex-grid.jpg" alt="Dex-1B explainer frames" loading="lazy"></div><div class="fx-media"><video src="../media/dex-2.mp4" poster="../media/dex-2.jpg" muted loop playsinline autoplay aria-label="Dex-1B benchmark motion graphic"></video></div></section>
+
+<div class="case-links"><a class="pill" href="https://github.com/CanadaOrNaw/dex">github.com/CanadaOrNaw/dex ↗</a><a class="pill" href="https://huggingface.co/CanadaOrNaw/dex-1b">huggingface.co/CanadaOrNaw/dex-1b ↗</a><a class="pill" href="https://github.com/CanadaOrNaw/dex">Inspect Repo &amp; Ablations ↗ ↗</a><a class="pill" href="https://www.youtube.com/watch?v=xuZgf5Ov5yI">Watch on YouTube ↗ ↗</a></div>
+
+<a class="next" href="sys-03.html"><span class="label">Next</span><span class="display display--lg">SYS-03 →</span></a>
+
+<script src="../fx.js" defer></script>
+</body>
+</html>
