@@ -46,9 +46,11 @@ void main(){
     let W = 0, H = 0, mx = -999, my = -999, tx = -999, ty = -999;
     const size = () => { const d = Math.min(devicePixelRatio, 1.5); W = cv.width = innerWidth * d; H = cv.height = innerHeight * d; gl.viewport(0, 0, W, H); };
     size(); addEventListener('resize', size);
-    addEventListener('pointermove', e => { const d = W / innerWidth; tx = e.clientX * d; ty = H - e.clientY * d; });
+    const touch = matchMedia('(pointer: coarse)').matches;  // phones: no hover cursor, so the blob drifts on its own
+    if (!touch) addEventListener('pointermove', e => { const d = W / innerWidth; tx = e.clientX * d; ty = H - e.clientY * d; });
     const t0 = performance.now();
     const frame = () => {
+      if (touch) { const s = (performance.now() - t0) / 1000; tx = W * (.5 + .32 * Math.sin(s * .35)); ty = H * (.5 + .28 * Math.sin(s * .52 + 1.3)); }
       mx += (tx - mx) * .12; my += (ty - my) * .12;  // eased cursor
       gl.uniform2f(U('r'), W, H); gl.uniform1f(U('t'), reduce ? 0 : (performance.now() - t0) / 1000);
       gl.uniform2f(U('m'), mx, my); gl.uniform1f(U('s'), scrollY);

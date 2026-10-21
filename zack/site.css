@@ -135,3 +135,16 @@ img, video { max-width: 100%; }
 @media (max-width: 1000px) { .day { grid-template-columns: repeat(6, 15rem); } }
 .case-hero.yt { aspect-ratio: 16/9; background: #000; }
 .case-hero.yt iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+/* mobile form fit: inputs must be allowed to shrink inside the grid */
+.contact > *, .form > *, .form label { min-width: 0; }
+.form input:not([type=radio]), .form select, .form textarea { width: 100%; max-width: 100%; min-width: 0; box-sizing: border-box; }
+.form select { text-overflow: ellipsis; }
+@media (max-width: 760px) {
+  .section { padding-top: 12vh; }
+  .big-link { font-size: 1.6rem; width: auto; overflow-wrap: anywhere; }
+  .who { flex-wrap: wrap; }
+  .form input, .form select, .form textarea { font-size: 16px; } /* stops iOS zoom on focus */
+  .hero h1 { margin-top: 4vh; }
+}
+.nav .brand, .nav .pill { white-space: nowrap; }
