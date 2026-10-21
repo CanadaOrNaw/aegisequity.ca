@@ -6,7 +6,7 @@
 <title>Dex-1B · Zack Harper</title>
 <link rel="icon" href="../assets/shield-mark.svg">
 <link rel="stylesheet" href="../fx.css">
-<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="../site.css?v=4">
 </head>
 <body class="case">
 <canvas id="fx-bg" aria-hidden="true"></canvas>
@@ -25,7 +25,7 @@
   <div class="meta"><span class="label">MODEL: CANADAORNAW/DEX-1B</span><span class="label">ARCH: ETTIN-1B ENCODER (784M TUNED)</span><span class="label">LATENCY: 18 MS · APACHE-2.0</span></div>
 </header>
 
-<div class="case-hero yt"><iframe src="https://www.youtube-nocookie.com/embed/xuZgf5Ov5yI?rel=0&modestbranding=1" title="Dex-1B: 18 ms decision explainer" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+<div class="case-hero yt" style="aspect-ratio:16/9;background:#000"><iframe src="https://www.youtube-nocookie.com/embed/xuZgf5Ov5yI?rel=0&modestbranding=1&playsinline=1" title="Dex-1B: 18 ms decision explainer" style="width:100%;height:100%;border:0;display:block" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
 
 <section class="case-body">
   <div class="case-text"><span class="label">Operational Problem</span><p>Calling a commercial decision API for every classification, routing, or command-gating check in an agent loop costs money per call and adds 780–890 ms of network latency.</p><span class="label">Engineered System</span><p>I built and released Dex-1B (github.com/CanadaOrNaw/dex · huggingface.co/CanadaOrNaw/dex-1b), a local drop-in replacement for the TypeSafe Jev API (POST /v1/systemone). It pairs the 1.1B-parameter bidirectional Ettin encoder (784M parameters fine-tuned; embeddings and lowest 7 of 28 layers frozen) with a custom typed decision head trained from scratch on my own RTX 3070 Ti (8 GB) in bfloat16. Trained for 3 epochs against strictly proper scoring rules (cross-entropy + KL divergence) with 30% option shuffling across ~1,080 distinct instruction wordings.</p></div>
