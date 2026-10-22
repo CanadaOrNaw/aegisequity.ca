@@ -76,6 +76,7 @@ img, video { max-width: 100%; }
 .case-body { display: grid; grid-template-columns: 1.1fr 1fr; gap: 6vw; padding: 14vh 4vw 0; }
 .case-text p { font-size: 1.15rem; line-height: 1.55; max-width: 52ch; margin: .6rem 0 2.4rem; }
 .spec { margin: 0; }
+.spec dt.label::after { content: '\00a0]'; }
 .spec div { display: grid; grid-template-columns: 11rem 1fr; gap: 1rem; padding: .9rem 0; border-top: 1px solid var(--line); }
 .spec dd { margin: 0; line-height: 1.45; }
 .case-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr)); gap: 1rem; padding: 14vh 4vw 0; }
