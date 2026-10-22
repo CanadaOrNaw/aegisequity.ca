@@ -19,7 +19,7 @@ img, video { max-width: 100%; }
 /* hero */
 .hero { min-height: 100vh; position: relative; display: grid; grid-template-rows: auto 1fr auto; padding: 6.5rem 4vw 2.5rem; }
 .hero h1 { position: relative; z-index: 2; margin-top: 8vh; mix-blend-mode: difference; }
-.hero .hero-media { position: absolute; right: 4vw; top: 13vh; width: 28vw; aspect-ratio: 4/5; z-index: 1; }
+.hero .hero-media { position: absolute; right: 4vw; top: 7vh; width: min(28vw, calc((100vh - 17rem) * .8)); aspect-ratio: 4/5; z-index: 1; }
 .hero .intro { align-self: end; justify-self: start; max-width: 40ch; margin: 0 0 2.5rem; font-size: 1.1rem; line-height: 1.45; position: relative; z-index: 2; }
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; border-top: 1px solid var(--line); padding-top: 1.1rem; }
 .stats strong { display: block; font-size: 1.35rem; font-weight: 700; letter-spacing: -.02em; margin: .5rem 0 .3rem; }
