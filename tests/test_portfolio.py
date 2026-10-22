@@ -48,9 +48,13 @@ for page, parsed in pages.items():
         assert video.get("aria-label") and video.get("poster"), page
 
 case = pages[PORTFOLIO / "work/sys-08.html"]
-assert len(case.iframes) == 1
-embed = urlsplit(case.iframes[0]["src"])
-assert embed.hostname == "www.youtube-nocookie.com" and embed.path == "/embed/snLAAeTeTwU"
-assert "https://www.youtube.com/watch?v=snLAAeTeTwU" in case.refs
+assert len(case.iframes) == 2
+for frame, video_id in zip(case.iframes, ("snLAAeTeTwU", "j_diuj0nAIg")):
+    embed = urlsplit(frame["src"])
+    assert embed.hostname == "www.youtube-nocookie.com" and embed.path == f"/embed/{video_id}"
+    assert f"https://www.youtube.com/watch?v={video_id}" in case.refs
+home = pages[PORTFOLIO / "index.html"]
+assert "media/sys08-epictetus.mp4" in home.refs
+assert "../media/sys08-epictetus.mp4" in case.refs
 assert "eWLfF3wh5ks" in (PORTFOLIO / "work/sys-01.html").read_text()
 print(f"PASS: {len(pages)} portfolio pages, {count} local links/media/posters, muted inline loops and SYS-08 embed/watch target.")
