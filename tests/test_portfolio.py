@@ -1,0 +1,56 @@
+"""Read-only portfolio links, media and SYS-08 playback wiring checks."""
+from html.parser import HTMLParser
+from pathlib import Path
+from urllib.parse import unquote, urlsplit
+
+ROOT = Path(__file__).resolve().parents[1]
+PORTFOLIO = ROOT / "zack"
+
+class Markup(HTMLParser):
+    def __init__(self, text):
+        super().__init__()
+        self.ids = set()
+        self.refs = []
+        self.videos = []
+        self.iframes = []
+        self.feed(text)
+
+    def handle_starttag(self, tag, attrs):
+        a = dict(attrs)
+        if "id" in a:
+            self.ids.add(a["id"])
+        for field in ("href", "src", "poster"):
+            if a.get(field):
+                self.refs.append(a[field])
+        if tag == "video":
+            self.videos.append(a)
+        if tag == "iframe":
+            self.iframes.append(a)
+
+pages = {p: Markup(p.read_text()) for p in [PORTFOLIO / "index.html", *sorted((PORTFOLIO / "work").glob("*.html"))]}
+count = 0
+for page, parsed in pages.items():
+    for ref in parsed.refs:
+        u = urlsplit(ref)
+        if u.scheme or u.netloc:
+            continue
+        target = ROOT / unquote(u.path).lstrip("/") if u.path.startswith("/") else page.parent / unquote(u.path)
+        if not u.path:
+            target = page
+        if target.is_dir():
+            target /= "index.html"
+        assert target.exists(), (page.relative_to(ROOT), ref)
+        if u.fragment and target.suffix == ".html":
+            assert u.fragment in Markup(target.read_text()).ids, (page.relative_to(ROOT), ref)
+        count += 1
+    for video in parsed.videos:
+        assert all(flag in video for flag in ("muted", "loop", "playsinline", "autoplay")), page
+        assert video.get("aria-label") and video.get("poster"), page
+
+case = pages[PORTFOLIO / "work/sys-08.html"]
+assert len(case.iframes) == 1
+embed = urlsplit(case.iframes[0]["src"])
+assert embed.hostname == "www.youtube-nocookie.com" and embed.path == "/embed/snLAAeTeTwU"
+assert "https://www.youtube.com/watch?v=snLAAeTeTwU" in case.refs
+assert "eWLfF3wh5ks" in (PORTFOLIO / "work/sys-01.html").read_text()
+print(f"PASS: {len(pages)} portfolio pages, {count} local links/media/posters, muted inline loops and SYS-08 embed/watch target.")
