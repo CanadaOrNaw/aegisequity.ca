@@ -49,7 +49,7 @@ for page, parsed in pages.items():
 
 case = pages[PORTFOLIO / "work/sys-08.html"]
 assert len(case.iframes) == 3
-for frame, video_id in zip(case.iframes, ("snLAAeTeTwU", "j_diuj0nAIg", "0kVID1IQWEE")):
+for frame, video_id in zip(case.iframes, ("0kVID1IQWEE", "j_diuj0nAIg", "snLAAeTeTwU")):
     embed = urlsplit(frame["src"])
     assert embed.hostname == "www.youtube-nocookie.com" and embed.path == f"/embed/{video_id}"
     assert f"https://www.youtube.com/watch?v={video_id}" in case.refs
@@ -60,7 +60,7 @@ assert "media/sys08-before-the-paver.mp4" in home.refs
 assert "../media/sys08-before-the-paver.mp4" in case.refs
 assert "media/sys08-before-the-paver.jpg" in home.refs
 assert "../media/sys08-before-the-paver.jpg" in case.refs
-watch_urls = [f"https://www.youtube.com/watch?v={video_id}" for video_id in ("snLAAeTeTwU", "j_diuj0nAIg", "0kVID1IQWEE")]
+watch_urls = [f"https://www.youtube.com/watch?v={video_id}" for video_id in ("0kVID1IQWEE", "j_diuj0nAIg", "snLAAeTeTwU")]
 assert [ref for ref in case.refs if ref in watch_urls] == watch_urls
 assert "eWLfF3wh5ks" in (PORTFOLIO / "work/sys-01.html").read_text()
 print(f"PASS: {len(pages)} portfolio pages, {count} local links/media/posters, muted inline loops and SYS-08 embed/watch target.")
