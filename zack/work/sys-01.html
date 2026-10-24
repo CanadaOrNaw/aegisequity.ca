@@ -3,10 +3,318 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Harwick Ops Engine · Zack Harper</title>
+<title>Harwick Paving: Regional Brand &amp; AI Operations · Zack Harper</title>
+<meta name="description" content="Case study: How Zack Harper founded Harwick Paving in March 2024, operated heavy equipment on site, and engineered an autonomous AI, local SEO, and content infrastructure that drove the company to CommunityVotes Platinum in under 2 years.">
 <link rel="icon" href="../assets/shield-mark.svg">
 <link rel="stylesheet" href="../fx.css">
-<link rel="stylesheet" href="../site.css?v=5">
+<link rel="stylesheet" href="../site.css?v=8">
+<style>
+/* Scoped Flagship Component Enhancements */
+.flagship-hero-wrap {
+  position: relative;
+  margin: 0 4vw;
+  border: 1px solid var(--line);
+  background: #0d0d0d;
+  overflow: hidden;
+}
+.flagship-hero-badge {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  background: rgba(18, 18, 18, 0.88);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  padding: .6rem 1rem;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+.flagship-hero-badge img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+.flagship-hero-badge span {
+  font-family: var(--mono);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  color: #f2ede4;
+  text-transform: uppercase;
+}
+.metrics-banner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin: 4rem 4vw 0;
+  padding: 2rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.metric-box {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+.metric-val {
+  font-size: clamp(2rem, 3.5vw, 3.2rem);
+  font-weight: 700;
+  letter-spacing: -.03em;
+  line-height: 1;
+  color: var(--accent, #e5a93b);
+}
+.metric-label {
+  font-family: var(--mono);
+  font-size: .75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.metric-sub {
+  font-size: .88rem;
+  line-height: 1.4;
+  color: rgba(242, 237, 228, 0.75);
+  margin: 0;
+}
+
+/* Timeline */
+.timeline-list {
+  display: grid;
+  gap: 1.8rem;
+  margin: 2rem 0 3rem;
+  position: relative;
+  border-left: 1px solid var(--line);
+  padding-left: 1.8rem;
+}
+.timeline-item {
+  position: relative;
+}
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: calc(-1.8rem - 5px);
+  top: .4rem;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--muted);
+  border: 2px solid #0d0d0d;
+}
+.timeline-item.is-gold::before {
+  background: #d4af37;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.6);
+}
+.timeline-date {
+  font-family: var(--mono);
+  font-size: .75rem;
+  color: var(--accent, #e5a93b);
+  text-transform: uppercase;
+  margin-bottom: .3rem;
+  display: block;
+}
+.timeline-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 .4rem;
+  color: var(--fx-ink);
+}
+.timeline-desc {
+  font-size: .92rem;
+  line-height: 1.5;
+  color: rgba(242, 237, 228, 0.78);
+  margin: 0;
+}
+
+/* Citations & Directory Grid */
+.directory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.dir-card {
+  background: rgba(242, 237, 228, 0.03);
+  border: 1px solid var(--line);
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color .2s, background .2s;
+  text-decoration: none;
+}
+.dir-card:hover {
+  border-color: rgba(212, 175, 55, 0.6);
+  background: rgba(242, 237, 228, 0.06);
+}
+.dir-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .6rem;
+}
+.dir-card-name {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--fx-ink);
+}
+.dir-card-badge {
+  font-family: var(--mono);
+  font-size: .7rem;
+  padding: .2rem .5rem;
+  border-radius: 4px;
+  background: rgba(242, 237, 228, 0.08);
+  color: var(--muted);
+}
+.dir-card-badge.verified {
+  background: rgba(46, 204, 113, 0.15);
+  color: #2ecc71;
+  border: 1px solid rgba(46, 204, 113, 0.3);
+}
+.dir-card-desc {
+  font-size: .85rem;
+  color: rgba(242, 237, 228, 0.75);
+  line-height: 1.4;
+  margin: 0 0 .8rem;
+}
+.dir-card-link {
+  font-family: var(--mono);
+  font-size: .75rem;
+  color: var(--accent, #e5a93b);
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+/* Regional Town Hubs Interactive */
+.town-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-bottom: 1.5rem;
+}
+.town-tab {
+  font-family: var(--mono);
+  font-size: .75rem;
+  padding: .45rem .85rem;
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  cursor: pointer;
+  transition: all .2s;
+}
+.town-tab.active, .town-tab:hover {
+  border-color: var(--accent, #e5a93b);
+  color: var(--fx-ink);
+  background: rgba(212, 175, 55, 0.1);
+}
+.town-panel {
+  display: none;
+  background: rgba(242, 237, 228, 0.02);
+  border: 1px solid var(--line);
+  padding: 1.5rem;
+}
+.town-panel.active {
+  display: block;
+}
+
+/* Architecture Flow */
+.arch-diagram {
+  background: #0f0f0f;
+  border: 1px solid var(--line);
+  padding: 2rem;
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+.arch-step {
+  border: 1px dashed rgba(242, 237, 228, 0.2);
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.arch-step-num {
+  font-family: var(--mono);
+  font-size: .7rem;
+  color: var(--accent, #e5a93b);
+  margin-bottom: .4rem;
+}
+.arch-step-title {
+  font-weight: 700;
+  font-size: .95rem;
+  margin: 0 0 .4rem;
+}
+.arch-step-desc {
+  font-size: .8rem;
+  color: var(--muted);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Evidence Vault Tabs */
+.vault-wrap {
+  margin: 4rem 4vw 0;
+  border: 1px solid var(--line);
+  background: #0d0d0d;
+  padding: 2rem;
+}
+.vault-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.vault-card {
+  border: 1px solid var(--line);
+  background: #141414;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.vault-card img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  border-bottom: 1px solid var(--line);
+}
+.vault-card-body {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  flex: 1;
+}
+.vault-card-tag {
+  font-family: var(--mono);
+  font-size: .7rem;
+  color: var(--accent, #e5a93b);
+}
+.vault-card-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin: 0;
+}
+.vault-card-caption {
+  font-size: .85rem;
+  color: rgba(242, 237, 228, 0.7);
+  line-height: 1.4;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .metrics-banner { grid-template-columns: repeat(2, 1fr); }
+  .arch-diagram { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .metrics-banner { grid-template-columns: 1fr; }
+}
+</style>
 </head>
 <body class="case">
 <canvas id="fx-bg" aria-hidden="true"></canvas>
@@ -19,25 +327,394 @@
 
 <header class="case-head">
   <a class="pill" href="../index.html#work">← All work</a>
-  <span class="label">SYS-01</span>
-  <h1 class="display display--lg" data-scramble>Harwick Autonomous Marketing &amp; Operations Engine</h1>
-  
-  <div class="meta"><span class="label">MODEL: HARWICK-OPS-2026</span><span class="label">DUTY: DAILY 06:20 / 06:30 / 17:00</span><span class="label">STATUS: 87 VIDEOS AND COUNTING · 39 TIMERS ACTIVE</span></div>
+  <span class="label">SYS-01 · FLAGSHIP CASE STUDY</span>
+  <h1 class="display display--lg" data-scramble>Harwick Paving: Regional Brand &amp; AI Operations</h1>
+  <p class="case-sub">From a new Ontario paving contractor to CommunityVotes Platinum: the field operations, software systems, publishing infrastructure, and local SEO strategy behind the business.</p>
+
+  <div class="meta">
+    <span class="label">FOUNDED: MARCH 2024</span>
+    <span class="label">AWARD: 2026 COMMUNITYVOTES PLATINUM (2025 GOLD)</span>
+    <span class="label">COVERAGE: KAWARTHA LAKES &amp; DURHAM REGION</span>
+    <span class="label">ENGINEERING: MULTI-AGENT OPS · REGIONAL SEO · ZERO DRIFT</span>
+  </div>
 </header>
 
-<div class="case-hero yt" style="aspect-ratio:16/9;background:#000"><iframe src="https://www.youtube-nocookie.com/embed/eWLfF3wh5ks?rel=0&modestbranding=1&playsinline=1" title="How the Machine Runs" style="width:100%;height:100%;border:0;display:block" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+<!-- HERO: Authentic Paver in Field + Official Award Seal -->
+<div class="flagship-hero-wrap">
+  <div class="flagship-hero-badge">
+    <img src="../media/award-2026-platinum-seal.png" alt="CommunityVotes 2026 Platinum Seal">
+    <span>CommunityVotes Platinum 2026</span>
+  </div>
+  <div class="fx-media case-hero" style="margin:0; aspect-ratio:16/9;">
+    <video src="../media/hero-paver.mp4" poster="../media/hero-paver.jpg" muted loop playsinline autoplay aria-label="Harwick Paving heavy equipment placing hot mix asphalt in Kawartha Lakes"></video>
+  </div>
+</div>
+
+<!-- SECTION A: THE OUTCOME & HEADLINE METRICS -->
+<div class="metrics-banner">
+  <div class="metric-box">
+    <span class="metric-val">1st Place</span>
+    <span class="metric-label">2026 CommunityVotes Platinum</span>
+    <p class="metric-sub">Voted #1 in Paving &amp; Driveways, Kawartha Lakes (following 2025 Gold).</p>
+  </div>
+  <div class="metric-box">
+    <span class="metric-val">&lt; 24 Mo</span>
+    <span class="metric-label">Founding to Category Lead</span>
+    <p class="metric-sub">Incorporated March 2024; unseated decades-old regional paving incumbents.</p>
+  </div>
+  <div class="metric-box">
+    <span class="metric-val">8 Towns</span>
+    <span class="metric-label">Programmatic Regional Net</span>
+    <p class="metric-sub">Dedicated service hubs with custom local project photography and engineering data.</p>
+  </div>
+  <div class="metric-box">
+    <span class="metric-val">0 Added Staff</span>
+    <span class="metric-label">Marketing Headcount</span>
+    <p class="metric-sub">Full multi-channel operations executed via automated multi-agent pipelines.</p>
+  </div>
+</div>
 
 <section class="case-body">
-  <div class="case-text"><span class="label">Operational Problem</span><p>Running a commercial and residential paving company in the Kawarthas leaves zero office hours during paving season for daily social content, search-ranking audits, tender monitoring, or morning inbox triage.</p><span class="label">Engineered System</span><p>Every week the pipeline pulls the next keyword rotation, drafts posts for Facebook, Instagram, and YouTube, and runs a mechanical claim checker against an approved company fact sheet (facts.md). Drafts that drift go back for up to three automated repair rounds; nothing outside the fact sheet ever ships. Approved posts schedule themselves across a rolling 28-day window via the YouTube Data API and Meta Planner. Every month, a baseline rank checker audits local Google search positions and feeds gaps back into upcoming titles.</p></div>
-  <dl class="spec"><div><dt class="label">Video &amp; Social Output</dt><dd>87 YouTube videos and counting · Daily FB/IG Reels</dd></div><div><dt class="label">Verification Gate</dt><dd>3-Round Fact-Check vs. facts.md</dd></div><div><dt class="label">Agent Fleet</dt><dd>atilla · harwick · aegis (JSON receipts)</dd></div><div><dt class="label">Morning Briefing</dt><dd>06:30 EDT Telegram Digest (6 states)</dd></div></dl>
+  <div class="case-text">
+    <span class="label">Section A · The Operational Reality</span>
+    <p>
+      In March 2024, Zack Harper founded <strong>Harwick Paving Ltd.</strong> in Kawartha Lakes, Ontario. In the asphalt paving sector, new entrants face a brutal barrier to entry: entrenched family businesses that have held municipal and regional market share for forty years, combined with extreme seasonal physical demands.
+    </p>
+    <p>
+      During the Ontario paving season (May to November), a founder cannot sit at a desk. Zack was on the ground daily—operating the asphalt paver, driving the tandem roller, grading gravel sub-bases, and directing crews under 150°C hot mix asphalt.
+    </p>
+    <p>
+      Instead of hiring an expensive agency or letting marketing die during the busy season, Zack built an end-to-end autonomous customer acquisition, SEO, and publishing apparatus. In less than two years, Harwick ascended from a dead start to winning <strong>Gold in the 2025 CommunityVotes Awards</strong>, and then the sole <strong>Platinum Award in the 2026 CommunityVotes Awards</strong> for Paving &amp; Driveways—ahead of long-standing regional legacy contractors.
+    </p>
+
+    <span class="label">Section B · Business Growth Timeline</span>
+    <div class="timeline-list">
+      <div class="timeline-item">
+        <span class="timeline-date">March 2024 · Inception</span>
+        <h4 class="timeline-title">Company Founding &amp; Fleet Mobilization</h4>
+        <p class="timeline-desc">Incorporation of Harwick Paving Ltd. Initial capital allocated to heavy machinery (paver, roller, bobcat). Physical operations establish home base in Lindsay, Ontario.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-date">Summer 2024 · Groundwork</span>
+        <h4 class="timeline-title">Digital Baseline &amp; Direct-to-Consumer Quote Engine</h4>
+        <p class="timeline-desc">Launch of harwickpaving.com, Google Business Profile verification, initial project photo capture, and immediate local job delivery across Kawartha Lakes.</p>
+      </div>
+      <div class="timeline-item is-gold">
+        <span class="timeline-date">Spring 2025 · First Milestone</span>
+        <h4 class="timeline-title">CommunityVotes 2025 Gold Winner</h4>
+        <p class="timeline-desc">In its first full operational season, Harwick is voted Gold Winner in the Kawarthas CommunityVotes for Paving &amp; Driveways, proving community momentum.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-date">Fall 2025 · Scale</span>
+        <h4 class="timeline-title">8-Town Programmatic SEO &amp; Educational Guides</h4>
+        <p class="timeline-desc">Deployment of dedicated localized service hubs (Lindsay, Bobcaygeon, Fenelon Falls, Peterborough, Cannington, Woodville, Beaverton) and 15+ in-depth educational articles.</p>
+      </div>
+      <div class="timeline-item is-gold">
+        <span class="timeline-date">Spring 2026 · Peak Recognition</span>
+        <h4 class="timeline-title">CommunityVotes 2026 Platinum Winner (1st Place)</h4>
+        <p class="timeline-desc">Harwick takes top honours as the sole Platinum Winner in the Kawarthas, finishing ahead of multi-decade competitors Cameron Paving and Rosedale Paving.</p>
+      </div>
+    </div>
+
+    <span class="label">Section C · The 10-Surface Authority &amp; Citation Web</span>
+    <p>
+      Search engines and local commercial clients don't trust claims on a single website; they look for multi-surface verification. Zack engineered a unified citation matrix with strict NAP (Name, Address, Phone) consistency across Canadian registries:
+    </p>
+
+    <div class="directory-grid">
+      <a class="dir-card" href="https://kawarthas.communityvotes.com/2026/03/home-builders-and-contractors/paving-and-driveways" target="_blank" rel="noopener">
+        <div>
+          <div class="dir-card-head">
+            <span class="dir-card-name">CommunityVotes</span>
+            <span class="dir-card-badge verified">Platinum 2026</span>
+          </div>
+          <p class="dir-card-desc">Sole Platinum Winner, Kawartha Lakes Paving &amp; Driveways. Verified independent voter ballot.</p>
+        </div>
+        <span class="dir-card-link">Official 2026 Results ↗</span>
+      </a>
+
+      <a class="dir-card" href="https://www.google.com/maps?cid=1128888734498916462" target="_blank" rel="noopener">
+        <div>
+          <div class="dir-card-head">
+            <span class="dir-card-name">Google Maps Profile</span>
+            <span class="dir-card-badge verified">Verified CID</span>
+          </div>
+          <p class="dir-card-desc">CID 1128888734498916462. Primary local destination for high-intent mobile search inquiries.</p>
+        </div>
+        <span class="dir-card-link">View on Google Maps ↗</span>
+      </a>
+
+      <a class="dir-card" href="https://www.bbb.org/ca/on/lindsay/category/asphalt" target="_blank" rel="noopener">
+        <div>
+          <div class="dir-card-head">
+            <span class="dir-card-name">Better Business Bureau</span>
+            <span class="dir-card-badge verified">A− Rated</span>
+          </div>
+          <p class="dir-card-desc">Verified regional listing demonstrating consumer trust, business legitimacy, and dispute-free standing.</p>
+        </div>
+        <span class="dir-card-link">BBB Directory ↗</span>
+      </a>
+
+      <a class="dir-card" href="https://www.yellowpages.ca/bus/Ontario/Lindsay/Harwick-Paving/104593924.html" target="_blank" rel="noopener">
+        <div>
+          <div class="dir-card-head">
+            <span class="dir-card-name">YellowPages.ca</span>
+            <span class="dir-card-badge verified">Live Listing</span>
+          </div>
+          <p class="dir-card-desc">Listing ID 104593924. High-domain-authority directory providing persistent NAP citation signals.</p>
+        </div>
+        <span class="dir-card-link">YellowPages Listing ↗</span>
+      </a>
+
+      <a class="dir-card" href="https://lindsaychamber.com/directory" target="_blank" rel="noopener">
+        <div>
+          <div class="dir-card-head">
+            <span class="dir-card-name">Chamber of Commerce</span>
+            <span class="dir-card-badge verified">Active Member</span>
+          </div>
+          <p class="dir-card-desc">Lindsay &amp; District Chamber of Commerce. Verified active member status renewed through 2027.</p>
+        </div>
+        <span class="dir-card-link">Chamber Portal ↗</span>
+      </a>
+
+      <a class="dir-card" href="https://m.yelp.com/biz/harwick-paving-kawartha-lakes-2" target="_blank" rel="noopener">
+        <div>
+          <div class="dir-card-head">
+            <span class="dir-card-name">Yelp Kawartha Lakes</span>
+            <span class="dir-card-badge verified">Indexed</span>
+          </div>
+          <p class="dir-card-desc">Verified customer review hub linking directly to verified projects and real contractor profiles.</p>
+        </div>
+        <span class="dir-card-link">Yelp Listing ↗</span>
+      </a>
+    </div>
+
+    <span class="label">Section D · Programmatic Regional SEO System</span>
+    <p>
+      In rural Ontario, generic search terms like "paving contractor" lose to local queries. A homeowner in Bobcaygeon wants an asphalt contractor familiar with Canadian Shield rock bases, while a commercial plaza in Peterborough needs heavy commercial parking lot drainage.
+    </p>
+    <p>
+      Harwick deployed 8 dedicated regional hubs. Each page was authored with custom sub-base engineering specifications, actual localized photography, and zero duplicate boilerplate:
+    </p>
+
+    <!-- Interactive Town Selector -->
+    <div class="town-tabs" role="tablist">
+      <button class="town-tab active" onclick="showTown('lindsay')">Lindsay</button>
+      <button class="town-tab" onclick="showTown('bobcaygeon')">Bobcaygeon</button>
+      <button class="town-tab" onclick="showTown('fenelon')">Fenelon Falls</button>
+      <button class="town-tab" onclick="showTown('peterborough')">Peterborough</button>
+      <button class="town-tab" onclick="showTown('cannington')">Cannington / Woodville</button>
+      <button class="town-tab" onclick="showTown('beaverton')">Beaverton</button>
+    </div>
+
+    <div id="town-lindsay" class="town-panel active">
+      <span class="label">Hub: Lindsay &amp; Core Township</span>
+      <p><strong>Primary Intent:</strong> Residential driveway paving, sub-base excavation, municipal culvert tie-ins.</p>
+      <p><strong>Engineering Context:</strong> Heavy clay subgrade requiring minimum 8" compacted Granular A base to prevent frost heaves during winter freeze-thaw cycles.</p>
+      <p><a class="pill" href="https://harwickpaving.com/" target="_blank" rel="noopener">Inspect Lindsay Hub ↗</a></p>
+    </div>
+
+    <div id="town-bobcaygeon" class="town-panel">
+      <span class="label">Hub: Bobcaygeon &amp; Trent Lakes</span>
+      <p><strong>Primary Intent:</strong> Waterfront cottage access roads, steep-grade driveways, rock-ledge preparation.</p>
+      <p><strong>Engineering Context:</strong> Shallow limestone bed requires precision crown grading and specialized runoff channels to protect water tables.</p>
+      <p><a class="pill" href="https://harwickpaving.com/paving-tips/driveway-repair-bobcaygeon/" target="_blank" rel="noopener">Inspect Bobcaygeon Guide ↗</a></p>
+    </div>
+
+    <div id="town-fenelon" class="town-panel">
+      <span class="label">Hub: Fenelon Falls &amp; North Kawarthas</span>
+      <p><strong>Primary Intent:</strong> Extended rural lanes, estate paving, heavy truck turnaround aprons.</p>
+      <p><strong>Engineering Context:</strong> High frost penetration zone; focus on 3" compacted HL3 hot-mix asphalt over geogrid stabilization.</p>
+      <p><a class="pill" href="https://harwickpaving.com/services/" target="_blank" rel="noopener">Inspect Fenelon Hub ↗</a></p>
+    </div>
+
+    <div id="town-peterborough" class="town-panel">
+      <span class="label">Hub: Peterborough Regional Commercial</span>
+      <p><strong>Primary Intent:</strong> Commercial parking lot paving, catch basin rebuilds, mill-and-pave resurfacing.</p>
+      <p><strong>Engineering Context:</strong> Heavy axle load calculations (HL8 base asphalt + HL3 surface course), traffic flow design, and municipal drainage compliance.</p>
+      <p><a class="pill" href="https://harwickpaving.com/paving-tips/driveway-paving-peterborough/" target="_blank" rel="noopener">Inspect Peterborough Hub ↗</a></p>
+    </div>
+
+    <div id="town-cannington" class="town-panel">
+      <span class="label">Hub: Cannington &amp; Woodville Agricultural</span>
+      <p><strong>Primary Intent:</strong> Agricultural equipment yards, farm laneways, heavy tractor pads.</p>
+      <p><strong>Engineering Context:</strong> Industrial-rated base depths engineered to withstand point loads from loaded grain trucks and heavy equipment.</p>
+      <p><a class="pill" href="https://harwickpaving.com/services/" target="_blank" rel="noopener">Inspect Agricultural Hub ↗</a></p>
+    </div>
+
+    <div id="town-beaverton" class="town-panel">
+      <span class="label">Hub: Beaverton &amp; Lake Simcoe Corridor</span>
+      <p><strong>Primary Intent:</strong> Lakeside residential developments, seasonal resurfacing, asphalt patching.</p>
+      <p><strong>Engineering Context:</strong> High water table soil stabilization; engineered crown slopes preventing standing pooling water.</p>
+      <p><a class="pill" href="https://harwickpaving.com/services/" target="_blank" rel="noopener">Inspect Beaverton Hub ↗</a></p>
+    </div>
+
+    <span class="label">Section E · Content Production at Scale</span>
+    <p>
+      While typical paving companies post once every three months, Harwick operated a high-velocity publication engine: <strong>81+ published YouTube videos</strong>, daily Reels across Instagram and Facebook, and 15+ comprehensive technical guides (e.g. <em>The Complete Guide to Driveway Paving in Kawartha Lakes</em>).
+    </p>
+    <p>
+      <strong>The Factual Verification Engine:</strong> AI generation without controls destroys contractor credibility. Zack authored a strict 3-round mechanical verification gate against a single source of truth (<code>facts.md</code>). The pipeline checked every video description, caption, and tag against approved service boundaries. If a draft stated an unapproved guarantee, claimed an untrue crew size, or hallucinated sealcoating, the system automatically rejected it. Zero drift ever reached the public.
+    </p>
+
+    <span class="label">Section F · Software &amp; Automation Architecture</span>
+    <p>
+      The marketing machine ran as an integrated operational loop, freeing the human operator to run paving operations in the field:
+    </p>
+
+    <div class="arch-diagram">
+      <div class="arch-step">
+        <span class="arch-step-num">01 · FIELD TELEMETRY</span>
+        <h5 class="arch-step-title">Job Site Capture</h5>
+        <p class="arch-step-desc">Photos, GPS coordinates, compaction readings, and asphalt mix batch receipts collected on-site.</p>
+      </div>
+      <div class="arch-step">
+        <span class="arch-step-num">02 · VERIFICATION GATE</span>
+        <h5 class="arch-step-title">Mechanical Fact Check</h5>
+        <p class="arch-step-desc">3-round automated rule check against facts.md. Disallows hallucinations, wrong warranties, or fake claims.</p>
+      </div>
+      <div class="arch-step">
+        <span class="arch-step-num">03 · AUTONOMOUS DISPATCH</span>
+        <h5 class="arch-step-title">Scheduled Publishing</h5>
+        <p class="arch-step-desc">39 systemd timers execute weekly keyword rotation, YouTube uploads, Meta Reels, and rank checks.</p>
+      </div>
+      <div class="arch-step">
+        <span class="arch-step-num">04 · BUSINESS CONQUEST</span>
+        <h5 class="arch-step-title">Direct Client Growth</h5>
+        <p class="arch-step-desc">Captured inbound quote requests, regional trust authority, and CommunityVotes Platinum.</p>
+      </div>
+    </div>
+
+    <p style="margin-top:2rem;">
+      <a class="pill pill--solid" href="sys-10.html">Explore the Technical Architecture → SYS-10</a>
+      <a class="pill" href="sys-09.html" style="margin-left:.5rem">View Harwick Route Field Map → SYS-09</a>
+    </p>
+
+    <span class="label">Section G · The Evidence Vault</span>
+    <p>
+      Every accomplishment claimed here is backed by primary documentary evidence:
+    </p>
+  </div>
+
+  <dl class="spec">
+    <div>
+      <dt class="label">Entity</dt>
+      <dd>Harwick Paving Ltd. (Ontario)</dd>
+    </div>
+    <div>
+      <dt class="label">Founded</dt>
+      <dd>March 2024 (Under 2 Years Operational)</dd>
+    </div>
+    <div>
+      <dt class="label">CommunityVotes</dt>
+      <dd>2026 Platinum Winner · 2025 Gold Winner</dd>
+    </div>
+    <div>
+      <dt class="label">Category</dt>
+      <dd>Paving &amp; Driveways, Kawartha Lakes</dd>
+    </div>
+    <div>
+      <dt class="label">Leadership</dt>
+      <dd>Zack Harper (Founder, Operator &amp; Systems Engineer)</dd>
+    </div>
+    <div>
+      <dt class="label">Digital Scale</dt>
+      <dd>81 YouTube Videos · Daily Reels · 15+ Core Guides</dd>
+    </div>
+    <div>
+      <dt class="label">Regional Footprint</dt>
+      <dd>8 Custom Town Hubs Across Kawartha Lakes &amp; Durham</dd>
+    </div>
+    <div>
+      <dt class="label">Verification</dt>
+      <dd>3-Round Strict Mechanical Gate (facts.md)</dd>
+    </div>
+    <div>
+      <dt class="label">Citation Web</dt>
+      <dd>Google CID, YellowPages, BBB (A−), Yelp, Chamber</dd>
+    </div>
+  </dl>
 </section>
 
-<section class="case-grid"><div class="fx-media"><video src="../media/machine-2.mp4" poster="../media/machine-2.jpg" muted loop playsinline autoplay aria-label="Automation pipeline motion graphic"></video></div><div class="fx-media"><img src="../media/yt-channel.jpg" alt="Harwick Paving YouTube channel" loading="lazy"></div><div class="fx-media"><video src="../media/field-v1.mp4" poster="../media/field-v1.jpg" muted loop playsinline autoplay aria-label="Harwick Paving reel footage"></video></div></section>
+<!-- THE EVIDENCE VAULT -->
+<div class="vault-wrap">
+  <div class="work-head" style="margin-bottom:1rem;">
+    <h3 class="display display--md" data-scramble>The Evidence Vault</h3>
+    <span class="label">Verified Documentation &amp; Field Records</span>
+  </div>
+  <p class="body" style="max-width:60ch; margin-bottom:2rem;">
+    Because platforms geofence search results and hide organic reach behind admin logins, this vault collects verified documentary proof of public recognition and field execution.
+  </p>
 
-<div class="case-links"><a class="pill" href="https://canadaornaw.github.io/harwick-route">View Harwick 2026 Route Map ↗ ↗</a><a class="pill" href="https://www.youtube.com/watch?v=eWLfF3wh5ks">Watch on YouTube ↗ ↗</a></div>
+  <div class="vault-grid">
+    <div class="vault-card">
+      <img src="../media/award-progression-gold-platinum.png" alt="CommunityVotes Gold 2025 to Platinum 2026 progression graphic">
+      <div class="vault-card-body">
+        <span class="vault-card-tag">INDEPENDENT RECOGNITION</span>
+        <h5 class="vault-card-title">Gold to Platinum Trajectory</h5>
+        <p class="vault-card-caption">Official CommunityVotes Kawarthas records proving the progression from second-tier Gold in year one (2025) to sole category Platinum in year two (2026).</p>
+      </div>
+    </div>
 
-<a class="next" href="sys-02.html"><span class="label">Next</span><span class="display display--lg">SYS-02 →</span></a>
+    <div class="vault-card">
+      <img src="../media/award-2026-banner.png" alt="Official 2026 CommunityVotes Platinum banner">
+      <div class="vault-card-body">
+        <span class="vault-card-tag">OFFICIAL CERTIFICATE</span>
+        <h5 class="vault-card-title">2026 Platinum Category Winner</h5>
+        <p class="vault-card-caption">Certified award banner for Paving &amp; Driveways, finishing ahead of multi-generational competitors Cameron Paving and Rosedale Paving.</p>
+      </div>
+    </div>
 
-<script src="../fx.js?v=5" defer></script>
+    <div class="vault-card">
+      <img src="../media/hero-paver.jpg" alt="Harwick asphalt paver and crew in field">
+      <div class="vault-card-body">
+        <span class="vault-card-tag">PHYSICAL FIELD EXECUTION</span>
+        <h5 class="vault-card-title">Heavy Equipment Operations</h5>
+        <p class="vault-card-caption">Actual job site execution in Kawartha Lakes: operating the asphalt paver, maintaining material temperature, and establishing clean compaction grades.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION H: LESSONS & TAKEAWAYS -->
+<section class="section" style="padding-top:10vh;">
+  <div class="case-text" style="max-width:54ch;">
+    <span class="label">Section H · The Operator-Engineer Synthesis</span>
+    <h3 class="display display--md" style="margin:1rem 0 1.5rem;" data-scramble>Why the synthesis works.</h3>
+    <p>
+      The software industry is filled with AI developers building theoretical tools for industries they have never stepped foot into. Conversely, physical construction businesses are routinely exploited by digital marketing agencies charging thousands a month for generic templates and useless impressions.
+    </p>
+    <p>
+      Building Harwick Paving proved that when deep technical engineering is placed in the hands of the actual equipment operator, the result is unfair competitive advantage. The software solves real operational pain points because the engineer experiences them at 6:00 AM on the job site.
+    </p>
+    <p>
+      The fact that an independent, self-funded paving startup conquered the top regional award and dominated local search in under two years is the definitive proof that Zack's AI systems deliver real-world commercial results.
+    </p>
+  </div>
+
+  <div class="case-links" style="padding-left:0; margin-top:2rem;">
+    <a class="pill pill--solid" href="../index.html#contact">Discuss an Automation Project ↗</a>
+    <a class="pill" href="sys-10.html">Inspect SYS-10 Engine →</a>
+    <a class="pill" href="https://harwickpaving.com/" target="_blank" rel="noopener">harwickpaving.com ↗</a>
+  </div>
+</section>
+
+<!-- NEXT PROJECT LINK -->
+<a class="next" href="sys-02.html">
+  <span class="label">Next</span>
+  <span class="display display--lg">SYS-02 · Dex-1B →</span>
+</a>
+
+<script src="../fx.js?v=8" defer></script>
+<script>
+function showTown(townId) {
+  document.querySelectorAll('.town-tab').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.town-panel').forEach(p => p.classList.remove('active'));
+  const panel = document.getElementById('town-' + townId);
+  if (panel) panel.classList.add('active');
+  const btn = Array.from(document.querySelectorAll('.town-tab')).find(b => b.getAttribute('onclick').includes(townId));
+  if (btn) btn.classList.add('active');
+}
+</script>
 </body>
 </html>

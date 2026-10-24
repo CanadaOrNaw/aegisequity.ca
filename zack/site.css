@@ -35,7 +35,8 @@ img, video { max-width: 100%; }
 .row .tags { display: flex; flex-wrap: wrap; gap: .4rem 1rem; }
 .row .strip { display: flex; gap: .5rem; transition: transform .7s var(--ease); }
 .row .strip .fx-media { height: 8.5vw; flex: none; }
-.row .strip .w { aspect-ratio: 4/3; } .row .strip .t { aspect-ratio: 9/16; } .row .strip .x { aspect-ratio: 16/9; }
+.row .strip .w { aspect-ratio: 4/3; } .row .strip .t { aspect-ratio: 9/16; } .row .strip .x { aspect-ratio: 16/9; } .row .strip .sq { aspect-ratio: 1/1; }
+.row .strip .is-contain > img { object-fit: contain; padding: .65rem; background: #161616; }
 .row:hover h3 { color: var(--accent); }
 .row:hover .strip { transform: translateX(-2rem); }
 .row--feature .strip .fx-media { height: 16vw; }
