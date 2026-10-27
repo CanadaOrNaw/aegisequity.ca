@@ -11,7 +11,7 @@ source_ref: ["README.md#L22-L39", "CONTEXT.md", "tests/check-site.py#L40-L105", 
 
 ## Observed working locally
 
-The current source and root contracts identify this repository as the static website publication source. All six executable first-party files, stylesheet, authored public HTML/SVG/config/contracts and five article pairs were reviewed. Generated public products were structurally inspected; all five article body sources occur in their existing article pages. After that evidence date the tree gained `tests/test_portfolio.py` (a seventh executable first-party file), the `zack/` portfolio pages and a `zack-v2-archive/` copy. The 2026-10-26 author pass classified and read the test file but did not run it, and did not review the portfolio page content.
+The current source and root contracts identify this repository as the static website publication source. All six executable first-party files, stylesheet, authored public HTML/SVG/config/contracts and five article pairs were reviewed. Generated public products were structurally inspected; all five article body sources occur in their existing article pages. After that evidence date the tree gained `tests/test_portfolio.py` (a seventh executable first-party file), the `zack/` portfolio pages and a `zack-v2-archive/` copy. The 2026-10-26 author pass classified and read the test file but did not run it, and did not review the portfolio page content. Zack (owner) reviewed and approved the portfolio content himself (stated 2026-10-27); the documentation reviewer did not re-review it.
 
 Three README-documented commands were executed using existing tools from the project root, all exit 0:
 

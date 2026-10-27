@@ -32,7 +32,7 @@ In words: the generator reads article pairs and parts of the homepage, then writ
 | `content/blog/` | Five public metadata/body pairs | Generated pages or device implementation |
 | `build-blog.py` | Article/listing templates, structured data, TOC, preview, feed, sitemap | Scheduler, stale-path deletion, atomic multi-file build |
 | `tests/` | Local structure/markup, portfolio link/media and synthetic JS checks; separate owner activation utility | Browser rendering, provider/mailbox or deployment acceptance |
-| `zack/`, `zack-v2-archive/` | Separate personal-portfolio pages (home, ten case pages, own CSS/JS/media) linked from the homepage nav; the archive directory holds the previous version. Nothing in `build-blog.py` references them | The generator, `inquiry.js`, the Aegis inquiry form docs or the sitemap; reviewed here only by inventory, the homepage link and the portfolio test's rules |
+| `zack/`, `zack-v2-archive/` | Separate personal-portfolio pages (home, ten case pages, own CSS/JS/media) linked from the homepage nav; the archive directory holds the previous version. Nothing in `build-blog.py` references them | The generator, `inquiry.js`, the Aegis inquiry form docs or the sitemap; documented here only by inventory, the homepage link and the portfolio test's rules; content approved by Zack (owner) 2026-10-27 |
 | `_config.yml`, `CNAME`, `robots.txt` | Declared publish exclusions, custom domain, crawler discovery | Actual remote Pages/DNS state |
 | Private docs and external hook adapter | Maintainer explanations and shared documentation enforcement route | A second live business status authority |
 

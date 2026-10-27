@@ -133,11 +133,11 @@
     },
     {
       "path": "zack/",
-      "role": "authored_public_page_set; /zack/ personal portfolio (home, ten work/sys-NN.html case pages, site.css, fx.css, fx.js, assets, about 80 media files); INVENTORY ONLY: copy, CSS, JavaScript, media and the inline form/script were not reviewed; claims limited to the file inventory, the homepage nav link and the rules of tests/test_portfolio.py"
+      "role": "authored_public_page_set; /zack/ personal portfolio (home, ten work/sys-NN.html case pages, site.css, fx.css, fx.js, assets, about 80 media files); content (copy, CSS, JavaScript, media, inline form/script) reviewed and approved by Zack (owner) 2026-10-27; the docs pass documents inventory only; claims limited to the file inventory, the homepage nav link and the rules of tests/test_portfolio.py"
     },
     {
       "path": "zack-v2-archive/",
-      "role": "archived_public_page; previous /zack/ portfolio (v2 dispatch board), kept for reference 2026-10-20; inventory only, content not reviewed"
+      "role": "archived_public_page; previous /zack/ portfolio (v2 dispatch board), kept for reference 2026-10-20; inventory only in docs; content approved by Zack (owner) 2026-10-27"
     }
   ],
   "excluded": [
