@@ -2,7 +2,7 @@
 title: "Architecture map"
 description: "See source/product ownership and the boundaries between browser, generator, provider and hosting."
 kind: "concept"
-source_ref: ["CONTEXT.md", "build-blog.py#L13-L155", "inquiry.js#L1-L79", "_config.yml#L1-L13", "index.html#L6-L208", "tests/activate-inquiry.py#L1-L63", "tests/check-site.py#L1-L105"]
+source_ref: ["CONTEXT.md", "build-blog.py#L13-L155", "inquiry.js#L1-L79", "_config.yml#L1-L13", "index.html#L6-L209", "tests/activate-inquiry.py#L1-L63", "tests/check-site.py#L1-L105", "tests/test_portfolio.py#L1-L66", "zack/index.html"]
 ---
 
 # Architecture map
@@ -31,7 +31,8 @@ In words: the generator reads article pairs and parts of the homepage, then writ
 | `inquiry.js` | Validation UI, duplicate guard, JSON request, acceptance/error state | Server validation, spam resistance or inbox receipt |
 | `content/blog/` | Five public metadata/body pairs | Generated pages or device implementation |
 | `build-blog.py` | Article/listing templates, structured data, TOC, preview, feed, sitemap | Scheduler, stale-path deletion, atomic multi-file build |
-| `tests/` | Local structure/markup and synthetic JS checks; separate owner activation utility | Browser rendering, provider/mailbox or deployment acceptance |
+| `tests/` | Local structure/markup, portfolio link/media and synthetic JS checks; separate owner activation utility | Browser rendering, provider/mailbox or deployment acceptance |
+| `zack/`, `zack-v2-archive/` | Separate personal-portfolio pages (home, ten case pages, own CSS/JS/media) linked from the homepage nav; the archive directory holds the previous version. Nothing in `build-blog.py` references them | The generator, `inquiry.js`, the Aegis inquiry form docs or the sitemap; reviewed here only by inventory, the homepage link and the portfolio test's rules |
 | `_config.yml`, `CNAME`, `robots.txt` | Declared publish exclusions, custom domain, crawler discovery | Actual remote Pages/DNS state |
 | Private docs and external hook adapter | Maintainer explanations and shared documentation enforcement route | A second live business status authority |
 

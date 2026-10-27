@@ -9,6 +9,7 @@ source_ref:
 - tests/check-site.py#L1-L105
 - tests/test_inquiry.py#L44-L85
 - tests/test-inquiry.mjs#L1-L102
+- tests/test_portfolio.py#L1-L66
 - tests/activate-inquiry.py#L13-L63
 - .githooks/docs-pre-commit#L1-L4
 ---
@@ -21,9 +22,10 @@ Commands below use the repository root as working directory. Python scripts deri
 
 | Command | Reads / behavior | Successful output |
 | --- | --- | --- |
-| `python3 -B tests/check-site.py` | Home, thank-you, every blog HTML, sitemap, RSS, config; imports form check | `PASS: 8 pages, 161 internal links, article metadata, 7 sitemap URLs and RSS.` at reviewed snapshot |
+| `python3 -B tests/check-site.py` | Home, thank-you, every blog HTML, sitemap, RSS, config; imports form check | `PASS: 8 pages, 161 internal links, article metadata, 7 sitemap URLs and RSS.` at the 2026-10-17 reviewed snapshot; 162 internal links expected after the homepage `Portfolio` link (derived, not re-run) |
 | `python3 -B tests/test_inquiry.py` | Current `index.html`; markup/mode assertions | `PASS: inquiry form is labeled and correctly configured for its current mode.` |
 | `node tests/test-inquiry.mjs` | `inquiry.js` through synthetic VM fixtures; no real fetch | `PASS: dormant fallback, validation, honeypot, duplicate guard, success and error responses.` |
+| `python3 -B tests/test_portfolio.py` | `zack/index.html` and `zack/work/*.html` plus the local files they reference; read-only by source. Not in the README; **not run** by any documentation pass | Per source, one `PASS: N portfolio pages, M local links/media/posters, ...` line; no observed output recorded |
 
 Each observed command exited 0 on 2026-10-17. Assertion/parse/IO errors normally exit 1 through Python/Node's uncaught-error behavior; no custom machine-readable error taxonomy is implemented. `-O` would disable Python assertions and is not a supported verification invocation. Counts change with the site.
 
@@ -69,7 +71,7 @@ The prior guide named a Python `http.server` bound to loopback. Starting it crea
 | `card(post, heading="h2")` | Category/title/date/read-time/excerpt card; homepage supplies `h3` | `build-blog.py:80-84,123,133` |
 | `activate(source: str, key: str) -> str` | Validates key and exact dormant replacements; returns new HTML or raises ValueError before file write | `tests/activate-inquiry.py:28-39` |
 | `check_markup(root=ROOT)` | Read local index; returns None after assertions or raises; site checker reuses it | `tests/test_inquiry.py:44-80` |
-| `Page(content)`, `Inquiry(html)` | Test HTMLParser collectors, not browser DOM implementations | `tests/check-site.py:15-37`, `tests/test_inquiry.py:12-41` |
+| `Page(content)`, `Inquiry(html)`, `Markup(text)` | Test HTMLParser collectors, not browser DOM implementations | `tests/check-site.py:15-37`, `tests/test_inquiry.py:12-41`, `tests/test_portfolio.py:9-28` |
 | `harness({ activated = true, valid = true, bot = false, fetchImpl } = {})` | Test-only synthetic objects/VM and submit helper, no application API | `tests/test-inquiry.mjs:10-45` |
 
 See [metadata](blog-metadata-and-body.md), [provider fields](inquiry-fields-and-provider.md), [configuration](configuration-and-discovery.md) and [test strategy](../development/test-strategy.md) for the corresponding behavior contracts.

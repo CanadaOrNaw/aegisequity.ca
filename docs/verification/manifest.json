@@ -124,16 +124,20 @@
       "role": "authored_test; offline local regression test; executed; complete source read"
     },
     {
+      "path": "tests/test_portfolio.py",
+      "role": "authored_test; offline read-only regression test for the /zack/ portfolio pages (links, media attributes, SYS-08 embeds); source read, not executed, by the 2026-10-26 author pass; not in the README command set"
+    },
+    {
       "path": "thank-you.html",
       "role": "authored_public_page; native form response landing page; complete source read"
     },
     {
       "path": "zack/",
-      "role": "authored_public_page; /zack/ personal portfolio page for Zack Harper (HTML, dispatch.js, styles, fonts, brand asset, video poster grids); complete source read"
+      "role": "authored_public_page_set; /zack/ personal portfolio (home, ten work/sys-NN.html case pages, site.css, fx.css, fx.js, assets, about 80 media files); INVENTORY ONLY: copy, CSS, JavaScript, media and the inline form/script were not reviewed; claims limited to the file inventory, the homepage nav link and the rules of tests/test_portfolio.py"
     },
     {
       "path": "zack-v2-archive/",
-      "role": "archived_public_page; previous /zack/ portfolio (v2 dispatch board), kept for reference 2026-10-20"
+      "role": "archived_public_page; previous /zack/ portfolio (v2 dispatch board), kept for reference 2026-10-20; inventory only, content not reviewed"
     }
   ],
   "excluded": [
@@ -241,7 +245,9 @@
         "_config.yml",
         "index.html",
         "tests/activate-inquiry.py",
-        "tests/check-site.py"
+        "tests/check-site.py",
+        "tests/test_portfolio.py",
+        "zack/index.html"
       ]
     },
     {
@@ -324,7 +330,10 @@
         "content/blog/scope-custom-tech-project.html",
         "content/blog/scope-custom-tech-project.json",
         "content/blog/solar-power-for-remote-sensors.html",
-        "content/blog/solar-power-for-remote-sensors.json"
+        "content/blog/solar-power-for-remote-sensors.json",
+        "tests/test_portfolio.py",
+        "zack/index.html",
+        "zack-v2-archive/index.html"
       ]
     },
     {
@@ -337,7 +346,8 @@
         "tests/activate-inquiry.py",
         "inquiry.js",
         "_config.yml",
-        ".githooks/docs-pre-commit"
+        ".githooks/docs-pre-commit",
+        "tests/test_portfolio.py"
       ]
     },
     {
@@ -392,7 +402,8 @@
         "tests/test_inquiry.py",
         "tests/test-inquiry.mjs",
         "tests/activate-inquiry.py",
-        ".githooks/docs-pre-commit"
+        ".githooks/docs-pre-commit",
+        "tests/test_portfolio.py"
       ]
     },
     {
@@ -464,7 +475,8 @@
         "tests/test-inquiry.mjs",
         "_config.yml",
         "build-blog.py",
-        "docs/CONTEXT.md"
+        "docs/CONTEXT.md",
+        "tests/test_portfolio.py"
       ]
     }
   ],
@@ -537,6 +549,21 @@
         "offline-local-or-synthetic-effects",
         "success-output-and-ordinary-uncaught-errors",
         "fixture-coverage-and-non-proof-limits"
+      ]
+    },
+    {
+      "id": "portfolio-check",
+      "kind": "cli-and-test",
+      "source": "tests/test_portfolio.py",
+      "docs": [
+        "reference/commands#read-only-checks",
+        "development/test-strategy#portfolio-link-and-media-check"
+      ],
+      "claims": [
+        "exact-native-command-python3--B-tests/test_portfolio.py-by-source-only",
+        "local-link-fragment-video-attribute-and-SYS-08-embed-assertions",
+        "not-in-README-and-not-run-by-authors-no-observed-output",
+        "does-not-cover-zack-v2-archive-remote-fetch-rendering-or-portfolio-form"
       ]
     },
     {
@@ -654,6 +681,18 @@
       "claims": [
         "Page-content-collector",
         "local-link-anchor-metadata-schema-policy-assertions"
+      ]
+    },
+    {
+      "id": "portfolio-parser",
+      "kind": "internal-python",
+      "source": "tests/test_portfolio.py",
+      "docs": [
+        "reference/commands#internal-helpers",
+        "development/test-strategy#portfolio-link-and-media-check"
+      ],
+      "claims": [
+        "Markup-collector-ids-link-attributes-video-iframe-tags"
       ]
     },
     {
@@ -1050,6 +1089,20 @@
         "stale-route-limits",
         "one-fact-owner-no-copied-private-tracker"
       ]
+    },
+    {
+      "id": "portfolio-pages-inventory",
+      "kind": "public-page-set",
+      "source": "zack/index.html",
+      "docs": [
+        "development/source-map-and-requirements",
+        "architecture"
+      ],
+      "claims": [
+        "inventory-only-home-ten-case-pages-own-css-js-media-linked-from-homepage-nav",
+        "not-generated-by-build-blog-py-own-form-and-inline-script-located-not-reviewed",
+        "no-claim-about-copy-media-or-behavior"
+      ]
     }
   ],
   "examples": [
@@ -1062,7 +1115,7 @@
         "tests/check-site.py"
       ],
       "effects": "Offline local reads; Python -B prevents bytecode writes, Node uses synthetic DOM/fetch; no request, service, source write, inbox or credential access.",
-      "expected": "PASS: 8 pages, 161 internal links, article metadata, 7 sitemap URLs and RSS."
+      "expected": "PASS: 8 pages, 162 internal links, article metadata, 7 sitemap URLs and RSS."
     },
     {
       "id": "markup",

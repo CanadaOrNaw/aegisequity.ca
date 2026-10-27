@@ -28,13 +28,13 @@ If either interpreter is unavailable, stop and tell the maintainer. Do not impro
 python3 -B tests/check-site.py
 ```
 
-At the reviewed 2026-10-17 snapshot, the command exited 0 and printed:
+At the reviewed 2026-10-17 snapshot, the command exited 0 and printed 161 internal links. The homepage has since gained one internal link (the `Portfolio` nav entry, `index.html:30`), so the current tree should print the line below. That 162 is derived by counting `href`/`src` values the same way the checker does, not observed from a run; the 2026-10-26 author pass did not execute project code. Confirm it in the reader trial:
 
 ```text
-PASS: 8 pages, 161 internal links, article metadata, 7 sitemap URLs and RSS.
+PASS: 8 pages, 162 internal links, article metadata, 7 sitemap URLs and RSS.
 ```
 
-The counts describe this snapshot, not permanent invariants. The check reads existing files; it does not regenerate them. `-B` prevents Python bytecode cache writes. Do not use `-O`: these checks rely on assertions.
+The counts describe a snapshot, not permanent invariants. The check reads existing files; it does not regenerate them. `-B` prevents Python bytecode cache writes. Do not use `-O`: these checks rely on assertions.
 
 ## 2. Check the actual form markup
 

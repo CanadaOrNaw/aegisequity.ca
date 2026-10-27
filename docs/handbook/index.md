@@ -2,7 +2,7 @@
 title: "Aegis website"
 description: "Maintain the actual static website, article generator and inquiry integration safely."
 kind: "overview"
-source_ref: ["README.md#L3-L39", "CONTEXT.md", "index.html#L159-L165", "tests/check-site.py#L105", "tests/test_inquiry.py#L83-L85", "tests/test-inquiry.mjs#L102", "CONTEXT.md"]
+source_ref: ["README.md#L3-L39", "CONTEXT.md", "index.html#L160-L166", "tests/check-site.py#L105", "tests/test_inquiry.py#L83-L85", "tests/test-inquiry.mjs#L102", "CONTEXT.md"]
 ---
 
 # Aegis website
@@ -25,9 +25,9 @@ There is no application server or package installer here. A Python script genera
 
 ## What works, and what is not proven
 
-The current local tree contains five article source pairs and their generated pages. The three offline checks passed on 2026-10-17: eight pages, 161 internal links and seven sitemap URLs, plus form markup and synthetic JavaScript behavior. These are local checks, not live acceptance. [Status](status.md) states the limits and the dated provider history.
+The current local tree contains five article source pairs and their generated pages. The three offline checks passed on 2026-10-17: eight pages, 161 internal links (162 expected since the homepage gained a `Portfolio` link; not re-run) and seven sitemap URLs, plus form markup and synthetic JavaScript behavior. These are local checks, not live acceptance. [Status](status.md) states the limits and the dated provider history.
 
-The public service boundaries exclude licensed engineering sign-off, electrical/structural certification and life-safety work (`index.html:159-165`). Do not turn sample scopes, terminal-style copy or the sample build specification into claims of implemented software or completed client work.
+The public service boundaries exclude licensed engineering sign-off, electrical/structural certification and life-safety work (`index.html:160-166`). Do not turn sample scopes, terminal-style copy or the sample build specification into claims of implemented software or completed client work.
 
 ## Safe contribution boundary
 

@@ -2,7 +2,7 @@
 title: "Verification status and limits"
 description: "Dated local evidence, historical provider failure and live unknowns; not a duplicate business work queue."
 kind: "status"
-source_ref: ["README.md#L22-L39", "CONTEXT.md", "tests/check-site.py#L40-L105", "tests/test_inquiry.py#L44-L85", "tests/test-inquiry.mjs#L48-L102", "_config.yml#L1-L13", "build-blog.py#L25-L155", "docs/CONTEXT.md#L1-L5"]
+source_ref: ["README.md#L22-L39", "CONTEXT.md", "tests/check-site.py#L40-L105", "tests/test_inquiry.py#L44-L85", "tests/test-inquiry.mjs#L48-L102", "tests/test_portfolio.py#L1-L66", "_config.yml#L1-L13", "build-blog.py#L25-L155", "docs/CONTEXT.md#L1-L5"]
 ---
 
 # Verification status and limits
@@ -11,13 +11,13 @@ source_ref: ["README.md#L22-L39", "CONTEXT.md", "tests/check-site.py#L40-L105", 
 
 ## Observed working locally
 
-The current source and root contracts identify this repository as the static website publication source. All six executable first-party files, stylesheet, authored public HTML/SVG/config/contracts and five article pairs were reviewed. Generated public products were structurally inspected; all five article body sources occur in their existing article pages.
+The current source and root contracts identify this repository as the static website publication source. All six executable first-party files, stylesheet, authored public HTML/SVG/config/contracts and five article pairs were reviewed. Generated public products were structurally inspected; all five article body sources occur in their existing article pages. After that evidence date the tree gained `tests/test_portfolio.py` (a seventh executable first-party file), the `zack/` portfolio pages and a `zack-v2-archive/` copy. The 2026-10-26 author pass classified and read the test file but did not run it, and did not review the portfolio page content.
 
 Three README-documented commands were executed using existing tools from the project root, all exit 0:
 
 | Check | Observed result |
 | --- | --- |
-| `python3 -B tests/check-site.py` | Eight pages, 161 internal links, article metadata, seven sitemap URLs and RSS passed |
+| `python3 -B tests/check-site.py` | Eight pages, 161 internal links, article metadata, seven sitemap URLs and RSS passed on 2026-10-17. The homepage has since gained one internal link, so the current expectation is 162 (derived by counting; not re-run) |
 | `python3 -B tests/test_inquiry.py` | Current form mode and labels/configuration passed |
 | `node tests/test-inquiry.mjs` | Synthetic fallback/validation/honeypot/duplicate/success/error cases passed |
 

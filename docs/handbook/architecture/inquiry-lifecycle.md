@@ -4,7 +4,7 @@ description: Separate native browser submission, enhanced JSON behavior, provide
   acceptance and final receipt.
 kind: concept
 source_ref:
-- index.html#L247-L291
+- index.html#L248-L292
 - inquiry.js#L1-L79
 - thank-you.html#L27-L32
 - README.md#L20-L26

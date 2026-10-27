@@ -4,8 +4,8 @@ description: Modify the real presentation owner while protecting generator coupl
   and form behavior.
 kind: how-to
 source_ref:
-- index.html#L8-L37
-- index.html#L228-L291
+- index.html#L8-L38
+- index.html#L229-L292
 - build-blog.py#L18-L22
 - build-blog.py#L48-L84
 - styles.css#L1-L21
@@ -22,7 +22,7 @@ source_ref:
 | Change | Source | Coupled behavior |
 | --- | --- | --- |
 | Homepage copy/sections | `index.html`, outside preview markers | Service JSON-LD and homepage factual assertions may need review |
-| Header/navigation | `index.html:20-37` | Generator regex extracts it and rebases links for every blog page |
+| Header/navigation | `index.html:20-38` | Generator regex extracts it and rebases links for every blog page. The homepage nav gained a `Portfolio` link to `/zack/` at `index.html:30`; generated blog pages carry the header from their last generation and did not contain that link when the 2026-10-26 pass searched them, so it reaches them only after an approved regeneration |
 | Form layout/focus/status | `styles.css:588-759`, markup/controller | Native field constraints and enhanced states must remain usable |
 | Blog layout/template | `styles.css:848-1068`, generator `page`/`card`/schema | Article/listing and homepage cards share classes/templates |
 | Visible brand/favicon | `shield-mark.svg` and HTML/template references | Current visible page uses SVG |

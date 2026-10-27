@@ -2,14 +2,14 @@
 title: "Collaboration and working state"
 description: "Understand purpose, ownership, evidence, decisions and the contribution path without duplicating a work tracker."
 kind: "overview"
-source_ref: ["README.md#L14-L39", "CLAUDE.md", "AGENTS.md", "CONTEXT.md", "docs/CONTEXT.md#L1-L5", "index.html#L146-L165", ".githooks/docs-pre-commit#L1-L4", "build-blog.py#L92-L155"]
+source_ref: ["README.md#L14-L39", "CLAUDE.md", "AGENTS.md", "CONTEXT.md", "docs/CONTEXT.md#L1-L5", "index.html#L147-L166", ".githooks/docs-pre-commit#L1-L4", "build-blog.py#L92-L155"]
 ---
 
 # Collaboration and working state
 
 ## Intended outcome
 
-Maintain a small public face for Aegis: clear service scope, useful planning articles and a reliable way to start a conversation. The website describes a listen → map → build → handoff process. It does not implement those customer projects (`index.html:146-165`).
+Maintain a small public face for Aegis: clear service scope, useful planning articles and a reliable way to start a conversation. The website describes a listen → map → build → handoff process. It does not implement those customer projects (`index.html:147-166`).
 
 The repository owns website behavior. The business owner owns public claims, publication approval and inquiry receipt. Domain/DNS/hosting evidence stays with fleet-index; business queues, approvals and records stay with their existing owners. `README.md:37-39` and `CLAUDE.md:27-36` are the routing records, not permission to copy those records here.
 

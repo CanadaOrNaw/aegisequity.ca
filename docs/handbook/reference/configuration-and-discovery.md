@@ -18,7 +18,7 @@ source_ref:
 - LICENSE#L1-L7
 - .githooks/docs-pre-commit#L1-L4
 - inquiry.js#L5-L55
-- index.html#L247-L252
+- index.html#L248-L253
 - tests/check-site.py#L94-L104
 ---
 

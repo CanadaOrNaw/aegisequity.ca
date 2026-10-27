@@ -8,7 +8,7 @@ source_ref:
 - README.md#L22-L26
 - thank-you.html#L27-L32
 - tests/activate-inquiry.py#L28-L63
-- index.html#L247-L291
+- index.html#L248-L292
 ---
 
 # Diagnose an inquiry safely

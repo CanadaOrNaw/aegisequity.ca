@@ -8,7 +8,7 @@ source_ref:
 - content/blog/scope-custom-tech-project.html#L1-L30
 - build-blog.py#L25-L45
 - build-blog.py#L92-L154
-- index.html#L228-L234
+- index.html#L229-L235
 - tests/check-site.py#L87-L105
 ---
 
@@ -56,7 +56,7 @@ All five current body sources were found unchanged inside their existing generat
 python3 -B tests/check-site.py
 ```
 
-The reviewed tree prints `PASS: 8 pages, 161 internal links, article metadata, 7 sitemap URLs and RSS.` and exits 0. It checks current products without writing them.
+The 2026-10-17 reviewed tree printed `PASS: 8 pages, 161 internal links, article metadata, 7 sitemap URLs and RSS.` and exited 0. After the homepage gained its `Portfolio` nav link the same command should print 162 internal links (derived by counting, not re-run). It checks current products without writing them.
 
 If a source is newer than its product, stop and review an owner-approved build; do not claim the trace proves freshness. If a post is absent, first inspect dates and slug/body pairing. Never assume the generator deleted an old slug: it does not.
 
