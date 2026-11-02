@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Custom Monitoring Dashboard for Small Business: Planning Guide</title>
+  <meta name="description" content="A custom monitoring dashboard for small business starts with one question: what decision does this screen support? Scope, data, layout and handoff planning.">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/svg+xml" href="/shield-mark.svg">
+  <link rel="canonical" href="https://aegisequity.ca/blog/custom-monitoring-dashboard-small-business/">
+  <link rel="alternate" type="application/rss+xml" title="Aegis Engineered Solutions blog" href="/blog/feed.xml">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aegisequity.ca/blog/custom-monitoring-dashboard-small-business/">
+  <meta property="og:title" content="Custom Monitoring Dashboard for Small Business: Planning Guide">
+  <meta property="og:description" content="A custom monitoring dashboard for small business starts with one question: what decision does this screen support? Scope, data, layout and handoff planning.">
+  <meta property="og:image" content="https://aegisequity.ca/logo.png">
+  <meta property="article:published_time" content="2026-10-27">
+  <meta property="article:modified_time" content="2026-10-27">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://aegisequity.ca/blog/custom-monitoring-dashboard-small-business/#article", "headline": "How to Plan a Custom Monitoring Dashboard for a Small Business", "description": "A custom monitoring dashboard for small business starts with one question: what decision does this screen support? Scope, data, layout and handoff planning.", "url": "https://aegisequity.ca/blog/custom-monitoring-dashboard-small-business/", "mainEntityOfPage": "https://aegisequity.ca/blog/custom-monitoring-dashboard-small-business/", "datePublished": "2026-10-27", "dateModified": "2026-10-27", "image": ["https://aegisequity.ca/logo.png"], "keywords": "custom monitoring dashboard for small business", "author": {"@type": "Organization", "name": "Aegis Engineered Solutions", "url": "https://aegisequity.ca/"}, "publisher": {"@type": "Organization", "name": "Aegis Equity Corp.", "url": "https://aegisequity.ca/", "logo": {"@type": "ImageObject", "url": "https://aegisequity.ca/logo.png"}}, "inLanguage": "en-CA", "isPartOf": {"@id": "https://aegisequity.ca/blog/#blog"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://aegisequity.ca/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aegisequity.ca/blog/"}, {"@type": "ListItem", "position": 3, "name": "How to Plan a Custom Monitoring Dashboard for a Small Business", "item": "https://aegisequity.ca/blog/custom-monitoring-dashboard-small-business/"}]}]}</script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">
+      <img src="/shield-mark.svg" alt="" class="brand-mark">
+      <span>Aegis</span>
+      <small>engineered solutions</small>
+    </a>
+    <nav class="nav">
+      <a href="/#systems">Systems</a>
+      <a href="/#work">Work</a>
+      <a href="/#process">Process</a>
+      <a href="/zack/">Portfolio</a>
+      <a href="/blog/" aria-current="page">Blog</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+    <a class="status-pill" href="/#contact">
+      <span></span>
+      build queue open
+    </a>
+  </header>
+
+  <main class="blog-main">
+    <article class="post">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/blog/">Blog</a><span aria-hidden="true">/</span><span>How to Plan a Custom Monitoring Dashboard for a Small Business</span></nav>
+      <header class="post-head"><p class="eyebrow">Dashboards and tools</p><h1>How to Plan a Custom Monitoring Dashboard for a Small Business</h1><p class="post-meta">By Aegis Engineered Solutions · <time datetime="2026-10-27">October 27, 2026</time> · 4 min read</p><p class="lede">Start with the decision the screen supports, not the data available. Scope, sources, layout and handoff for a dashboard that gets checked.</p></header>
+      <div class="post-layout"><div class="post-body"><p>A custom monitoring dashboard for small business starts with one question: what decision does this screen support? Dashboards fail when they display everything available instead of what someone needs to act on. A yard panel that shows two cameras and gate status supports a morning decision. A wall of graphs nobody reads supports nothing. This guide covers scoping, data sources, layout and handoff for a dashboard that actually gets checked.</p>
+<p>It is written for a farm or small business owner thinking about one screen in one place: an office wall, a workshop bench, a back room. No giant software promises here, just a bounded panel with a clear job, following the same order every Aegis project follows: listen, map, build, handoff.</p>
+<h2 id="define-decision">Define the decision before the data</h2>
+<p>Write down who looks at the screen and what they decide from it. The office manager glances over and knows whether the yard is normal. The owner checks from the desk whether the pump ran overnight. Each viewer gets one sentence. If a proposed tile serves no sentence, it does not belong on the first version.</p>
+<p>Then list what success looks like in observable terms. Each view labelled, each failure visible as a named state rather than a blank tile, readable from the distance the viewer actually stands at. If you cannot describe the check, the scope is not ready. Be honest about unknowns too: a scope with labelled unknowns beats one that guesses, because each unknown becomes a question for prototyping.</p>
+<h2 id="map-sources">Map every data source honestly</h2>
+<p>Mapping means writing down each feed by name: camera models and their stream types, sensor makes and what they report, where each device lives and what network it reaches. Local monitoring that never leaves the property has different needs than a panel checked from town. Note what already exists: network coverage at the screen location, cables, hubs, a spare display.</p>
+<p>State how information gets in and out for each source. A camera on the local network keeps working when the outside connection drops, which is often the whole point of a local panel. Anything the dashboard needs from outside the property, such as a remote feed over the internet, should be named as a dependency with its failure behaviour: the tile must show a named offline state, never a frozen image pretending to be live.</p>
+<h2 id="layout-small">Lay out small on purpose</h2>
+<p>An illustrative example with round numbers shows the sizing. Suppose the office wall fits a 40 inch display viewed from about ten paces. Four tiles at that distance stay readable: two named camera views, one sensor status line and one clock with a connection indicator. Six tiles would shrink text past readability, so the remaining feeds wait for version two. Round numbers only; your wall and your viewing distance replace them.</p>
+<p>Keep each tile simple: a label, the current value or view, and a normal versus attention state. Colour supports the state but never carries it alone, since lighting and eyesight vary. Place the most decided-upon tile where eyes land first and relegate the nice to know items to the edge.</p>
+<h2 id="build-handoff">Build the smallest version, then hand it over</h2>
+<p>Prototype the smallest useful version first: one camera and one status line on a spare screen, running for a week where the final display will live. Confirm it survives reboots, network drops and Monday mornings before anything is purchased or mounted. Custom builds include two physical iterations by default, so expect a round of adjustments against the real wall, light and viewing distance.</p>
+<p>A finished panel hands over the display, its configuration, plain language notes on restarting each piece, and a support path. Decide who maintains it and name the routine, even if the routine is only a monthly check that each tile still shows fresh data. Also plan power honestly: a mains powered display mount may need a licensed electrician, and the scope should say so plainly. Aegis designs and plans around licensed electrical work rather than doing it.</p>
+<h2 id="what-to-send">What to send to start</h2>
+<p>Aegis Engineered Solutions builds camera dashboards, monitoring panels and local device interfaces with a clear deliverable and a tested handoff, with local setup in Durham Region and the Kawarthas. Aegis does not provide licensed engineering sign off, electrical certification, structural certification, life safety systems, medical devices, weapons or mass production, and licensed electrical work is done by a licensed electrician.</p>
+<p>To start, send photos of the wall or bench and the devices involved, the camera and sensor details, what network reaches the spot, what you have tried, what it connects to and what success looks like. Start with a brief overview of the problem; photos and technical details can follow after first contact. Reach out by <a href="mailto:admin@aegisequity.ca">email</a> or call <a href="tel:+17053413980">(705) 341-3980</a>.</p>
+</div><div class="post-side"><nav class="post-contents" aria-label="In this note"><p class="eyebrow">in this note</p><ul><li><a href="#define-decision">Define the decision before the data</a></li><li><a href="#map-sources">Map every data source honestly</a></li><li><a href="#layout-small">Lay out small on purpose</a></li><li><a href="#build-handoff">Build the smallest version, then hand it over</a></li><li><a href="#what-to-send">What to send to start</a></li></ul></nav><aside class="post-cta"><p class="eyebrow">start</p><h2>Have a problem like this?</h2><p>Start with a brief overview of the problem. We can discuss photos and technical details after first contact.</p><a class="btn primary" href="/#contact">Describe the problem</a><a class="btn secondary" href="/#systems">See the systems</a></aside></div></div>
+      <p class="post-back"><a class="post-link" href="/blog/">← all notes</a></p>
+    </article>
+  </main>
+</body>
+</html>
